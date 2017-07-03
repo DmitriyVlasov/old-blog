@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3 on Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/publication_types/3/</link>
+    <description>Recent content in 3 on Дмитрий Власов</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
+    <lastBuildDate>Sat, 28 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/3/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Глава 11. Синтаксический анализ JSON</title>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</guid>
+      <description>&lt;p&gt;Now that we have discussed the basics of FParsec we are well prepared to work through a real world parser example: a JSON parser.&lt;/p&gt;
+
+&lt;p&gt;JSON (JavaScript Object Notation) is a text-based data interchange format with a simple and lightweight syntax. You can find descriptions of the syntax on &lt;a href=&#34;http://json.org&#34; target=&#34;_blank&#34;&gt;json.org&lt;/a&gt; and in &lt;a href=&#34;http://www.ietf.org/rfc/rfc4627.txt&#34; target=&#34;_blank&#34;&gt;RFC 4626&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In many applications one only has to deal with JSON files describing one particular kind of object. In such a context it sometimes can be appropriate to write a specialized parser just for that specific kind of JSON file. In this tutorial, however, we will follow a more general approach. We will implement a parser that can parse any general JSON file into an AST, i.e. an intermediate data structure describing the contents of the file. Applications can then conveniently query this data structure and extract the information they need. This is an approach comparable to that of XML parsers which build a data structure describing the document tree of an XML document. The great advantage of this approach is that the JSON parser itself becomes reusable and the document specific parsing logic can be expressed in the form of simple functions processing the AST of the JSON document.&lt;/p&gt;
+
+&lt;p&gt;The natural way to implement an AST in F# is with the help of a discriminated union type. If you look at the &lt;a href=&#34;http://json.org&#34; target=&#34;_blank&#34;&gt;JSON specification&lt;/a&gt;, you can see that a JSON value can be a string, a number, a boolean, null, a comma-separated list of values in square brackets, or an object with a sequence of key-value pairs in curly brackets.&lt;/p&gt;
+
+&lt;p&gt;In our parser we will use the following union type to represent JSON values:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;type Json = JString of string
+          | JNumber of float
+          | JBool   of bool
+          | JNull
+          | JList   of Json list
+          | JObject of Map&amp;lt;string, Json&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here we&amp;rsquo;ve chosen the F# &lt;code&gt;list&lt;/code&gt; type to represent a sequence of values and the &lt;code&gt;Map&lt;/code&gt; type to represent a sequence of key-value pairs, because these types are particularly convenient to process in F#.[fn If you need to parse huge sequences and objects, it might be more appropriate to use an array and dictionary for JList and JObject respectively.] Note that the &lt;code&gt;Json&lt;/code&gt; type is recursive, since both &lt;code&gt;JList&lt;/code&gt; and &lt;code&gt;JObject&lt;/code&gt; values can themselves contain &lt;code&gt;Json&lt;/code&gt; values. Our parser will have to reflect this recursive structure.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;###Tip
+If you&amp;rsquo;re new to FParsec and have a little time, it would be a good exercise to try to implement the JSON parser on your own (with the help of the reference documentation). This tutorial already covered almost everything you need and the JSON grammar is simple enough that this shouldn&amp;rsquo;t take too much time. Of course, you can always peek at the implementation below if you get stuck.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We start the actual parser implementation by covering the simple &lt;code&gt;null&lt;/code&gt; and boolean cases:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let jnull = stringReturn &amp;quot;null&amp;quot; JNull
+let jool =      (stringReturn &amp;quot;true&amp;quot;  (JBool true))
+            &amp;lt;|&amp;gt; (stringReturn &amp;quot;false&amp;quot; (JBool false))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Handling the number case is just as simple, because the JSON number format is based on the typical floating-point number format used in many programming languages and hence can be parsed with FParsec&amp;rsquo;s built-in &lt;code&gt;pfloat&lt;/code&gt; parser:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let jnumber = pfloat |&amp;gt;&amp;gt; JNumber
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Note that F# allows us to pass the object constructor &lt;code&gt;JNumber&lt;/code&gt; as a function argument.)&lt;/p&gt;
+
+&lt;p&gt;If you compare the precise number format supported by &lt;code&gt;pfloat&lt;/code&gt; with that in the JSON spec, you&amp;rsquo;ll see that &lt;code&gt;pfloat&lt;/code&gt; supports a superset of the JSON format. In contrast to the JSON format the &lt;code&gt;pfloat&lt;/code&gt; parser also recognizes &lt;code&gt;NaN&lt;/code&gt; and &lt;code&gt;Infinity&lt;/code&gt; values, accepts a leading plus sign, accepts leading zeros and even supports the hexadecimal float format of Java and C99. Depending on the context this behaviour can be considered a feature or a limitation of the parser. For most applications it probably doesn&amp;rsquo;t matter, and the JSON RFC clearly states that a JSON parser may support a superset of the JSON syntax. However, if you&amp;rsquo;d rather only support the exact JSON number format, you can implement such a float parser rather easily based on the configurable &lt;code&gt;numberLiteral&lt;/code&gt; parser (just have a look at how this is currently done in the &lt;code&gt;pfloat&lt;/code&gt; source).&lt;/p&gt;
+
+&lt;p&gt;The JSON string format takes a little more effort to implement, but we&amp;rsquo;ve already parsed a similar format with the &lt;code&gt;stringLiteral&lt;/code&gt; parsers in &lt;a href=&#34;#Parsing string data&#34;&gt;Parsing string data&lt;/a&gt;, so we can just adapt one of those parsers for our purpose:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let stringLiteral =
+    let escape =  anyOf &amp;quot;\&amp;quot;\\/bfnrt&amp;quot;
+                  |&amp;gt;&amp;gt; function
+                      | &#39;b&#39; -&amp;gt; &amp;quot;\b&amp;quot;
+                      | &#39;f&#39; -&amp;gt; &amp;quot;\u000C&amp;quot;
+                      | &#39;n&#39; -&amp;gt; &amp;quot;\n&amp;quot;
+                      | &#39;r&#39; -&amp;gt; &amp;quot;\r&amp;quot;
+                      | &#39;t&#39; -&amp;gt; &amp;quot;\t&amp;quot;
+                      | c   -&amp;gt; string c // every other char is mapped to itself
+
+    let unicodeEscape =
+    	/// converts a hex char ([0-9a-fA-F]) to its integer number (0-15)
+        let hex2int c = (int c &amp;amp;&amp;amp;&amp;amp; 15) + (int c &amp;gt;&amp;gt;&amp;gt; 6)*9
+
+        str &amp;quot;u&amp;quot; &amp;gt;&amp;gt;. pipe4 hex hex hex hex (fun h3 h2 h1 h0 -&amp;gt;
+            (hex2int h3)*4096 + (hex2int h2)*256 + (hex2int h1)*16 + hex2int h0
+            |&amp;gt; char |&amp;gt; string
+        )
+
+    let escapedCharSnippet = str &amp;quot;\\&amp;quot; &amp;gt;&amp;gt;. (escape &amp;lt;|&amp;gt; unicodeEscape)
+    let normalCharSnippet  = manySatisfy (fun c -&amp;gt; c &amp;lt;&amp;gt; &#39;&amp;quot;&#39; &amp;amp;&amp;amp; c &amp;lt;&amp;gt; &#39;\\&#39;)
+
+    between (str &amp;quot;\&amp;quot;&amp;quot;) (str &amp;quot;\&amp;quot;&amp;quot;)
+            (stringsSepBy normalCharSnippet escapedCharSnippet)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;stringLiteral&lt;/code&gt; parses string literals as a sequence of normal char snippets separated by escaped char snippets. A normal char snippet is any sequence of chars that does not contain the chars &lt;code&gt;&#39;&amp;quot;&#39;&lt;/code&gt; and &lt;code&gt;&#39;\\&#39;&lt;/code&gt;. An escaped char snippet consists of a backslash followed by any of the chars &lt;code&gt;&#39;\\&#39;&lt;/code&gt;, &lt;code&gt;&#39;\&amp;quot;&#39;&lt;/code&gt;, &lt;code&gt;&#39;/&#39;&lt;/code&gt;, &lt;code&gt;&#39;b&#39;&lt;/code&gt;, &lt;code&gt;&#39;f&#39;&lt;/code&gt;, &lt;code&gt;&#39;n&#39;&lt;/code&gt;, &lt;code&gt;&#39;r&#39;&lt;/code&gt;, &lt;code&gt;&#39;t&#39;&lt;/code&gt;, or an Unicode escape. An Unicode escape consists of an &lt;code&gt;&#39;u&#39;&lt;/code&gt; followed by four hex chars representing an UTF-16 code point.&lt;/p&gt;
+
+&lt;p&gt;[#createParserForwardedToRef-example]
+The grammar rules for JSON lists and objects are recursive, because any list or object can contain itself any kind of JSON value. Hence, in order to write parsers for the list and object grammar rules, we need a way to refer to the parser for any kind of JSON value, even though we haven&amp;rsquo;t yet constructed this parser. Like it is so often in computing, we can solve this problem by introducing an extra indirection:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let jvalue, jvalueRef = createParserForwardedToRef&amp;lt;Json, unit&amp;gt;()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you might have guessed from the name, &lt;code&gt;createParserForwardedToRef&lt;/code&gt; creates a parser (&lt;code&gt;jvalue&lt;/code&gt;) that forwards all invocations to the parser in a reference cell (&lt;code&gt;jvalueRef&lt;/code&gt;). Initially, the reference cell holds a dummy parser, but since the reference cell is mutable, we can later replace the dummy parser with the actual value parser, once we have finished constructing it.&lt;/p&gt;
+
+&lt;p&gt;The JSON RFC sensibly only permits spaces, (horizontal) tabs, line feeds and carriage returns as whitespace characters, which allows us to use the built-in &lt;code&gt;spaces&lt;/code&gt; parser for parsing whitespace:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let ws = spaces
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Both JSON lists and objects are syntactically represented as a comma-separated lists of &amp;ldquo;elements&amp;rdquo; between brackets, where whitespace is allowed before and after any bracket, comma and list element. We can conveniently parse such lists with the following helper function:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let listBetweenStrings sOpen sClose pElement f =
+    between (str sOpen) (str sClose)
+            (ws &amp;gt;&amp;gt;. sepBy (pElement .&amp;gt;&amp;gt; ws) (str &amp;quot;,&amp;quot; &amp;gt;&amp;gt;. ws) |&amp;gt;&amp;gt; f)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This function takes four arguments: an opening string, a closing string, an element parser and a function that is applied to the parsed list of elements.&lt;/p&gt;
+
+&lt;p&gt;With the help of this function we can define the parser for a JSON list as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let jlist   = listBetweenStrings &amp;quot;[&amp;quot; &amp;quot;]&amp;quot; jvalue JList
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;JSON objects are lists of key-value pairs, so we need a parser for a key-value pair:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let keyValue = stringLiteral .&amp;gt;&amp;gt;. (ws &amp;gt;&amp;gt;. str &amp;quot;:&amp;quot; &amp;gt;&amp;gt;. ws &amp;gt;&amp;gt;. jvalue)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Remember, the points on both sides of &lt;code&gt;.&amp;gt;&amp;gt;.&lt;/code&gt; indicate that the results of the two parsers on both sides are returned as a tuple.)&lt;/p&gt;
+
+&lt;p&gt;By passing the &lt;code&gt;keyValue&lt;/code&gt; parser to &lt;code&gt;listBetweenStrings&lt;/code&gt; we obtain a parser for JSON objects:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let jobject = listBetweenStrings &amp;quot;{&amp;quot; &amp;quot;}&amp;quot; keyValue (Map.ofList &amp;gt;&amp;gt; JObject)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;[#json-value-parser]
+Having defined parsers for all the possible kind of JSON values, we can combine the different cases with a &lt;code&gt;choice&lt;/code&gt; parser to obtain the finished parser for JSON values:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;do jvalueRef := choice [jobject
+                        jlist
+                        jstring
+                        jnumber
+                        jtrue
+                        jfalse
+                        jnull]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;jvalue&lt;/code&gt; parser doesn&amp;rsquo;t accept leading or trailing whitespace, so we need to define our parser for complete JSON documents as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let json = ws &amp;gt;&amp;gt;. jvalue .&amp;gt;&amp;gt; ws .&amp;gt;&amp;gt; eof
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This parser will try to consume a complete JSON input stream and, if successful, will return a &lt;code&gt;Json&lt;/code&gt; AST of the input as the parser result&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s it, we&amp;rsquo;re finished with our JSON parser. If you want to try this parser out on some sample input, please take a look at the JSON project in the &lt;strong&gt;Samples&lt;/strong&gt; folder.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Глава 12. Куда дальше?</title>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</guid>
+      <description>&lt;p&gt;If this tutorial has whet your appetite for a more in-depth introduction to FParsec, just head over to the &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/&#34; target=&#34;_blank&#34;&gt;user&amp;rsquo;s guide&lt;/a&gt;. If you can&amp;rsquo;t wait to write your own parser, then bookmark the &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/parser-overview.html&#34; target=&#34;_blank&#34;&gt;parser overview&lt;/a&gt; page, maybe take a short look at the example parsers in the &lt;strong&gt;Samples&lt;/strong&gt; folder and just start hacking. You can always consult the user&amp;rsquo;s guide at a later point should you get stuck somewhere.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Учебник библиотеки FParsec</title>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/</guid>
+      <description>
+
+&lt;h1 id=&#34;введение&#34;&gt;Введение&lt;/h1&gt;
+
+&lt;p&gt;Этот учебник знакомит вас с основными понятиями библиотеки FParsec. Наша цель &amp;mdash; дать вам возможность попробовать создать приложения синтаксического разбора с помощью библиотеки FParsec. Мы охватим только основные идеи и дадим беглый обзор библиотеки по &lt;a href=&#34;https://ru.wikipedia.org/wiki/API&#34; target=&#34;_blank&#34;&gt;API&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;. Но, надеемся, это будет достаточной основой для того, чтобы вы могли в дальнейшем использовать FParsec самостоятельно с помощью: &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/&#34; target=&#34;_blank&#34;&gt;руководства пользователя&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/&#34; target=&#34;_blank&#34;&gt;справочника по API&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; и примеров синтаксических анализаторов в папке &lt;a href=&#34;https://bitbucket.org/fparsec/main/src/c234349e7b738e09a1b9eb53f5f1ef77d584f09b/Samples/?at=default&#34; target=&#34;_blank&#34;&gt;Samples&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;благодарности&#34;&gt;Благодарности&lt;/h2&gt;
+
+&lt;p&gt;Благодарю мою жену Ольгу за помощь в переводе, стилистической выверке и редактуре теста.&lt;/p&gt;
+
+&lt;h1 id=&#34;оглавление&#34;&gt;Оглавление&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;01-preliminaries&#34; target=&#34;_blank&#34;&gt;Вступление&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;02-parsing-a-single-float&#34; target=&#34;_blank&#34;&gt;Синтаксический анализатор числа с плавающей точкой&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;03-parsing-a-float-between-brackets&#34; target=&#34;_blank&#34;&gt;Синтаксический анализатор числа с плавающей точкой в скобках&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;04-abstracting-parsers&#34; target=&#34;_blank&#34;&gt;Абстрактные синтаксические анализаторы&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;05-parsing-a-list-of-floats&#34; target=&#34;_blank&#34;&gt;Синтаксический анализатор списка чисел с плавающей точкой&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;06-handling-whitespace&#34; target=&#34;_blank&#34;&gt;Обработка пробелов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;07-parsing-string-data&#34; target=&#34;_blank&#34;&gt;Синтаксический анализатор строковых данных&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;08-sequentially-applying-parsers&#34; target=&#34;_blank&#34;&gt;Использование последовательности синтаксических анализаторов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;09-parsing-alternatives&#34; target=&#34;_blank&#34;&gt;Использование альтернативных синтаксических анализов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;10-fsharps-value-restriction&#34; target=&#34;_blank&#34;&gt;Ограничение значений F#&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;11-parsing-json&#34; target=&#34;_blank&#34;&gt;Синтаксический анализ JSON&lt;/a&gt; (В работе)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;12-what-now&#34; target=&#34;_blank&#34;&gt;Куда дальше?&lt;/a&gt; (В работе)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;учебник-на-других-языках&#34;&gt;Учебник на других языках&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stephan-tolksdorf&#34; target=&#34;_blank&#34;&gt;Стефан Тольксдорф&lt;/a&gt;, авторский текст на &lt;a href=&#34;http://www.quanttec.com/fparsec/tutorial.html&#34; target=&#34;_blank&#34;&gt;английском языке&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/gab_km&#34; target=&#34;_blank&#34;&gt;Gab_km&lt;/a&gt;, перевод на &lt;a href=&#34;http://blog.livedoor.jp/gab_km/archives/1437534.html&#34; target=&#34;_blank&#34;&gt;японский язык&lt;/a&gt;.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,2 +1,2 @@
 # Blog
-My Home page.
+Personal site and blog

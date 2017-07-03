@@ -1,0 +1,207 @@
+baseurl = "https://DmitriyVlasov.ru/"  # End your URL with a `/` trailing slash.
+title = "Дмитрий Власов"
+copyright = "&copy; Creative Commons Attribution-ShareAlike 3.0 Unported"
+
+theme = "academic"
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+
+# Каталог публикации документа.
+# Настройка для работы одного из вариантов публикации сайта на pages.github.io
+publishDir = "docs"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+
+# Enable analytics by entering your Google Analytics tracking ID
+googleAnalytics = "UA-91250239-1"
+
+# Default language to use (if you setup multilingual support)
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = false
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  # General information
+  author = "Dmitriy Vlasov"
+  description = "Notes business analyst."
+  
+  name = "Дмитрий Власов"
+  role = "Старший разработчик"
+  organization = "Awara IT Solutions"
+  organization_url = "http://www.awaraitsolutions.com/home_ru.asp"
+  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  email = "mail@DmitriyVlasov.ru"
+  address = "наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация"
+  office_hours = "С понедельника по пятницу 10:00 to 18:00"
+  phone = "+7 (904) 601-95-40"
+#  skype = "vlasovde@outlook.com"
+  telegram = "DmitriyVlasov"
+
+  # Enable Keybase in Contact section by entering your keybase.io username.
+  keybase = ""
+
+  # Date format (refer to Go's date format: http://flippinggodateformat.com )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "02.01.2006"
+
+  # Enable global LaTeX math rendering?
+  #   If false, you can enable it locally on a per page basis.
+  math = false
+
+  # Highlight.js options
+  #   highlight
+  #     Enable global source code highlighting?  If false, you can
+  #     override it for a particular page in that page's preamble.
+  #
+  #     Example: highlight = true
+  #
+  #   highlight_languages
+  #     Add support for highlighting additional languages. Support for
+  #     languages mentioned here will be included in all pages. You
+  #     can also set this variable for a particular page in that
+  #     page's preamble.
+  #
+  #     Example: highlight_languages = ["go", "lisp", "ocaml"]
+  #
+  #   highlight_style
+  #     Choose a different CSS style for highlighting source
+  #     code. Setting this option in a page's preamble has no
+  #     effect.
+  #
+  #     Example: highlight_style = "github-gist"
+  #
+  #   highlight_version
+  #     Choose the version of highlight.js you want. Setting this
+  #     option in a page's preamble has no effect.
+  #
+  #     Example: highlight_version = "9.9.0"
+  #
+  #   For the list of supported languages, styles, and versions, see:
+  #   https://cdnjs.com/libraries/highlight.js/
+  #
+  #   For more info on the highlighting options, see:
+  #   https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/#highlighting-options
+  highlight = true
+  highlight_languages = ['fsharp']
+  # highlight_style = "github"
+  # highlight_version = "9.9.0"
+
+  # Enable native social sharing buttons?
+  sharing = true
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  custom_css = []
+  custom_js  = []
+
+  # Publication types.
+  #   Used to categorize publications.
+  #   The index of the publication type in the list is used as its unique numerical identifier.
+  #   The numeric ID is used in a publication's frontmatter to categorize it.
+  #   The language can be edited below.
+  #   For multi-lingual sites, copy this block to each language section at the end of this file.
+  publication_types = [
+    'Без категории',         # 0
+    'Материалы конференций', # 1
+    'Журнал',                # 2
+    'В работе',              # 3
+    'Технический отчет',     # 4
+    'Книга',                 # 5
+    'Глава из книги',        # 6
+    'Перевод'                # 7
+  ]
+
+  # Social/Academic Networking
+  #
+  # Icon pack "fa" includes the following social network icons:
+  #
+  #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
+  #   youtube, instagram, soundcloud
+  #
+  #   For email icon, use "fa" icon pack, "envelope" icon, and
+  #   "mailto:your@email.com" as the link.
+  #
+  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
+  #
+  # Icon pack "ai" includes the following academic network icons:
+  #
+  #   google-scholar, arxiv, orcid, researchgate, mendeley
+  #
+  #   Full list: https://jpswalsh.github.io/academicons/
+
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "mailto:mail@DmitriyVlasov.ru"
+
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/vlasovde"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin.com/in/DmitriyVlasov/"
+
+  [[params.social]]
+    icon = "google-plus"
+    icon_pack = "fa"
+    link = "//plus.google.com/+DmitriyVlasov"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/DmitriyVlasov"
+
+
+  [params.font]
+    text = "Noto Sans"
+    code = "Noto Mono"
+
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+[[menu.main]]
+  name = "Обо мне"
+  url = "#about"
+  weight = 1
+
+[[menu.main]]
+  name = "Статьи"
+  url = "#posts"
+  weight = 20
+
+[[menu.main]]
+  name = "Публикации"
+  url = "#publications_selected"
+  weight = 30
+
+[[menu.main]]
+  name = "Выступления"
+  url = "#talks"
+  weight = 40
+
+[[menu.main]]
+  name = "Контакты"
+  url = "#contact"
+  weight = 50
+
+# Taxonomies.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+
+# Languages
+#   Create a [languages.X] block for each language you want, where X is the language ID.
+
+# Configure the English version of the website.
+[languages.ru]
+  languageCode = "ru-ru"
