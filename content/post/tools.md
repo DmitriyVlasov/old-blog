@@ -1,7 +1,6 @@
 +++
 date = "2016-11-27"
 title = "Инструменты"
-weight = 1
 
 math = false
 highlight = true

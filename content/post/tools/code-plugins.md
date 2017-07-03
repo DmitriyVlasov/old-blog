@@ -1,7 +1,6 @@
 +++
 date = "2016-11-27"
 title = "Расширения для Visual Studio Code"
-weight = 20
 
 math = false
 highlight = true
