@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Дмитрий Власов</title>
-    <link>https://DmitriyVlasov.ru/post/</link>
+    <link>http://DmitriyVlasov.ru/post/</link>
     <description>Recent content in Posts on Дмитрий Власов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Инструменты</title>
-      <link>https://DmitriyVlasov.ru/post/tools/</link>
+      <link>http://DmitriyVlasov.ru/post/tools/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://DmitriyVlasov.ru/post/tools/</guid>
+      <guid>http://DmitriyVlasov.ru/post/tools/</guid>
       <description>
 
 &lt;p&gt;В своей работы при поддержке информационных систем зачастую кроме предлагаемых основной платформой средств приходиться использовать еще ряд дополнительных инструментов и сервисов.&lt;/p&gt;
@@ -97,10 +97,10 @@
     
     <item>
       <title>Расширения для Visual Studio Code</title>
-      <link>https://DmitriyVlasov.ru/post/tools/code-plugins/</link>
+      <link>http://DmitriyVlasov.ru/post/tools/code-plugins/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://DmitriyVlasov.ru/post/tools/code-plugins/</guid>
+      <guid>http://DmitriyVlasov.ru/post/tools/code-plugins/</guid>
       <description>&lt;p&gt;Ниже в таблице представлены расширения для Visual Studio Code используемые мною в работе на ежедневной основе. В столбце &amp;ldquo;Название расширения&amp;rdquo; приведены ссылки на официальную страницу расширения в &lt;a href=&#34;https://marketplace.visualstudio.com/&#34; target=&#34;_blank&#34;&gt;магазине расширений Visual Studio&lt;/a&gt;.&lt;/p&gt;
 
 &lt;table&gt;

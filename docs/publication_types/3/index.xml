@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3 on Дмитрий Власов</title>
-    <link>https://DmitriyVlasov.ru/publication_types/3/</link>
+    <link>http://DmitriyVlasov.ru/publication_types/3/</link>
     <description>Recent content in 3 on Дмитрий Власов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Глава 11. Синтаксический анализ JSON</title>
-      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</link>
+      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</guid>
+      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</guid>
       <description>&lt;p&gt;Now that we have discussed the basics of FParsec we are well prepared to work through a real world parser example: a JSON parser.&lt;/p&gt;
 
 &lt;p&gt;JSON (JavaScript Object Notation) is a text-based data interchange format with a simple and lightweight syntax. You can find descriptions of the syntax on &lt;a href=&#34;http://json.org&#34; target=&#34;_blank&#34;&gt;json.org&lt;/a&gt; and in &lt;a href=&#34;http://www.ietf.org/rfc/rfc4627.txt&#34; target=&#34;_blank&#34;&gt;RFC 4626&lt;/a&gt;.&lt;/p&gt;
@@ -153,20 +153,20 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
     
     <item>
       <title>Глава 12. Куда дальше?</title>
-      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</link>
+      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</guid>
+      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</guid>
       <description>&lt;p&gt;If this tutorial has whet your appetite for a more in-depth introduction to FParsec, just head over to the &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/&#34; target=&#34;_blank&#34;&gt;user&amp;rsquo;s guide&lt;/a&gt;. If you can&amp;rsquo;t wait to write your own parser, then bookmark the &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/parser-overview.html&#34; target=&#34;_blank&#34;&gt;parser overview&lt;/a&gt; page, maybe take a short look at the example parsers in the &lt;strong&gt;Samples&lt;/strong&gt; folder and just start hacking. You can always consult the user&amp;rsquo;s guide at a later point should you get stuck somewhere.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Учебник библиотеки FParsec</title>
-      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/</link>
+      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/</guid>
+      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/</guid>
       <description>
 
 &lt;h1 id=&#34;введение&#34;&gt;Введение&lt;/h1&gt;
