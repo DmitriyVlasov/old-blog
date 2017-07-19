@@ -249,16 +249,16 @@
 <h2 id="краткое-содержание">Краткое содержание</h2>
 
 <ul>
-<li><a href="#logicFunction">Логические функции</a></li>
-<li><a href="#textFunction">Текстовые функции</a></li>
-<li><a href="#mathFunction">Математические и тригонометрические функции</a></li>
-<li><a href="#dateTimeFunction">Функции даты и времени</a></li>
-<li><a href="#dateTimeLogicFunction">Интеллектуальные операции со временем</a></li>
-<li><a href="#informationFunction">Информационные функции</a></li>
-<li><a href="#filterFunction">Функции фильтрации</a></li>
-<li><a href="#agregateAndstatFunction">Агрегатные и статистические функции</a></li>
-<li><a href="#patentChildFunction">Функции над иерархическими данными</a></li>
-<li><a href="#otherFunction">Прочие функции</a></li>
+<li><a href="#logicFunction">Логические</a> функции</li>
+<li><a href="#textFunction">Текстовые</a> функции</li>
+<li><a href="#mathFunction">Математические</a> и <a href="#trigMathFunction">Тригонометрические</a> функции</li>
+<li><a href="#dateTimeFunction">Простые</a> и <a href="#dateTimeLogicFunction">Интеллектуальные</a> операции с датой и временем</li>
+<li><a href="#informationFunction">Информационные</a> функции</li>
+<li>Функции <a href="#agregateAndstatFunction">Создания</a> и <a href="#filterFunction">Фильтрации</a> таблиц</li>
+<li><a href="#statFunction">Статистические</a> функции</li>
+<li>Функции над <a href="#patentChildFunction">Иерархиями</a></li>
+<li><a href="#otherFunction">Прочие</a> функции</li>
+<li><a href="#syntaxElement">Синтаксические элементы</a></li>
 </ul>
 
 <h2 id="подробное-содержание">Подробное содержание</h2>
@@ -312,6 +312,7 @@
 </ul></li>
 <li><a href="#patentChildFunction">Функции над иерархическими данными</a></li>
 <li><a href="#otherFunction">Прочие функции</a></li>
+<li><a href="#syntaxElement">Синтаксические элементы</a></li>
 </ul>
 
 <p><a name="logicFunction"></a></p>
@@ -1082,6 +1083,11 @@
 </tr>
 
 <tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/dn802550" target="_blank">ISEMPTY</a></td>
+<td>Возвращает значение <code>true</code>, если таблица пустая.</td>
+</tr>
+
+<tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/gg492197" target="_blank">ISCROSSFILTERED</a></td>
 <td>Возвращает значение <code>true</code> при фильтрации по столбцу columnName или другому столбцу в этой же или связанной таблице.</td>
 </tr>
@@ -1270,6 +1276,16 @@
 </tr>
 
 <tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt163696" target="_blank">SUMMARIZECOLUMNS</a></td>
+<td>Возвращает таблицу-сводку по набору групп.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt163693" target="_blank">GROUPBY</a></td>
+<td>Функция <code>GROUPBY</code> аналогична функции <code>SUMMARIZE</code>. Однако <code>GROUPBY</code> не выполняет неявный <code>CALCULATE</code> для любых добавочных столбцов, которые он добавляет. <code>GROUPBY</code> разрешает использовать новую функцию <code>CURRENTGROUP()</code> внутри функций агрегации в добавочных столбцах, которые она добавляет. <code>GROUPBY</code> пытается повторно использовать данные, которые были сгруппированы, что делает его высокоэффективным.</td>
+</tr>
+
+<tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/gg492168" target="_blank">CROSSJOIN</a></td>
 <td>Возвращает <a href="https://ru.wikipedia.org/wiki/Прямое_произведение" target="_blank">декартово произведение</a> $1 + N$ таблиц, где $N &gt;= 1$.</td>
 </tr>
@@ -1282,16 +1298,6 @@
 <tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/gg492206" target="_blank">GENERATEALL</a></td>
 <td>Аналогично <code>GENERATE</code>.</td>
-</tr>
-
-<tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/dn802550" target="_blank">ISEMPTY</a></td>
-<td>Проверяет, пуста ли таблица.</td>
-</tr>
-
-<tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/mt163693" target="_blank">GROUPBY</a></td>
-<td>Функция <code>GROUPBY</code> аналогична функции <code>SUMMARIZE</code>. Однако <code>GROUPBY</code> не выполняет неявный <code>CALCULATE</code> для любых добавочных столбцов, которые он добавляет. <code>GROUPBY</code> разрешает использовать новую функцию <code>CURRENTGROUP()</code> внутри функций агрегации в добавочных столбцах, которые она добавляет. <code>GROUPBY</code> пытается повторно использовать данные, которые были сгруппированы, что делает его высокоэффективным.</td>
 </tr>
 
 <tr>
@@ -1310,11 +1316,6 @@
 </tr>
 
 <tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/mt163696" target="_blank">SUMMARIZECOLUMNS</a></td>
-<td>Возвращает таблицу-сводку по набору групп.</td>
-</tr>
-
-<tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/dn802530" target="_blank">UNION</a></td>
 <td>Создает таблицу объединения (объединения) из пары таблиц.</td>
 </tr>
@@ -1322,6 +1323,11 @@
 <tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/mt243784" target="_blank">EXCEPT</a></td>
 <td>Возвращает строки одной таблицы, которых не существует в другой таблице.</td>
+</tr>
+
+<tr>
+<td><a name="datatableFunction"></a><a href="https://msdn.microsoft.com/ru-ru/mt674921.aspx" target="_blank">DATATABLE</a></td>
+<td>Создает таблицу с константными значениями средствами языка DAX. Полезно для использования в случае создания короткого редко изменчивого справочника на уровне DAX.</td>
 </tr>
 </tbody>
 </table>
@@ -1541,18 +1547,69 @@
 
 <tbody>
 <tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634820" target="_blank">BLANK</a></td>
+<td>Возвращает пустое значение.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="syntaxElement"></a></p>
+
+<h1 id="синтаксические-элементы">Синтаксические элементы</h1>
+
+<p>Несмотря на то что DAX является библиотекой функций ее эволюционное развитие привело разработчиков к необходимости введения удобных синтаксических элементов характерных для языков программирования.</p>
+
+<p>Например выражение <code>VAR ... RETURN</code> успешно используется для уменьшения сложности написания и чтения DAX функций с помощью  построения промежуточных вычислений. А типы данных используются при построении справочника на уровне DAX с помощью функции <a href="#datatableFunction">DATATABLE</a>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Имя элемента</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/mt243785" target="_blank">VAR</a></td>
 <td>Сохраняет результат выражения как именованную переменную, которая затем может быть передана как аргумент другим выражениям. Когда результирующие значения были рассчитаны для выражения переменных, эти значения не изменяются, даже если эта переменная указана в другом выражении.</td>
 </tr>
 
 <tr>
-<td>RETURN</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt243785" target="_blank">RETURN</a></td>
 <td>Возвращает результат вычисления формулы используется совместно с выражением <code>VAR</code>.</td>
 </tr>
 
 <tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/ee634820" target="_blank">BLANK</a></td>
-<td>Возвращает пустое значение.</td>
+<td>INTEGER</td>
+<td>Целое число</td>
+</tr>
+
+<tr>
+<td>DOUBLE</td>
+<td>Число с плавающей точкой</td>
+</tr>
+
+<tr>
+<td>STRING</td>
+<td>Строка</td>
+</tr>
+
+<tr>
+<td>BOOLEAN</td>
+<td>Логическая переменная</td>
+</tr>
+
+<tr>
+<td>CURRENCY</td>
+<td>Валюта</td>
+</tr>
+
+<tr>
+<td>DATETIME</td>
+<td>Дата время</td>
 </tr>
 </tbody>
 </table>

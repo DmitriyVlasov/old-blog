@@ -910,16 +910,16 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;h2 id=&#34;краткое-содержание&#34;&gt;Краткое содержание&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#logicFunction&#34;&gt;Логические функции&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#textFunction&#34;&gt;Текстовые функции&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#mathFunction&#34;&gt;Математические и тригонометрические функции&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#dateTimeFunction&#34;&gt;Функции даты и времени&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#dateTimeLogicFunction&#34;&gt;Интеллектуальные операции со временем&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#informationFunction&#34;&gt;Информационные функции&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#filterFunction&#34;&gt;Функции фильтрации&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#agregateAndstatFunction&#34;&gt;Агрегатные и статистические функции&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#patentChildFunction&#34;&gt;Функции над иерархическими данными&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#otherFunction&#34;&gt;Прочие функции&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#logicFunction&#34;&gt;Логические&lt;/a&gt; функции&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#textFunction&#34;&gt;Текстовые&lt;/a&gt; функции&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#mathFunction&#34;&gt;Математические&lt;/a&gt; и &lt;a href=&#34;#trigMathFunction&#34;&gt;Тригонометрические&lt;/a&gt; функции&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dateTimeFunction&#34;&gt;Простые&lt;/a&gt; и &lt;a href=&#34;#dateTimeLogicFunction&#34;&gt;Интеллектуальные&lt;/a&gt; операции с датой и временем&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#informationFunction&#34;&gt;Информационные&lt;/a&gt; функции&lt;/li&gt;
+&lt;li&gt;Функции &lt;a href=&#34;#agregateAndstatFunction&#34;&gt;Создания&lt;/a&gt; и &lt;a href=&#34;#filterFunction&#34;&gt;Фильтрации&lt;/a&gt; таблиц&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#statFunction&#34;&gt;Статистические&lt;/a&gt; функции&lt;/li&gt;
+&lt;li&gt;Функции над &lt;a href=&#34;#patentChildFunction&#34;&gt;Иерархиями&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#otherFunction&#34;&gt;Прочие&lt;/a&gt; функции&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#syntaxElement&#34;&gt;Синтаксические элементы&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;подробное-содержание&#34;&gt;Подробное содержание&lt;/h2&gt;
@@ -973,6 +973,7 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#patentChildFunction&#34;&gt;Функции над иерархическими данными&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#otherFunction&#34;&gt;Прочие функции&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#syntaxElement&#34;&gt;Синтаксические элементы&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a name=&#34;logicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1743,6 +1744,11 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802550&#34; target=&#34;_blank&#34;&gt;ISEMPTY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если таблица пустая.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492197&#34; target=&#34;_blank&#34;&gt;ISCROSSFILTERED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt; при фильтрации по столбцу columnName или другому столбцу в этой же или связанной таблице.&lt;/td&gt;
 &lt;/tr&gt;
@@ -1931,6 +1937,16 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163696&#34; target=&#34;_blank&#34;&gt;SUMMARIZECOLUMNS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает таблицу-сводку по набору групп.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163693&#34; target=&#34;_blank&#34;&gt;GROUPBY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Функция &lt;code&gt;GROUPBY&lt;/code&gt; аналогична функции &lt;code&gt;SUMMARIZE&lt;/code&gt;. Однако &lt;code&gt;GROUPBY&lt;/code&gt; не выполняет неявный &lt;code&gt;CALCULATE&lt;/code&gt; для любых добавочных столбцов, которые он добавляет. &lt;code&gt;GROUPBY&lt;/code&gt; разрешает использовать новую функцию &lt;code&gt;CURRENTGROUP()&lt;/code&gt; внутри функций агрегации в добавочных столбцах, которые она добавляет. &lt;code&gt;GROUPBY&lt;/code&gt; пытается повторно использовать данные, которые были сгруппированы, что делает его высокоэффективным.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492168&#34; target=&#34;_blank&#34;&gt;CROSSJOIN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает &lt;a href=&#34;https://ru.wikipedia.org/wiki/Прямое_произведение&#34; target=&#34;_blank&#34;&gt;декартово произведение&lt;/a&gt; $1 + N$ таблиц, где $N &amp;gt;= 1$.&lt;/td&gt;
 &lt;/tr&gt;
@@ -1943,16 +1959,6 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492206&#34; target=&#34;_blank&#34;&gt;GENERATEALL&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Аналогично &lt;code&gt;GENERATE&lt;/code&gt;.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802550&#34; target=&#34;_blank&#34;&gt;ISEMPTY&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Проверяет, пуста ли таблица.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163693&#34; target=&#34;_blank&#34;&gt;GROUPBY&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Функция &lt;code&gt;GROUPBY&lt;/code&gt; аналогична функции &lt;code&gt;SUMMARIZE&lt;/code&gt;. Однако &lt;code&gt;GROUPBY&lt;/code&gt; не выполняет неявный &lt;code&gt;CALCULATE&lt;/code&gt; для любых добавочных столбцов, которые он добавляет. &lt;code&gt;GROUPBY&lt;/code&gt; разрешает использовать новую функцию &lt;code&gt;CURRENTGROUP()&lt;/code&gt; внутри функций агрегации в добавочных столбцах, которые она добавляет. &lt;code&gt;GROUPBY&lt;/code&gt; пытается повторно использовать данные, которые были сгруппированы, что делает его высокоэффективным.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -1971,11 +1977,6 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163696&#34; target=&#34;_blank&#34;&gt;SUMMARIZECOLUMNS&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает таблицу-сводку по набору групп.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802530&#34; target=&#34;_blank&#34;&gt;UNION&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Создает таблицу объединения (объединения) из пары таблиц.&lt;/td&gt;
 &lt;/tr&gt;
@@ -1983,6 +1984,11 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243784&#34; target=&#34;_blank&#34;&gt;EXCEPT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает строки одной таблицы, которых не существует в другой таблице.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a name=&#34;datatableFunction&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt674921.aspx&#34; target=&#34;_blank&#34;&gt;DATATABLE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Создает таблицу с константными значениями средствами языка DAX. Полезно для использования в случае создания короткого редко изменчивого справочника на уровне DAX.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2202,18 +2208,69 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634820&#34; target=&#34;_blank&#34;&gt;BLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает пустое значение.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&#34;syntaxElement&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;синтаксические-элементы&#34;&gt;Синтаксические элементы&lt;/h1&gt;
+
+&lt;p&gt;Несмотря на то что DAX является библиотекой функций ее эволюционное развитие привело разработчиков к необходимости введения удобных синтаксических элементов характерных для языков программирования.&lt;/p&gt;
+
+&lt;p&gt;Например выражение &lt;code&gt;VAR ... RETURN&lt;/code&gt; успешно используется для уменьшения сложности написания и чтения DAX функций с помощью  построения промежуточных вычислений. А типы данных используются при построении справочника на уровне DAX с помощью функции &lt;a href=&#34;#datatableFunction&#34;&gt;DATATABLE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Имя элемента&lt;/th&gt;
+&lt;th&gt;Описание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34; target=&#34;_blank&#34;&gt;VAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Сохраняет результат выражения как именованную переменную, которая затем может быть передана как аргумент другим выражениям. Когда результирующие значения были рассчитаны для выражения переменных, эти значения не изменяются, даже если эта переменная указана в другом выражении.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;RETURN&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34; target=&#34;_blank&#34;&gt;RETURN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает результат вычисления формулы используется совместно с выражением &lt;code&gt;VAR&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634820&#34; target=&#34;_blank&#34;&gt;BLANK&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает пустое значение.&lt;/td&gt;
+&lt;td&gt;INTEGER&lt;/td&gt;
+&lt;td&gt;Целое число&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;DOUBLE&lt;/td&gt;
+&lt;td&gt;Число с плавающей точкой&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;STRING&lt;/td&gt;
+&lt;td&gt;Строка&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;BOOLEAN&lt;/td&gt;
+&lt;td&gt;Логическая переменная&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;CURRENCY&lt;/td&gt;
+&lt;td&gt;Валюта&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;DATETIME&lt;/td&gt;
+&lt;td&gt;Дата время&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
