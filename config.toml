@@ -29,7 +29,7 @@ defaultContentLanguageInSubdir = false
   description = "Notes business analyst."
   
   name = "Дмитрий Власов"
-  role = "Старший разработчик"
+  role = "Старший ERP разработчик"
   organization = "Awara IT Solutions"
   organization_url = "http://www.awaraitsolutions.com/home_ru.asp"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
@@ -142,6 +142,12 @@ highlight_version = "9.12.0"
     icon = "twitter"
     icon_pack = "fa"
     link = "//twitter.com/vlasovde"
+
+  [[params.social]]
+    icon = "facebook"
+    icon_pack = "fa"
+    link = "//facebook.com/dmitriy.vlasov.39750"
+
 
   [[params.social]]
     icon = "linkedin"
