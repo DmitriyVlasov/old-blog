@@ -146,13 +146,13 @@ highlight_version = "9.12.0"
   [[params.social]]
     icon = "facebook"
     icon_pack = "fa"
-    link = "//facebook.com/dmitriy.vlasov.39750"
+    link = "//facebook.com/DmitriyVasov"
 
 
   [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
-    link = "//linkedin.com/in/DmitriyVlasov/"
+    link = "//linkedin.com/in/DmitriyVlasov"
 
   [[params.social]]
     icon = "google-plus"
