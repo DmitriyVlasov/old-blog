@@ -299,25 +299,25 @@
   1. применение анализатора к входному потоку.</p>
 
 <p>Давайте начнем с простого примера: синтаксический разбор строки представляющей собой отдельное число с плавающей точкой.
-В этом случае первый шаг &mdash; построение синтаксического анализатора, просто, поскольку модуль <code>CharParsers</code> уже поставляется со встроенным анализатором числа с плавающей точкой:</p>
+В этом случае первый шаг &mdash; построение синтаксического анализатора, просто, поскольку модуль <a href="http://www.quanttec.com/fparsec/reference/charparsers.html" target="_blank"><code>CharParsers</code></a> уже поставляется со встроенным анализатором числа с плавающей точкой:</p>
 
-<pre><code>val pfloat: Parser&lt;float,'u&gt;
+<pre><code class="language-fsharp">val pfloat: Parser&lt;float,'u&gt;
 </code></pre>
 
-<p>Универсальный тип <code>Parser&lt;'Result,'UserState&gt;</code> является типом всех синтаксических анализаторов в библиотеке FParsec. Если вы перейдете по следующей гиперссылке, вы увидите, что <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.Parser" target="_blank"><code>Parser</code></a> является <a href="https://msdn.microsoft.com/ru-ru/library/dd233246.aspx" target="_blank">синонимом</a> для функционального типа. Однако, на данный момент мы не должны вдаваться в подробности типа <code>Parser</code>. Достаточно отметить, что первый аргумент типа представляет тип результата синтаксического анализа. Итак, в рассматриваемом случае тип функции <code>pfloat</code> говорит нам, что, если синтаксический анализ успешно завершен, функция возвращает число с плавающей точкой типа <code>float</code>. Мы не будем использовать &ldquo;пользовательское состояние&rdquo; в этом уроке, так что, на данный момент, вы можете просто игнорировать второй аргумент типа.</p>
+<p>Универсальный тип <code>Parser&lt;'Result,'UserState&gt;</code> является типом всех синтаксических анализаторов в библиотеке FParsec. Если вы перейдете по следующей гиперссылке, вы увидите, что <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.Parser" target="_blank"><code>Parser</code></a> является <a href="https://msdn.microsoft.com/ru-ru/library/dd233246.aspx" target="_blank">синонимом</a> для функционального типа. Однако, на данный момент мы не должны вдаваться в подробности типа <code>Parser</code>. Достаточно отметить, что первый аргумент типа представляет тип результата синтаксического анализа. Итак, в рассматриваемом случае тип функции <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.pfloat" target="_blank"><code>pfloat</code></a> говорит нам, что, если синтаксический анализ успешно завершен, функция возвращает число с плавающей точкой типа <code>float</code>. Мы не будем использовать пользовательское состояние синтаксического анализатора (<code>UserState</code>) в этом уроке, так что, на данный момент, вы можете просто игнорировать второй аргумент типа.</p>
 
-<p>Чтобы применить синтаксический анализатор <code>pfloat</code> к строке, мы можем использовать функцию <code>run</code> из модуля <code>CharParsers</code>:</p>
+<p>Чтобы применить синтаксический анализатор <code>pfloat</code> к строке, мы можем использовать функцию <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.run" target="_blank"><code>run</code></a> из модуля <code>CharParsers</code>:</p>
 
-<pre><code>val run: Parser&lt;'Result, unit&gt; -&gt; string -&gt; ParserResult&lt;'Result,unit&gt;
+<pre><code class="language-fsharp">val run: Parser&lt;'Result, unit&gt; -&gt; string -&gt; ParserResult&lt;'Result,unit&gt;
 </code></pre>
 
-<p>Функция <code>run</code>, простейшая из <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#interface.runparser-functions" target="_blank">ряда</a> функций модуля <code>CharParsers</code>, используется для запуска синтаксических анализаторов по входным данным. Другие функции позволяют вам, например, запускать синтаксические анализаторы по содержимому файла или <code>System.IO.Stream</code>.</p>
+<p>Функция <code>run</code>, простейшая из <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#interface.runparser-functions" target="_blank">ряда</a> функций модуля <code>CharParsers</code>, используется для запуска синтаксических анализаторов по входным данным. Другие функции позволяют вам, например, запускать синтаксические анализаторы по содержимому файла или потоку ввода-вывода (<code>System.IO.Stream</code>).</p>
 
-<p>Функция <code>run</code> применяет синтаксический анализатор, переданный в качестве первого аргумента к строке переданной в качестве второго аргумента и возвращает возвращенное синтаксическим анализатором значение в виде <code>ParserResult</code>. Тип <code>ParserResult</code> является типом размеченного объединения с двумя вариантами: <code>Success</code> и <code>Failure</code>. В случае, если синтаксический анализатор успешно выполнен, <code>ParserResult</code> содержит результирующее значение, в противном случае он содержит сообщение об ошибке.</p>
+<p>Функция <code>run</code> применяет синтаксический анализатор, переданный в качестве первого аргумента к строке переданной в качестве второго аргумента и возвращает возвращенное синтаксическим анализатором значение в виде <code>ParserResult</code>. Тип <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.ParserResult" target="_blank"><code>ParserResult</code></a> является типом размеченного объединения с двумя вариантами: <code>Success</code> и <code>Failure</code>. В случае, если синтаксический анализатор успешно выполнен, <code>ParserResult</code> содержит результирующее значение, в противном случае он содержит сообщение об ошибке.</p>
 
 <p>Для упрощения тестирования мы напишем маленькую вспомогательную функцию, которая выводит на печать значение результата или сообщение об ошибке:</p>
 
-<pre><code>let test p str =
+<pre><code class="language-fsharp">let test p str =
     match run p str with
     | Success(result, _, _)   -&gt; printfn &quot;Success: %A&quot; result
     | Failure(errorMsg, _, _) -&gt; printfn &quot;Failure: %s&quot; errorMsg
@@ -325,7 +325,7 @@
 
 <p>Используя вспомогательную функцию, мы можем протестировать <code>pfloat</code> выполнив:</p>
 
-<pre><code>test pfloat &quot;1.25&quot;
+<pre><code class="language-fsharp">test pfloat &quot;1.25&quot;
 </code></pre>
 
 <p>что дает в результате:</p>
@@ -335,7 +335,7 @@
 
 <p>Тестирование <code>pfloat</code> с числовым литералом, который имеет недопустимый знак экспоненты</p>
 
-<pre><code>test pfloat &quot;1.25E 3&quot;
+<pre><code class="language-fsharp">test pfloat &quot;1.25E 3&quot;
 </code></pre>
 
 <p>дает сообщение об ошибке</p>

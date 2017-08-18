@@ -298,12 +298,12 @@
 
 <p>Возьмем, к примеру <code>floatBetweenBrackets</code> из предыдущей главы. Если вы намерены также разобрать другие элементы между строк, вы можете определить свой собственный специализированный комбинатор для этой цели:</p>
 
-<pre><code>let betweenStrings s1 s2 p = str s1 &gt;&gt;. p .&gt;&gt; str s2
+<pre><code class="language-fsharp">let betweenStrings s1 s2 p = str s1 &gt;&gt;. p .&gt;&gt; str s2
 </code></pre>
 
 <p>Затем можно определить <code>floatInBrackets</code> и другие синтаксические анализаторы с помощью этого комбинатора:</p>
 
-<pre><code>let floatBetweenBrackets = pfloat |&gt; betweenStrings &quot;[&quot; &quot;]&quot;
+<pre><code class="language-fsharp">let floatBetweenBrackets = pfloat |&gt; betweenStrings &quot;[&quot; &quot;]&quot;
 let floatBetweenDoubleBrackets = pfloat |&gt; betweenStrings &quot;[[&quot; &quot;]]&quot;
 </code></pre>
 
@@ -315,11 +315,11 @@ let floatBetweenDoubleBrackets = pfloat |&gt; betweenStrings &quot;[[&quot; &quo
 
 <p>В тот момент, как вы заметите, что вам часто нужно применять синтаксический анализатор между двумя другими, вы можете пойти дальше, представив функцию <code>betweenStrings</code> следующим образом:</p>
 
-<pre><code>let between pBegin pEnd p  = pBegin &gt;&gt;. p .&gt;&gt; pEnd
+<pre><code class="language-fsharp">let between pBegin pEnd p  = pBegin &gt;&gt;. p .&gt;&gt; pEnd
 let betweenStrings s1 s2 p = p |&gt; between (str s1) (str s2)
 </code></pre>
 
-<p>На самом деле, вам не нужно определять <code>between</code>, потому что это уже встроенный комбинатор FParsec.</p>
+<p>На самом деле, вам не нужно определять <code>between</code>, потому что <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.between" target="_blank">это</a> уже встроенный комбинатор FParsec.</p>
 
 <p>Все это, конечно, простые примеры. Но поскольку FParsec это лишь библиотека F#, а не какой-то внешний инструмент для генерации синтаксического анализатора, нет никаких ограничений на абстракции, которые можно определять. Вы можете написать функции, которые принимают любые, необходимые вам, входные данные, делают на входных данных вычисления произвольной сложности, а затем возвращают синтаксический анализатор специального назначения или комбинатор синтаксических анализаторов.</p>
 

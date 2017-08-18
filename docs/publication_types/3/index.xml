@@ -26,7 +26,7 @@
 
 &lt;p&gt;In our parser we will use the following union type to represent JSON values:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;type Json = JString of string
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;type Json = JString of string
           | JNumber of float
           | JBool   of bool
           | JNull
@@ -45,14 +45,14 @@ If you&amp;rsquo;re new to FParsec and have a little time, it would be a good ex
 
 &lt;p&gt;We start the actual parser implementation by covering the simple &lt;code&gt;null&lt;/code&gt; and boolean cases:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let jnull = stringReturn &amp;quot;null&amp;quot; JNull
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jnull = stringReturn &amp;quot;null&amp;quot; JNull
 let jool =      (stringReturn &amp;quot;true&amp;quot;  (JBool true))
             &amp;lt;|&amp;gt; (stringReturn &amp;quot;false&amp;quot; (JBool false))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Handling the number case is just as simple, because the JSON number format is based on the typical floating-point number format used in many programming languages and hence can be parsed with FParsec&amp;rsquo;s built-in &lt;code&gt;pfloat&lt;/code&gt; parser:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let jnumber = pfloat |&amp;gt;&amp;gt; JNumber
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jnumber = pfloat |&amp;gt;&amp;gt; JNumber
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;(Note that F# allows us to pass the object constructor &lt;code&gt;JNumber&lt;/code&gt; as a function argument.)&lt;/p&gt;
@@ -61,7 +61,7 @@ let jool =      (stringReturn &amp;quot;true&amp;quot;  (JBool true))
 
 &lt;p&gt;The JSON string format takes a little more effort to implement, but we&amp;rsquo;ve already parsed a similar format with the &lt;code&gt;stringLiteral&lt;/code&gt; parsers in &lt;a href=&#34;#Parsing string data&#34;&gt;Parsing string data&lt;/a&gt;, so we can just adapt one of those parsers for our purpose:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let stringLiteral =
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let stringLiteral =
     let escape =  anyOf &amp;quot;\&amp;quot;\\/bfnrt&amp;quot;
                   |&amp;gt;&amp;gt; function
                       | &#39;b&#39; -&amp;gt; &amp;quot;\b&amp;quot;
@@ -92,19 +92,19 @@ let jool =      (stringReturn &amp;quot;true&amp;quot;  (JBool true))
 &lt;p&gt;[#createParserForwardedToRef-example]
 The grammar rules for JSON lists and objects are recursive, because any list or object can contain itself any kind of JSON value. Hence, in order to write parsers for the list and object grammar rules, we need a way to refer to the parser for any kind of JSON value, even though we haven&amp;rsquo;t yet constructed this parser. Like it is so often in computing, we can solve this problem by introducing an extra indirection:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let jvalue, jvalueRef = createParserForwardedToRef&amp;lt;Json, unit&amp;gt;()
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jvalue, jvalueRef = createParserForwardedToRef&amp;lt;Json, unit&amp;gt;()
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;As you might have guessed from the name, &lt;code&gt;createParserForwardedToRef&lt;/code&gt; creates a parser (&lt;code&gt;jvalue&lt;/code&gt;) that forwards all invocations to the parser in a reference cell (&lt;code&gt;jvalueRef&lt;/code&gt;). Initially, the reference cell holds a dummy parser, but since the reference cell is mutable, we can later replace the dummy parser with the actual value parser, once we have finished constructing it.&lt;/p&gt;
 
 &lt;p&gt;The JSON RFC sensibly only permits spaces, (horizontal) tabs, line feeds and carriage returns as whitespace characters, which allows us to use the built-in &lt;code&gt;spaces&lt;/code&gt; parser for parsing whitespace:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let ws = spaces
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let ws = spaces
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Both JSON lists and objects are syntactically represented as a comma-separated lists of &amp;ldquo;elements&amp;rdquo; between brackets, where whitespace is allowed before and after any bracket, comma and list element. We can conveniently parse such lists with the following helper function:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let listBetweenStrings sOpen sClose pElement f =
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let listBetweenStrings sOpen sClose pElement f =
     between (str sOpen) (str sClose)
             (ws &amp;gt;&amp;gt;. sepBy (pElement .&amp;gt;&amp;gt; ws) (str &amp;quot;,&amp;quot; &amp;gt;&amp;gt;. ws) |&amp;gt;&amp;gt; f)
 &lt;/code&gt;&lt;/pre&gt;
@@ -113,25 +113,25 @@ The grammar rules for JSON lists and objects are recursive, because any list or 
 
 &lt;p&gt;With the help of this function we can define the parser for a JSON list as follows:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let jlist   = listBetweenStrings &amp;quot;[&amp;quot; &amp;quot;]&amp;quot; jvalue JList
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jlist   = listBetweenStrings &amp;quot;[&amp;quot; &amp;quot;]&amp;quot; jvalue JList
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;JSON objects are lists of key-value pairs, so we need a parser for a key-value pair:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let keyValue = stringLiteral .&amp;gt;&amp;gt;. (ws &amp;gt;&amp;gt;. str &amp;quot;:&amp;quot; &amp;gt;&amp;gt;. ws &amp;gt;&amp;gt;. jvalue)
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let keyValue = stringLiteral .&amp;gt;&amp;gt;. (ws &amp;gt;&amp;gt;. str &amp;quot;:&amp;quot; &amp;gt;&amp;gt;. ws &amp;gt;&amp;gt;. jvalue)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;(Remember, the points on both sides of &lt;code&gt;.&amp;gt;&amp;gt;.&lt;/code&gt; indicate that the results of the two parsers on both sides are returned as a tuple.)&lt;/p&gt;
 
 &lt;p&gt;By passing the &lt;code&gt;keyValue&lt;/code&gt; parser to &lt;code&gt;listBetweenStrings&lt;/code&gt; we obtain a parser for JSON objects:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let jobject = listBetweenStrings &amp;quot;{&amp;quot; &amp;quot;}&amp;quot; keyValue (Map.ofList &amp;gt;&amp;gt; JObject)
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jobject = listBetweenStrings &amp;quot;{&amp;quot; &amp;quot;}&amp;quot; keyValue (Map.ofList &amp;gt;&amp;gt; JObject)
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;[#json-value-parser]
 Having defined parsers for all the possible kind of JSON values, we can combine the different cases with a &lt;code&gt;choice&lt;/code&gt; parser to obtain the finished parser for JSON values:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;do jvalueRef := choice [jobject
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;do jvalueRef := choice [jobject
                         jlist
                         jstring
                         jnumber
@@ -142,7 +142,7 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 
 &lt;p&gt;The &lt;code&gt;jvalue&lt;/code&gt; parser doesn&amp;rsquo;t accept leading or trailing whitespace, so we need to define our parser for complete JSON documents as follows:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;let json = ws &amp;gt;&amp;gt;. jvalue .&amp;gt;&amp;gt; ws .&amp;gt;&amp;gt; eof
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let json = ws &amp;gt;&amp;gt;. jvalue .&amp;gt;&amp;gt; ws .&amp;gt;&amp;gt; eof
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This parser will try to consume a complete JSON input stream and, if successful, will return a &lt;code&gt;Json&lt;/code&gt; AST of the input as the parser result&lt;/p&gt;

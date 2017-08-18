@@ -298,7 +298,7 @@
 
 <p>Вы уже видели несколько применений синтаксического анализатора <code>pstring</code> (сокращенно <code>str</code> ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор <code>pstring</code> успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:</p>
 
-<pre><code>&gt; test (many (str &quot;a&quot; &lt;|&gt; str &quot;b&quot;)) &quot;abba&quot;;;
+<pre><code class="language-fsharp">&gt; test (many (str &quot;a&quot; &lt;|&gt; str &quot;b&quot;)) &quot;abba&quot;;;
 Success: [&quot;a&quot;; &quot;b&quot;; &quot;b&quot;; &quot;a&quot;]
 </code></pre>
 
@@ -314,13 +314,13 @@ Success: [&quot;a&quot;; &quot;b&quot;; &quot;b&quot;; &quot;a&quot;]
 
 <p>Если вы хотите проанализировать строку без учета регистра, вы можете использовать <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.pstringCI" target="_blank"><code>pstringCI</code></a><sup>en</sup> и <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.skipStringCI" target="_blank"><code>skipStringCI</code></a><sup>en</sup>. Например:</p>
 
-<pre><code>&gt; test (skipStringCI &quot;&lt;float&gt;&quot; &gt;&gt;. pfloat) &quot;&lt;FLOAT&gt;1.0&quot;;;
+<pre><code class="language-fsharp">&gt; test (skipStringCI &quot;&lt;float&gt;&quot; &gt;&gt;. pfloat) &quot;&lt;FLOAT&gt;1.0&quot;;;
 Success: 1.0
 </code></pre>
 
 <p>Часто нужно разбирать строковые переменные, чьи символы должны удовлетворять определенным критериям. Например, идентификаторы в языках программирования часто должны начинаться с буквы или подчеркивания, а затем необходимо продолжать буквы, цифры или символы подчеркивания. Чтобы проанализировать такой идентификатор, вы можете использовать следующий синтаксический анализатор:</p>
 
-<pre><code>let identifier =
+<pre><code class="language-fsharp">let identifier =
     let isIdentifierFirstChar c = isLetter c || c = '_'
     let isIdentifierChar c = isLetter c || isDigit c || c = '_'
 
@@ -332,7 +332,7 @@ Success: 1.0
 
 <p>Следующие тесты показывают, как работает этот анализатор:</p>
 
-<pre><code>&gt; test identifier &quot;_&quot;;;
+<pre><code class="language-fsharp">&gt; test identifier &quot;_&quot;;;
 Success: &quot;_&quot;
 &gt; test identifier &quot;_test1=&quot;;;
 Success: &quot;_test1&quot;
@@ -351,7 +351,7 @@ Expecting: identifier
 
 <p>Многие строковые форматы достаточно сложны, поэтому вам нужно объединить несколько примитивов символьного синтаксического анализатора и строкового синтаксического анализатора. Например, рассмотрим следующий пример анализа строки в формате РНБН:</p>
 
-<pre><code>  normalChar:    any char except '\' and '&quot;'
+<pre><code class="language-fsharp">  normalChar:    any char except '\' and '&quot;'
 
   escapedChar:   '\\' ('\\'|'&quot;'|'n'|'r'|'t')
 
@@ -360,7 +360,7 @@ Expecting: identifier
 
 <p>Прямой перевод этой грамматики в FParsec выглядит так:</p>
 
-<pre><code>let stringLiteral =
+<pre><code class="language-fsharp">let stringLiteral =
   let normalChar = 
     let anyCharExcept c = c &lt;&gt; '\\' &amp;&amp; c &lt;&gt; '&quot;'
     satisfy anyCharExcept
@@ -388,7 +388,7 @@ Expecting: identifier
 
 <p>Давайте протестируем синтаксический анализатор <code>stringLiteral</code>:</p>
 
-<pre><code>&gt; test stringLiteral &quot;\&quot;abc\&quot;&quot;;;
+<pre><code class="language-fsharp">&gt; test stringLiteral &quot;\&quot;abc\&quot;&quot;;;
 Success: &quot;abc&quot;
 &gt; test stringLiteral &quot;\&quot;abc\\\&quot;def\\\\ghi&quot;;;
 Success: &quot;abc&quot;def\ghi&quot;
@@ -401,7 +401,7 @@ Expecting: any char in ‘\nrt&quot;’
 
 <p>Вместо разбора строкового литерала посимвольно мы могли бы также разобрать его построчно:</p>
 
-<pre><code>let stringLiteral2 =
+<pre><code class="language-fsharp">let stringLiteral2 =
   let normalString = 
     let anyCharExcept c = c &lt;&gt; '\\' &amp;&amp; c &lt;&gt; '&quot;'
     many1Satisfy anyCharExcept
@@ -427,7 +427,7 @@ Expecting: any char in ‘\nrt&quot;’
 
 <p>Синтаксический анализ строки с использованием оптимизированного синтаксического анализатора, такого как <code>many1Satisfy</code>, обычно немного быстрее, чем синтаксический анализ его с помощью <code>manyChars</code> и <code>satisfy</code>. В этом случае мы можем оптимизировать наш синтаксический анализатор еще немного - как только мы поймем, что два нормальных фрагмента строк должны быть разделены хотя бы одним экранированным символом:</p>
 
-<pre><code>let stringLiteral3 =
+<pre><code class="language-fsharp">let stringLiteral3 =
   let normalString = 
     let anyCharExcept c = c &lt;&gt; '\\' &amp;&amp; c &lt;&gt; '&quot;'
     manySatisfy anyCharExcept

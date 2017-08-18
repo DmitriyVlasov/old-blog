@@ -296,7 +296,7 @@
   <div class="article-style">
     <p>В главе 7 &ldquo;<a href="../07-parsing-string-data">Синтаксический анализатор строковых данных</a>&rdquo; мы вкратце представили комбинатор выбора <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.:60::124::62:" target="_blank"><code>&lt;|&gt;</code></a><sup>en</sup> :</p>
 
-<pre><code>val (&lt;|&gt;): Parser&lt;'a,'u&gt; -&gt; Parser&lt;'a,'u&gt; -&gt; Parser&lt;'a,u&gt;
+<pre><code class="language-fsharp">val (&lt;|&gt;): Parser&lt;'a,'u&gt; -&gt; Parser&lt;'a,'u&gt; -&gt; Parser&lt;'a,u&gt;
 </code></pre>
 
 <p>Этот комбинатор позволяет вам поддерживать несколько альтернативных вариантов.</p>
@@ -305,7 +305,7 @@
 
 <p>Другим примером, показывающим, как работает <code>&lt;|&gt;</code> является следующий синтаксический анализатор для разбора строкового представления булевых значений:</p>
 
-<pre><code>let boolean = 
+<pre><code class="language-fsharp">let boolean = 
   (stringReturn &quot;true&quot;  true) &lt;|&gt;
   (stringReturn &quot;false&quot; false)
 </code></pre>
@@ -314,7 +314,7 @@
 
 <p>Протестируем синтаксический анализатор <code>boolean</code> на примерах:</p>
 
-<pre><code>&gt; test boolean &quot;false&quot;;;
+<pre><code class="language-fsharp">&gt; test boolean &quot;false&quot;;;
 Success: false
 &gt; test boolean &quot;true&quot;;;
 Success: true
@@ -331,7 +331,7 @@ Expecting: 'false' or 'true'
 
 <p>Следствием второго пункта является то, что следующий тест завершился неудачно, потому что синтаксический анализатор в левой части <code>&lt;|&gt;</code> получает пробелы перед сбоем:</p>
 
-<pre><code>&gt; test ((ws &gt;&gt;. str &quot;a&quot;) &lt;|&gt; (ws &gt;&gt;. str &quot;b&quot;)) &quot; b&quot;;;
+<pre><code class="language-fsharp">&gt; test ((ws &gt;&gt;. str &quot;a&quot;) &lt;|&gt; (ws &gt;&gt;. str &quot;b&quot;)) &quot; b&quot;;;
 Failure: Error in Ln: 1 Col: 2
  b
  ^
@@ -340,7 +340,7 @@ Expecting: 'a'
 
 <p>К счастью, мы можем легко исправить этот синтаксический анализатор, выделив <code>ws</code>:</p>
 
-<pre><code>&gt; test (ws &gt;&gt;. (str &quot;a&quot; &lt;|&gt; str &quot;b&quot;)) &quot; b&quot;;;
+<pre><code class="language-fsharp">&gt; test (ws &gt;&gt;. (str &quot;a&quot; &lt;|&gt; str &quot;b&quot;)) &quot; b&quot;;;
 Success: &quot;b&quot;
 </code></pre>
 

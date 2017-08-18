@@ -294,17 +294,17 @@
   <div class="space-below"></div>
 
   <div class="article-style">
-    <p>FParsec состоит из двух DLL файлов: <em>FParsec.dll</em> и <em>FParsecCS.dll</em>. Для использования FParsec в вашем проекте, вы можете или установить из <a href="http://nuget.org" target="_blank">nuget</a> (см. подробнее варианты установки <a href="http://www.quanttec.com/fparsec/download-and-installation.html#nuget-packages" target="_blank">nuget-пакетов</a><sup>en</sup>), или собрать два DLL файла FParsec из исходного кода. Самый простой способ собрать FParsec из исходного кода это использовать файлы решений Visual Studio в каталогах <code>Build/VS...</code> <a href="https://bitbucket.org/fparsec/main/get/tip.zip" target="_blank">исходного кода пакета</a>, например, в каталоге <code>Build/VS11</code> для Visual Studio 2012. Любой проект, который использует библиотеку FParsec должен ссылаться на оба файла DLL. Смотри подробнее в руководстве пользователя главу <a href="http://www.quanttec.com/fparsec/download-and-installation.html" target="_blank">Загрузка и установка</a><sup>en</sup>.</p>
+    <p>FParsec состоит из двух библиотек: <em>FParsec.dll</em> и <em>FParsecCS.dll</em>. Для использования FParsec в вашем проекте, вы можете или установить из <a href="http://nuget.org" target="_blank">nuget</a> (см. подробнее варианты установки <a href="http://www.quanttec.com/fparsec/download-and-installation.html#nuget-packages" target="_blank">nuget-пакетов</a><sup>en</sup>), или собрать два DLL файла FParsec из исходного кода. Самый простой способ собрать FParsec из исходного кода это использовать файлы решений Visual Studio в каталогах <strong>=Build/VS</strong> <a href="https://github.com/stephan-tolksdorf/fparsec/archive/master.zip" target="_blank">исходного кода пакета</a>, например, в каталоге <strong>Build/VS11</strong> для Visual Studio 2012. Любой проект, который использует библиотеку FParsec должен ссылаться на оба файла DLL. Смотри подробнее в руководстве пользователя главу <a href="http://www.quanttec.com/fparsec/download-and-installation.html" target="_blank">Загрузка и установка</a><sup>en</sup>.</p>
 
 <p>Все типы и модули библиотеки FParsec объявлены в пространстве имен <code>FParsec</code>. Это пространство имен содержит несколько базовых классов (например, <code>CharStream</code> и <code>Reply</code>) и четыре F# модуля, а именно:
-- <code>Primitives</code>, содержащий основные определения типов и комбинаторов синтаксического анализа,
-- <code>CharParsers</code>, содержащий синтаксические анализаторы для символов, строк, чисел и функций для применения синтаксических анализаторов для входных потоков,
-- <code>Error</code>, содержащий типы и вспомогательные функции для создания, обработки, форматирования сообщений об ошибках синтаксического анализа,
-- <code>StaticMapping</code>, содержащий функции для создания оптимизированных функций отображения между ключами и значениями.</p>
+- <a href="http://www.quanttec.com/fparsec/reference/primitives.html" target="_blank"><code>Primitives</code></a>, содержащий основные определения типов и комбинаторов синтаксического анализа,
+- <a href="http://www.quanttec.com/fparsec/reference/charparsers.html" target="_blank"><code>CharParsers</code></a>, содержащий синтаксические анализаторы для символов, строк, чисел и функций для применения синтаксических анализаторов для входных потоков,
+- <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.Error" target="_blank"><code>Error</code></a>, содержащий типы и вспомогательные функции для создания, обработки, форматирования сообщений об ошибках синтаксического анализа,
+- <a href="http://www.quanttec.com/fparsec/reference/staticmapping.html" target="_blank"><code>StaticMapping</code></a>, содержащий функции для создания оптимизированных функций отображения между ключами и значениями.</p>
 
-<p>Во всех примерах в этом учебнике предполагается, что вы открыли пространство имен FParsec:</p>
+<p>Во всех примерах в этом учебнике предполагается, что вы открыли пространство имен <code>FParsec</code>:</p>
 
-<pre><code>open FParsec
+<pre><code class="language-fsharp">open FParsec
 </code></pre>
 
 <p>При открытии пространства имен <code>FParsec</code> также автоматически открываются модули <code>Primitives</code>, <code>CharParsers</code> и <code>Error</code>.</p>

@@ -298,7 +298,7 @@
 
 <p>В следующих главах мы продемонстрируем этот подход, обсуждая различные варианты примеров синтаксических анализаторов, которые построены друг из друга. В этой главе мы начнем с очень простого анализатора для числа с плавающей точкой в скобках:</p>
 
-<pre><code>let str s = pstring s
+<pre><code class="language-fsharp">let str s = pstring s
 let floatBetweenBrackets = str &quot;[&quot; &gt;&gt;. pfloat .&gt;&gt; str &quot;]&quot;
 </code></pre>
 
@@ -308,22 +308,22 @@ let floatBetweenBrackets = str &quot;[&quot; &gt;&gt;. pfloat .&gt;&gt; str &quo
 </div>
 
 
-<p>Определение <code>str</code> и <code>floatBetweenBrackets</code> включает в себя три библиотечные функции, которые мы ранее не рассматривали: <code>pstring</code>, <code>&gt;&gt;.</code> и <code>&gt;&gt;.</code>.</p>
+<p>Определение <code>str</code> и <code>floatBetweenBrackets</code> включает в себя три библиотечные функции, которые мы ранее не рассматривали: <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.pstring" target="_blank"><code>pstring</code></a>, <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.:62::62:.." target="_blank"><code>&gt;&gt;.</code></a> и <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:" target="_blank"><code>&gt;&gt;.</code></a>.</p>
 
 <p>Функция</p>
 
-<pre><code>val pstring: string -&gt; Parser&lt;string,'u&gt;
+<pre><code class="language-fsharp">val pstring: string -&gt; Parser&lt;string,'u&gt;
 </code></pre>
 
 <p>принимает строку в качестве аргумента и возвращает синтаксический анализатор для этой строки. Когда анализатор применяется к входному потоку он проверяет соответствуют ли символы во входном потоке строке, заданной в аргументе. Если символы полностью совпадают со строкой, анализатор поглощает их, то есть пропускает и идет дальше. В противном случае он не исполнится и не поглотит входные данные. Когда анализатор успешно обрабатывает, он также возвращает данную строку в качестве результата анализатора, но, поскольку строка константа, вы будете редко использовать этот результат.</p>
 
-<p>Функция <code>pstring</code> не называется <code>string</code>, потому что иначе она скроет встроенную в F# функцию <code>string</code>. Как правило, имена синтаксических анализаторов в FParsec, которые конфликтуют со встроенными именами функций в F#, имеют префикс &mdash; символ р. Функция <code>pfloat</code> еще один пример этого соглашения об именах.</p>
+<p>Функция <code>pstring</code> не называется <code>string</code>, потому что иначе она скроет встроенную в F# функцию <code>string</code>. Как правило, имена синтаксических анализаторов в FParsec, которые конфликтуют со встроенными именами функций в F#, имеют префикс &mdash; символ <code>р</code>. Функция <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.pfloat" target="_blank"><code>pfloat</code></a> еще один пример этого соглашения об именовании.</p>
 
 <p>Для экономии нескольких нажатий клавиш, мы сокращаем <code>pstring</code> как <code>str</code>. Так, например, <code>str &quot;[&quot;</code> это синтаксический анализатор, который пропускает символ <code>'['</code>.</p>
 
 <p>Бинарные операторы  <code>&gt;&gt;.</code> и  <code>.&gt;&gt;</code> имеет следующие типы:</p>
 
-<pre><code>val (&gt;&gt;.): Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; Parser&lt;'b,'u&gt;
+<pre><code class="language-fsharp">val (&gt;&gt;.): Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; Parser&lt;'b,'u&gt;
 val (.&gt;&gt;): Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; Parser&lt;'a,'u&gt;
 </code></pre>
 
@@ -339,7 +339,7 @@ val (.&gt;&gt;): Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; Parser&lt;'
 
 <p>Следующие тесты показывают, что <code>floatBetweenBrackets</code> разбирает правильные входные данные, как и ожидалось, и дает информативные сообщения об ошибках, когда он сталкивается с неправильными входными данными:</p>
 
-<pre><code>&gt; test floatBetweenBrackets &quot;[1.0]&quot;;;
+<pre><code class="language-fsharp">&gt; test floatBetweenBrackets &quot;[1.0]&quot;;;
 Success: 1.0
 
 &gt; test floatBetweenBrackets &quot;[]&quot;;;

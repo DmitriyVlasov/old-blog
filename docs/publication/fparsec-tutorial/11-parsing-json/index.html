@@ -308,7 +308,7 @@
 
 <p>In our parser we will use the following union type to represent JSON values:</p>
 
-<pre><code>type Json = JString of string
+<pre><code class="language-fsharp">type Json = JString of string
           | JNumber of float
           | JBool   of bool
           | JNull
@@ -327,14 +327,14 @@ If you&rsquo;re new to FParsec and have a little time, it would be a good exerci
 
 <p>We start the actual parser implementation by covering the simple <code>null</code> and boolean cases:</p>
 
-<pre><code>let jnull = stringReturn &quot;null&quot; JNull
+<pre><code class="language-fsharp">let jnull = stringReturn &quot;null&quot; JNull
 let jool =      (stringReturn &quot;true&quot;  (JBool true))
             &lt;|&gt; (stringReturn &quot;false&quot; (JBool false))
 </code></pre>
 
 <p>Handling the number case is just as simple, because the JSON number format is based on the typical floating-point number format used in many programming languages and hence can be parsed with FParsec&rsquo;s built-in <code>pfloat</code> parser:</p>
 
-<pre><code>let jnumber = pfloat |&gt;&gt; JNumber
+<pre><code class="language-fsharp">let jnumber = pfloat |&gt;&gt; JNumber
 </code></pre>
 
 <p>(Note that F# allows us to pass the object constructor <code>JNumber</code> as a function argument.)</p>
@@ -343,7 +343,7 @@ let jool =      (stringReturn &quot;true&quot;  (JBool true))
 
 <p>The JSON string format takes a little more effort to implement, but we&rsquo;ve already parsed a similar format with the <code>stringLiteral</code> parsers in <a href="#Parsing string data">Parsing string data</a>, so we can just adapt one of those parsers for our purpose:</p>
 
-<pre><code>let stringLiteral =
+<pre><code class="language-fsharp">let stringLiteral =
     let escape =  anyOf &quot;\&quot;\\/bfnrt&quot;
                   |&gt;&gt; function
                       | 'b' -&gt; &quot;\b&quot;
@@ -374,19 +374,19 @@ let jool =      (stringReturn &quot;true&quot;  (JBool true))
 <p>[#createParserForwardedToRef-example]
 The grammar rules for JSON lists and objects are recursive, because any list or object can contain itself any kind of JSON value. Hence, in order to write parsers for the list and object grammar rules, we need a way to refer to the parser for any kind of JSON value, even though we haven&rsquo;t yet constructed this parser. Like it is so often in computing, we can solve this problem by introducing an extra indirection:</p>
 
-<pre><code>let jvalue, jvalueRef = createParserForwardedToRef&lt;Json, unit&gt;()
+<pre><code class="language-fsharp">let jvalue, jvalueRef = createParserForwardedToRef&lt;Json, unit&gt;()
 </code></pre>
 
 <p>As you might have guessed from the name, <code>createParserForwardedToRef</code> creates a parser (<code>jvalue</code>) that forwards all invocations to the parser in a reference cell (<code>jvalueRef</code>). Initially, the reference cell holds a dummy parser, but since the reference cell is mutable, we can later replace the dummy parser with the actual value parser, once we have finished constructing it.</p>
 
 <p>The JSON RFC sensibly only permits spaces, (horizontal) tabs, line feeds and carriage returns as whitespace characters, which allows us to use the built-in <code>spaces</code> parser for parsing whitespace:</p>
 
-<pre><code>let ws = spaces
+<pre><code class="language-fsharp">let ws = spaces
 </code></pre>
 
 <p>Both JSON lists and objects are syntactically represented as a comma-separated lists of &ldquo;elements&rdquo; between brackets, where whitespace is allowed before and after any bracket, comma and list element. We can conveniently parse such lists with the following helper function:</p>
 
-<pre><code>let listBetweenStrings sOpen sClose pElement f =
+<pre><code class="language-fsharp">let listBetweenStrings sOpen sClose pElement f =
     between (str sOpen) (str sClose)
             (ws &gt;&gt;. sepBy (pElement .&gt;&gt; ws) (str &quot;,&quot; &gt;&gt;. ws) |&gt;&gt; f)
 </code></pre>
@@ -395,25 +395,25 @@ The grammar rules for JSON lists and objects are recursive, because any list or 
 
 <p>With the help of this function we can define the parser for a JSON list as follows:</p>
 
-<pre><code>let jlist   = listBetweenStrings &quot;[&quot; &quot;]&quot; jvalue JList
+<pre><code class="language-fsharp">let jlist   = listBetweenStrings &quot;[&quot; &quot;]&quot; jvalue JList
 </code></pre>
 
 <p>JSON objects are lists of key-value pairs, so we need a parser for a key-value pair:</p>
 
-<pre><code>let keyValue = stringLiteral .&gt;&gt;. (ws &gt;&gt;. str &quot;:&quot; &gt;&gt;. ws &gt;&gt;. jvalue)
+<pre><code class="language-fsharp">let keyValue = stringLiteral .&gt;&gt;. (ws &gt;&gt;. str &quot;:&quot; &gt;&gt;. ws &gt;&gt;. jvalue)
 </code></pre>
 
 <p>(Remember, the points on both sides of <code>.&gt;&gt;.</code> indicate that the results of the two parsers on both sides are returned as a tuple.)</p>
 
 <p>By passing the <code>keyValue</code> parser to <code>listBetweenStrings</code> we obtain a parser for JSON objects:</p>
 
-<pre><code>let jobject = listBetweenStrings &quot;{&quot; &quot;}&quot; keyValue (Map.ofList &gt;&gt; JObject)
+<pre><code class="language-fsharp">let jobject = listBetweenStrings &quot;{&quot; &quot;}&quot; keyValue (Map.ofList &gt;&gt; JObject)
 </code></pre>
 
 <p>[#json-value-parser]
 Having defined parsers for all the possible kind of JSON values, we can combine the different cases with a <code>choice</code> parser to obtain the finished parser for JSON values:</p>
 
-<pre><code>do jvalueRef := choice [jobject
+<pre><code class="language-fsharp">do jvalueRef := choice [jobject
                         jlist
                         jstring
                         jnumber
@@ -424,7 +424,7 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 
 <p>The <code>jvalue</code> parser doesn&rsquo;t accept leading or trailing whitespace, so we need to define our parser for complete JSON documents as follows:</p>
 
-<pre><code>let json = ws &gt;&gt;. jvalue .&gt;&gt; ws .&gt;&gt; eof
+<pre><code class="language-fsharp">let json = ws &gt;&gt;. jvalue .&gt;&gt; ws .&gt;&gt; eof
 </code></pre>
 
 <p>This parser will try to consume a complete JSON input stream and, if successful, will return a <code>Json</code> AST of the input as the parser result</p>

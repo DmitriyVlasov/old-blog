@@ -304,20 +304,20 @@
 
 <p>Ограничение значений F# является причиной того, что следующий фрагмент кода не компилируется</p>
 
-<pre><code>open FParsec
+<pre><code class="language-fsharp">open FParsec
 let p = pstring &quot;test&quot;
 </code></pre>
 
 <p>Но следующий фрагмент скомпилирован без проблем (Предполагаем, что вы ссылались на две библиотеки FParsec):</p>
 
-<pre><code>open FParsec
+<pre><code class="language-fsharp">open FParsec
 let p = pstring &quot;test&quot;
 run p &quot;input&quot;
 </code></pre>
 
 <p>Ошибка компилятора, сгенерированная для первого примера будет примерно следующая:</p>
 
-<pre><code>error FS0030: Value restriction.
+<pre><code class="language-fsharp">error FS0030: Value restriction.
 The value 'p' has been inferred to have generic type
     val p : Parser&lt;string,'_a&gt;
 Either make the arguments to 'p' explicit or,
@@ -339,13 +339,13 @@ if you do not intend for it to be generic, add a type annotation.
 
 <p>Часто бывает удобно определить аббревиатуры типа следующего вида:</p>
 
-<pre><code>type UserState = unit // Конечно не обязательно должен быть unit типом
+<pre><code class="language-fsharp">type UserState = unit // Конечно не обязательно должен быть unit типом
 type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
 </code></pre>
 
 <p>С такими аббревиатурами, типы аннотаций становятся такими же простыми, как</p>
 
-<pre><code>let p : Parser&lt;_&gt; = pstring &quot;test&quot;
+<pre><code class="language-fsharp">let p : Parser&lt;_&gt; = pstring &quot;test&quot;
 </code></pre>
 
 <p>Конечно, ограничение значения типа синтаксического анализатора до определенного типа - это только решение, если вам действительно не нужен общий тип. Если вам нужен общий тип, вам придется применять другие методы, как это описано, например, в документации по языку <a href="https://docs.microsoft.com/ru-ru/dotnet/fsharp/language-reference/generics/automatic-generalization" target="_blank">F#</a> или в статье <a href="http://blogs.msdn.com/b/mulambda/archive/2010/05/01/value-restriction-in-f.aspx" target="_blank">Finer Points of F# Value Restriction</a><sup>en</sup> в блоге Дмитрия Ломова. Однако значения <code>Parser</code> FParsec (непараметрические функции синтаксического анализатора) обычно используются только в контексте конкретного использования синтаксического анализатора с фиксированным типом состояния пользователя. В этой ситуации ограничение типа действительно является подходящей мерой, чтобы избежать ошибок ограничения значения.</p>

@@ -298,30 +298,30 @@
 
 <p>Например, с комбинатором <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2" target="_blank"><code>pipe2</code></a><sup>en</sup></p>
 
-<pre><code>val pipe2: Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; ('a -&gt; b -&gt; 'c) -&gt; Parser&lt;'c,'u&gt;
+<pre><code class="language-fsharp">val pipe2: Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; ('a -&gt; b -&gt; 'c) -&gt; Parser&lt;'c,'u&gt;
 </code></pre>
 
 <p>Вы можете построить синтаксический анализатор <code>pipe2 p1 p2 f</code> который последовательно применяет два синтаксических анализатора <code>p1</code> и <code>p2</code>, а затем возвращает результат применения функции <code>f x1 x2</code>, где <code>x1</code> и <code>x2</code> - результаты, возвращаемые <code>p1</code> и <code>p2</code>.</p>
 
 <p>В следующем примере мы используем <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2" target="_blank"><code>pipe2</code></a><sup>en</sup> для синтаксического анализа произведения из двух чисел:</p>
 
-<pre><code>let product = 
+<pre><code class="language-fsharp">let product = 
   pipe2 float_ws (str_ws &quot;*&quot; &gt;&gt;. float_ws) (fun x y -&gt; x * y)
 </code></pre>
 
-<pre><code>&gt; test product &quot;3 * 5&quot;;;
+<pre><code class="language-fsharp">&gt; test product &quot;3 * 5&quot;;;
 Success: 15.0
 </code></pre>
 
 <p><code>pipe2-5</code> особенно полезны для построения объектов Абстрактного синтаксического дерева (далее АСТ). В следующем примере мы используем <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe3" target="_blank"><code>pipe3</code></a><sup>en</sup> для анализа определения строковой константы в объекте <code>StringConstant</code>:</p>
 
-<pre><code>type StringConstant = StringConstant of string * string
+<pre><code class="language-fsharp">type StringConstant = StringConstant of string * string
 
 let stringConstant = 
   pipe3 identifier (str_ws &quot;=&quot;) stringLiteral (fun id _ str -&gt; StringConstant(id, str))
 </code></pre>
 
-<pre><code>&gt; test stringConstant &quot;myString = \&quot;stringValue\&quot;&quot;;;
+<pre><code class="language-fsharp">&gt; test stringConstant &quot;myString = \&quot;stringValue\&quot;&quot;;;
 Success: StringConstant (&quot;myString&quot;,&quot;stringValue&quot;)
 </code></pre>
 
@@ -329,7 +329,7 @@ Success: StringConstant (&quot;myString&quot;,&quot;stringValue&quot;)
 
 <p>Синтаксический анализатор <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2" target="_blank"><code>tuple2</code></a><sup>en</sup> также доступен в виде комбинатора <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:.." target="_blank"><code>.&gt;&gt;.</code></a><sup>en</sup>. Так что вы можете написать  <code>p1 .&gt;&gt;. p2</code> вместо <code>tuple2 p1 p2</code>. В следующем примере мы проанализируем пару разделенных запятыми чисел с этим оператором:</p>
 
-<pre><code>&gt; test (float_ws .&gt;&gt;. (str_ws &quot;,&quot; &gt;&gt;. float_ws)) &quot;123, 456&quot;;;
+<pre><code class="language-fsharp">&gt; test (float_ws .&gt;&gt;. (str_ws &quot;,&quot; &gt;&gt;. float_ws)) &quot;123, 456&quot;;;
 Success: (123.0, 456.0)
 </code></pre>
 
@@ -337,7 +337,7 @@ Success: (123.0, 456.0)
 
 <p>Если вам нужен синтаксический анализатор <code>pipe</code> или <code>tuple</code> более чем c пятью аргументами, вы можете легко построить его с помощью существующих. Например, у вас есть идея: определить синтаксический анализатор <code>pipe7</code>.</p>
 
-<pre><code>let pipe7 p1 p2 p3 p4 p5 p6 p7 f =
+<pre><code class="language-fsharp">let pipe7 p1 p2 p3 p4 p5 p6 p7 f =
     pipe4 p1 p2 p3 (tuple4 p4 p5 p6 p7)
           (fun x1 x2 x3 (x4, x5, x6, x7) -&gt; f x1 x2 x3 x4 x5 x6 x7)
 </code></pre>

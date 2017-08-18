@@ -298,16 +298,16 @@
 
 <p>Предположим сначала, что нам нужно, чтобы делать синтаксический разбор последовательности чисел с плавающей точкой в скобках, т.е. текст в формате <a href="https://ru.wikipedia.org/wiki/Расширенная_форма_Бэкуса_—_Наура" target="_blank">расширенной формы Бэкуса-Наура</a> (далее РБНФ): <code>(&quot;[&quot; float &quot;]&quot;)*</code>. Допустимые входные строки в этом формате, например: <code>&quot;&quot;</code>, <code>&quot;[1.0]&quot;</code>, <code>&quot;[2][3][4]&quot;</code>.</p>
 
-<p>Поскольку у нас уже есть синтаксический анализатор для числа с плавающей точкой в скобках, нам нужен только способ неоднократно применять этот синтаксический анализатор для разбора последовательности. Именно это этого предназначен комбинатор <code>many</code>:</p>
+<p>Поскольку у нас уже есть синтаксический анализатор для числа с плавающей точкой в скобках, нам нужен только способ неоднократно применять этот синтаксический анализатор для разбора последовательности. Именно это этого предназначен комбинатор <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.many" target="_blank"><code>many</code></a>:</p>
 
-<pre><code>val many: Parser&lt;'a,'u&gt; -&gt; Parser&lt;'a list,'u&gt;
+<pre><code class="language-fsharp">val many: Parser&lt;'a,'u&gt; -&gt; Parser&lt;'a list,'u&gt;
 </code></pre>
 
 <p>Синтаксический анализатор <code>many p</code> повторно применяет синтаксический анализатор <code>p</code> до тех пор пока <code>p</code> не потерпит неудачу, другими словами он &ldquo;жадно&rdquo; разбирает максимально возможное количество вхождений <code>p</code>. Результаты <code>p</code> возвращаются в виде списка в порядке появления.</p>
 
 <p>Несколько простых тестов показывают, что <code>many floatInBrackets</code> работает, как ожидалось:</p>
 
-<pre><code>&gt; test (many floatBetweenBrackets) &quot;&quot;;;
+<pre><code class="language-fsharp">&gt; test (many floatBetweenBrackets) &quot;&quot;;;
 Success: []
 
 &gt; test (many floatBetweenBrackets) &quot;[1.0]&quot;;;
@@ -319,7 +319,7 @@ Success: [2.0; 3.0; 4.0]
 
 <p>Если в результате <em>потребления входных данных</em> <code>floatBetweenBrackets</code> вызывает исключение, то комбинированный синтаксический анализатор также вызывает исключение:</p>
 
-<pre><code>&gt; test (many floatBetweenBrackets) &quot;[1][2.0E]&quot;;;
+<pre><code class="language-fsharp">&gt; test (many floatBetweenBrackets) &quot;[1][2.0E]&quot;;;
 
 Failure: Error in Ln: 1 Col: 9
 [1][2.0E]
@@ -327,9 +327,9 @@ Failure: Error in Ln: 1 Col: 9
 Expecting: decimal digit
 </code></pre>
 
-<p>Обратите внимание, что <code>many</code> также успешно исполняется для пустой последовательности. Если вы хотите, чтобы требовался, по крайней мере, один элемент во входной последовательности, вы сможете использовать вместо этого <code>many1</code>:</p>
+<p>Обратите внимание, что <code>many</code> также успешно исполняется для пустой последовательности. Если вы хотите, чтобы требовался, по крайней мере, один элемент во входной последовательности, вы сможете использовать вместо этого <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.many1" target="_blank"><code>many1</code></a>:</p>
 
-<pre><code>&gt; test (many1 floatBetweenBrackets) &quot;(1)&quot;;;
+<pre><code class="language-fsharp">&gt; test (many1 floatBetweenBrackets) &quot;(1)&quot;;;
 Failure: Error in Ln: 1 Col: 1
 (1)
 ^
@@ -339,7 +339,7 @@ Expecting: '['
 <div class="alert alert-note">
   <p>Если вы предпочитаете, чтобы последнее сообщение об ошибке было сформулировано в терминах более высокого уровневого синтаксического анализатора <code>floatBetweenBrackets</code> вместо низкоуровневого синтаксического анализатора <code>str &quot;[&quot;</code>, вы можете использовать оператор <code>&lt;?&gt;</code>, как в следующем примере:</p>
 
-<pre><code>&gt; test (many1 (floatBetweenBrackets &lt;?&gt; &quot;float between brackets&quot;)) &quot;(1)&quot;;;
+<pre><code class="language-fsharp">&gt; test (many1 (floatBetweenBrackets &lt;?&gt; &quot;float between brackets&quot;)) &quot;(1)&quot;;;
 Failure: Error in Ln: 1 Col: 1
 (1)
 ^
@@ -351,11 +351,11 @@ Expecting: float between brackets
 </div>
 
 
-<p>Если вам не нужен результат работы синтаксического анализатора и просто хотите пропустить полученный список, вы можете использовать оптимизированные комбинаторы <code>skipMany</code> или <code>skipMany1</code> вместо <code>many</code> и <code>many1</code> .</p>
+<p>Если вам не нужен результат работы синтаксического анализатора и просто хотите пропустить полученный список, вы можете использовать оптимизированные комбинаторы <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.skipMany" target="_blank"><code>skipMany</code></a> или <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.skipMany1" target="_blank"><code>skipMany1</code></a> вместо <code>many</code> и <code>many1</code> .</p>
 
-<p>Другим часто используемым комбинатором для синтаксического разбора последовательностей является <code>sepBy</code>:</p>
+<p>Другим часто используемым комбинатором для синтаксического разбора последовательностей является <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.sepBy" target="_blank"><code>sepBy</code></a>:</p>
 
-<pre><code>val sepBy: Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; Parser&lt;'a list, 'u&gt;
+<pre><code class="language-fsharp">val sepBy: Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; Parser&lt;'a list, 'u&gt;
 </code></pre>
 
 <p><code>sepBy</code> принимает два параметра синтаксический анализатор «элемент» и «разделитель» и возвращает синтаксический анализатор для списка элементов. В нотации РНБН <code>sepBy p pSep</code> может быть записана как <code>(p (pSep p)*)?</code>, Подобно <code>many</code>, существует <a href="http://www.quanttec.com/fparsec/reference/primitives.html#interface.sepBy-parsers" target="_blank">несколько вариантов</a><sup>en</sup> <code>sepBy</code>.</p>
@@ -369,12 +369,12 @@ Expecting: float between brackets
 
 <p>Дословной реализацией этого формата будет следующий синтаксический анализатор:</p>
 
-<pre><code>let floatList = str &quot;[&quot; &gt;&gt;. sepBy pfloat (str &quot;,&quot;) .&gt;&gt; str &quot;]&quot;
+<pre><code class="language-fsharp">let floatList = str &quot;[&quot; &gt;&gt;. sepBy pfloat (str &quot;,&quot;) .&gt;&gt; str &quot;]&quot;
 </code></pre>
 
 <p>Тестирование <code>floatList</code> с корректными строками дает ожидаемый результат:</p>
 
-<pre><code>&gt; test floatList &quot;[]&quot;;;
+<pre><code class="language-fsharp">&gt; test floatList &quot;[]&quot;;;
 Success: []
 &gt; test floatList &quot;[1.0]&quot;;;
 Success: [1.0]
@@ -384,7 +384,7 @@ Success: [4.0; 5.0; 6.0]
 
 <p>Тестирование с не корректными строками показывает, что <code>floatList</code> создает полезные сообщения об ошибках:</p>
 
-<pre><code>&gt; test floatList &quot;[1.0,]&quot;;;
+<pre><code class="language-fsharp">&gt; test floatList &quot;[1.0,]&quot;;;
 Failure: Error in Ln: 1 Col: 6
 [1.0,]
      ^

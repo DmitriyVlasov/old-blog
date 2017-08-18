@@ -296,7 +296,7 @@
   <div class="article-style">
     <p>FParsec обрабатывает пробелы (пробелы, табуляции, новые строки и т. д.) Так же, как и любой другой ввод, поэтому наш синтаксический анализатор <code>floatList</code> еще не умеет работать с пробелами:</p>
 
-<pre><code>&gt; test floatBetweenBrackets &quot;[1.0, 2.0]&quot;;;
+<pre><code class="language-fsharp">&gt; test floatBetweenBrackets &quot;[1.0, 2.0]&quot;;;
 Failure: Error in Ln: 1 Col: 5
 [1.0, 2.0]
     ^
@@ -307,26 +307,26 @@ Expecting: ']'
 
 <p>Во-первых, нам нужно определить, что мы хотим принять в качестве пробела. Для простоты мы просто используем встроенный синтаксическим анализатором <code>spaces</code>, который пропускает любую (возможно, пустую) последовательность символов <code>' '</code>, <code>'\t'</code> , <code>'\r'</code> или <code>'\n'</code>.</p>
 
-<pre><code>let ws = spaces
+<pre><code class="language-fsharp">let ws = spaces
 </code></pre>
 
 <p>Затем нам нужно добавить синтаксический анализатор <code>ws</code> во все места, где мы хотим игнорировать пробелы. В общем случае удобно пропустить пробелы <em>после</em> вхождения отдельного элемента, т.е. Пропускать конечные, а не ведущие пробелы, потому что это уменьшает необходимость в обратной трассировке (подробнее см. ниже). В результате мы добавляем <code>ws</code> в два места, чтобы пропустить любые пробелы после скобок или цифр:</p>
 
-<pre><code>let str_ws s = pstring s .&gt;&gt; ws
+<pre><code class="language-fsharp">let str_ws s = pstring s .&gt;&gt; ws
 let float_ws = pfloat .&gt;&gt; ws
 let numberList = str_ws &quot;[&quot; &gt;&gt;. sepBy float_ws (str_ws &quot;,&quot;) .&gt;&gt; str_ws &quot;]&quot;
 </code></pre>
 
 <p>Простой тест показывает, что <code>numberList</code> игнорирует пробелы:</p>
 
-<pre><code>&gt; test numberList @&quot;[ 1 ,
+<pre><code class="language-fsharp">&gt; test numberList @&quot;[ 1 ,
                           2 ] &quot;;;
 Success: [1.0; 2.0]
 </code></pre>
 
 <p>Если мы привнесем ошибку во второй строке, то увидим, что FParsec автоматически отслеживает текущее положение столбца и строки синтаксического анализа текста:</p>
 
-<pre><code>&gt; test numberList @&quot;[ 1,
+<pre><code class="language-fsharp">&gt; test numberList @&quot;[ 1,
                          2; 3]&quot;;;
 
 Failure: Error in Ln: 2 Col: 27
@@ -337,12 +337,12 @@ Expecting: ',' or ']'
 
 <p>Наш синтаксический анализатор <code>numberList</code> прежнему не пропускает ведущие пробелы, потому что это необязательно, когда мы сопоставляем его с другими синтаксическими анализаторами, которые пропускают все конечные пробелы. Если бы мы хотели разобрать весь поток ввода только с числами с плавающей запятой, мы могли бы использовать следующий синтаксический анализатор:</p>
 
-<pre><code>let numberListFile = ws &gt;&gt;. numberList .&gt;&gt; eof
+<pre><code class="language-fsharp">let numberListFile = ws &gt;&gt;. numberList .&gt;&gt; eof
 </code></pre>
 
 <p>Синтаксический анализатор конца файла <code>eof</code> будет генерировать ошибку, если конец потока не был достигнут. Это полезно для обеспечения того, чтобы весь входной поток был потреблен. Без анализатора <code>eof</code> следующий тест будет работать без ошибки:</p>
 
-<pre><code>&gt; test numberListFile &quot; [1, 2, 3] [4]&quot;;;
+<pre><code class="language-fsharp">&gt; test numberListFile &quot; [1, 2, 3] [4]&quot;;;
 Failure: Error in Ln: 1 Col: 12
  [1, 2, 3] [4]
            ^
