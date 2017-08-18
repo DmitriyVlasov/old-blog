@@ -24,7 +24,7 @@ url_source = "http://www.quanttec.com/fparsec/tutorial.html#parsing-alternatives
 
 В главе 7 "[Синтаксический анализатор строковых данных](../07-parsing-string-data)" мы вкратце представили комбинатор выбора [`<|>`](http://www.quanttec.com/fparsec/reference/primitives.html#members.:60::124::62:)<sup>en</sup> :
 
-```
+```fsharp
 val (<|>): Parser<'a,'u> -> Parser<'a,'u> -> Parser<'a,u>
 ```
 
@@ -34,7 +34,7 @@ val (<|>): Parser<'a,'u> -> Parser<'a,'u> -> Parser<'a,u>
 
 Другим примером, показывающим, как работает `<|>` является следующий синтаксический анализатор для разбора строкового представления булевых значений:
 
-```
+```fsharp
 let boolean = 
   (stringReturn "true"  true) <|>
   (stringReturn "false" false)
@@ -43,7 +43,8 @@ let boolean =
 Здесь мы использовали синтаксический анализатор [`stringReturn`](http://www.quanttec.com/fparsec/reference/charparsers.html#members.stringReturn)<sup>en</sup>, который берет в качестве первого аргумента строку, и, в случае успеха, возвращает значение, указанное в качестве второго аргумента.
 
 Протестируем синтаксический анализатор `boolean` на примерах:
-```
+
+```fsharp
 > test boolean "false";;
 Success: false
 > test boolean "true";;
@@ -61,16 +62,17 @@ Expecting: 'false' or 'true'
 
 Следствием второго пункта является то, что следующий тест завершился неудачно, потому что синтаксический анализатор в левой части `<|>` получает пробелы перед сбоем:
 
-```
+```fsharp
 > test ((ws >>. str "a") <|> (ws >>. str "b")) " b";;
 Failure: Error in Ln: 1 Col: 2
  b
  ^
 Expecting: 'a'
 ```
+
 К счастью, мы можем легко исправить этот синтаксический анализатор, выделив `ws`:
 
-```
+```fsharp
 > test (ws >>. (str "a" <|> str "b")) " b";;
 Success: "b"
 ```

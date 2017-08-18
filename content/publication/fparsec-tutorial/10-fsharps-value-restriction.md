@@ -30,21 +30,22 @@ url_source = "http://www.quanttec.com/fparsec/tutorial.html#fs-value-restriction
 
 Ограничение значений F# является причиной того, что следующий фрагмент кода не компилируется
 
-```
+```fsharp
 open FParsec
 let p = pstring "test"
 ```
 
 Но следующий фрагмент скомпилирован без проблем (Предполагаем, что вы ссылались на две библиотеки FParsec):
 
-```
+```fsharp
 open FParsec
 let p = pstring "test"
 run p "input"
 ```
 
 Ошибка компилятора, сгенерированная для первого примера будет примерно следующая:
-```
+
+```fsharp
 error FS0030: Value restriction.
 The value 'p' has been inferred to have generic type
     val p : Parser<string,'_a>
@@ -64,14 +65,15 @@ if you do not intend for it to be generic, add a type annotation.
 * Или предоставьте явную аннотацию типа, чтобы вручную ограничивать тип значения синтаксического анализатора (обычно для всего модуля синтаксического анализа достаточно нескольких аннотаций типа в ключевых точках).
 
 Часто бывает удобно определить аббревиатуры типа следующего вида:
-```
+
+```fsharp
 type UserState = unit // Конечно не обязательно должен быть unit типом
 type Parser<'t> = Parser<'t, UserState>
 ```
 
 С такими аббревиатурами, типы аннотаций становятся такими же простыми, как
 
-```
+```fsharp
 let p : Parser<_> = pstring "test"
 ```
 
