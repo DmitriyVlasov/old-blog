@@ -8,7 +8,9 @@
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://DmitriyVlasov.ru/talk/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Обзор F# 4.0</title>

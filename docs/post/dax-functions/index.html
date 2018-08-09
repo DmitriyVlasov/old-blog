@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.22.1" />
+  <meta name="generator" content="Hugo 0.46" />
   <meta name="author" content="Дмитрий Власов">
   <meta name="description" content="Старший ERP разработчик">
 
@@ -300,7 +300,12 @@
 <li><a href="#returnCellPart2DateTimeLogicFunction">Функции возвращающие ячейку со значением</a></li>
 <li><a href="#returnValueDateTimeLogicFunction">Функции возвращающие скалярное значение</a></li>
 </ul></li>
-<li><a href="#informationFunction">Информационные функции</a></li>
+<li><a href="#informationFunction">Информационные функции</a>
+
+<ul>
+<li><a href="#userInformationFunction">Информация о пользжователе</a></li>
+<li><a href="#errorHanding">Обработка ошибок</a></li>
+</ul></li>
 <li><a href="#filterFunction">Функции фильтрации</a></li>
 <li><a href="#agregateAndstatFunction">Агрегатные и статистические функции</a>
 
@@ -359,11 +364,6 @@
 </tr>
 
 <tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/ee634765" target="_blank">IFERROR</a></td>
-<td>Вычисляет выражение и возвращает указанное значение, если выражение ошибочно. В противном случае возвращает значение выражения.</td>
-</tr>
-
-<tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/gg492166" target="_blank">SWITCH</a></td>
 <td>Вычисляет выражение на основе списка значений и возвращает одно из нескольких возможных результирующих выражений.</td>
 </tr>
@@ -394,6 +394,11 @@
 <tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/ee634811" target="_blank">CONCATENATE</a></td>
 <td>Соединяет две текстовые строки в одну текстовую строку (Чаще удобнее использовать оператор <code>&amp;</code>).</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt163697.aspx" target="_blank">CONCATENATEX</a></td>
+<td>Функция работает над таблицей и возвращает текстовую строку. Сначала  для каждой записи таблицы вычисляет выражение, а затем сводит все вычесленные записи таблицы в одну строку с учетом разделителя из параметров.</td>
 </tr>
 
 <tr>
@@ -477,8 +482,13 @@
 
 <tbody>
 <tr>
-<td>UNICHAR</td>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt825189.aspx" target="_blank">UNICHAR</a></td>
 <td>Возвращает символ Юникод по его числовому значению. Работает аналогично функции Excel <a href="https://goo.gl/33djp8" target="_blank">ЮНИСИМВ</a></td>
+</tr>
+
+<tr>
+<td>UNICODE</td>
+<td>Возвращает число (код знака), соответствующее первому знаку в тексте.</td>
 </tr>
 
 <tr>
@@ -818,6 +828,11 @@
 
 <tbody>
 <tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/library/dn802538.aspx" target="_blank">DATEDIFF</a></td>
+<td>Возвращает интервал времени между двумя датами. (Тип интервала указывается в параметре Interval) Интервал может принимать следующие значения: <code>second</code>, <code>minute</code>, <code>hour</code>, <code>day</code>, <code>week</code>, <code>month</code>, <code>quarter</code>, <code>year</code>.</td>
+</tr>
+
+<tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/ee634405" target="_blank">YEARFRAC</a></td>
 <td>Вычисляет долю года, представленную числом целых дней между двумя датами. Функция позволяет определить долю преимуществ или обязательств за целый год, приходящуюся на указанный срок.</td>
 </tr>
@@ -1041,7 +1056,7 @@
 
 <h1 id="информационные-функции">Информационные функции</h1>
 
-<p>Информационная функция проверяет ячейку или строку, указанные в качестве аргумента, и сообщает, соответствует ли значение ожидаемому типу. Например, функция <code>ISERROR</code> возвращает значение <code>true</code>, если упоминаемое значение содержит ошибку.</p>
+<p>Информационная функция проверяет ячейку или строку, указанные в качестве аргумента, и сообщает, соответствует ли значение ожидаемому типу.</p>
 
 <table>
 <thead>
@@ -1055,6 +1070,11 @@
 <tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/ee634204" target="_blank">ISBLANK</a></td>
 <td>Проверяет, пустое ли значение, и возвращает значение <code>true</code> или <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/dn802550" target="_blank">ISEMPTY</a></td>
+<td>Возвращает значение <code>true</code>, если таблица пустая.</td>
 </tr>
 
 <tr>
@@ -1078,13 +1098,18 @@
 </tr>
 
 <tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/gg492163" target="_blank">ISFILTERED</a></td>
-<td>Возвращает значение <code>true</code>, если columnName фильтруется напрямую. Если для столбца не задан фильтр или если фильтрация происходит потому, что выполняется фильтрация другого столбца в той же или в связанной таблице, функция возвращает значение <code>false</code>.</td>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt171515.aspx" target="_blank">ISEVEN</a></td>
+<td>Возвращает значение ИСТИНА, если число четное, и значение ЛОЖЬ, если нечетное.</td>
 </tr>
 
 <tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/dn802550" target="_blank">ISEMPTY</a></td>
-<td>Возвращает значение <code>true</code>, если таблица пустая.</td>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt171506.aspx" target="_blank">ISODD</a></td>
+<td>Возвращает значение ИСТИНА, если число нечетное, и значение ЛОЖЬ, если четное.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492163" target="_blank">ISFILTERED</a></td>
+<td>Возвращает значение <code>true</code>, если columnName фильтруется напрямую. Если для столбца не задан фильтр или если фильтрация происходит потому, что выполняется фильтрация другого столбца в той же или в связанной таблице, функция возвращает значение <code>false</code>.</td>
 </tr>
 
 <tr>
@@ -1093,18 +1118,23 @@
 </tr>
 
 <tr>
+<td>[ISSUBTOTAL]()</td>
+<td>Возвращает значение <code>true</code>, если текущая строка содержит подытог для заданного столбца, в противном случае возвращает <code>false</code>.</td>
+</tr>
+
+<tr>
 <td><a href="https://msdn.microsoft.com/en-us/library/dn802535.aspx" target="_blank">ISONORAFTER</a></td>
 <td>Логическая функция, которая эмулирует поведение предложения <code>Start At</code> и возвращает <code>true</code> для строки, которая соответствует всем параметрам условия. Эта функция принимает переменное число аргументов кратное трем (т.н. троек), первые два аргумента в тройке - это сравниваемые выражения, а третий аргумент указывает порядок сортировки. Порядок сортировки по увеличению (по умолчанию) или уменьшению.</td>
 </tr>
 
 <tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/ee634214" target="_blank">ISERROR</a></td>
-<td>Проверяет, является ли значение ошибкой, и возвращает <code>true</code> или <code>false</code>.</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492183" target="_blank">CONTAINS</a></td>
+<td>Возвращает значение <code>true</code>, если значения для всех столбцов, на которые имеются ссылки, существуют или содержатся в этих столбцах; в противном случае возвращает значение <code>false</code>.</td>
 </tr>
 
 <tr>
-<td><a href="https://msdn.microsoft.com/ru-ru/gg492183" target="_blank">CONTAINS</a></td>
-<td>Возвращает значение <code>true</code>, если значения для всех столбцов, на которые имеются ссылки, существуют или содержатся в этих столбцах; в противном случае возвращает значение <code>false</code>.</td>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt842621.aspx" target="_blank">CONTAINSROW</a></td>
+<td>Возвращает значение <code>true</code>, если существует по меньшей мере одна строка, в которой все столбцы имеют указанные значения.</td>
 </tr>
 
 <tr>
@@ -1116,10 +1146,65 @@
 <td><a href="https://msdn.microsoft.com/ru-ru/gg492190" target="_blank">HASONEVALUE</a></td>
 <td>Возвращает значение <code>true</code> при фильтрации содержимого столбца columnName до одного уникального значения. В противном случае возвращается значение <code>false</code>.</td>
 </tr>
+</tbody>
+</table>
 
+<p><a name="userInformationFunction"></a></p>
+
+<h2 id="информация-о-пользователе">Информация о пользователе</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
 <tr>
 <td><a href="https://msdn.microsoft.com/en-us/library/hh230954.aspx" target="_blank">USERNAME</a></td>
 <td>Возвращает имя домена и имя пользователя из учетных данных, предоставленных системе при подключении.</td>
+</tr>
+
+<tr>
+<td>[USEROBJECTID]()</td>
+<td>Возвращает идентификатор объекта текущего пользователя из Azure AD для сервера анализа данных Azure и идентификатор безопасности текущего пользователя для локального сервера анализа данных.</td>
+</tr>
+
+<tr>
+<td>[USERPRINCIPALNAME]()</td>
+<td>Возвращает имя субъекта-пользователя.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="errorHanding"></a></p>
+
+<h2 id="обработка-ошибок">Обработка ошибок</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ERROR</td>
+<td>Принимает текстовое сообщение и порождает ошибку. Может использовать в формулах для описания недопустимого состояния пользовательских данных.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634214" target="_blank">ISERROR</a></td>
+<td>Проверяет, является ли значение ошибкой, и возвращает <code>true</code> или <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634765" target="_blank">IFERROR</a></td>
+<td>Вычисляет выражение и возвращает указанное значение, если выражение ошибочно. В противном случае возвращает значение выражения.</td>
 </tr>
 </tbody>
 </table>
@@ -1575,6 +1660,11 @@
 <tr>
 <td><a href="https://msdn.microsoft.com/ru-ru/mt243785" target="_blank">VAR</a></td>
 <td>Сохраняет результат выражения как именованную переменную, которая затем может быть передана как аргумент другим выражениям. Когда результирующие значения были рассчитаны для выражения переменных, эти значения не изменяются, даже если эта переменная указана в другом выражении.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt842621.aspx" target="_blank">IN</a></td>
+<td>Возвращает значение <code>true</code>, если существует по меньшей мере одно значение, в которой все столбцы имеют указанные значения.</td>
 </tr>
 
 <tr>

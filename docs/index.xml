@@ -961,7 +961,12 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;li&gt;&lt;a href=&#34;#returnCellPart2DateTimeLogicFunction&#34;&gt;Функции возвращающие ячейку со значением&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#returnValueDateTimeLogicFunction&#34;&gt;Функции возвращающие скалярное значение&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#informationFunction&#34;&gt;Информационные функции&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#informationFunction&#34;&gt;Информационные функции&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#userInformationFunction&#34;&gt;Информация о пользжователе&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#errorHanding&#34;&gt;Обработка ошибок&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#filterFunction&#34;&gt;Функции фильтрации&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#agregateAndstatFunction&#34;&gt;Агрегатные и статистические функции&lt;/a&gt;
 
@@ -1020,11 +1025,6 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634765&#34; target=&#34;_blank&#34;&gt;IFERROR&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Вычисляет выражение и возвращает указанное значение, если выражение ошибочно. В противном случае возвращает значение выражения.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492166&#34; target=&#34;_blank&#34;&gt;SWITCH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет выражение на основе списка значений и возвращает одно из нескольких возможных результирующих выражений.&lt;/td&gt;
 &lt;/tr&gt;
@@ -1055,6 +1055,11 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634811&#34; target=&#34;_blank&#34;&gt;CONCATENATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Соединяет две текстовые строки в одну текстовую строку (Чаще удобнее использовать оператор &lt;code&gt;&amp;amp;&lt;/code&gt;).&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt163697.aspx&#34; target=&#34;_blank&#34;&gt;CONCATENATEX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Функция работает над таблицей и возвращает текстовую строку. Сначала  для каждой записи таблицы вычисляет выражение, а затем сводит все вычесленные записи таблицы в одну строку с учетом разделителя из параметров.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -1138,8 +1143,13 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;UNICHAR&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt825189.aspx&#34; target=&#34;_blank&#34;&gt;UNICHAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает символ Юникод по его числовому значению. Работает аналогично функции Excel &lt;a href=&#34;https://goo.gl/33djp8&#34; target=&#34;_blank&#34;&gt;ЮНИСИМВ&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;UNICODE&lt;/td&gt;
+&lt;td&gt;Возвращает число (код знака), соответствующее первому знаку в тексте.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -1479,6 +1489,11 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/dn802538.aspx&#34; target=&#34;_blank&#34;&gt;DATEDIFF&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает интервал времени между двумя датами. (Тип интервала указывается в параметре Interval) Интервал может принимать следующие значения: &lt;code&gt;second&lt;/code&gt;, &lt;code&gt;minute&lt;/code&gt;, &lt;code&gt;hour&lt;/code&gt;, &lt;code&gt;day&lt;/code&gt;, &lt;code&gt;week&lt;/code&gt;, &lt;code&gt;month&lt;/code&gt;, &lt;code&gt;quarter&lt;/code&gt;, &lt;code&gt;year&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634405&#34; target=&#34;_blank&#34;&gt;YEARFRAC&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет долю года, представленную числом целых дней между двумя датами. Функция позволяет определить долю преимуществ или обязательств за целый год, приходящуюся на указанный срок.&lt;/td&gt;
 &lt;/tr&gt;
@@ -1702,7 +1717,7 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 
 &lt;h1 id=&#34;информационные-функции&#34;&gt;Информационные функции&lt;/h1&gt;
 
-&lt;p&gt;Информационная функция проверяет ячейку или строку, указанные в качестве аргумента, и сообщает, соответствует ли значение ожидаемому типу. Например, функция &lt;code&gt;ISERROR&lt;/code&gt; возвращает значение &lt;code&gt;true&lt;/code&gt;, если упоминаемое значение содержит ошибку.&lt;/p&gt;
+&lt;p&gt;Информационная функция проверяет ячейку или строку, указанные в качестве аргумента, и сообщает, соответствует ли значение ожидаемому типу.&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1716,6 +1731,11 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634204&#34; target=&#34;_blank&#34;&gt;ISBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, пустое ли значение, и возвращает значение &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802550&#34; target=&#34;_blank&#34;&gt;ISEMPTY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если таблица пустая.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -1739,13 +1759,18 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492163&#34; target=&#34;_blank&#34;&gt;ISFILTERED&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если columnName фильтруется напрямую. Если для столбца не задан фильтр или если фильтрация происходит потому, что выполняется фильтрация другого столбца в той же или в связанной таблице, функция возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171515.aspx&#34; target=&#34;_blank&#34;&gt;ISEVEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает значение ИСТИНА, если число четное, и значение ЛОЖЬ, если нечетное.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802550&#34; target=&#34;_blank&#34;&gt;ISEMPTY&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если таблица пустая.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171506.aspx&#34; target=&#34;_blank&#34;&gt;ISODD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает значение ИСТИНА, если число нечетное, и значение ЛОЖЬ, если четное.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492163&#34; target=&#34;_blank&#34;&gt;ISFILTERED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если columnName фильтруется напрямую. Если для столбца не задан фильтр или если фильтрация происходит потому, что выполняется фильтрация другого столбца в той же или в связанной таблице, функция возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -1754,18 +1779,23 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;/tr&gt;
 
 &lt;tr&gt;
+&lt;td&gt;[ISSUBTOTAL]()&lt;/td&gt;
+&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если текущая строка содержит подытог для заданного столбца, в противном случае возвращает &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/dn802535.aspx&#34; target=&#34;_blank&#34;&gt;ISONORAFTER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Логическая функция, которая эмулирует поведение предложения &lt;code&gt;Start At&lt;/code&gt; и возвращает &lt;code&gt;true&lt;/code&gt; для строки, которая соответствует всем параметрам условия. Эта функция принимает переменное число аргументов кратное трем (т.н. троек), первые два аргумента в тройке - это сравниваемые выражения, а третий аргумент указывает порядок сортировки. Порядок сортировки по увеличению (по умолчанию) или уменьшению.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634214&#34; target=&#34;_blank&#34;&gt;ISERROR&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Проверяет, является ли значение ошибкой, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492183&#34; target=&#34;_blank&#34;&gt;CONTAINS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если значения для всех столбцов, на которые имеются ссылки, существуют или содержатся в этих столбцах; в противном случае возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492183&#34; target=&#34;_blank&#34;&gt;CONTAINS&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если значения для всех столбцов, на которые имеются ссылки, существуют или содержатся в этих столбцах; в противном случае возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34; target=&#34;_blank&#34;&gt;CONTAINSROW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если существует по меньшей мере одна строка, в которой все столбцы имеют указанные значения.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -1777,10 +1807,65 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492190&#34; target=&#34;_blank&#34;&gt;HASONEVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt; при фильтрации содержимого столбца columnName до одного уникального значения. В противном случае возвращается значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
+&lt;p&gt;&lt;a name=&#34;userInformationFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;информация-о-пользователе&#34;&gt;Информация о пользователе&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Имя функции&lt;/th&gt;
+&lt;th&gt;Описание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh230954.aspx&#34; target=&#34;_blank&#34;&gt;USERNAME&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает имя домена и имя пользователя из учетных данных, предоставленных системе при подключении.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;[USEROBJECTID]()&lt;/td&gt;
+&lt;td&gt;Возвращает идентификатор объекта текущего пользователя из Azure AD для сервера анализа данных Azure и идентификатор безопасности текущего пользователя для локального сервера анализа данных.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;[USERPRINCIPALNAME]()&lt;/td&gt;
+&lt;td&gt;Возвращает имя субъекта-пользователя.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a name=&#34;errorHanding&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;обработка-ошибок&#34;&gt;Обработка ошибок&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Имя функции&lt;/th&gt;
+&lt;th&gt;Описание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;ERROR&lt;/td&gt;
+&lt;td&gt;Принимает текстовое сообщение и порождает ошибку. Может использовать в формулах для описания недопустимого состояния пользовательских данных.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634214&#34; target=&#34;_blank&#34;&gt;ISERROR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Проверяет, является ли значение ошибкой, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634765&#34; target=&#34;_blank&#34;&gt;IFERROR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Вычисляет выражение и возвращает указанное значение, если выражение ошибочно. В противном случае возвращает значение выражения.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2236,6 +2321,11 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34; target=&#34;_blank&#34;&gt;VAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Сохраняет результат выражения как именованную переменную, которая затем может быть передана как аргумент другим выражениям. Когда результирующие значения были рассчитаны для выражения переменных, эти значения не изменяются, даже если эта переменная указана в другом выражении.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34; target=&#34;_blank&#34;&gt;IN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если существует по меньшей мере одно значение, в которой все столбцы имеют указанные значения.&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;

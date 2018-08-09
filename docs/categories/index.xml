@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
-    <atom:link href="/categories/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://DmitriyVlasov.ru/categories/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

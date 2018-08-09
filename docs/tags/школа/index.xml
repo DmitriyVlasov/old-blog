@@ -8,7 +8,9 @@
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
     <lastBuildDate>Sat, 10 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://DmitriyVlasov.ru/tags/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Заметки с мероприятия Технологии будущего. Microsoft Devcon School</title>
@@ -16,49 +18,7 @@
       <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>http://DmitriyVlasov.ru/post/devcon-school-future-technologies/</guid>
-      <description>
-
-&lt;p&gt;1 июня 2017 принял участие в мероприятии &lt;a href=&#34;https://events.techdays.ru/Future-Technologies/2017-06/&#34; target=&#34;_blank&#34;&gt;DevCon School Технологии будущего&lt;/a&gt; проводимого компанией Microsoft. Мероприятие проходило в Москве на территории центра &lt;a href=&#34;digitaloctober.ru/ru&#34; target=&#34;_blank&#34;&gt;Digital October&lt;/a&gt;. Ключевыми темами мероприятия были:  Искусственный интеллект, Блокчейн, Azure Stack и гибридные облака, контейнеры и микросервисы, DevOps и процессы разработки, Безопасная разработка, Машинное обучение.
-  &lt;/p&gt;
-
-&lt;h1 id=&#34;подборка-ссылок-на-материалы&#34;&gt;Подборка ссылок на материалы&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLVDsxiCH_PqRIZ84g-1X57Tr6VHBVVevP&#34; target=&#34;_blank&#34;&gt;Запись видео с открытия, интенсива по нейронным сетям и отдельным трекам&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/evangelism/DevCon-School/tree/master/Big%20June%20School&#34; target=&#34;_blank&#34;&gt;Презентации и обучающие материалы с интенсива и большинства треков&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;машинное-обучение&#34;&gt;Машинное обучение&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Определение опечаток в тексте &lt;a href=&#34;https://ru.wikipedia.org/wiki/Расстояние_Левенштейна&#34; target=&#34;_blank&#34;&gt;Алгоритм расстояние Левенштейна&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://ru.wikipedia.org/wiki//Метод_обратного_распространения_ошибки&#34; target=&#34;_blank&#34;&gt;Метод обратного распространения ошибки&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://bit.ly/deeplearnbox&#34; target=&#34;_blank&#34;&gt;Как выбрать компьютер для машинного обучения&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;NVidia Deep Learning Institute. Практические материалы и учебные курсы по глубокому обучению:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.nvidia.com/en-us/deep-learning-ai/education/&#34; target=&#34;_blank&#34;&gt;Глобальный портал&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.nvidia.ru/deep-learning-ai/education/&#34; target=&#34;_blank&#34;&gt;Российская локализация&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;сообщества&#34;&gt;Сообщества&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Официальный русскоязычный канал в телеграмме &lt;a href=&#34;https://t.me/microsoftschool&#34; target=&#34;_blank&#34;&gt;Microsoft Developer&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Официальный канал Microsoft в телеграмме по &lt;a href=&#34;https://t.me/neuroworkshop&#34; target=&#34;_blank&#34;&gt;машинному обучению и интеллектуальным сервисам&lt;/a&gt;
- &lt;/p&gt;
-
-&lt;h2 id=&#34;обучение&#34;&gt;Обучение&lt;/h2&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Если вас заинтересовали прикладные вопросы Машинного обучения и анализа данных рекомендую начать изучение вопроса с блога &lt;a href=&#34;https://habrahabr.ru/users/i_shutov/topics/page2/&#34; target=&#34;_blank&#34;&gt;Ильи Шутова на хабре&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Для комплексного обучения по направлению машинное обучение и анализ данных рекомендую специализацию &lt;a href=&#34;https://www.coursera.org/specializations/machine-learning-data-analysis&#34; target=&#34;_blank&#34;&gt;Машинное обучение и анализ данных от МФТИ и Яндекса&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>1 июня 2017 принял участие в мероприятии DevCon School Технологии будущего проводимого компанией Microsoft. Мероприятие проходило в Москве на территории центра Digital October. Ключевыми темами мероприятия были: Искусственный интеллект, Блокчейн, Azure Stack и гибридные облака, контейнеры и микросервисы, DevOps и процессы разработки, Безопасная разработка, Машинное обучение. Подборка ссылок на материалы  Запись видео с открытия, интенсива по нейронным сетям и отдельным трекам Презентации и обучающие материалы с интенсива и большинства треков  Машинное обучение  Определение опечаток в тексте Алгоритм расстояние Левенштейна Метод обратного распространения ошибки Как выбрать компьютер для машинного обучения</description>
     </item>
     
   </channel>
