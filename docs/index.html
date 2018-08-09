@@ -326,6 +326,13 @@
     <h1>Последние статьи</h1>
     
     
+    <p class="view-all">
+      <a href="/post/">
+        Больше статей
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
+    
 
   </div>
   <div class="col-xs-12 col-md-8">
@@ -387,6 +394,135 @@
   </div>
   <p class="read-more">
     <a href="http://DmitriyVlasov.ru/post/dax-functions/" class="btn btn-primary btn-outline">
+      Читать далее
+    </a>
+  </p>
+</div>
+
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="http://DmitriyVlasov.ru/post/handing-of-dax-blank/" itemprop="url">Сравнение обработки пустых значений в DAX, Excel и SQL</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-07-05 15:56:25 &#43;0300 MSK" itemprop="datePublished">
+      05.07.2017
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/dax">DAX</a
+    >, 
+    
+    <a href="/tags/excel">Excel</a
+    >, 
+    
+    <a href="/tags/tabular">Tabular</a
+    >, 
+    
+    <a href="/tags/sql">SQL</a
+    >, 
+    
+    <a href="/tags/sql-server">SQL Server</a
+    >, 
+    
+    <a href="/tags/%d0%b7%d0%b0%d0%bc%d0%b5%d1%82%d0%ba%d0%b0">Заметка</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    Пустое значение в:
+ SQL это null; Excel это не заполненная ячейка; DAX это blank.  В DAX также существует функция blank() возвращающее пустое значение.
+Таблица сравнения поведения пустого значения в разных окружениях
+   Выражение DAX Excel SQL1     blank + blank blank 0 (ноль) blank   blank + 5 5 5 blank   blank * 5 blank 0 (ноль) blank   5 / blank infinity error blank   0 / blank nan error blank   blank / blank blank error blank   false or blank false false -   false and blank false false -   true or blank true true -   true and blank false true -   blank or blank blank error -   blank and blank blank error -    Источники  docs.
+    
+  </div>
+  <p class="read-more">
+    <a href="http://DmitriyVlasov.ru/post/handing-of-dax-blank/" class="btn btn-primary btn-outline">
+      Читать далее
+    </a>
+  </p>
+</div>
+
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="http://DmitriyVlasov.ru/post/dax-function-earlier/" itemprop="url">Пример использования функции EARLIER</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-07-05 11:37:05 &#43;0300 MSK" itemprop="datePublished">
+      05.07.2017
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/dax">DAX</a
+    >, 
+    
+    <a href="/tags/excel">Excel</a
+    >, 
+    
+    <a href="/tags/tabular">Tabular</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    Синтаксис EARLIER(column, [number])  Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
+Пример = COUNTROWS ( FILTER ( ProductSubcategory; EARLIER ( ProductSubcategory[TotalSubcategorySales] ) &lt; ProductSubcategory[TotalSubcategorySales] ) ) + 1   Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице.
+    
+  </div>
+  <p class="read-more">
+    <a href="http://DmitriyVlasov.ru/post/dax-function-earlier/" class="btn btn-primary btn-outline">
       Читать далее
     </a>
   </p>
@@ -497,51 +633,6 @@
   </div>
   <p class="read-more">
     <a href="http://DmitriyVlasov.ru/post/tools/" class="btn btn-primary btn-outline">
-      Читать далее
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="http://DmitriyVlasov.ru/post/tools/code-plugins/" itemprop="url">Расширения для Visual Studio Code</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2016-11-27 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      27.11.2016
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    Ниже в таблице представлены расширения для Visual Studio Code используемые мною в работе на ежедневной основе. В столбце &ldquo;Название расширения&rdquo; приведены ссылки на официальную страницу расширения в магазине расширений Visual Studio.
-   Лого Название расширения Назначение Детали      code-settings-sync Синхронизирует настройки и расширения между разными компьютерами. Для использования Расширение необходима учетная запись на Гитхабе.    csharp Поддержка языка C# Официальная поддержка языка C# от Майкрософт.
-    
-  </div>
-  <p class="read-more">
-    <a href="http://DmitriyVlasov.ru/post/tools/code-plugins/" class="btn btn-primary btn-outline">
       Читать далее
     </a>
   </p>

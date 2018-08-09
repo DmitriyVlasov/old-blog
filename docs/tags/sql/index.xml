@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on Дмитрий Власов</title>
+    <link>http://DmitriyVlasov.ru/tags/sql/</link>
+    <description>Recent content in Sql on Дмитрий Власов</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
+    <lastBuildDate>Wed, 05 Jul 2017 15:56:25 +0300</lastBuildDate>
+    
+	<atom:link href="http://DmitriyVlasov.ru/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Сравнение обработки пустых значений в DAX, Excel и SQL</title>
+      <link>http://DmitriyVlasov.ru/post/handing-of-dax-blank/</link>
+      <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
+      
+      <guid>http://DmitriyVlasov.ru/post/handing-of-dax-blank/</guid>
+      <description>Пустое значение в:
+ SQL это null; Excel это не заполненная ячейка; DAX это blank.  В DAX также существует функция blank() возвращающее пустое значение.
+Таблица сравнения поведения пустого значения в разных окружениях
+   Выражение DAX Excel SQL1     blank + blank blank 0 (ноль) blank   blank + 5 5 5 blank   blank * 5 blank 0 (ноль) blank   5 / blank infinity error blank   0 / blank nan error blank   blank / blank blank error blank   false or blank false false -   false and blank false false -   true or blank true true -   true and blank false true -   blank or blank blank error -   blank and blank blank error -    Источники  docs.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,7 +4,7 @@ highlight = true
 math = false
 tags = ["DAX","Excel","Tabular", "SQL","SQL Server","Заметка"]
 title = "Сравнение обработки пустых значений в DAX, Excel и SQL"
-draft = true
+draft = false
 [header]
   caption = ""
   image = ""

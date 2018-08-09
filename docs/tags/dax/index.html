@@ -172,6 +172,28 @@
     </div>
   </div>
   
+  <div>
+    <h2><a href="http://DmitriyVlasov.ru/post/handing-of-dax-blank/">Сравнение обработки пустых значений в DAX, Excel и SQL</a></h2>
+    <div class="article-style">
+      
+      Пустое значение в:
+ SQL это null; Excel это не заполненная ячейка; DAX это blank.  В DAX также существует функция blank() возвращающее пустое значение.
+Таблица сравнения поведения пустого значения в разных окружениях
+   Выражение DAX Excel SQL1     blank + blank blank 0 (ноль) blank   blank + 5 5 5 blank   blank * 5 blank 0 (ноль) blank   5 / blank infinity error blank   0 / blank nan error blank   blank / blank blank error blank   false or blank false false -   false and blank false false -   true or blank true true -   true and blank false true -   blank or blank blank error -   blank and blank blank error -    Источники  docs.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="http://DmitriyVlasov.ru/post/dax-function-earlier/">Пример использования функции EARLIER</a></h2>
+    <div class="article-style">
+      
+      Синтаксис EARLIER(column, [number])  Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
+Пример = COUNTROWS ( FILTER ( ProductSubcategory; EARLIER ( ProductSubcategory[TotalSubcategorySales] ) &lt; ProductSubcategory[TotalSubcategorySales] ) ) + 1   Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице.
+      
+    </div>
+  </div>
+  
 
   
 
