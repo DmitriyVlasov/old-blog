@@ -30,7 +30,7 @@ defaultContentLanguageInSubdir = false
   
   name = "Дмитрий Власов"
   role = "Старший BI разработчик"
-  organization = "Awara IT Solutions"
+  organization = "Awara IT"
   organization_url = "http://awara-it.com/ru_RU/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
