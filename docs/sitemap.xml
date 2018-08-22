@@ -5,7 +5,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/01-preliminaries/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/01-preliminaries/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -14,7 +14,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/02-parsing-a-single-float/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/02-parsing-a-single-float/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -23,7 +23,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -32,7 +32,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/04-abstracting-parsers/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/04-abstracting-parsers/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -41,7 +41,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -50,7 +50,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/06-handling-whitespace/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/06-handling-whitespace/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -59,7 +59,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/07-parsing-string-data/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/07-parsing-string-data/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,7 +68,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -77,7 +77,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/09-parsing-alternatives/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/09-parsing-alternatives/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -86,7 +86,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -95,7 +95,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -104,7 +104,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -113,7 +113,16 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/post/dax-functions/</loc>
+      <loc>https://DmitriyVlasov.ru/talk/power-bi-and-sql-server-reporting-services/</loc>
+      <lastmod>2018-06-05T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://DmitriyVlasov.ru/post/dax-functions/</loc>
       <lastmod>2017-07-19T13:11:31+03:00</lastmod>
     </url>
     
@@ -122,7 +131,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/post/handing-of-dax-blank/</loc>
+      <loc>https://DmitriyVlasov.ru/post/handing-of-dax-blank/</loc>
       <lastmod>2017-07-05T15:56:25+03:00</lastmod>
     </url>
     
@@ -131,7 +140,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/post/dax-function-earlier/</loc>
+      <loc>https://DmitriyVlasov.ru/post/dax-function-earlier/</loc>
       <lastmod>2017-07-05T11:37:05+03:00</lastmod>
     </url>
     
@@ -140,7 +149,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/post/devcon-school-future-technologies/</loc>
+      <loc>https://DmitriyVlasov.ru/post/devcon-school-future-technologies/</loc>
       <lastmod>2017-06-10T00:00:00+00:00</lastmod>
     </url>
     
@@ -149,7 +158,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/fparsec-tutorial/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/fparsec-tutorial/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
     </url>
     
@@ -158,7 +167,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/academic/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -167,7 +176,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/post/</loc>
+      <loc>https://DmitriyVlasov.ru/post/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -176,7 +185,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/talk/</loc>
+      <loc>https://DmitriyVlasov.ru/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -185,7 +194,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication/</loc>
+      <loc>https://DmitriyVlasov.ru/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -194,7 +203,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/post/tools/</loc>
+      <loc>https://DmitriyVlasov.ru/post/tools/</loc>
       <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -203,7 +212,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/post/tools/code-plugins/</loc>
+      <loc>https://DmitriyVlasov.ru/post/tools/code-plugins/</loc>
       <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -212,7 +221,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/talk/review-fsharp-4/</loc>
+      <loc>https://DmitriyVlasov.ru/talk/review-fsharp-4/</loc>
       <lastmod>2015-08-25T00:00:00+00:00</lastmod>
     </url>
     
@@ -221,7 +230,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication_types/3/</loc>
+      <loc>https://DmitriyVlasov.ru/publication_types/3/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -231,7 +240,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication_types/7/</loc>
+      <loc>https://DmitriyVlasov.ru/publication_types/7/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -241,7 +250,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/categories/</loc>
+      <loc>https://DmitriyVlasov.ru/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -250,7 +259,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/dax/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/dax/</loc>
       <lastmod>2017-07-19T13:11:31+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -260,7 +269,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/devcon/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/devcon/</loc>
       <lastmod>2017-06-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -270,7 +279,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/excel/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/excel/</loc>
       <lastmod>2017-07-05T15:56:25+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -280,7 +289,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/microsoft/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/microsoft/</loc>
       <lastmod>2017-06-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -290,7 +299,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/publication_types/</loc>
+      <loc>https://DmitriyVlasov.ru/publication_types/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -300,7 +309,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/sql/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/sql/</loc>
       <lastmod>2017-07-05T15:56:25+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -310,7 +319,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/sql-server/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/sql-server/</loc>
       <lastmod>2017-07-05T15:56:25+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -320,7 +329,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/tabular/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/tabular/</loc>
       <lastmod>2017-07-05T15:56:25+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -330,7 +339,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -340,7 +349,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/</loc>
+      <loc>https://DmitriyVlasov.ru/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -350,7 +359,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0/</loc>
       <lastmod>2017-07-05T15:56:25+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -360,7 +369,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/</loc>
       <lastmod>2017-06-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -370,7 +379,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F/</loc>
       <lastmod>2017-06-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -380,7 +389,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</loc>
       <lastmod>2017-07-19T13:11:31+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -390,7 +399,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BA%D0%B0/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BA%D0%B0/</loc>
       <lastmod>2017-07-19T13:11:31+03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -400,7 +409,7 @@
     
     <url>
     
-      <loc>http://DmitriyVlasov.ru/tags/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/</loc>
+      <loc>https://DmitriyVlasov.ru/tags/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/</loc>
       <lastmod>2017-06-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>

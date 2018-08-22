@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Дмитрий Власов on Дмитрий Власов</title>
-    <link>http://DmitriyVlasov.ru/</link>
+    <link>https://DmitriyVlasov.ru/</link>
     <description>Recent content in Дмитрий Власов on Дмитрий Власов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Глава 1. Вступление</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/01-preliminaries/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/01-preliminaries/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/01-preliminaries/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/01-preliminaries/</guid>
       <description>&lt;p&gt;FParsec состоит из двух библиотек: &lt;em&gt;FParsec.dll&lt;/em&gt; и &lt;em&gt;FParsecCS.dll&lt;/em&gt;. Для использования FParsec в вашем проекте, вы можете или установить из &lt;a href=&#34;http://nuget.org&#34; target=&#34;_blank&#34;&gt;nuget&lt;/a&gt; (см. подробнее варианты установки &lt;a href=&#34;http://www.quanttec.com/fparsec/download-and-installation.html#nuget-packages&#34; target=&#34;_blank&#34;&gt;nuget-пакетов&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;), или собрать два DLL файла FParsec из исходного кода. Самый простой способ собрать FParsec из исходного кода это использовать файлы решений Visual Studio в каталогах &lt;strong&gt;=Build/VS&lt;/strong&gt; &lt;a href=&#34;https://github.com/stephan-tolksdorf/fparsec/archive/master.zip&#34; target=&#34;_blank&#34;&gt;исходного кода пакета&lt;/a&gt;, например, в каталоге &lt;strong&gt;Build/VS11&lt;/strong&gt; для Visual Studio 2012. Любой проект, который использует библиотеку FParsec должен ссылаться на оба файла DLL. Смотри подробнее в руководстве пользователя главу &lt;a href=&#34;http://www.quanttec.com/fparsec/download-and-installation.html&#34; target=&#34;_blank&#34;&gt;Загрузка и установка&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Все типы и модули библиотеки FParsec объявлены в пространстве имен &lt;code&gt;FParsec&lt;/code&gt;. Это пространство имен содержит несколько базовых классов (например, &lt;code&gt;CharStream&lt;/code&gt; и &lt;code&gt;Reply&lt;/code&gt;) и четыре F# модуля, а именно:
@@ -41,10 +41,10 @@
     
     <item>
       <title>Глава 2. Синтаксический анализатор числа с плавающей точкой</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/02-parsing-a-single-float/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/02-parsing-a-single-float/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/02-parsing-a-single-float/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/02-parsing-a-single-float/</guid>
       <description>&lt;p&gt;Синтаксический разбор входного потока включает два этапа:
   1. построение синтаксического анализатора и
   1. применение анализатора к входному потоку.&lt;/p&gt;
@@ -101,10 +101,10 @@ Expecting: decimal digit
     
     <item>
       <title>Глава 3. Синтаксический анализатор числа с плавающей точкой в скобках</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</guid>
       <description>&lt;p&gt;Реализация синтаксических анализаторов с использованием библиотеки FParsec обычно означает, что высокоуровневые синтаксические анализаторы получены как комбинация низкоуровневых анализаторов. Вы начинаете с анализатора примитивов, предоставляемых библиотекой, а затем последовательно объединяете их в анализаторы более высокого уровня, пока вы, наконец, не имеете один синтаксический анализатор для полной обработки входных данных.&lt;/p&gt;
 
 &lt;p&gt;В следующих главах мы продемонстрируем этот подход, обсуждая различные варианты примеров синтаксических анализаторов, которые построены друг из друга. В этой главе мы начнем с очень простого анализатора для числа с плавающей точкой в скобках:&lt;/p&gt;
@@ -181,10 +181,10 @@ Expecting: &#39;]&#39;
     
     <item>
       <title>Глава 4. Абстрактные синтаксические анализаторы</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/04-abstracting-parsers/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/04-abstracting-parsers/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/04-abstracting-parsers/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/04-abstracting-parsers/</guid>
       <description>&lt;p&gt;Одной из самых больших сильных сторон FParsec является легкость, с которой вы можете определить свои собственные абстрактные синтаксические анализаторы.&lt;/p&gt;
 
 &lt;p&gt;Возьмем, к примеру &lt;code&gt;floatBetweenBrackets&lt;/code&gt; из предыдущей главы. Если вы намерены также разобрать другие элементы между строк, вы можете определить свой собственный специализированный комбинатор для этой цели:&lt;/p&gt;
@@ -224,10 +224,10 @@ let betweenStrings s1 s2 p = p |&amp;gt; between (str s1) (str s2)
     
     <item>
       <title>Глава 5. Синтаксический анализатор списка чисел с плавающей точкой</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</guid>
       <description>&lt;p&gt;Мы уже течение трех глав обсуждаем как делать синтаксический разбор одного числа с плавающей запятой, поэтому в этот раз мы попытаемся нечто более амбициозное: синтаксический разбор списка чисел с плавающей точкой.&lt;/p&gt;
 
 &lt;p&gt;Предположим сначала, что нам нужно, чтобы делать синтаксический разбор последовательности чисел с плавающей точкой в скобках, т.е. текст в формате &lt;a href=&#34;https://ru.wikipedia.org/wiki/Расширенная_форма_Бэкуса_—_Наура&#34; target=&#34;_blank&#34;&gt;расширенной формы Бэкуса-Наура&lt;/a&gt; (далее РБНФ): &lt;code&gt;(&amp;quot;[&amp;quot; float &amp;quot;]&amp;quot;)*&lt;/code&gt;. Допустимые входные строки в этом формате, например: &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;[1.0]&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;[2][3][4]&amp;quot;&lt;/code&gt;.&lt;/p&gt;
@@ -336,10 +336,10 @@ Expecting: &#39;,&#39; or &#39;]&#39;
     
     <item>
       <title>Глава 6. Обработка пробелов</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/06-handling-whitespace/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/06-handling-whitespace/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/06-handling-whitespace/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/06-handling-whitespace/</guid>
       <description>&lt;p&gt;FParsec обрабатывает пробелы (пробелы, табуляции, новые строки и т. д.) Так же, как и любой другой ввод, поэтому наш синтаксический анализатор &lt;code&gt;floatList&lt;/code&gt; еще не умеет работать с пробелами:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test floatBetweenBrackets &amp;quot;[1.0, 2.0]&amp;quot;;;
@@ -399,10 +399,10 @@ Expecting: end of input
     
     <item>
       <title>Глава 7. Синтаксический анализатор строковых данных</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/07-parsing-string-data/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/07-parsing-string-data/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/07-parsing-string-data/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/07-parsing-string-data/</guid>
       <description>&lt;p&gt;FParsec содержит различные встроенные синтаксические анализаторы для символов, строк, чисел и пробелов. В этой главе мы представим несколько синтаксических анализаторов символов и строк. Обзор всех доступных синтаксических анализаторов см. в &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/parser-overview.html&#34; target=&#34;_blank&#34;&gt;руководстве пользователя&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Вы уже видели несколько применений синтаксического анализатора &lt;code&gt;pstring&lt;/code&gt; (сокращенно &lt;code&gt;str&lt;/code&gt; ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор &lt;code&gt;pstring&lt;/code&gt; успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:&lt;/p&gt;
@@ -560,10 +560,10 @@ Expecting: any char in ‘\nrt&amp;quot;’
     
     <item>
       <title>Глава 8. Использование последовательности синтаксических анализаторов</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</guid>
       <description>&lt;p&gt;Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.:62::62:..&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;.&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; и &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;.&amp;gt;&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pipe2&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, &amp;hellip;, &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe5&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pipe5&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.&lt;/p&gt;
 
 &lt;p&gt;Например, с комбинатором &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pipe2&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;&lt;/p&gt;
@@ -616,10 +616,10 @@ Success: (123.0, 456.0)
     
     <item>
       <title>Глава 9. Использование альтернативных синтаксических анализов</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/09-parsing-alternatives/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/09-parsing-alternatives/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/09-parsing-alternatives/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/09-parsing-alternatives/</guid>
       <description>&lt;p&gt;В главе 7 &amp;ldquo;&lt;a href=&#34;../07-parsing-string-data&#34;&gt;Синтаксический анализатор строковых данных&lt;/a&gt;&amp;rdquo; мы вкратце представили комбинатор выбора &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.:60::124::62:&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; :&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val (&amp;lt;|&amp;gt;): Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,u&amp;gt;
@@ -678,10 +678,10 @@ Success: &amp;quot;b&amp;quot;
     
     <item>
       <title>Глава 10. Ограничение значений F#</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</guid>
       <description>&lt;p&gt;Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -742,10 +742,10 @@ type Parser&amp;lt;&#39;t&amp;gt; = Parser&amp;lt;&#39;t, UserState&amp;gt;
     
     <item>
       <title>Глава 11. Синтаксический анализ JSON</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/11-parsing-json/</guid>
       <description>&lt;p&gt;Now that we have discussed the basics of FParsec we are well prepared to work through a real world parser example: a JSON parser.&lt;/p&gt;
 
 &lt;p&gt;JSON (JavaScript Object Notation) is a text-based data interchange format with a simple and lightweight syntax. You can find descriptions of the syntax on &lt;a href=&#34;http://json.org&#34; target=&#34;_blank&#34;&gt;json.org&lt;/a&gt; and in &lt;a href=&#34;http://www.ietf.org/rfc/rfc4627.txt&#34; target=&#34;_blank&#34;&gt;RFC 4626&lt;/a&gt;.&lt;/p&gt;
@@ -883,20 +883,41 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
     
     <item>
       <title>Глава 12. Куда дальше?</title>
-      <link>http://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</link>
+      <link>https://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</guid>
+      <guid>https://DmitriyVlasov.ru/publication/fparsec-tutorial/12-what-now/</guid>
       <description>&lt;p&gt;If this tutorial has whet your appetite for a more in-depth introduction to FParsec, just head over to the &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/&#34; target=&#34;_blank&#34;&gt;user&amp;rsquo;s guide&lt;/a&gt;. If you can&amp;rsquo;t wait to write your own parser, then bookmark the &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/parser-overview.html&#34; target=&#34;_blank&#34;&gt;parser overview&lt;/a&gt; page, maybe take a short look at the example parsers in the &lt;strong&gt;Samples&lt;/strong&gt; folder and just start hacking. You can always consult the user&amp;rsquo;s guide at a later point should you get stuck somewhere.&lt;/p&gt;
 </description>
     </item>
     
     <item>
+      <title>Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</title>
+      <link>https://DmitriyVlasov.ru/talk/power-bi-and-sql-server-reporting-services/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/talk/power-bi-and-sql-server-reporting-services/</guid>
+      <description>
+
+&lt;p&gt;Прошло почти 3 месяца после моего выступления на митапе &lt;a href=&#34;https://www.facebook.com/yamoneywork/posts/352379185287478&#34; target=&#34;_blank&#34;&gt;яндекс денег по SQL Server&lt;/a&gt;. И наконец вышла официальная статья в блоге на &lt;a href=&#34;https://habr.com/company/yamoney/blog/420087/&#34; target=&#34;_blank&#34;&gt;хабре&lt;/a&gt;. В том числе есть &lt;a href=&#34;https://youtu.be/R6gfu4oIwlE?t=1s&#34; target=&#34;_blank&#34;&gt;видео запись&lt;/a&gt; моего выступления. Атмосфера на митапе и выступлении была
+теплая и ламповая, сумрак и дружественная атмосфера :-).&lt;/p&gt;
+
+&lt;p&gt;Во время записи моего выступления, как оказалось позже, &amp;ldquo;что то пошло не так&amp;rdquo; и видео оказалось в масштабе мобильного, расположена в не удобном месте, я в сумраке и экрана с выступлением скорее не видно. Но слышно хорошо, так что можно использовать как запись подкаста )).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;P.S.: Послушал сам себя, голос понравился. Но со словами паразитами предстоит еще работать и работать. Так что практика, практика и еще раз практика.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;слайды&#34;&gt;Слайды&lt;/h2&gt;
+
+&lt;iframe src=&#34;https://onedrive.live.com/embed?cid=E46638C5BB68AE00&amp;amp;resid=E46638C5BB68AE00%21248302&amp;amp;authkey=AHoB7-4B9XLbPyE&amp;amp;em=2&amp;amp;wdAr=1.7777777777777777&#34; width=&#34;610px&#34; height=&#34;367px&#34; frameborder=&#34;0&#34;&gt;Это внедренный файл &lt;a target=&#34;_blank&#34; href=&#34;https://office.com&#34;&gt;Microsoft Office&lt;/a&gt; на платформе &lt;a target=&#34;_blank&#34; href=&#34;https://office.com/webapps&#34;&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Обзор всех функций DAX</title>
-      <link>http://DmitriyVlasov.ru/post/dax-functions/</link>
+      <link>https://DmitriyVlasov.ru/post/dax-functions/</link>
       <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/post/dax-functions/</guid>
+      <guid>https://DmitriyVlasov.ru/post/dax-functions/</guid>
       <description>
 
 &lt;p&gt;&lt;a name=&#34;TOC&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -2206,7 +2227,7 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 &lt;li&gt;&lt;strong&gt;Обычные&lt;/strong&gt; &lt;a name=&#34;normalFunc&#34;&gt;&lt;/a&gt; - Позволяет вычислить функцию над столбцом. Принимает только числовые значения. &lt;strong&gt;Не производит преобразование данных&lt;/strong&gt; из других типов данных в число, если ячейка содержит:
 
 &lt;ul&gt;
-&lt;li&gt;текст - функция не вычисляется и возвращает &lt;a href=&#34;http://DmitriyVlasov.ru/post/handing-of-dax-blank/&#34; target=&#34;_blank&#34;&gt;пусто&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;текст - функция не вычисляется и возвращает &lt;a href=&#34;https://DmitriyVlasov.ru/post/handing-of-dax-blank/&#34; target=&#34;_blank&#34;&gt;пусто&lt;/a&gt;;&lt;/li&gt;
 &lt;li&gt;логическое значение - ячейка игнорируется.&lt;/li&gt;
 &lt;li&gt;пустое значение - ячейка игнорируется.&lt;/li&gt;
 &lt;li&gt;нулевое значение - ячейка учитывается в расчете.&lt;/li&gt;
@@ -2371,10 +2392,10 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
     
     <item>
       <title>Сравнение обработки пустых значений в DAX, Excel и SQL</title>
-      <link>http://DmitriyVlasov.ru/post/handing-of-dax-blank/</link>
+      <link>https://DmitriyVlasov.ru/post/handing-of-dax-blank/</link>
       <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/post/handing-of-dax-blank/</guid>
+      <guid>https://DmitriyVlasov.ru/post/handing-of-dax-blank/</guid>
       <description>
 
 &lt;p&gt;Пустое значение в:&lt;/p&gt;
@@ -2498,82 +2519,6 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
 
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;В SQL Server отсутствует логический тип данных. Поэтому в явном виде логические операции и таблицы истинности в SQL не применимы. Хотя в предложении &lt;code&gt;WHERE&lt;/code&gt; и есть выражения &lt;code&gt;or&lt;/code&gt; или &lt;code&gt;and&lt;/code&gt; Которые позволяют объединять между выражения возвращающие логический контекст.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Пример использования функции EARLIER</title>
-      <link>http://DmitriyVlasov.ru/post/dax-function-earlier/</link>
-      <pubDate>Wed, 05 Jul 2017 11:37:05 +0300</pubDate>
-      
-      <guid>http://DmitriyVlasov.ru/post/dax-function-earlier/</guid>
-      <description>
-
-&lt;h1 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code&gt;EARLIER(column, [number])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;параметры&#34;&gt;Параметры&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Параметр&lt;/th&gt;
-&lt;th&gt;Обязательный&lt;/th&gt;
-&lt;th&gt;Описание&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;column&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Да&lt;/td&gt;
-&lt;td&gt;Столбец или выражение, результатом которого служит столбец.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Нет&lt;/td&gt;
-&lt;td&gt;Следующий внешний этап вычисления. По умолчанию 1.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;возвращаемое-значение&#34;&gt;Возвращаемое значение&lt;/h2&gt;
-
-&lt;p&gt;Текущее значение строки из столбца &lt;code&gt;column&lt;/code&gt; на расстоянии в &lt;code&gt;number&lt;/code&gt; внешних этапов вычисления.&lt;/p&gt;
-
-&lt;h1 id=&#34;пример&#34;&gt;Пример&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-dax&#34;&gt;=
-COUNTROWS (
-    FILTER (
-        ProductSubcategory;
-        EARLIER ( ProductSubcategory[TotalSubcategorySales] )
-            &amp;lt; ProductSubcategory[TotalSubcategorySales]
-    )
-)
-    + 1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; получает значение TotalSubcategorySales для текущей строки в таблице. В данном случае, поскольку процесс только начинается, это первая строка в таблице.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EARLIER([TotalSubcategorySales])&lt;/code&gt; дает результат $ 156 176.88 — текущая строка во внешнем цикле.&lt;/li&gt;
-&lt;li&gt;Теперь функция &lt;code&gt;FILTER&lt;/code&gt; возвращает таблицу, где все строки имеют значение TotalSubcategorySales, превышающее $ 156 176.88 (текущее значение &lt;code&gt;EARLIER&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Функция &lt;code&gt;COUNTROWS&lt;/code&gt; подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-&lt;li&gt;Формула вычисляемого столбца переходит к следующей строке, и шаги с 1 по 4 повторяются. Эти шаги повторяются до конца таблицы.&lt;/li&gt;
-&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Прибавлять единицу необходимо, чтобы предотвратить появление &lt;a href=&#34;../handing-of-dax-blank&#34;&gt;пустого значения&lt;/a&gt; в качестве значения с верхним рангом.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;

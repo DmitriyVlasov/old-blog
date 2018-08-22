@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sql on Дмитрий Власов</title>
-    <link>http://DmitriyVlasov.ru/tags/sql/</link>
+    <link>https://DmitriyVlasov.ru/tags/sql/</link>
     <description>Recent content in Sql on Дмитрий Власов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
     <lastBuildDate>Wed, 05 Jul 2017 15:56:25 +0300</lastBuildDate>
     
-	<atom:link href="http://DmitriyVlasov.ru/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://DmitriyVlasov.ru/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Сравнение обработки пустых значений в DAX, Excel и SQL</title>
-      <link>http://DmitriyVlasov.ru/post/handing-of-dax-blank/</link>
+      <link>https://DmitriyVlasov.ru/post/handing-of-dax-blank/</link>
       <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
       
-      <guid>http://DmitriyVlasov.ru/post/handing-of-dax-blank/</guid>
+      <guid>https://DmitriyVlasov.ru/post/handing-of-dax-blank/</guid>
       <description>Пустое значение в:
  SQL это null; Excel это не заполненная ячейка; DAX это blank.  В DAX также существует функция blank() возвращающее пустое значение.
 Таблица сравнения поведения пустого значения в разных окружениях

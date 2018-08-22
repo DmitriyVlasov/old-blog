@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Дмитрий Власов</title>
-    <link>http://DmitriyVlasov.ru/categories/</link>
+    <link>https://DmitriyVlasov.ru/categories/</link>
     <description>Recent content in Categories on Дмитрий Власов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
     
-	<atom:link href="http://DmitriyVlasov.ru/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://DmitriyVlasov.ru/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

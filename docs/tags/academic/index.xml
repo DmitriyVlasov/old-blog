@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Content tagged as &#39;Academic&#39; on Дмитрий Власов</title>
-    <link>http://DmitriyVlasov.ru/tags/academic/</link>
+    <link>https://DmitriyVlasov.ru/tags/academic/</link>
     <description>Recent content in Content tagged as &#39;Academic&#39; on Дмитрий Власов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://DmitriyVlasov.ru/tags/academic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://DmitriyVlasov.ru/tags/academic/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
