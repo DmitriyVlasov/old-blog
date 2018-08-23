@@ -93,7 +93,7 @@ Parameters['FromDate'] = pd.to_datetime( Parameters['FromDate'], format="%d.%m.%
 Parameters['ToDate'] = pd.to_datetime( Parameters['ToDate'], format="%d.%m.%Y" )
 ```
 
-> см. подробнее таблицу кодов форматов для [2](https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior) и [3](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior) Питона.
+> Если вам нужно адаптировать параметры под ваш форматы даты времени, можете для информации использовать таблицу кодов форматов для [2](https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior) или [3](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior) Питона соответственно.
 
 
 * Получаем данные из внешней системы. Для демо примера создаем вручную таблицу в Pandas 
