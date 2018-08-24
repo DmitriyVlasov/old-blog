@@ -26,7 +26,7 @@ defaultContentLanguageInSubdir = false
 [params]
   # General information
   author = "Dmitriy Vlasov"
-  description = "Notes business analyst."
+  description = "BI developer's Notes on the life of the universe and all that."
   
   name = "Дмитрий Власов"
   role = "Старший BI разработчик"
@@ -35,10 +35,9 @@ defaultContentLanguageInSubdir = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "mail@DmitriyVlasov.ru"
-  address = "Компания Авара АЙ ТИ Солюшенс, наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация"
+  address = "Компания Авара Ай Ти, наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация"
   office_hours = "С понедельника по пятницу 10:00 to 18:00"
   phone = "+7 (904) 601-95-40"
-#  skype = "vlasovde@outlook.com"
   telegram = "DmitriyVlasov"
 
   # Enable Keybase in Contact section by entering your keybase.io username.
