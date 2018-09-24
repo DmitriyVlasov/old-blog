@@ -16,4 +16,4 @@ autolink = true
 
 +++
 
-<iframe src="https://yandex.ru/map-widget/v1/-/CBBVANtrcB" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+<iframe src="https://yandex.ru/map-widget/v1/-/CBBVANtrcB" width="375" height="275" frameborder="0" allowfullscreen="true"></iframe>
