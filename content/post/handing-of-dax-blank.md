@@ -2,7 +2,7 @@
 date = "2017-07-05T15:56:25+03:00"
 highlight = true
 math = false
-tags = ["DAX","Excel","Tabular", "SQL","SQL Server","Заметка"]
+tags = ["Power BI","Excel","Tabular", "SQL Server", "DAX", "SQL"]
 title = "Сравнение обработки пустых значений в DAX, Excel и SQL"
 draft = false
 [header]

@@ -2,7 +2,7 @@
 date = "2017-07-05T11:37:05+03:00"
 highlight = true
 math = false
-tags = ["DAX","Excel","Tabular"]
+tags = ["Power BI","Excel","DAX"]
 draft = false
 title = "Пример использования функции EARLIER"
 

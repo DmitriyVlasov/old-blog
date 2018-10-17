@@ -2,7 +2,7 @@
 date = "2017-07-19T13:11:31+03:00"
 highlight = true
 math = true
-tags = ["DAX","Памятка","Обзор"]
+tags = ["Power BI","DAX","Review"]
 title = "Обзор всех функций DAX"
 draft = false
 [header]
