@@ -94,6 +94,15 @@
     </item>
     
     <item>
+      <title>Review</title>
+      <link>https://DmitriyVlasov.ru/tags/review/</link>
+      <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sql</title>
       <link>https://DmitriyVlasov.ru/tags/sql/</link>
       <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
@@ -121,15 +130,6 @@
     </item>
     
     <item>
-      <title>Заметка</title>
-      <link>https://DmitriyVlasov.ru/tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0/</link>
-      <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
-      
-      <guid>https://DmitriyVlasov.ru/tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Заметки</title>
       <link>https://DmitriyVlasov.ru/tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/</link>
       <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
@@ -144,24 +144,6 @@
       <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://DmitriyVlasov.ru/tags/%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Обзор</title>
-      <link>https://DmitriyVlasov.ru/tags/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</link>
-      <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>
-      
-      <guid>https://DmitriyVlasov.ru/tags/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Памятка</title>
-      <link>https://DmitriyVlasov.ru/tags/%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BA%D0%B0/</link>
-      <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>
-      
-      <guid>https://DmitriyVlasov.ru/tags/%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BA%D0%B0/</guid>
       <description></description>
     </item>
     
