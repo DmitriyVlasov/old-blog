@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power Bi on Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/tags/power-bi/</link>
+    <description>Recent content in Power Bi on Дмитрий Власов</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>&amp;copy; Creative Commons Attribution-ShareAlike 3.0 Unported</copyright>
+    <lastBuildDate>Wed, 17 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://DmitriyVlasov.ru/tags/power-bi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Как на Power Query создать таблицу?</title>
+      <link>https://DmitriyVlasov.ru/post/how-to-create-a-table-on-power-query/</link>
+      <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/post/how-to-create-a-table-on-power-query/</guid>
+      <description>Встроенные средства языка  В этом варианте используем встроенную в язык функцию #table. Функция принимает два варианта параметров:  Первый параметр список имен полей, Второй список списков записей таблицы (см. Создание таблицы на основании списка полей) Первый параметр тип описывающий тип таблицы в виде перечисления в записи имен полей и их типов, Второй параметр список списков записей таблицы (см. Создание таблицы на основании ее типа).</description>
+    </item>
+    
+    <item>
+      <title>Передача Параметров из Power BI в скрипт на Python</title>
+      <link>https://DmitriyVlasov.ru/post/power-bi-use-python-script-with-parameters/</link>
+      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/post/power-bi-use-python-script-with-parameters/</guid>
+      <description>Предисловие После установки августовского релиза Power BI  я очень обрадовался, увидев поддержку Python. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, поддержка шифрования в Power BI есть только в кастомных дата коннекторах, и отсутствует в Power Query для Power BI Desktop.</description>
+    </item>
+    
+  </channel>
+</rss>

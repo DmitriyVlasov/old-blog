@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Как на Power Query создать таблицу?</title>
+      <link>https://DmitriyVlasov.ru/post/how-to-create-a-table-on-power-query/</link>
+      <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/post/how-to-create-a-table-on-power-query/</guid>
+      <description>Встроенные средства языка  В этом варианте используем встроенную в язык функцию #table. Функция принимает два варианта параметров:  Первый параметр список имен полей, Второй список списков записей таблицы (см. Создание таблицы на основании списка полей) Первый параметр тип описывающий тип таблицы в виде перечисления в записи имен полей и их типов, Второй параметр список списков записей таблицы (см. Создание таблицы на основании ее типа).</description>
+    </item>
+    
+    <item>
+      <title>Передача Параметров из Power BI в скрипт на Python</title>
+      <link>https://DmitriyVlasov.ru/post/power-bi-use-python-script-with-parameters/</link>
+      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/post/power-bi-use-python-script-with-parameters/</guid>
+      <description>Предисловие После установки августовского релиза Power BI  я очень обрадовался, увидев поддержку Python. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, поддержка шифрования в Power BI есть только в кастомных дата коннекторах, и отсутствует в Power Query для Power BI Desktop.</description>
+    </item>
+    
+    <item>
       <title>Обзор всех функций DAX</title>
       <link>https://DmitriyVlasov.ru/post/dax-functions/</link>
       <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>

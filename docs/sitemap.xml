@@ -113,6 +113,24 @@
     
     <url>
     
+      <loc>https://DmitriyVlasov.ru/post/how-to-create-a-table-on-power-query/</loc>
+      <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://DmitriyVlasov.ru/post/power-bi-use-python-script-with-parameters/</loc>
+      <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://DmitriyVlasov.ru/talk/power-bi-and-sql-server-reporting-services/</loc>
       <lastmod>2018-06-05T00:00:00+00:00</lastmod>
     </url>
@@ -299,8 +317,48 @@
     
     <url>
     
+      <loc>https://DmitriyVlasov.ru/tags/power-bi/</loc>
+      <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://DmitriyVlasov.ru/tags/power-query/</loc>
+      <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://DmitriyVlasov.ru/publication_types/</loc>
       <lastmod>2017-01-28T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://DmitriyVlasov.ru/tags/python/</loc>
+      <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://DmitriyVlasov.ru/tags/qa/</loc>
+      <lastmod>2018-10-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
