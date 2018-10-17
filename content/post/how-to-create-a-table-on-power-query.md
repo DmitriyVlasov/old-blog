@@ -3,7 +3,7 @@ date = "2018-10-17"
 draft = false
 math = false
 highlight = true
-tags = ["Power BI","Power Query", "Q&A"]
+tags = ["Power BI","Power Query", "Answers"]
 title = "Как на Power Query создать таблицу?"
 # Optional featured image (relative to `static/img/` folder).
 [header]
