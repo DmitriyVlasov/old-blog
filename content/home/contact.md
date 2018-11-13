@@ -15,5 +15,3 @@ weight = 50
 autolink = true
 
 +++
-
-<iframe src="https://yandex.ru/map-widget/v1/-/CBBVaTAKGA" width="375" height="275" frameborder="1" allowfullscreen="true"></iframe>

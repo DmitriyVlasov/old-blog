@@ -35,8 +35,8 @@ defaultContentLanguageInSubdir = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "mail@DmitriyVlasov.ru"
-  address = "Компания Авара Ай Ти, наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация"
-  office_hours = "С понедельника по пятницу 10:00 to 18:00"
+  address = "Компания Awara IT, наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация"
+  office_hours = "С понедельника по пятницу 10:00 to 19:00"
   phone = "+7 (904) 601-95-40"
   telegram = "DmitriyVlasov"
 
@@ -138,29 +138,26 @@ highlight_version = "9.12.0"
     link = "mailto:mail@DmitriyVlasov.ru"
 
   [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/vlasovde"
-
-  [[params.social]]
     icon = "facebook"
     icon_pack = "fa"
     link = "//facebook.com/DmitriyVlasov.ru"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/DmitriyVlasov"
+
+  [[params.social]]
+     icon = "twitter"
+    icon_pack = "fa"
+    link = "//twitter.com/vlasovde"
+
 
   [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
     link = "//linkedin.com/in/DmitriyVlasov"
 
-  [[params.social]]
-    icon = "google-plus"
-    icon_pack = "fa"
-    link = "//plus.google.com/+DmitriyVlasov"
-
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fa"
-    link = "//github.com/DmitriyVlasov"
 
 
   [params.font]
