@@ -34,7 +34,7 @@ defaultContentLanguageInSubdir = false
   organization_url = "http://awara-it.com/ru_RU/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "powerbi@DmitriyVlasov.ru"
+  email = "hello@DmitriyVlasov.ru"
   address = "Компания Awara IT, наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация"
   office_hours = "С понедельника по пятницу 10:00 to 19:00"
   phone = "+7 (904) 601-95-40"
@@ -135,7 +135,7 @@ highlight_version = "9.12.0"
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:powerbi@DmitriyVlasov.ru"
+    link = "mailto:hello@DmitriyVlasov.ru"
 
   [[params.social]]
     icon = "facebook"
