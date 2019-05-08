@@ -23,6 +23,15 @@
     </item>
     
     <item>
+      <title>Блог</title>
+      <link>https://DmitriyVlasov.ru/home/blog/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/home/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Последние статьи</title>
       <link>https://DmitriyVlasov.ru/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
@@ -64,7 +73,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://DmitriyVlasov.ru/home/contact/</guid>
-      <description> </description>
+      <description></description>
     </item>
     
   </channel>

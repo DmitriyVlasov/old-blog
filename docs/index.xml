@@ -892,6 +892,16 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
     </item>
     
     <item>
+      <title>Привет мир</title>
+      <link>https://DmitriyVlasov.ru/blog/intro/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/blog/intro/</guid>
+      <description>&lt;p&gt;О сколько нам мгновений чудных готовит просвещенья дух.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Как на Power Query создать таблицу?</title>
       <link>https://DmitriyVlasov.ru/post/how-to-create-a-table-on-power-query/</link>
       <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
@@ -1236,27 +1246,6 @@ in
 &lt;li&gt;Дату и время в power query нужно приводить к строке.&lt;/li&gt;
 &lt;li&gt;А внутри скрипта на python приводить обратно к типу &lt;code&gt;date&lt;/code&gt;/&lt;code&gt;datetime&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</title>
-      <link>https://DmitriyVlasov.ru/talk/power-bi-and-sql-server-reporting-services/</link>
-      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://DmitriyVlasov.ru/talk/power-bi-and-sql-server-reporting-services/</guid>
-      <description>
-
-&lt;p&gt;Прошло почти 3 месяца после моего выступления на митапе &lt;a href=&#34;https://www.facebook.com/yamoneywork/posts/352379185287478&#34; target=&#34;_blank&#34;&gt;яндекс денег по SQL Server&lt;/a&gt;. И наконец вышла официальная статья в блоге на &lt;a href=&#34;https://habr.com/company/yamoney/blog/420087/&#34; target=&#34;_blank&#34;&gt;хабре&lt;/a&gt;. В том числе есть &lt;a href=&#34;https://youtu.be/R6gfu4oIwlE?t=1s&#34; target=&#34;_blank&#34;&gt;видео запись&lt;/a&gt; моего выступления. Атмосфера на митапе и выступлении была
-теплая и ламповая, сумрак и дружественная атмосфера :-).&lt;/p&gt;
-
-&lt;p&gt;Во время записи моего выступления, как оказалось позже, &amp;ldquo;что то пошло не так&amp;rdquo; и видео оказалось в масштабе мобильного, расположена в не удобном месте, я в сумраке и экрана с выступлением скорее не видно. Но слышно хорошо, так что можно использовать как запись подкаста )).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;P.S.: Послушал сам себя, голос понравился. Но со словами паразитами предстоит еще работать и работать. Так что практика, практика и еще раз практика.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;слайды&#34;&gt;Слайды&lt;/h2&gt;
-
-&lt;iframe src=&#34;https://onedrive.live.com/embed?cid=E46638C5BB68AE00&amp;amp;resid=E46638C5BB68AE00%21248302&amp;amp;authkey=AHoB7-4B9XLbPyE&amp;amp;em=2&amp;amp;wdAr=1.7777777777777777&#34; width=&#34;610px&#34; height=&#34;367px&#34; frameborder=&#34;0&#34;&gt;Это внедренный файл &lt;a target=&#34;_blank&#34; href=&#34;https://office.com&#34;&gt;Microsoft Office&lt;/a&gt; на платформе &lt;a target=&#34;_blank&#34; href=&#34;https://office.com/webapps&#34;&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
 </description>
     </item>
     
