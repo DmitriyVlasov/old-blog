@@ -6,7 +6,7 @@ draft = false
 
 title = "Блог"
 subtitle = "Мысли, путевые заметки, короткие заметки, наброски статей"
-widget = "custom"
+widget = "blog"
 
 # Order that this section will appear in.
 weight = 10
