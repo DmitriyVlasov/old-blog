@@ -2,7 +2,7 @@
 date = "2017-06-10"
 highlight = true
 math = false
-tags = ["Microsoft","DevCon","Школа","Конференция","Заметки"]
+tags = [ "microsoft","devcon", "notes", "школа", "конференция", "заметка" ]
 title = "Заметки с мероприятия Технологии будущего. Microsoft Devcon School"
 
 [header]

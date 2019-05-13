@@ -3,7 +3,7 @@ date = "2018-08-20"
 draft = false
 math = false
 highlight = true
-tags = ["Power BI","Python"]
+tags = ["power-bi","python"]
 title = "Передача Параметров из Power BI в скрипт на Python"
 # Optional featured image (relative to `static/img/` folder).
 [header]

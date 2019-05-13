@@ -12,14 +12,5 @@
 	<atom:link href="https://DmitriyVlasov.ru/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Привет мир</title>
-      <link>https://DmitriyVlasov.ru/blog/intro/</link>
-      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://DmitriyVlasov.ru/blog/intro/</guid>
-      <description>О сколько нам мгновений чудных готовит просвещенья дух.</description>
-    </item>
-    
   </channel>
 </rss>
