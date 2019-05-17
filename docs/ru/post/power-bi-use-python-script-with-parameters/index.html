@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Дмитрий Власов">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Предисловие После установки августовского релиза Power BI  я очень обрадовался, увидев поддержку Python. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, поддержка шифрования в Power BI есть только в кастомных дата коннекторах, и отсутствует в Power Query для Power BI Desktop.">
+
+  
+  <link rel="alternate" hreflang="ru-ru" href="https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.9e398b7a64ee2c82769da9724cdbf0cc.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-91250239-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Дмитрий Власов">
+  <meta property="og:url" content="https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/">
+  <meta property="og:title" content="Передача Параметров из Power BI в скрипт на Python | Дмитрий Власов">
+  <meta property="og:description" content="Предисловие После установки августовского релиза Power BI  я очень обрадовался, увидев поддержку Python. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, поддержка шифрования в Power BI есть только в кастомных дата коннекторах, и отсутствует в Power Query для Power BI Desktop."><meta property="og:image" content="https://DmitriyVlasov.ru/img/icon-192.png">
+  <meta property="og:locale" content="ru-ru">
+  
+  <meta property="article:published_time" content="2018-08-20T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-08-20T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Передача Параметров из Power BI в скрипт на Python | Дмитрий Власов</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Поиск</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Поиск..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#about">
+            
+            <span>Обо мне</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#posts">
+            
+            <span>Статьи</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#talks">
+            
+            <span>Выступления</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#featured">
+            
+            <span>Публикации</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#contact">
+            
+            <span>Контакты</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Передача Параметров из Power BI в скрипт на Python</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2018-08-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2018-08-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>20.08.2018</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 мин. на чтение
+  </span>
+  
+
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u="
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    
+    <li>
+      <a class="email"
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h2 id="предисловие">Предисловие</h2>
+
+<p>После установки <a href="https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary" target="_blank">августовского релиза Power BI </a> я очень обрадовался, увидев поддержку <a href="https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#python" target="_blank">Python</a>. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, <a href="https://blog.crossjoin.co.uk/2017/11/06/which-m-functions-are-only-available-to-custom-data-connectors/" target="_blank">поддержка шифрования в Power BI</a> есть только в <a href="https://github.com/Microsoft/DataConnectors" target="_blank">кастомных дата коннекторах</a>, и отсутствует в Power Query для Power BI Desktop. А при всем моем теплом отношении к языку R, связываться с ним лишний раз, мне бы не хотелось. Поэтому поддержке Python в Power BI я был рад очень.</p>
+
+<h2 id="задача">Задача</h2>
+
+<ul>
+<li>Настроить управление поведением скрипта на Python через параметры отчета Power BI Desktop.</li>
+</ul>
+
+<h2 id="демонстрационный-отчет-в-power-bi-online">Демонстрационный отчет в Power BI Online</h2>
+
+<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNDNkZWM5OTgtZjRkMS00YzVkLTkxYjAtYjdmZDA2NzQ0YjdjIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+
+<h2 id="описание-решения">Описание решения</h2>
+
+<h3 id="предварительные-требования">Предварительные требования</h3>
+
+<ol>
+<li>У вас установлена <a href="https://www.anaconda.com/download/" target="_blank">Anaconda</a></li>
+<li>В Power BI включена <a href="https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#python" target="_blank">поддержка Python</a></li>
+<li>Запуск в терминале <code>jupyter notebook</code></li>
+<li>Откройте перед глазами памятку по <a href="https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf" target="_blank">Python</a></li>
+</ol>
+
+<h3 id="подготовка-в-power-bi">Подготовка в Power BI</h3>
+
+<ul>
+<li>В файле Power BI создаем параметры отчета.</li>
+
+<li><p>Оборачиваем параметры отчета в таблицу с необходимой структурой. Если используются параметры типа <code>date</code>/<code>datetime</code>, то предварительно их приводим к строке:</p>
+
+<pre><code>let
+Parameters = Table.FromRows(
+{ 
+  { 
+    Date.ToText( FromDate, &quot;dd.MM.yyyy&quot; ), 
+    Date.ToText( ToDate,   &quot;dd.MM.yyyy&quot; ) 
+  } 
+},
+type table [ FromDate = text, ToDate = text ] 
+)
+in
+Parameters
+</code></pre></li>
+</ul>
+
+<h3 id="разработка-скрипта-python">Разработка скрипта Python</h3>
+
+<p>В моем примере скрипт на Python будем разрабатывать в инструменте, популярном у аналитиков данных <a href="http://jupyter.org/" target="_blank">Jupyter Notebook</a>.</p>
+
+<ul>
+<li>Создаем файл блокнота.</li>
+<li>Импортируем библиотеку работы с таблицами Pandas (структура аналогичная объекту Table в Power BI)</li>
+</ul>
+
+<pre><code class="language-python">import pandas as pd
+</code></pre>
+
+<ul>
+<li>Объявляем переменную <code>Parameters</code> повторяющую структуру, таблицы с параметрами на Power Query (см. выше), это необходимо для отладки и проверки работоспособности скрипта.</li>
+</ul>
+
+<pre><code class="language-python">import pandas as pd
+
+FromDate = &quot;01.07.2018&quot;
+ToDate = &quot;31.07.2018&quot;
+
+Parameters = pd.DataFrame(
+    [ 
+      [ 
+        FromDate, ToDate 
+      ] 
+    ],
+    columns = ['FromDate','ToDate'] 
+)
+</code></pre>
+
+<blockquote>
+<p>В рамках рассмотренного примера для простоты работы внутри скрипта на Python вручную создается таблица, а затем с помощью переданных параметров таблица отфильтровывается. Полученный результат далее возвращается в Power BI и может использоваться для дальнейшего анализа.</p>
+</blockquote>
+
+<ul>
+<li>Далее реализовываем логику обработки скрипта.</li>
+<li>Для удобства переноса разработанного скрипта, обработки снова объявляем импорт библиотеки Pandas.</li>
+</ul>
+
+<pre><code class="language-python">import pandas as pd
+</code></pre>
+
+<ul>
+<li>Помним о том, что мы передали параметры в формате даты времени в текстовом формате ( объяснение подробнее <a href="#Обсуждение-решения">см ниже</a> )</li>
+</ul>
+
+<pre><code class="language-python">Parameters['FromDate'] = pd.to_datetime( Parameters['FromDate'], format=&quot;%d.%m.%Y&quot; )
+Parameters['ToDate'] = pd.to_datetime( Parameters['ToDate'], format=&quot;%d.%m.%Y&quot; )
+</code></pre>
+
+<blockquote>
+<p>Если вам нужно настроить преобразование строки под ваш формат даты времени, то вы можете использовать для этого таблицу кодов форматов для <a href="https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior" target="_blank">2</a> или <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior" target="_blank">3</a> Питона соответственно.</p>
+</blockquote>
+
+<ul>
+<li>Получаем данные из внешней системы. Для демо примера создаем вручную таблицу в Pandas</li>
+</ul>
+
+<pre><code class="language-python">Sales = pd.DataFrame( [
+        [&quot;01.07.2018&quot;, 10], 
+        [&quot;01.08.2018&quot;, 20], 
+        [&quot;01.09.2018&quot;, 30]
+    ], columns=['Date', 'Amount' ] 
+)
+</code></pre>
+
+<ul>
+<li>Для корректной работы сортировки и фильтрации данных по столбцу даты времени приводим, в исследуемых таблицах столбец к дате.<br /></li>
+</ul>
+
+<pre><code class="language-python">Sales['Date'] = pd.to_datetime(Sales['Date'],format=&quot;%d.%m.%Y&quot;)
+</code></pre>
+
+<ul>
+<li>Применяем бизнес правила полученные от клиента и параметры, полученные из Power BI, к полученной в скрипте таблице</li>
+</ul>
+
+<pre><code class="language-python">Result = Sales[ Sales['Date'] &gt; Parameters['FromDate'][0] ]
+</code></pre>
+
+<ul>
+<li><p>Средствами <a href="http://jupyter.org/" target="_blank">Jupyter Notebook</a> мы можем отладить и проверить полученные данные перед копированием полученного сприпта в Power BI.</p></li>
+
+<li><p>В результате получаем скрипт, подготовленный для передачи в Power BI</p></li>
+</ul>
+
+<pre><code class="language-python"># Импортируем библиотеку работы с таблицами Pandas 
+import pandas as pd
+
+# Готовим параметры для использования
+# Так как параметры даты, времени внутрь Python из Power BI передаются не совсем корректно (с ошибкой).
+# Удобно параметры даты передать в строковом виде, а затем привести обрратно в дате.
+Parameters['FromDate'] = pd.to_datetime( Parameters['FromDate'], format=&quot;%d.%m.%Y&quot; )
+Parameters['ToDate'] = pd.to_datetime( Parameters['ToDate'], format=&quot;%d.%m.%Y&quot; )
+
+# Получаем данные из внешней системы. Для демо примера просто создаем вручную таблицу в Pandas 
+Sales = pd.DataFrame( [
+        [&quot;01.07.2018&quot;, 10], 
+        [&quot;01.08.2018&quot;, 20], 
+        [&quot;01.09.2018&quot;, 30]
+    ], columns=['Date', 'Amount' ] 
+)
+Sales['Date'] = pd.to_datetime(Sales['Date'],format=&quot;%d.%m.%Y&quot;)
+
+# Применяем бизнес правила и параметры полученные из Power BI к таблице и возвращаем результат
+Result = Sales[ Sales['Date'] &gt; Parameters['FromDate'][0] ]
+</code></pre>
+
+<h3 id="вызов-скрипта-на-python-из-power-bi">Вызов скрипта на Python из Power BI</h3>
+
+<ul>
+<li>Так как, на данный момент, в мастере создания скрипта на Python в Power BI нет возможности передать не обязательные параметры, для простоты создаем минимально рабочий пример для создания корректного запроса Power Query, который затем обновим разработанным выше скриптом.</li>
+</ul>
+
+<pre><code class="language-python">import pandas as pd
+
+Dummy = pd.DataFrame( [ [ &quot;&quot; ] ], columns = ['Dummy'] )
+
+</code></pre>
+
+<ul>
+<li>В мастере создания запросов Power BI Desktop, выбираем из раскрывающегося списка скрипт на Python. Передам минимальный скрипт на Python написанный выше.</li>
+<li>В мастере выбираем флажком таблицу <code>Dummy</code> и нажимаем OK.</li>
+<li>Скрипт будет успешно создан.</li>
+
+<li><p>Для передачи параметров нам придется перейти в расширенный редактор Power Query, где мы увидим следующий текст:</p>
+
+<pre><code>let
+Source = Python.Execute(&quot;import pandas as pd#(lf)#(lf)Dummy = pd.DataFrame( [ [ &quot;&quot;&quot;&quot; ] ], columns = ['Dummy'] )#(lf)&quot;),
+Dummy1 = Source{[Name=&quot;Dummy&quot;]}[Value]
+in
+Dummy1
+</code></pre></li>
+
+<li><p>Последний шаг навигации нам пока что не нужен, уберем его.</p>
+
+<pre><code>let
+Source = Python.Execute(&quot;import pandas as pd#(lf)#(lf)Dummy = pd.DataFrame( [ [ &quot;&quot;&quot;&quot; ] ], columns = ['Dummy'] )#(lf)&quot;)
+in
+Source
+</code></pre></li>
+
+<li><p>Передадим параметры из Power Query в пустой скрипт. С помощью ручного редактирования в расширенном редакторе Power Query добавим второй параметр вида <code>[ Parameters = Parameters ]</code>.</p></li>
+
+<li><p>В результате получится следующий запроса на Power Query:</p>
+
+<pre><code>let
+Source = Python.Execute(&quot;import pandas as pd#(lf)#(lf)Dummy = pd.DataFrame( [ [ &quot;&quot;&quot;&quot; ] ], columns = ['Dummy'] )#(lf)&quot;, [ Parameters = Parameters ])
+in
+Source
+</code></pre></li>
+
+<li><p>Power Query предупредит что мы изменили определение скрипта. Мы должны согласиться с изменениями. В результате нам будет доступно для навигации две записи каждая из которых содержит таблицу.</p></li>
+
+<li><p>Отредактируем с помощью мастера запрос и вставим разработанный на предыдущем шаге скрипт, нажав на шестеренку напросив пункта Source.</p></li>
+
+<li><p>В результате получится следующий запроса на Power Query:</p>
+
+<pre><code>let
+Source = Python.Execute(&quot;import pandas as pd#(lf)import datetime as dt#(lf)#(lf)Parameters['FromDate'] = pd.to_datetime( Parameters['FromDate'], format=&quot;&quot;%d.%m.%Y&quot;&quot; )#(lf)Parameters['ToDate'] = pd.to_datetime( Parameters['ToDate'], format=&quot;&quot;%d.%m.%Y&quot;&quot; )#(lf)#(lf)Sales = pd.DataFrame( [#(lf)        [dt.date(2018,7,1), 10], #(lf)        [dt.date(2018,8,1), 20], #(lf)        [dt.date(2018,9,1), 30]#(lf)    ], columns=['Date', 'Amount' ] #(lf))#(lf)#(lf)Sales['Date'] = pd.to_datetime(Sales['Date'])#(lf)#(lf)Result = Sales[ Sales['Date'] &gt; Parameters['FromDate'][0] ]&quot;,[ Parameters = Parameters ])
+in
+Source
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>Обратите внимание на то, что все наше красивое форматирование в python Power BI Desktop собрал в одну строку. Так что если далее потребуется дорабатывать наш скрипт мы вернемся в Jupyter и последовательно проделаем шаги: исправим, отладим и так же передадим его через буфер обмена в Power BI Desktop.</p>
+</blockquote>
+
+<ul>
+<li>В результате у нас будет доступны все источники данных в формате <code>DataFrame</code> которые мы объявили в скрипте и далее средствами Power Query как мы привыкли будем обрабатывать таблицы и объединять их в модель.</li>
+</ul>
+
+<h3 id="материалы">Материалы</h3>
+
+<p>Для удобства исследования статьи привожу готовый файл срипта и пример на Power BI:</p>
+
+<ul>
+<li><a href="https://github.com/DmitriyVlasov/Blog/blob/master/samples/2018-08-20/sample-power-bi-use-python-script-with-parameters.pbix" target="_blank">Решение на Power BI</a></li>
+<li><a href="https://github.com/DmitriyVlasov/Blog/blob/master/samples/2018-08-20/sample-power-bi-use-python-script-with-parameters.ipynb" target="_blank">Файл скрипта на python в формате jupiter</a></li>
+<li><a href="https://app.powerbi.com/view?r=eyJrIjoiNDNkZWM5OTgtZjRkMS00YzVkLTkxYjAtYjdmZDA2NzQ0YjdjIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9" target="_blank">Ссылка на интерактивный отчет в Power BI online</a></li>
+</ul>
+
+<h3 id="обсуждение-решения">Обсуждение решения</h3>
+
+<ul>
+<li>Из описания помощи к функции power query <code>Python.Execute</code> видно, что функция получает два параметра <code>function (script as text, optional arguments as nullable record) as table</code>. Обязательный <code>script</code> собственно текст скрипта на Python и не обязательный <code>arguments</code>. Опытным путем понял, что корректным форматом передачи аргументов внутрь скрипта является таблица. Таким образом для передачи аргументов нужно создать запись у которой есть хотя-бы одно значение содержащее таблицу. В нашем случае мы создали запись вида <code>[ Parameters = Parameters ]</code>. Где справа ключ записи, а справа ссылка на таблицу содержащую параметры.</li>
+<li>При подготовке примера оказалось что у Power BI при передаче параметров есть особенность работы с типом <code>date</code>/<code>datetime</code>.</li>
+<li>Дату и время в power query нужно приводить к строке.</li>
+<li>А внутри скрипта на python приводить обратно к типу <code>date</code>/<code>datetime</code>.</li>
+</ul>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/ru/tags/power-bi/">Power BI</a>
+  
+  <a class="badge badge-light" href="/ru/tags/python/">Python</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/ru/authors/me/">Дмитрий Власов</a></h5>
+      <h6 class="card-subtitle">Старший BI разработчик</h6>
+      <p class="card-text" itemprop="description">Бизнес аналитика, функциональное программирование и машинное обучение.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/ru/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/DmitriyVlasov" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vk.com/DmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-vk"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://facebook.com/MeDmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/DmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/DmitriyVlasov" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Обзоры</h3>
+        <ul>
+          
+          <li><a href="/ru/post/dax-functions/">Обзор всех функций DAX</a></li>
+          
+          <li><a href="/ru/post/handing-of-dax-blank/">Сравнение обработки пустых значений в DAX, Excel и SQL</a></li>
+          
+          <li><a href="/ru/post/dax-function-earlier/">Пример использования функции EARLIER</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Цитата</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Скачать
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/ru/index.json";
+      const i18n = {
+        'placeholder': "Поиск...",
+        'results': "Найдено",
+        'no_results': "Результатов не найдено"
+      };
+      const content_type = {
+        'post': "Статьи",
+        'project': "Проекты",
+        'publication' : "Публикации",
+        'talk' : "Выступления"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.3258b3a711acd6208568ec000de4beec.js"></script>
+
+  </body>
+</html>
+

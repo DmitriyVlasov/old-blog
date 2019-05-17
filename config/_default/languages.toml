@@ -1,0 +1,93 @@
+# Languages
+#   Create a `[X]` block for each language you want, where X is the language ID.
+#   Refer to https://sourcethemes.com/academic/docs/language/
+
+# Настройте русскую версию сайта.
+[ru]
+  languageCode = "ru-ru"
+  contentDir = "content/ru"
+  title = "Дмитрий Власов"
+  address = "наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация"
+  office_hours = "С понедельника по пятницу 10:00 to 19:00"
+  description = "Заметки разработчика о жизни, Вселенной и всего такого."
+
+  [[ru.menu.main]]
+    name = "Обо мне"
+    url = "#about"
+    weight = 10
+
+  [[ru.menu.main]]
+    name = "Статьи"
+    url = "#posts"
+    weight = 20
+
+  # [[ru.menu.main]]
+  #   name = "Проекты"
+  #   url = "#projects"
+  #   weight = 30
+
+  [[ru.menu.main]]
+    name = "Выступления"
+    url = "#talks"
+    weight = 35
+
+  [[ru.menu.main]]
+    name = "Публикации"
+    url = "#featured"
+    weight = 40
+
+# # Посмотреть подробнее как сделано:
+#   [[ru.menu.main]]
+#     name = "Курсы"
+#     url = "courses/"
+#     weight = 50
+
+  [[ru.menu.main]]
+    name = "Контакты"
+    url = "#contact"
+    weight = 60
+
+# Configure the English version of the site.
+[en]
+  languageCode = "en-us"
+  contentDir = "content/en"
+  title = "Dmitriy Vlasov"
+  address = "Awara IT, Moyka emb. 37A, St.Petersburg, Russia"
+  office_hours = "Monday to Friday 10:00 AM to 07:00 PM"
+  description = "BI developer's Notes on the life of the universe and all that."
+
+  [[en.menu.main]]
+    name = "Home"
+    url = "#about"
+    weight = 10
+
+  [[en.menu.main]]
+    name = "Posts"
+    url = "#posts"
+    weight = 20
+
+  # [[en.menu.main]]
+  #   name = "Projects"
+  #   url = "#projects"
+  #   weight = 30
+
+  [[en.menu.main]]
+    name = "Talks"
+    url = "#talks"
+    weight = 35
+
+  [[en.menu.main]]
+    name = "Publications"
+    url = "#featured"
+    weight = 40
+
+# # Посмотреть подробнее как сделано:
+#   [[en.menu.main]]
+#     name = "Courses"
+#     url = "courses/"
+#     weight = 50
+
+  [[en.menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 60

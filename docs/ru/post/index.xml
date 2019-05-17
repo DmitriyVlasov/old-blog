@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Статьи on Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/post/</link>
+    <description>Recent content in Статьи on Дмитрий Власов</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
+    <lastBuildDate>Wed, 17 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://DmitriyVlasov.ru/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Как на Power Query создать таблицу?</title>
+      <link>https://DmitriyVlasov.ru/ru/post/how-to-create-a-table-on-power-query/</link>
+      <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/how-to-create-a-table-on-power-query/</guid>
+      <description>Встроенные средства языка  В этом варианте используем встроенную в язык функцию #table. Функция принимает два варианта параметров:  Первый параметр список имен полей, Второй список списков записей таблицы (см. Создание таблицы на основании списка полей) Первый параметр тип описывающий тип таблицы в виде перечисления в записи имен полей и их типов, Второй параметр список списков записей таблицы (см. Создание таблицы на основании ее типа).</description>
+    </item>
+    
+    <item>
+      <title>Передача Параметров из Power BI в скрипт на Python</title>
+      <link>https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/</link>
+      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/</guid>
+      <description>Предисловие После установки августовского релиза Power BI  я очень обрадовался, увидев поддержку Python. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, поддержка шифрования в Power BI есть только в кастомных дата коннекторах, и отсутствует в Power Query для Power BI Desktop.</description>
+    </item>
+    
+    <item>
+      <title>Обзор всех функций DAX</title>
+      <link>https://DmitriyVlasov.ru/ru/post/dax-functions/</link>
+      <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/dax-functions/</guid>
+      <description>Предисловие Приводится обзор всех существующих функций DAX. Основное назначение статьи максимально возможно упростить обзор и изучение, навигацию и ориентирование по всем существующим функциям DAX в одной статье. По мере появления в статью будут добавляться новые DAX функции.
+Содержание Краткое содержание  Логические функции Текстовые функции Математические и Тригонометрические функции Простые и Интеллектуальные операции с датой и временем Информационные функции Функции Создания и Фильтрации таблиц Статистические функции Функции над Иерархиями Прочие функции Синтаксические элементы  Подробное содержание  Логические функции Текстовые функции  Базовые операции со стоками Форматирование и преобразование типов Поиск и замена  Математические и тригонометрические функции  Базовые операции с числами Округление Операции со случайными числами Тригонометрические функции и константы  Функции даты и времени  Базовые операции с датой и временем Конструкторы даты и времени Расширенные операции с датой  Интеллектуальные операции со временем  Функции возвращающие столбец дат  Операции с периодами Операции днем, месяцем, кварталом и годом  Функции возвращающие ячейку с датой Функции возвращающие ячейку со значением Функции возвращающие скалярное значение  Информационные функции  Информация о пользжователе Обработка ошибок  Функции фильтрации Агрегатные и статистические функции  Агрегатные функции над таблицами Агрегатные функции над столбцами и выражениями Статистические функции над столбцами и выражениями Замечания к агрегатным и статистическим функциям  Функции над иерархическими данными Прочие функции Синтаксические элементы</description>
+    </item>
+    
+    <item>
+      <title>Сравнение обработки пустых значений в DAX, Excel и SQL</title>
+      <link>https://DmitriyVlasov.ru/ru/post/handing-of-dax-blank/</link>
+      <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/handing-of-dax-blank/</guid>
+      <description>Пустое значение в:
+ SQL это null; Excel это не заполненная ячейка; DAX это blank.  В DAX также существует функция blank() возвращающее пустое значение.
+Таблица сравнения поведения пустого значения в разных окружениях
+   Выражение DAX Excel SQL1     blank + blank blank 0 (ноль) blank   blank + 5 5 5 blank   blank * 5 blank 0 (ноль) blank   5 / blank infinity error blank   0 / blank nan error blank   blank / blank blank error blank   false or blank false false -   false and blank false false -   true or blank true true -   true and blank false true -   blank or blank blank error -   blank and blank blank error -    Источники  docs.</description>
+    </item>
+    
+    <item>
+      <title>Пример использования функции EARLIER</title>
+      <link>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</link>
+      <pubDate>Wed, 05 Jul 2017 11:37:05 +0300</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</guid>
+      <description>Синтаксис EARLIER(column, [number])  Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
+Пример = COUNTROWS ( FILTER ( ProductSubcategory; EARLIER ( ProductSubcategory[TotalSubcategorySales] ) &amp;lt; ProductSubcategory[TotalSubcategorySales] ) ) + 1   Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице.</description>
+    </item>
+    
+    <item>
+      <title>Заметки с мероприятия Технологии будущего. Microsoft Devcon School</title>
+      <link>https://DmitriyVlasov.ru/ru/post/devcon-school-future-technologies/</link>
+      <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/devcon-school-future-technologies/</guid>
+      <description>1 июня 2017 принял участие в мероприятии DevCon School Технологии будущего проводимого компанией Microsoft. Мероприятие проходило в Москве на территории центра Digital October. Ключевыми темами мероприятия были: Искусственный интеллект, Блокчейн, Azure Stack и гибридные облака, контейнеры и микросервисы, DevOps и процессы разработки, Безопасная разработка, Машинное обучение. Подборка ссылок на материалы  Запись видео с открытия, интенсива по нейронным сетям и отдельным трекам Презентации и обучающие материалы с интенсива и большинства треков  Машинное обучение  Определение опечаток в тексте Алгоритм расстояние Левенштейна Метод обратного распространения ошибки Как выбрать компьютер для машинного обучения</description>
+    </item>
+    
+    <item>
+      <title>Инструменты</title>
+      <link>https://DmitriyVlasov.ru/ru/post/tools/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/tools/</guid>
+      <description>В своей работы при поддержке информационных систем зачастую кроме предлагаемых основной платформой средств приходиться использовать еще ряд дополнительных инструментов и сервисов.
+Ниже описан используемый мною &amp;ldquo;чемоданчик инструментов&amp;rdquo;.
+Часть инструментов вы сами можете использовать уже сегодня и возможно использовали раньше. Часть инструментов может быть для вас новой. Все приведенные ниже инструменты использовались мною в работе на ежедневной основе (F#). По части инструментов были пилотные и экспериментальные проекты, но которые считаю очень перспективными и на которые, по моему мнению, стоит обратить внимание при развитии ИТ среды предприятия (язык R, язык PowerShell, Microsoft Power BI).</description>
+    </item>
+    
+    <item>
+      <title>Расширения для Visual Studio Code</title>
+      <link>https://DmitriyVlasov.ru/ru/post/code-plugins/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/code-plugins/</guid>
+      <description>Ниже в таблице представлены расширения для Visual Studio Code используемые мною в работе на ежедневной основе. В столбце &amp;ldquo;Название расширения&amp;rdquo; приведены ссылки на официальную страницу расширения в магазине расширений Visual Studio.
+   Лого Название расширения Назначение Детали      code-settings-sync Синхронизирует настройки и расширения между разными компьютерами. Для использования Расширение необходима учетная запись на Гитхабе.    csharp Поддержка языка C# Официальная поддержка языка C# от Майкрософт.</description>
+    </item>
+    
+  </channel>
+</rss>

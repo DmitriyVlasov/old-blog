@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/tags/python/</link>
+    <description>Recent content in Python on Дмитрий Власов</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
+    <lastBuildDate>Mon, 20 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://DmitriyVlasov.ru/ru/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Передача Параметров из Power BI в скрипт на Python</title>
+      <link>https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/</link>
+      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/</guid>
+      <description>Предисловие После установки августовского релиза Power BI  я очень обрадовался, увидев поддержку Python. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, поддержка шифрования в Power BI есть только в кастомных дата коннекторах, и отсутствует в Power Query для Power BI Desktop.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,11 +1,18 @@
-<nav>
-  <ul class="pager">
-    {{if .NextInSection}}
-    <li class="previous"><a href="{{.NextInSection.Permalink}}"><span aria-hidden="true">&larr; </span>{{.NextInSection.Title}}</a></li>
-    {{end}}
-
-    {{if .PrevInSection}}
-    <li class="next"><a href="{{.PrevInSection.Permalink}}">{{.PrevInSection.Title}}<span aria-hidden="true"> &rarr;</span></a></li>
-    {{end}}
-  </ul>
-</nav>
+{{ $str := "" }}
+<div class="post-nav">
+  {{if .NextInSection}}
+  {{/* For the docs layout, prev/next labels are reversed. */}}
+  {{ if eq .Type "docs" }}{{ $str = "previous" }}{{else}}{{ $str = "next" }}{{end}}
+  <div class="post-nav-item">
+    <div class="meta-nav">{{ i18n $str }}</div>
+    <a href="{{.NextInSection.RelPermalink}}" rel="next">{{.NextInSection.Title}}</a>
+  </div>
+  {{end}}
+  {{if .PrevInSection}}
+  {{ if eq .Type "docs" }}{{ $str = "next" }}{{else}}{{ $str = "previous" }}{{end}}
+  <div class="post-nav-item">
+    <div class="meta-nav">{{ i18n $str }}</div>
+    <a href="{{.PrevInSection.RelPermalink}}" rel="prev">{{.PrevInSection.Title}}</a>
+  </div>
+  {{end}}
+</div>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Прошедшие и предстоящие выступления on Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/talk/</link>
+    <description>Recent content in Прошедшие и предстоящие выступления on Дмитрий Власов</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
+    <lastBuildDate>Tue, 05 Jun 2018 21:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://DmitriyVlasov.ru/ru/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</title>
+      <link>https://DmitriyVlasov.ru/ru/talk/power-bi-and-sql-server-reporting-services/</link>
+      <pubDate>Tue, 05 Jun 2018 21:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/talk/power-bi-and-sql-server-reporting-services/</guid>
+      <description>Чем отличаются эти две технологии и какое у них будущее? Обсудим особенности каждой, нюансы лицензирования, сравним производительность.</description>
+    </item>
+    
+    <item>
+      <title>Обзор F# 4.0</title>
+      <link>https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/</link>
+      <pubDate>Tue, 25 Aug 2015 20:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

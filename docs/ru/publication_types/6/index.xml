@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 on Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/publication_types/6/</link>
+    <description>Recent content in 6 on Дмитрий Власов</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
+    <lastBuildDate>Sat, 28 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://DmitriyVlasov.ru/ru/publication_types/6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Глава 3. Синтаксический анализатор числа с плавающей точкой в скобках</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</guid>
+      <description>Реализация синтаксических анализаторов с использованием библиотеки FParsec обычно означает, что высокоуровневые синтаксические анализаторы получены как комбинация низкоуровневых анализаторов. Вы начинаете с анализатора примитивов, предоставляемых библиотекой, а затем последовательно объединяете их в анализаторы более высокого уровня, пока вы, наконец, не имеете один синтаксический анализатор для полной обработки входных данных.
+В следующих главах мы продемонстрируем этот подход, обсуждая различные варианты примеров синтаксических анализаторов, которые построены друг из друга. В этой главе мы начнем с очень простого анализатора для числа с плавающей точкой в скобках:</description>
+    </item>
+    
+    <item>
+      <title>Глава 4. Абстрактные синтаксические анализаторы</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/04-abstracting-parsers/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/04-abstracting-parsers/</guid>
+      <description>Одной из самых больших сильных сторон FParsec является легкость, с которой вы можете определить свои собственные абстрактные синтаксические анализаторы.
+Возьмем, к примеру floatBetweenBrackets из предыдущей главы. Если вы намерены также разобрать другие элементы между строк, вы можете определить свой собственный специализированный комбинатор для этой цели:
+let betweenStrings s1 s2 p = str s1 &amp;gt;&amp;gt;. p .&amp;gt;&amp;gt; str s2  Затем можно определить floatInBrackets и другие синтаксические анализаторы с помощью этого комбинатора:</description>
+    </item>
+    
+    <item>
+      <title>Глава 5. Синтаксический анализатор списка чисел с плавающей точкой</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</guid>
+      <description>Мы уже течение трех глав обсуждаем как делать синтаксический разбор одного числа с плавающей запятой, поэтому в этот раз мы попытаемся нечто более амбициозное: синтаксический разбор списка чисел с плавающей точкой.
+Предположим сначала, что нам нужно, чтобы делать синтаксический разбор последовательности чисел с плавающей точкой в скобках, т.е. текст в формате расширенной формы Бэкуса-Наура (далее РБНФ): (&amp;quot;[&amp;quot; float &amp;quot;]&amp;quot;)*. Допустимые входные строки в этом формате, например: &amp;quot;&amp;quot;, &amp;quot;[1.0]&amp;quot;, &amp;quot;[2][3][4]&amp;quot;.
+Поскольку у нас уже есть синтаксический анализатор для числа с плавающей точкой в скобках, нам нужен только способ неоднократно применять этот синтаксический анализатор для разбора последовательности.</description>
+    </item>
+    
+    <item>
+      <title>Глава 6. Обработка пробелов</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/06-handling-whitespace/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/06-handling-whitespace/</guid>
+      <description>FParsec обрабатывает пробелы (пробелы, табуляции, новые строки и т. д.) Так же, как и любой другой ввод, поэтому наш синтаксический анализатор floatList еще не умеет работать с пробелами:
+&amp;gt; test floatBetweenBrackets &amp;quot;[1.0, 2.0]&amp;quot;;; Failure: Error in Ln: 1 Col: 5 [1.0, 2.0] ^ Expecting: &#39;]&#39;  Если мы хотим, чтобы синтаксический анализатор игнорировал пробелы, нам нужно сделать это явным образом.
+Во-первых, нам нужно определить, что мы хотим принять в качестве пробела.</description>
+    </item>
+    
+    <item>
+      <title>Глава 7. Синтаксический анализатор строковых данных</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/07-parsing-string-data/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/07-parsing-string-data/</guid>
+      <description>FParsec содержит различные встроенные синтаксические анализаторы для символов, строк, чисел и пробелов. В этой главе мы представим несколько синтаксических анализаторов символов и строк. Обзор всех доступных синтаксических анализаторов см. в руководстве пользователяen.
+Вы уже видели несколько применений синтаксического анализатора pstring (сокращенно str ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор pstring успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:</description>
+    </item>
+    
+    <item>
+      <title>Глава 8. Использование последовательности синтаксических анализаторов</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</guid>
+      <description>Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация &amp;gt;&amp;gt;.en и .&amp;gt;&amp;gt;en операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать pipe2en, &amp;hellip;, pipe5en, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.
+Например, с комбинатором pipe2en</description>
+    </item>
+    
+    <item>
+      <title>Глава 9. Использование альтернативных синтаксических анализов</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/09-parsing-alternatives/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/09-parsing-alternatives/</guid>
+      <description>В главе 7 &amp;ldquo;Синтаксический анализатор строковых данных&amp;rdquo; мы вкратце представили комбинатор выбора &amp;lt;|&amp;gt;en :
+val (&amp;lt;|&amp;gt;): Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,u&amp;gt;  Этот комбинатор позволяет вам поддерживать несколько альтернативных вариантов.
+Например, в главе 7 мы использовали &amp;lt;|&amp;gt; для объединения синтаксического анализатора для неэкранированных символов и анализатора для экранированных символов в новый анализатор, который поддерживает оба варианта: normalChar &amp;lt;|&amp;gt; escapedChar.
+Другим примером, показывающим, как работает &amp;lt;|&amp;gt; является следующий синтаксический анализатор для разбора строкового представления булевых значений:</description>
+    </item>
+    
+    <item>
+      <title>Глава 10. Ограничение значений F#</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</guid>
+      <description>Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.
+ Если вы найдете содержимое главы слишком техническим на данный момент, просто перейдите к следующей главе и вернитесь позже, когда вы в первый раз увидите сообщение компилятора, в котором упоминается value restriction.</description>
+    </item>
+    
+    <item>
+      <title>Глава 11. Синтаксический анализ JSON</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/11-parsing-json/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/11-parsing-json/</guid>
+      <description>Now that we have discussed the basics of FParsec we are well prepared to work through a real world parser example: a JSON parser.
+JSON (JavaScript Object Notation) is a text-based data interchange format with a simple and lightweight syntax. You can find descriptions of the syntax on json.org and in RFC 4626.
+In many applications one only has to deal with JSON files describing one particular kind of object. In such a context it sometimes can be appropriate to write a specialized parser just for that specific kind of JSON file.</description>
+    </item>
+    
+    <item>
+      <title>Глава 12. Куда дальше?</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/12-what-now/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/12-what-now/</guid>
+      <description>If this tutorial has whet your appetite for a more in-depth introduction to FParsec, just head over to the user&amp;rsquo;s guide. If you can&amp;rsquo;t wait to write your own parser, then bookmark the parser overview page, maybe take a short look at the example parsers in the Samples folder and just start hacking. You can always consult the user&amp;rsquo;s guide at a later point should you get stuck somewhere.</description>
+    </item>
+    
+    <item>
+      <title>Учебник библиотеки FParsec</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/fparsec-tutorial/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/fparsec-tutorial/</guid>
+      <description>Введение Этот учебник знакомит вас с основными понятиями библиотеки FParsec. Наша цель &amp;mdash; дать вам возможность попробовать создать приложения синтаксического разбора с помощью библиотеки FParsec. Мы охватим только основные идеи и дадим беглый обзор библиотеки по APIen. Но, надеемся, это будет достаточной основой для того, чтобы вы могли в дальнейшем использовать FParsec самостоятельно с помощью: руководства пользователяen, справочника по APIen и примеров синтаксических анализаторов в папке Samplesen.
+Благодарности Благодарю мою жену Ольгу за помощь в переводе, стилистической выверке и редактуре теста.</description>
+    </item>
+    
+  </channel>
+</rss>

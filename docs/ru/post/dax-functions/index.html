@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Дмитрий Власов">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Предисловие Приводится обзор всех существующих функций DAX. Основное назначение статьи максимально возможно упростить обзор и изучение, навигацию и ориентирование по всем существующим функциям DAX в одной статье. По мере появления в статью будут добавляться новые DAX функции.
+Содержание Краткое содержание  Логические функции Текстовые функции Математические и Тригонометрические функции Простые и Интеллектуальные операции с датой и временем Информационные функции Функции Создания и Фильтрации таблиц Статистические функции Функции над Иерархиями Прочие функции Синтаксические элементы  Подробное содержание  Логические функции Текстовые функции  Базовые операции со стоками Форматирование и преобразование типов Поиск и замена  Математические и тригонометрические функции  Базовые операции с числами Округление Операции со случайными числами Тригонометрические функции и константы  Функции даты и времени  Базовые операции с датой и временем Конструкторы даты и времени Расширенные операции с датой  Интеллектуальные операции со временем  Функции возвращающие столбец дат  Операции с периодами Операции днем, месяцем, кварталом и годом  Функции возвращающие ячейку с датой Функции возвращающие ячейку со значением Функции возвращающие скалярное значение  Информационные функции  Информация о пользжователе Обработка ошибок  Функции фильтрации Агрегатные и статистические функции  Агрегатные функции над таблицами Агрегатные функции над столбцами и выражениями Статистические функции над столбцами и выражениями Замечания к агрегатным и статистическим функциям  Функции над иерархическими данными Прочие функции Синтаксические элементы">
+
+  
+  <link rel="alternate" hreflang="ru-ru" href="https://DmitriyVlasov.ru/ru/post/dax-functions/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.9e398b7a64ee2c82769da9724cdbf0cc.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-91250239-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://DmitriyVlasov.ru/ru/post/dax-functions/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Дмитрий Власов">
+  <meta property="og:url" content="https://DmitriyVlasov.ru/ru/post/dax-functions/">
+  <meta property="og:title" content="Обзор всех функций DAX | Дмитрий Власов">
+  <meta property="og:description" content="Предисловие Приводится обзор всех существующих функций DAX. Основное назначение статьи максимально возможно упростить обзор и изучение, навигацию и ориентирование по всем существующим функциям DAX в одной статье. По мере появления в статью будут добавляться новые DAX функции.
+Содержание Краткое содержание  Логические функции Текстовые функции Математические и Тригонометрические функции Простые и Интеллектуальные операции с датой и временем Информационные функции Функции Создания и Фильтрации таблиц Статистические функции Функции над Иерархиями Прочие функции Синтаксические элементы  Подробное содержание  Логические функции Текстовые функции  Базовые операции со стоками Форматирование и преобразование типов Поиск и замена  Математические и тригонометрические функции  Базовые операции с числами Округление Операции со случайными числами Тригонометрические функции и константы  Функции даты и времени  Базовые операции с датой и временем Конструкторы даты и времени Расширенные операции с датой  Интеллектуальные операции со временем  Функции возвращающие столбец дат  Операции с периодами Операции днем, месяцем, кварталом и годом  Функции возвращающие ячейку с датой Функции возвращающие ячейку со значением Функции возвращающие скалярное значение  Информационные функции  Информация о пользжователе Обработка ошибок  Функции фильтрации Агрегатные и статистические функции  Агрегатные функции над таблицами Агрегатные функции над столбцами и выражениями Статистические функции над столбцами и выражениями Замечания к агрегатным и статистическим функциям  Функции над иерархическими данными Прочие функции Синтаксические элементы"><meta property="og:image" content="https://DmitriyVlasov.ru/img/icon-192.png">
+  <meta property="og:locale" content="ru-ru">
+  
+  <meta property="article:published_time" content="2017-07-19T13:11:31&#43;03:00">
+  
+  <meta property="article:modified_time" content="2017-07-19T13:11:31&#43;03:00">
+  
+
+  
+
+  
+
+  <title>Обзор всех функций DAX | Дмитрий Власов</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Поиск</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Поиск..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#about">
+            
+            <span>Обо мне</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#posts">
+            
+            <span>Статьи</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#talks">
+            
+            <span>Выступления</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#featured">
+            
+            <span>Публикации</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#contact">
+            
+            <span>Контакты</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Обзор всех функций DAX</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2017-07-19 13:11:31 &#43;0300 MSK" itemprop="datePublished">
+<meta content="2017-07-19 13:11:31 &#43;0300 MSK" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>19.07.2017</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    16 мин. на чтение
+  </span>
+  
+
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u="
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    
+    <li>
+      <a class="email"
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p><a name="TOC"></a></p>
+
+<h1 id="предисловие">Предисловие</h1>
+
+<p>Приводится обзор всех существующих функций DAX. Основное назначение статьи максимально возможно упростить обзор и изучение, навигацию и ориентирование по всем существующим функциям DAX в одной статье. По мере появления в статью будут добавляться новые DAX функции.</p>
+
+<h1 id="содержание">Содержание</h1>
+
+<h2 id="краткое-содержание">Краткое содержание</h2>
+
+<ul>
+<li><a href="#logicFunction">Логические</a> функции</li>
+<li><a href="#textFunction">Текстовые</a> функции</li>
+<li><a href="#mathFunction">Математические</a> и <a href="#trigMathFunction">Тригонометрические</a> функции</li>
+<li><a href="#dateTimeFunction">Простые</a> и <a href="#dateTimeLogicFunction">Интеллектуальные</a> операции с датой и временем</li>
+<li><a href="#informationFunction">Информационные</a> функции</li>
+<li>Функции <a href="#agregateAndstatFunction">Создания</a> и <a href="#filterFunction">Фильтрации</a> таблиц</li>
+<li><a href="#statFunction">Статистические</a> функции</li>
+<li>Функции над <a href="#patentChildFunction">Иерархиями</a></li>
+<li><a href="#otherFunction">Прочие</a> функции</li>
+<li><a href="#syntaxElement">Синтаксические элементы</a></li>
+</ul>
+
+<h2 id="подробное-содержание">Подробное содержание</h2>
+
+<ul>
+<li><a href="#logicFunction">Логические функции</a></li>
+<li><a href="#textFunction">Текстовые функции</a>
+
+<ul>
+<li><a href="#baseTextFunction">Базовые операции со стоками</a></li>
+<li><a href="#formatTextFunction">Форматирование и преобразование типов</a></li>
+<li><a href="#searchAndReplaceTextFunction">Поиск и замена</a></li>
+</ul></li>
+<li><a href="#mathFunction">Математические и тригонометрические функции</a>
+
+<ul>
+<li><a href="#baseMathFunction">Базовые операции с числами</a></li>
+<li><a href="#roundMathFunction">Округление</a></li>
+<li><a href="#randomMathFunction">Операции со случайными числами</a></li>
+<li><a href="#trigMathFunction">Тригонометрические функции и константы</a></li>
+</ul></li>
+<li><a href="#dateTimeFunction">Функции даты и времени</a>
+
+<ul>
+<li><a href="#baseDateTimeFunction">Базовые операции с датой и временем</a></li>
+<li><a href="#constructorDateTimeFunction">Конструкторы даты и времени</a></li>
+<li><a href="#extendDateTimeFunction">Расширенные операции с датой</a></li>
+</ul></li>
+<li><a href="#dateTimeLogicFunction">Интеллектуальные операции со временем</a>
+
+<ul>
+<li><a href="#returnColDateTimeLogicFunction">Функции возвращающие столбец дат</a>
+
+<ul>
+<li><a href="#returnColPart1DateTimeLogicFunction">Операции с периодами</a></li>
+<li><a href="#returnColPart2DateTimeLogicFunction">Операции днем, месяцем, кварталом и годом</a></li>
+</ul></li>
+<li><a href="#returnCellPart1DateTimeLogicFunction">Функции возвращающие ячейку с датой</a></li>
+<li><a href="#returnCellPart2DateTimeLogicFunction">Функции возвращающие ячейку со значением</a></li>
+<li><a href="#returnValueDateTimeLogicFunction">Функции возвращающие скалярное значение</a></li>
+</ul></li>
+<li><a href="#informationFunction">Информационные функции</a>
+
+<ul>
+<li><a href="#userInformationFunction">Информация о пользжователе</a></li>
+<li><a href="#errorHanding">Обработка ошибок</a></li>
+</ul></li>
+<li><a href="#filterFunction">Функции фильтрации</a></li>
+<li><a href="#agregateAndstatFunction">Агрегатные и статистические функции</a>
+
+<ul>
+<li><a href="#agregareTableFunction">Агрегатные функции над таблицами</a></li>
+<li><a href="#agregareColumnFunction">Агрегатные функции над столбцами и выражениями</a></li>
+<li><a href="#statFunction">Статистические функции над столбцами и выражениями</a></li>
+<li><a href="#notesAgregateAndstatFunction">Замечания к агрегатным и статистическим функциям</a></li>
+</ul></li>
+<li><a href="#patentChildFunction">Функции над иерархическими данными</a></li>
+<li><a href="#otherFunction">Прочие функции</a></li>
+<li><a href="#syntaxElement">Синтаксические элементы</a></li>
+</ul>
+
+<p><a name="logicFunction"></a></p>
+
+<h1 id="логические-функции">Логические функции</h1>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee635034" target="_blank">TRUE</a></td>
+<td>Возвращает логическое значение <code>true</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634894" target="_blank">FALSE</a></td>
+<td>Возвращает логическое значение <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634379" target="_blank">AND</a></td>
+<td>Проверяет значения аргументов и возвращает значение <code>true</code>, если оба аргумента имеют значение <code>true</code>. В противном случае возвращает значение <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634951" target="_blank">OR</a></td>
+<td>Проверяет, является ли один из аргументов <code>true</code>, и если да, то возвращает значение <code>true</code>. Функция возвращает значение <code>false</code>, если оба аргумента имеют значение <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634884" target="_blank">NOT</a></td>
+<td>Изменяет значение <code>false</code> на <code>true</code>, а <code>true</code> на <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634824" target="_blank">IF</a></td>
+<td>Проверяет выполнение условия, указанного в первом аргументе. Возвращает одно значение, если условие равно <code>true</code>, и другое значение, если условие равно <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492166" target="_blank">SWITCH</a></td>
+<td>Вычисляет выражение на основе списка значений и возвращает одно из нескольких возможных результирующих выражений.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="textFunction"></a></p>
+
+<h1 id="текстовые-функции">Текстовые функции</h1>
+
+<p>Текстовые функции, основаны на библиотеке строковых функций в Excel. C помощью этих функций можно вернуть часть строки, искать текст в строке или объединить строковые значения, а так же для управления форматами дат, времени и чисел.</p>
+
+<p><a name="baseTextFunction"></a></p>
+
+<h2 id="базовые-операции-со-стоками">Базовые операции со стоками</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634811" target="_blank">CONCATENATE</a></td>
+<td>Соединяет две текстовые строки в одну текстовую строку (Чаще удобнее использовать оператор <code>&amp;</code>).</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt163697.aspx" target="_blank">CONCATENATEX</a></td>
+<td>Функция работает над таблицей и возвращает текстовую строку. Сначала  для каждой записи таблицы вычисляет выражение, а затем сводит все вычесленные записи таблицы в одну строку с учетом разделителя из параметров.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634898" target="_blank">REPT</a></td>
+<td>Повторяет текст заданное количество раз.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634781" target="_blank">LEFT</a></td>
+<td>Возвращает указанное количество символов с начала текстовой строки.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634358" target="_blank">RIGHT</a></td>
+<td>Функция RIGHT возвращает последний символ или последние символы текстовой строки, в зависимости от указанного количества символов.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634558" target="_blank">TRIM</a></td>
+<td>Удаляет все пробелы из текста, за исключением единичных пробелов между словами.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634251" target="_blank">LOWER</a></td>
+<td>Преобразует все буквы в текстовой строке в нижний регистр.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634377" target="_blank">UPPER</a></td>
+<td>Преобразует все буквы в текстовой строке в верхний регистр.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="formatTextFunction"></a></p>
+
+<h2 id="форматирование-и-преобразование-типов">Форматирование и преобразование типов</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634924" target="_blank">FORMAT</a></td>
+<td>Преобразует значение в текст в указанном числовом формате. (см. также предопределенные форматы <a href="https://msdn.microsoft.com/ru-ru/ee634561" target="_blank">чисел</a> и <a href="https://msdn.microsoft.com/ru-ru/ee634813" target="_blank">даты и времени</a>. Пользовательские форматы <a href="https://msdn.microsoft.com/ru-ru/ee634206" target="_blank">чисел</a> и <a href="https://msdn.microsoft.com/ru-ru/ee634398" target="_blank">даты и времени</a>)</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634924" target="_blank">FIXED</a></td>
+<td>Преобразует значение в текст в указанном числовом формате.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634584" target="_blank">VALUE</a></td>
+<td>Преобразует текстовую строку, представляющую число, в число.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492191" target="_blank">CURRENCY</a></td>
+<td>Вычисляет аргумент и возвращает результат как тип данных currency.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="searchAndReplaceTextFunction"></a></p>
+
+<h2 id="поиск-и-замена">Поиск и замена</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt825189.aspx" target="_blank">UNICHAR</a></td>
+<td>Возвращает символ Юникод по его числовому значению. Работает аналогично функции Excel <a href="https://goo.gl/33djp8" target="_blank">ЮНИСИМВ</a></td>
+</tr>
+
+<tr>
+<td>UNICODE</td>
+<td>Возвращает число (код знака), соответствующее первому знаку в тексте.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634917" target="_blank">LEN</a></td>
+<td>Возвращает число символов в текстовой строке.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634235" target="_blank">SEARCH</a></td>
+<td>Возвращает номер позиции, начиная с которой обнаружена подстрока. Поиск идет слева на право без учета регистра и с учетом диакритических знаков.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634882" target="_blank">FIND</a></td>
+<td>Возвращает начальный номер позиции, начиная с которой обнаружена подстрока. Поиск идет с учетом регистра.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634548" target="_blank">MID</a></td>
+<td>Возвращает строку символов из середины текстовой строки с учетом начальной позиции и длины.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634374" target="_blank">REPLACE</a></td>
+<td>Заменяет часть текстовой строки другой текстовой строкой на основе указанного числа символов.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634233" target="_blank">SUBSTITUTE</a></td>
+<td>Заменяет существующий текст новым в текстовой строке.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634408" target="_blank">EXACT</a></td>
+<td>Сравнивает две текстовые строки и возвращает <code>true</code>, если они полностью одинаковые, и <code>false</code> в противном случае. Функция учитывает регистр, но не учитывает отличия форматирования. Можно использовать функцию, чтобы проверить входящий в документ текст.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="mathFunction"></a></p>
+
+<h1 id="математические-и-тригонометрические-функции">Математические и тригонометрические функции</h1>
+
+<p>Математические функции в DAX похожи на математические и тригонометрические функции Excel. Однако имеются некоторые отличия в типах числовых данных.</p>
+
+<p><a name="baseMathFunction"></a></p>
+
+<h2 id="базовые-операции-с-числами">Базовые операции с числами</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634559" target="_blank">SQRT</a></td>
+<td>Возвращает квадратный корень числа.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634921" target="_blank">POWER</a></td>
+<td>Возвращает результат возведения числа в степень.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634249" target="_blank">SIGN</a></td>
+<td>Определяет знак числа, результата вычисления или значения в столбце. Функция возвращает значение 1, если число положительное, значение 0 (ноль), если число равно нулю, и значение -1, если число отрицательное.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634382" target="_blank">QUOTIENT</a></td>
+<td>Выполняет деление и возвращает только целочисленную часть результата. Эта функция используется, если не нужно учитывать остаток от деления.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="roundMathFunction"></a></p>
+
+<h2 id="округление">Округление</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634566" target="_blank">ABS</a></td>
+<td>Возвращает абсолютное значение числа.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634373" target="_blank">INT</a></td>
+<td>Округляет число в меньшую сторону до ближайшего целого.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634402" target="_blank">ROUND</a></td>
+<td>Округляет число до указанного количества разрядов.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634963" target="_blank">ROUNDDOWN</a></td>
+<td>Округляет число вниз, к нулю.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634948" target="_blank">ROUNDUP</a></td>
+<td>Округляет число в большую сторону, от 0 (нуля).</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634815" target="_blank">FLOOR</a></td>
+<td>Округляет число в меньшую сторону (к нулю) до ближайшего числа, кратного заданной значимости.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634541" target="_blank">CEILING</a></td>
+<td>Округляет число в большую сторону до ближайшего целого или до ближайшего числа, кратного заданной значимости.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg413419" target="_blank">ISO.CEILING</a></td>
+<td>Округляет число в большую сторону до ближайшего целого или до ближайшего числа, кратного заданной значимости.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634553" target="_blank">MROUND</a></td>
+<td>Возвращает число, округленное до кратного заданной значимости.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634907" target="_blank">TRUNC</a></td>
+<td>Усекает число до целого, удаляя дробную часть.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="randomMathFunction"></a></p>
+
+<h2 id="операции-со-случайными-числами">Операции со случайными числами</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634783" target="_blank">RAND</a></td>
+<td>Возвращает случайное число, большее или равное 0 и меньшее 1, с равномерным распределением. Возвращаемое число изменяется каждый раз при пересчете ячейки, содержащей данную функцию.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634569" target="_blank">RANDBETWEEN</a></td>
+<td>Возвращает случайное число, расположенное в интервале между двумя заданными числами.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="trigMathFunction"></a></p>
+
+<h2 id="тригонометрические-функции-и-константы">Тригонометрические функции и константы</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634817" target="_blank">PI</a></td>
+<td>Возвращает число $Pi$ с точностью до 15 знака.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634774" target="_blank">LOG</a></td>
+<td>Возвращает логарифм числа по указанному основанию.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634578" target="_blank">LOG10</a></td>
+<td>Возвращает логарифм числа по основанию 10.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634772" target="_blank">LN</a></td>
+<td>Возвращает натуральный логарифм числа. Натуральные логарифмы вычисляются по основанию $e$.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634208" target="_blank">EXP</a></td>
+<td>Возвращает значение выражения $e^n$, где $n$ - заданное в параметрах число.  Функция <code>EXP</code> обратна функции <code>LN</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634540" target="_blank">FACT</a></td>
+<td>Возвращает факториал числа.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="dateTimeFunction"></a></p>
+
+<h1 id="функции-даты-и-времени">Функции даты и времени</h1>
+
+<p>Многие функции даты и времени в DAX схожи с функциями даты и времени Excel. Однако в функциях DAX используется тип данных <code>datetime</code> Microsoft SQL Server.</p>
+
+<p><a name="baseDateTimeFunction"></a></p>
+
+<h2 id="базовые-операции-с-датой-и-временем">Базовые операции с датой и временем</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634567" target="_blank">YEAR</a></td>
+<td>Возвращает для заданной даты год в виде четырехзначного числа от 1900 до 9999.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634914" target="_blank">MONTH</a></td>
+<td>Возвращает месяц в виде числа от 1 до 12.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634390" target="_blank">DAY</a></td>
+<td>Возвращает день месяца в виде числа от 1 до 31.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634800" target="_blank">HOUR</a></td>
+<td>Возвращает значение часа в виде числа от 0 до 23.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634776" target="_blank">MINUTE</a></td>
+<td>Возвращает число минут от 0 до 59 по заданному значению даты и времени.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634889" target="_blank">SECOND</a></td>
+<td>Возвращает для заданного значения времени число секунд в виде числа от 0 до 59.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634550" target="_blank">WEEKDAY</a></td>
+<td>Возвращает число от 1 до 7, определяющее день недели для даты. По умолчанию дни недели считаются от воскресенья (1) до субботы (7).</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634572" target="_blank">WEEKNUM</a></td>
+<td>Возвращает номер недели для заданных даты и года в соответствии со значением тип возврата. Номер недели указывает числовую позицию недели относительно начала года.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="constructorDateTimeFunction"></a></p>
+
+<h2 id="конструкторы-даты-и-времени">Конструкторы даты и времени</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634927" target="_blank">DATE</a></td>
+<td>Преобразует год, месяц, день, заданный в виде чисел в дату формате <code>datetime</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634564" target="_blank">TIME</a></td>
+<td>Преобразует часы, минуты и секунды, заданные в виде чисел, во время в формате <code>datetime</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634543" target="_blank">DATEVALUE</a></td>
+<td>Преобразует дату из текстового формата в дату в формате <code>datetime</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee635036" target="_blank">TIMEVALUE</a></td>
+<td>Преобразует время из текстового формата во время в формате <code>datetime</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634554" target="_blank">TODAY</a></td>
+<td>Возвращает текущую дату без времени.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634891" target="_blank">NOW</a></td>
+<td>Возвращает текущую дату и время.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="extendDateTimeFunction"></a></p>
+
+<h2 id="расширенные-операции-с-датой">Расширенные операции с датой</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/library/dn802538.aspx" target="_blank">DATEDIFF</a></td>
+<td>Возвращает интервал времени между двумя датами. (Тип интервала указывается в параметре Interval) Интервал может принимать следующие значения: <code>second</code>, <code>minute</code>, <code>hour</code>, <code>day</code>, <code>week</code>, <code>month</code>, <code>quarter</code>, <code>year</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634405" target="_blank">YEARFRAC</a></td>
+<td>Вычисляет долю года, представленную числом целых дней между двумя датами. Функция позволяет определить долю преимуществ или обязательств за целый год, приходящуюся на указанный срок.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634544" target="_blank">EDATE</a></td>
+<td>Возвращает дату, отстоящую от заданной даты на указанное число месяцев (до или после). С помощью функции вычисляются сроки обязательств и платежей, приходящиеся на тот же день месяца, что и начало расчетного периода.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634394" target="_blank">EOMONTH</a></td>
+<td>Возвращает дату окончания месяца (до или после указанного числа месяцев). С помощью функции вычисляются сроки обязательств и платежей, приходящиеся на конец месяца.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="dateTimeLogicFunction"></a></p>
+
+<h1 id="интеллектуальные-операции-со-временем">Интеллектуальные операции со временем</h1>
+
+<p>Интеллектуальные операции со временем, поддерживают методы анализа бизнес-аналитики и позволяют работать с данными с использованием временных периодов, таких как дни, месяцы, кварталы и годы.</p>
+
+<p>Эти функции позволяют выполнять вычисления с использованием встроенных наборов знаний о календарях и датах.</p>
+
+<p>Используя диапазоны времени и дат вместе со статистическими выражениями можно создавать осмысленные сравнения по сравнимым периодам времени для продаж, количеству товара и так далее.</p>
+
+<p><a name="returnColDateTimeLogicFunction"></a></p>
+
+<h2 id="функции-возвращающие-столбец-дат">Функции возвращающие столбец дат</h2>
+
+<p>Столбец дат это таблица содержащую один столбец со значениями даты.</p>
+
+<p><a name="returnColPart1DateTimeLogicFunction"></a></p>
+
+<h3 id="операции-с-периодами">Операции с периодами</h3>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634905" target="_blank">DATEADD</a></td>
+<td>Столбец дат, сдвинутых в будущее или в прошлое от дат в текущем контексте на указанное количество интервалов.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634557" target="_blank">DATESBETWEEN</a></td>
+<td>Столбец дат, за период с начальной до конечной даты.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634539" target="_blank">DATESINPERIOD</a></td>
+<td>Столбец дат, который начинается с начальной даты и продолжается определенное количество интервалов.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634873" target="_blank">PARALLELPERIOD</a></td>
+<td>Столбец дат, со сдвинутыми на несколько интервалов вперед или назад датами, от дат из столбца параметров в текущем контексте.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634972" target="_blank">SAMEPERIODLASTYEAR</a></td>
+<td>Столбец дат, со сдвинутыми на один год назад от дат, из столбца параметров в текущем контексте.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="returnColPart2DateTimeLogicFunction"></a></p>
+
+<h3 id="операции-днем-месяцем-кварталом-и-годом">Операции днем, месяцем, кварталом и годом</h3>
+
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>День</th>
+<th>Месяц</th>
+<th>Квартал</th>
+<th>Год</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Текущий</td>
+<td>-</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634359" target="_blank">DATESMTD</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634901" target="_blank">DATESQTD</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634221" target="_blank">DATESYTD</a></td>
+</tr>
+
+<tr>
+<td>Предыдущий</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634803" target="_blank">PREVIOUSDAY</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634758" target="_blank">PREVIOUSMONTH</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634385" target="_blank">PREVIOUSQUARTER</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634770" target="_blank">PREVIOUSYEAR</a></td>
+</tr>
+
+<tr>
+<td>Следующий</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634542" target="_blank">NEXTDAY</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634392" target="_blank">NEXTMONTH</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634878" target="_blank">NEXTQUARTER</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634212" target="_blank">NEXTYEAR</a></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="returnCellPart1DateTimeLogicFunction"></a></p>
+
+<h2 id="функции-возвращающие-ячейку-с-датой">Функции возвращающие ячейку с датой</h2>
+
+<p>Ячейка это таблица с одним столбцом и одной строкой.</p>
+
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>День</th>
+<th>Месяц</th>
+<th>Квартал</th>
+<th>Год</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Первый</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634806" target="_blank">FIRSTDATE</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634954" target="_blank">STARTOFMONTH</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634935" target="_blank">STARTOFQUARTER</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634797" target="_blank">STARTOFYEAR</a></td>
+</tr>
+
+<tr>
+<td>Последний</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634380" target="_blank">LASTDATE</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634239" target="_blank">ENDOFMONTH</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634243" target="_blank">ENDOFQUARTER</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634245" target="_blank">ENDOFYEAR</a></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="returnCellPart2DateTimeLogicFunction"></a></p>
+
+<h2 id="функции-возвращающие-ячейку-со-значением">Функции возвращающие ячейку со значением</h2>
+
+<p>Ячейка это таблица с одним столбцом и одной строкой.</p>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634210" target="_blank">FIRSTNONBLANK</a></td>
+<td>Возвращает первое значение в столбце column (с фильтрацией по текущему контексту), где выражение не является пустым.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634247" target="_blank">LASTNONBLANK</a></td>
+<td>Возвращает последнее значение в столбце column (с фильтрацией по текущему контексту), где выражение не является пустым.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="returnValueDateTimeLogicFunction"></a></p>
+
+<h2 id="функции-возвращающие-скалярное-значение">Функции возвращающие скалярное значение</h2>
+
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Месяц</th>
+<th>Квартал</th>
+<th>Год</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Сальдо на начало</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634224" target="_blank">OPENINGBALANCEMONTH</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634931" target="_blank">OPENINGBALANCEQUARTER</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634886" target="_blank">OPENINGBALANCEYEAR</a></td>
+</tr>
+
+<tr>
+<td>Оборот</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634560" target="_blank">TOTALMTD</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634579" target="_blank">TOTALQTD</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634400" target="_blank">TOTALYTD</a></td>
+</tr>
+
+<tr>
+<td>Сальдо на конец</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634215" target="_blank">CLOSINGBALANCEMONTH</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634876" target="_blank">CLOSINGBALANCEQUARTER</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634562" target="_blank">CLOSINGBALANCEYEAR</a></td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="informationFunction"></a></p>
+
+<h1 id="информационные-функции">Информационные функции</h1>
+
+<p>Информационная функция проверяет ячейку или строку, указанные в качестве аргумента, и сообщает, соответствует ли значение ожидаемому типу.</p>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634204" target="_blank">ISBLANK</a></td>
+<td>Проверяет, пустое ли значение, и возвращает значение <code>true</code> или <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/dn802550" target="_blank">ISEMPTY</a></td>
+<td>Возвращает значение <code>true</code>, если таблица пустая.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634580" target="_blank">ISLOGICAL</a></td>
+<td>Проверяет, является ли значение ошибкой, и возвращает <code>true</code> или <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634370" target="_blank">ISTEXT</a></td>
+<td>Проверяет, является ли значение текстом, и возвращает <code>true</code> или <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634563" target="_blank">ISNONTEXT</a></td>
+<td>Проверяет, не является ли значение текстом (пустые ячейки не являются текстом), и возвращает <code>true</code> или <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634911" target="_blank">ISNUMBER</a></td>
+<td>Проверяет, является ли значение числом, и возвращает <code>true</code> или <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt171515.aspx" target="_blank">ISEVEN</a></td>
+<td>Возвращает значение ИСТИНА, если число четное, и значение ЛОЖЬ, если нечетное.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt171506.aspx" target="_blank">ISODD</a></td>
+<td>Возвращает значение ИСТИНА, если число нечетное, и значение ЛОЖЬ, если четное.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492163" target="_blank">ISFILTERED</a></td>
+<td>Возвращает значение <code>true</code>, если columnName фильтруется напрямую. Если для столбца не задан фильтр или если фильтрация происходит потому, что выполняется фильтрация другого столбца в той же или в связанной таблице, функция возвращает значение <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492197" target="_blank">ISCROSSFILTERED</a></td>
+<td>Возвращает значение <code>true</code> при фильтрации по столбцу columnName или другому столбцу в этой же или связанной таблице.</td>
+</tr>
+
+<tr>
+<td>[ISSUBTOTAL]()</td>
+<td>Возвращает значение <code>true</code>, если текущая строка содержит подытог для заданного столбца, в противном случае возвращает <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/dn802535.aspx" target="_blank">ISONORAFTER</a></td>
+<td>Логическая функция, которая эмулирует поведение предложения <code>Start At</code> и возвращает <code>true</code> для строки, которая соответствует всем параметрам условия. Эта функция принимает переменное число аргументов кратное трем (т.н. троек), первые два аргумента в тройке - это сравниваемые выражения, а третий аргумент указывает порядок сортировки. Порядок сортировки по увеличению (по умолчанию) или уменьшению.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492183" target="_blank">CONTAINS</a></td>
+<td>Возвращает значение <code>true</code>, если значения для всех столбцов, на которые имеются ссылки, существуют или содержатся в этих столбцах; в противном случае возвращает значение <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt842621.aspx" target="_blank">CONTAINSROW</a></td>
+<td>Возвращает значение <code>true</code>, если существует по меньшей мере одна строка, в которой все столбцы имеют указанные значения.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492135" target="_blank">HASONEFILTER</a></td>
+<td>Возвращает значение <code>true</code>, если число значений, отсортированных по columnName, равно одному; в противном случае возвращает значение <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492190" target="_blank">HASONEVALUE</a></td>
+<td>Возвращает значение <code>true</code> при фильтрации содержимого столбца columnName до одного уникального значения. В противном случае возвращается значение <code>false</code>.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="userInformationFunction"></a></p>
+
+<h2 id="информация-о-пользователе">Информация о пользователе</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/hh230954.aspx" target="_blank">USERNAME</a></td>
+<td>Возвращает имя домена и имя пользователя из учетных данных, предоставленных системе при подключении.</td>
+</tr>
+
+<tr>
+<td>[USEROBJECTID]()</td>
+<td>Возвращает идентификатор объекта текущего пользователя из Azure AD для сервера анализа данных Azure и идентификатор безопасности текущего пользователя для локального сервера анализа данных.</td>
+</tr>
+
+<tr>
+<td>[USERPRINCIPALNAME]()</td>
+<td>Возвращает имя субъекта-пользователя.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="errorHanding"></a></p>
+
+<h2 id="обработка-ошибок">Обработка ошибок</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ERROR</td>
+<td>Принимает текстовое сообщение и порождает ошибку. Может использовать в формулах для описания недопустимого состояния пользовательских данных.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634214" target="_blank">ISERROR</a></td>
+<td>Проверяет, является ли значение ошибкой, и возвращает <code>true</code> или <code>false</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634765" target="_blank">IFERROR</a></td>
+<td>Вычисляет выражение и возвращает указанное значение, если выражение ошибочно. В противном случае возвращает значение выражения.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="filterFunction"></a></p>
+
+<h1 id="функции-фильтрации">Функции фильтрации</h1>
+
+<p>Функции фильтра и значений DAX относятся к самым мощным и сложным, значительно отличаясь от функций Excel. Функции поиска работают с использованием таблиц и связей, как в базе данных. Функции фильтрации дают возможность управлять контекстом данных для создания динамических вычислений. Описание контекста см. в разделе <a href="https://msdn.microsoft.com/ru-ru/gg413423" target="_blank">Контекст в формулах DAX</a>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492170" target="_blank">LOOKUPVALUE</a></td>
+<td>Возвращает значение в столбце result_columnName для строки, соответствующей всем критериям, указанным с помощью параметров search_columnName и search_value.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634825" target="_blank">CALCULATE</a></td>
+<td>Вычисляет выражение в контексте, изменяемом указанными фильтрами.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634760" target="_blank">CALCULATETABLE</a></td>
+<td>Вычисляет табличное выражение в контексте, изменяемом данными фильтрами.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634202" target="_blank">RELATED</a></td>
+<td>Возвращает связанное значение из другой таблицы.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634226" target="_blank">RELATEDTABLE</a></td>
+<td>Вычисляет табличное выражение в контексте, изменяемом данными фильтрами.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634802" target="_blank">ALL</a></td>
+<td>Возвращает все строки в таблице или все значения в столбце, не учитывая применяемые фильтры. Эта функция полезна для очистки фильтров и создания вычислений по всем строкам таблицы.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634795" target="_blank">ALLEXCEPT</a></td>
+<td>Удаляет все фильтры контекста в таблице, кроме фильтров, примененных к указанным столбцам.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634793" target="_blank">ALLNOBLANKROW</a></td>
+<td>Из родительской таблицы связи возвращает все непустые строки либо все различные значения столбца, за исключением пустых строк, не учитывая существующие фильтры контекста.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492186" target="_blank">ALLSELECTED</a></td>
+<td>Удаляет фильтры содержимого из столбцов и строк в текущем запросе, сохраняя все остальные фильтры содержимого и явные фильтры. Функция ALLSELECTED возвращает содержимое, представляющее все строки и столбцы в запросе, сохраняя явные фильтры и фильтры содержимого, не относящиеся к фильтрам строк и столбцов. Эту функцию можно использовать для получения визуальных итогов в запросах.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634966" target="_blank">FILTER</a></td>
+<td>Возвращает таблицу, представляющую подмножество другой таблицы или выражения.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492172" target="_blank">FILTERS</a></td>
+<td>Возвращает значения, которые напрямую применяются в качестве фильтров к столбцу columnName.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634943" target="_blank">DISTINCT</a></td>
+<td>Возвращает таблицу из одного столбца, содержащую уникальные значения из указанного столбца. Другими словами, повторяющиеся значения удаляются, и возвращаются только уникальные значения. <br><br> <strong>Примечание</strong> <br><br> Эту функцию нельзя использовать для возвращения результатов в ячейку или столбец на листе. Функция DISTINCT вкладывается в формулу, чтобы получить список уникальных значений, который можно передать другой функции, а затем выполнить подсчет, суммирование или другие операции.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634547" target="_blank">VALUES</a></td>
+<td>Возвращает таблицу с одним столбцом, содержащую уникальные значения из указанного столбца или таблицы. Другими словами, повторяющиеся значения удаляются, и возвращаются только уникальные значения. <br><br> <strong>Примечание</strong> <br><br> Эту функцию нельзя использовать для возвращения результатов в ячейку или столбец на листе. Она служит в качестве промежуточной функции, вложенной в формулу, чтобы получить список уникальных значений, которые можно подсчитать или использовать для фильтрации или суммирования других значений.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634551" target="_blank">EARLIER</a></td>
+<td>Возвращает текущее значение указанного столбца на внешнем этапе вычисления для данного столбца. <br><br> Функция EARLIER полезна для вложенных вычислений, когда необходимо указать в качестве входного определенное значение и в зависимости от него проводить вычисления. В Microsoft Excel такие вычисления можно выполнять только в контексте текущей строки, однако в DAX можно сохранить входное значение, а затем выполнить вычисление с использованием данных из всей таблицы. <br><br> Функция EARLIER используется главным образом в контексте вычисляемых столбцов.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634779" target="_blank">EARLIEST</a></td>
+<td>Возвращает текущее значение указанного столбца на внешнем этапе вычисления для данного столбца.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/hh213140.aspx" target="_blank">CUSTOMDATA</a></td>
+<td>Возвращает содержимое свойства <code>CustomData</code> в строке подключения.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="agregateAndstatFunction"></a></p>
+
+<h1 id="агрегатные-и-статистические-функции">Агрегатные и статистические функции</h1>
+
+<p>Язык выражений анализа данных предоставляет множество функций для вычисления агрегированных выражений. Эти функции:</p>
+
+<ul>
+<li>Схожи со статистическими функциями, используемыми в Microsoft Excel.</li>
+<li>Выполняют статистические выражения.</li>
+<li>Позволяют отфильтровать столбец, прежде чем выполнять статистическую обработку или создавать статистические выражения на основе связанных таблиц.</li>
+</ul>
+
+<p><a name="agregareTableFunction"></a></p>
+
+<h2 id="агрегатные-функции-над-таблицами">Агрегатные функции над таблицами</h2>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492204" target="_blank">ADDCOLUMNS</a></td>
+<td>Добавляет вычисляемые столбцы к выбранной таблице или табличному выражению.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634574" target="_blank">COUNTROWS</a></td>
+<td>Возвращает количество строк в таблице.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492184" target="_blank">ROW</a></td>
+<td>Возвращает однострочную таблицу. Эта таблица содержит значения, являющиеся результатом выражения, заданного для каждого столбца.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492198" target="_blank">TOPN</a></td>
+<td>Возвращает первые $N$ строк таблицы.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492171" target="_blank">SUMMARIZE</a></td>
+<td>Возвращает сводную таблицу с вычисленными итогами для перечня сгруппированных столбцов.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt163696" target="_blank">SUMMARIZECOLUMNS</a></td>
+<td>Возвращает таблицу-сводку по набору групп.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt163693" target="_blank">GROUPBY</a></td>
+<td>Функция <code>GROUPBY</code> аналогична функции <code>SUMMARIZE</code>. Однако <code>GROUPBY</code> не выполняет неявный <code>CALCULATE</code> для любых добавочных столбцов, которые он добавляет. <code>GROUPBY</code> разрешает использовать новую функцию <code>CURRENTGROUP()</code> внутри функций агрегации в добавочных столбцах, которые она добавляет. <code>GROUPBY</code> пытается повторно использовать данные, которые были сгруппированы, что делает его высокоэффективным.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492168" target="_blank">CROSSJOIN</a></td>
+<td>Возвращает <a href="https://ru.wikipedia.org/wiki/Прямое_произведение" target="_blank">декартово произведение</a> $1 + N$ таблиц, где $N &gt;= 1$.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492196" target="_blank">GENERATE</a></td>
+<td>Возвращает декартово произведение всех строк в таблице 1 и таблицы, являющейся результатом вычисления таблицы 2 в контексте текущей строки из таблицы 1.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492206" target="_blank">GENERATEALL</a></td>
+<td>Аналогично <code>GENERATE</code>.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt243783" target="_blank">INTERSECT</a></td>
+<td>Возвращает пересечение строк двух таблиц, сохраняя дубликаты.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/dn802543" target="_blank">NATURALINNERJOIN</a></td>
+<td>Выполняет внутреннее соединение таблицы с другой таблицей. Таблицы объединены в общие столбцы (по имени) в двух таблицах. Если две таблицы не имеют общих имен столбцов, возвращается ошибка.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/dn802527" target="_blank">NATURALLEFTOUTERJOIN</a></td>
+<td>Выполняет внутреннее соединение таблицы с другой таблицей. Таблицы объединены в общие столбцы (по имени) в двух таблицах. Если две таблицы не имеют общих имен столбцов, возвращается ошибка.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/dn802530" target="_blank">UNION</a></td>
+<td>Создает таблицу объединения (объединения) из пары таблиц.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt243784" target="_blank">EXCEPT</a></td>
+<td>Возвращает строки одной таблицы, которых не существует в другой таблице.</td>
+</tr>
+
+<tr>
+<td><a name="datatableFunction"></a><a href="https://msdn.microsoft.com/ru-ru/mt674921.aspx" target="_blank">DATATABLE</a></td>
+<td>Создает таблицу с константными значениями средствами языка DAX. Полезно для использования в случае создания короткого редко изменчивого справочника на уровне DAX.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="agregareColumnFunction"></a></p>
+
+<h2 id="агрегатные-функции-над-столбцами-и-выражениями">Агрегатные функции над столбцами и выражениями</h2>
+
+<table>
+<thead>
+<tr>
+<th>Описание</th>
+<th>Обычные<sup><a href="#normalFunc">1</a></sup></th>
+<th>Тип A<sup><a href="#typeAFunc">2</a></sup></th>
+<th>Тип X<sup><a href="#typeXFunc">3</a></sup></th>
+<th>Тип AX<sup><a href="#typeAXFunc">4</a></sup></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Сумма</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634387" target="_blank">SUM</a></td>
+<td>-</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634959" target="_blank">SUMX</a></td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Среднее</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634231" target="_blank">AVERAGE</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634809" target="_blank">AVERAGE<strong>A</strong></a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634546" target="_blank">AVERAGE<strong>X</strong></a></td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Минимум</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634870" target="_blank">MIN</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634789" target="_blank">MIN<strong>A</strong></a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634576" target="_blank">MIN<strong>X</strong></a></td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Максимум</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634228" target="_blank">MAX</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634582" target="_blank">MAX<strong>A</strong></a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634576" target="_blank">MAX<strong>X</strong></a></td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Количество значений</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634791" target="_blank">COUNT</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634956" target="_blank">COUNT<strong>A</strong></a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634549" target="_blank">COUNT<strong>X</strong></a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634219" target="_blank">COUNT<strong>AX</strong></a></td>
+</tr>
+
+<tr>
+<td>Количество пустых значений</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634230" target="_blank">COUNTBLANK</a></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td>Количество разных значений</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492142" target="_blank">DISTINCTCOUNT</a></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="statFunction"></a></p>
+
+<h2 id="статистические-функции-над-столбцами-и-выражениями">Статистические функции над столбцами и выражениями</h2>
+
+<table>
+<thead>
+<tr>
+<th>Описание</th>
+<th>Обычные<sup><a href="#normalFunc">1</a></sup></th>
+<th>Тип X<sup><a href="#typeXFunc">3</a></sup></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Ранг</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492169" target="_blank">RANK.EQ</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492185" target="_blank">RANK<strong>X</strong></a></td>
+</tr>
+
+<tr>
+<td>Дисперсия всей совокупности</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492143" target="_blank">VAR.P</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492202" target="_blank">VAR<strong>X</strong>.P</a></td>
+</tr>
+
+<tr>
+<td>Дисперсия выборки</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492133" target="_blank">VAR.S</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492132" target="_blank">VAR<strong>X</strong>.S</a></td>
+</tr>
+
+<tr>
+<td>Стандартное отклонение всей совокупности</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492207" target="_blank">STDEV.P</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492208" target="_blank">STDEV<strong>X</strong>.P</a></td>
+</tr>
+
+<tr>
+<td>Стандартное отклонение выборки</td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492150" target="_blank">STDEV.S</a></td>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492205" target="_blank">STDEV<strong>X</strong>.S</a></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="notesAgregateAndstatFunction"></a></p>
+
+<h2 id="замечания-к-агрегатным-и-статистическим-функциям">Замечания к агрегатным и статистическим функциям</h2>
+
+<ol>
+<li><strong>Обычные</strong> <a name="normalFunc"></a> - Позволяет вычислить функцию над столбцом. Принимает только числовые значения. <strong>Не производит преобразование данных</strong> из других типов данных в число, если ячейка содержит:
+
+<ul>
+<li>текст - функция не вычисляется и возвращает <a href="https://DmitriyVlasov.ru/ru/post/handing-of-dax-blank/" target="_blank">пусто</a>;</li>
+<li>логическое значение - ячейка игнорируется.</li>
+<li>пустое значение - ячейка игнорируется.</li>
+<li>нулевое значение - ячейка учитывается в расчете.</li>
+</ul></li>
+<li><strong>Тип A</strong> <a name="typeAFunc"></a> - Позволяет вычислить функцию над столбцом. Производит преобразование данных других типов к числу (в отличии от <a href="#normalFunc">обычных функций</a>). Если ячейка содержит:
+
+<ul>
+<li>текст - если возможно производится преобразование к числу, иначе</li>
+<li>логическое значение - истина = 1, ложь = 0;
+возвращается;</li>
+<li>пустое значение - ячейка игнорируется.</li>
+<li>нулевое значение - ячейка учитывается в расчете.</li>
+</ul></li>
+<li><strong>Тип X</strong>  <a name="typeXFunc"></a> - Позволяет вычислить функцию над выражением, а не над столбцом отличии от <a href="#normalFunc">обычных функций</a> и функций <a href="#typeAFunc">типа A</a>. В принципе обработки не числовых значений аналогичная <a href="#normalFunc">обычной функции</a>.</li>
+<li><strong>Тип AX</strong> <a name="typeAXFunc"></a> - Позволяет вычислить функцию над выражением, а не над столбцом отличии от <a href="#normalFunc">обычных функций</a> и функций <a href="#typeAFunc">типа A</a>. В принципе обработки не числовых значений аналогичная  функциям <a href="#typeAFunc">типа A</a>.</li>
+</ol>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="patentChildFunction"></a></p>
+
+<h1 id="функции-над-иерархическими-данными">Функции над иерархическими данными</h1>
+
+<p>Функции для управления данными, представленными в моделях в виде иерархии типа «родители-потомки». Эти функции можно использовать для получения следующих данных:</p>
+
+<ul>
+<li>Общее количество родительских элементов строки, количество уровней в иерархии до родительского элемента верхнего уровня,</li>
+<li>Идентификатор родительского элемента, расположенного на n уровней выше текущей строки,</li>
+<li>Идентификатор n-потомка, считая от верхнего уровня иерархии.</li>
+<li>Определить, является ли определенный родительский элемент элементом иерархии текущей строки. (см. <a href="https://msdn.microsoft.com/ru-ru/gg492192" target="_blank">подробнее</a>)</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492167" target="_blank">PATH</a></td>
+<td>Возвращает строку текста с разделителями, содержащую идентификаторы всех родительских элементов текущего идентификатора, с самого старого до текущего.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492187" target="_blank">PATHLENGTH</a></td>
+<td>Возвращает количество родительских элементов указанного элемента в заданных результатах функции PATH, включая сам элемент.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492182" target="_blank">PATHCONTAINS</a></td>
+<td>Возвращает значение <code>true</code>, если указанный объект item существует в указанном объекте path.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492134" target="_blank">PATHITEM</a></td>
+<td>Возвращает элемент с указанным параметром position из строки результатов вычисления функции PATH. Позиции считаются слева направо.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/gg492199" target="_blank">PATHITEMREVERSE</a></td>
+<td>Возвращает элемент с указанным параметром position из строки результатов вычисления функции PATH. Позиции вычисляются в направлении справа налево.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="otherFunction"></a></p>
+
+<h1 id="прочие-функции">Прочие функции</h1>
+
+<p>эти функции выполняют уникальные действия, которые не могут быть определены ни одной из других категорий, к которым принадлежит большинство функций.</p>
+
+<table>
+<thead>
+<tr>
+<th>Имя функции</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/ee634820" target="_blank">BLANK</a></td>
+<td>Возвращает пустое значение.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+<p><a name="syntaxElement"></a></p>
+
+<h1 id="синтаксические-элементы">Синтаксические элементы</h1>
+
+<p>Несмотря на то что DAX является библиотекой функций ее эволюционное развитие привело разработчиков к необходимости введения удобных синтаксических элементов характерных для языков программирования.</p>
+
+<p>Например выражение <code>VAR ... RETURN</code> успешно используется для уменьшения сложности написания и чтения DAX функций с помощью  построения промежуточных вычислений. А типы данных используются при построении справочника на уровне DAX с помощью функции <a href="#datatableFunction">DATATABLE</a>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Имя элемента</th>
+<th>Описание</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt243785" target="_blank">VAR</a></td>
+<td>Сохраняет результат выражения как именованную переменную, которая затем может быть передана как аргумент другим выражениям. Когда результирующие значения были рассчитаны для выражения переменных, эти значения не изменяются, даже если эта переменная указана в другом выражении.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/en-us/library/mt842621.aspx" target="_blank">IN</a></td>
+<td>Возвращает значение <code>true</code>, если существует по меньшей мере одно значение, в которой все столбцы имеют указанные значения.</td>
+</tr>
+
+<tr>
+<td><a href="https://msdn.microsoft.com/ru-ru/mt243785" target="_blank">RETURN</a></td>
+<td>Возвращает результат вычисления формулы используется совместно с выражением <code>VAR</code>.</td>
+</tr>
+
+<tr>
+<td>INTEGER</td>
+<td>Целое число</td>
+</tr>
+
+<tr>
+<td>DOUBLE</td>
+<td>Число с плавающей точкой</td>
+</tr>
+
+<tr>
+<td>STRING</td>
+<td>Строка</td>
+</tr>
+
+<tr>
+<td>BOOLEAN</td>
+<td>Логическая переменная</td>
+</tr>
+
+<tr>
+<td>CURRENCY</td>
+<td>Валюта</td>
+</tr>
+
+<tr>
+<td>DATETIME</td>
+<td>Дата время</td>
+</tr>
+</tbody>
+</table>
+
+<p><a href="#TOC">К содержанию</a></p>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/ru/tags/power-bi/">Power BI</a>
+  
+  <a class="badge badge-light" href="/ru/tags/dax/">DAX</a>
+  
+  <a class="badge badge-light" href="">Обзор</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/ru/authors/me/">Дмитрий Власов</a></h5>
+      <h6 class="card-subtitle">Старший BI разработчик</h6>
+      <p class="card-text" itemprop="description">Бизнес аналитика, функциональное программирование и машинное обучение.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/ru/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/DmitriyVlasov" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vk.com/DmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-vk"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://facebook.com/MeDmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/DmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/DmitriyVlasov" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Обзоры</h3>
+        <ul>
+          
+          <li><a href="/ru/post/handing-of-dax-blank/">Сравнение обработки пустых значений в DAX, Excel и SQL</a></li>
+          
+          <li><a href="/ru/post/dax-function-earlier/">Пример использования функции EARLIER</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Цитата</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Скачать
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/ru/index.json";
+      const i18n = {
+        'placeholder': "Поиск...",
+        'results': "Найдено",
+        'no_results': "Результатов не найдено"
+      };
+      const content_type = {
+        'post': "Статьи",
+        'project': "Проекты",
+        'publication' : "Публикации",
+        'talk' : "Выступления"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.3258b3a711acd6208568ec000de4beec.js"></script>
+
+  </body>
+</html>
+

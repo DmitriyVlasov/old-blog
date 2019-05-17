@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5 on Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/publication_types/5/</link>
+    <description>Recent content in 5 on Дмитрий Власов</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
+    <lastBuildDate>Sat, 28 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://DmitriyVlasov.ru/ru/publication_types/5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Глава 1. Вступление</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/01-preliminaries/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/01-preliminaries/</guid>
+      <description>FParsec состоит из двух библиотек: FParsec.dll и FParsecCS.dll. Для использования FParsec в вашем проекте, вы можете или установить из nuget (см. подробнее варианты установки nuget-пакетовen), или собрать два DLL файла FParsec из исходного кода. Самый простой способ собрать FParsec из исходного кода это использовать файлы решений Visual Studio в каталогах =Build/VS исходного кода пакета, например, в каталоге Build/VS11 для Visual Studio 2012. Любой проект, который использует библиотеку FParsec должен ссылаться на оба файла DLL.</description>
+    </item>
+    
+    <item>
+      <title>Глава 2. Синтаксический анализатор числа с плавающей точкой</title>
+      <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/02-parsing-a-single-float/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/02-parsing-a-single-float/</guid>
+      <description>Синтаксический разбор входного потока включает два этапа: 1. построение синтаксического анализатора и 1. применение анализатора к входному потоку.
+Давайте начнем с простого примера: синтаксический разбор строки представляющей собой отдельное число с плавающей точкой. В этом случае первый шаг &amp;mdash; построение синтаксического анализатора, просто, поскольку модуль CharParsers уже поставляется со встроенным анализатором числа с плавающей точкой:
+val pfloat: Parser&amp;lt;float,&#39;u&amp;gt;  Универсальный тип Parser&amp;lt;&#39;Result,&#39;UserState&amp;gt; является типом всех синтаксических анализаторов в библиотеке FParsec. Если вы перейдете по следующей гиперссылке, вы увидите, что Parser является синонимом для функционального типа.</description>
+    </item>
+    
+  </channel>
+</rss>
