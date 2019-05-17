@@ -17,10 +17,10 @@
   translation: мин. на чтение
 
 - id: previous
-  translation: Предыдущие
+  translation: Далее
 
 - id: next
-  translation: Далее
+  translation: Ранее
 
 - id: figure
   translation: 'Рис. %d:'
