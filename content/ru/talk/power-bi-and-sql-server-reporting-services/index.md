@@ -34,4 +34,4 @@ _P.S.: Послушал сам себя, голос понравился. Но �
 
 ## Слайды
 
-<iframe src="https://onedrive.live.com/embed?cid=E46638C5BB68AE00&amp;resid=E46638C5BB68AE00%21248302&amp;authkey=AHoB7-4B9XLbPyE&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">Это внедренный файл <a target="_blank" href="https://office.com">Microsoft Office</a> на платформе <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+<iframe src="https://onedrive.live.com/embed?cid=E46638C5BB68AE00&resid=E46638C5BB68AE00%21248302&authkey=AHoB7-4B9XLbPyE&em=2" width="610px" height="367px" frameborder="0" scrolling="no"></iframe>
