@@ -8,12 +8,13 @@ abstract: История разработки четвертой версии F#
 
 # Talk start and end times.
 # End time can optionally be hidden by prefixing the line with `#`.
-date: "2015-08-25T20:00:00Z"
-date_end: "2015-08-25T21:00:00Z"
+
+date: "2015-08-25T20:00:00+03:00"
+date_end: "2015-08-25T21:00:00+03:00"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2015-08-25T22:00:00Z"
+publishDate: "2015-08-25T22:00:00+03:00"
 
 authors: []
 tags: []

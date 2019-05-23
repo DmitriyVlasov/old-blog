@@ -8,8 +8,9 @@ abstract: Custom коннектор от нуля до единицы. Расс�
 
 # Talk start and end times.
 # End time can optionally be hidden by prefixing the line with `#`.
-date: "2019-02-28T19:00:00Z"
-date_end: "2019-02-28T20:00:00Z"
+
+date: "2019-02-28T19:00:00+03:00"
+date_end: "2019-02-28T20:00:00+03:00"
 all_day: false
 
 image:
