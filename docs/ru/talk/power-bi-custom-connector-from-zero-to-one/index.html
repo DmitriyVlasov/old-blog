@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="История разработки четвертой версии F# в лицах. Улучшения языка F# и среды исполнения. Улучшения основой библиотеки языка FSharp.Core. Интегрированная среда разработки — новые функции Visual Studio 2015 и плагина &#34;Visual F# Power Tools&#34;. Материалы и полезные сайты для старта изучения F#.">
+  <meta name="description" content="Custom коннектор от нуля до единицы. Расскажем о кейсе собственного опыта написания custom-коннектора для Power BI к Mango Office специалистом «общего» профиля.">
 
   
-  <link rel="alternate" hreflang="ru-ru" href="https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/">
+  <link rel="alternate" hreflang="ru-ru" href="https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/">
 
   
 
@@ -117,7 +117,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/">
+  <link rel="canonical" href="https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/">
 
   
   
@@ -128,21 +128,21 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Дмитрий Власов">
-  <meta property="og:url" content="https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/">
-  <meta property="og:title" content="Обзор F# 4.0 | Дмитрий Власов">
-  <meta property="og:description" content="История разработки четвертой версии F# в лицах. Улучшения языка F# и среды исполнения. Улучшения основой библиотеки языка FSharp.Core. Интегрированная среда разработки — новые функции Visual Studio 2015 и плагина &#34;Visual F# Power Tools&#34;. Материалы и полезные сайты для старта изучения F#."><meta property="og:image" content="https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/featured.jpg">
+  <meta property="og:url" content="https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/">
+  <meta property="og:title" content="Power BI Custom Connector от 0 к 1 | Дмитрий Власов">
+  <meta property="og:description" content="Custom коннектор от нуля до единицы. Расскажем о кейсе собственного опыта написания custom-коннектора для Power BI к Mango Office специалистом «общего» профиля."><meta property="og:image" content="https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/featured.jpg">
   <meta property="og:locale" content="ru-ru">
   
-  <meta property="article:published_time" content="2015-08-25T22:00:00&#43;03:00">
+  <meta property="article:published_time" content="2019-02-28T19:00:00&#43;03:00">
   
-  <meta property="article:modified_time" content="2015-08-25T20:00:00&#43;03:00">
-  
-
+  <meta property="article:modified_time" content="2019-02-28T19:00:00&#43;03:00">
   
 
   
 
-  <title>Обзор F# 4.0 | Дмитрий Власов</title>
+  
+
+  <title>Power BI Custom Connector от 0 к 1 | Дмитрий Власов</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -408,7 +408,7 @@
 
 
 <div class="article-header d-xl-none">
-  <div class="featured-image" style="background-image: url('/ru/talk/review-fsharp-4/featured_hu36338e1587dc404b9e66dab61962948d_137568_800x0_resize_q90_lanczos.jpg');"></div>
+  <div class="featured-image" style="background-image: url('/ru/talk/power-bi-custom-connector-from-zero-to-one/featured_hu2fbf0ed34f072e1b8c8f15a89aa75cb2_150181_800x0_resize_q90_lanczos.jpg');"></div>
   
 </div>
 
@@ -417,7 +417,7 @@
   <div class="row">
     <div class="col-6">
       <div class="split-header-content">
-        <h1 itemprop="name">Обзор F# 4.0</h1>
+        <h1 itemprop="name">Power BI Custom Connector от 0 к 1</h1>
 
         
 
@@ -425,8 +425,8 @@
 
 
 
-<meta content="2015-08-25 20:00:00 &#43;0300 MSK" itemprop="datePublished">
-<meta content="2015-08-25 20:00:00 &#43;0300 MSK" itemprop="dateModified">
+<meta content="2019-02-28 19:00:00 &#43;0300 MSK" itemprop="datePublished">
+<meta content="2019-02-28 19:00:00 &#43;0300 MSK" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -482,6 +482,14 @@
 
 
 
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/DmitriyVlasov/Blog/tree/master/samples/2019-02-28" target="_blank" rel="noopener">
+  Код
+</a>
+
 
 
 
@@ -493,7 +501,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="http://dmitriyvlasov.github.io/Presentations/review-fsharp-4.html#/" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://1drv.ms/p/s!AgCuaLvFOGbkj7w4AjL92umWKr-xeA" target="_blank" rel="noopener">
   Слайды
 </a>
 
@@ -503,28 +511,12 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://youtu.be/iOItE4hR6jg" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://www.facebook.com/alexander.ermakov.758/videos/988080561402683/?hc_ref=ARRPJMvHTc3WDqaDQRlEtolvpWTWBfZ6gZ8xOwuyESmZq0EDh3P39aSAbmfoz0AXuC4" target="_blank" rel="noopener">
   Видео
 </a>
 
 
 
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="http://fsharplang.ru" target="_blank" rel="noopener">
-    <i class="fab fa-telegram mr-1"></i>
-    F# russan
-  </a>
 
 
 </div>
@@ -536,21 +528,21 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=%d0%9e%d0%b1%d0%b7%d0%be%d1%80%20F%23%204.0&amp;url=https%3a%2f%2fDmitriyVlasov.ru%2fru%2ftalk%2freview-fsharp-4%2f"
+         href="https://twitter.com/intent/tweet?text=Power%20BI%20Custom%20Connector%20%d0%be%d1%82%200%20%d0%ba%201&amp;url=https%3a%2f%2fDmitriyVlasov.ru%2fru%2ftalk%2fpower-bi-custom-connector-from-zero-to-one%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fDmitriyVlasov.ru%2fru%2ftalk%2freview-fsharp-4%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fDmitriyVlasov.ru%2fru%2ftalk%2fpower-bi-custom-connector-from-zero-to-one%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fDmitriyVlasov.ru%2fru%2ftalk%2freview-fsharp-4%2f&amp;title=%d0%9e%d0%b1%d0%b7%d0%be%d1%80%20F%23%204.0"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fDmitriyVlasov.ru%2fru%2ftalk%2fpower-bi-custom-connector-from-zero-to-one%2f&amp;title=Power%20BI%20Custom%20Connector%20%d0%be%d1%82%200%20%d0%ba%201"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
@@ -558,7 +550,7 @@
     
     <li>
       <a class="email"
-         href="mailto:?subject=%d0%9e%d0%b1%d0%b7%d0%be%d1%80%20F%23%204.0&amp;body=https%3a%2f%2fDmitriyVlasov.ru%2fru%2ftalk%2freview-fsharp-4%2f">
+         href="mailto:?subject=Power%20BI%20Custom%20Connector%20%d0%be%d1%82%200%20%d0%ba%201&amp;body=https%3a%2f%2fDmitriyVlasov.ru%2fru%2ftalk%2fpower-bi-custom-connector-from-zero-to-one%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -570,7 +562,7 @@
     </div>
     <div class="col-6">
       <div class="split-header-image">
-        <img src="/ru/talk/review-fsharp-4/featured_hu36338e1587dc404b9e66dab61962948d_137568_680x500_fill_q90_lanczos_right.jpg" itemprop="image" alt="">
+        <img src="/ru/talk/power-bi-custom-connector-from-zero-to-one/featured_hu2fbf0ed34f072e1b8c8f15a89aa75cb2_150181_680x500_fill_q90_lanczos_center.jpg" itemprop="image" alt="">
         
       </div>
     </div>
@@ -578,7 +570,7 @@
 </div>
 
 <div class="article-container d-xl-none">
-  <h1 itemprop="name">Обзор F# 4.0</h1>
+  <h1 itemprop="name">Power BI Custom Connector от 0 к 1</h1>
 
   
 
@@ -586,8 +578,8 @@
 
 
 
-<meta content="2015-08-25 20:00:00 &#43;0300 MSK" itemprop="datePublished">
-<meta content="2015-08-25 20:00:00 &#43;0300 MSK" itemprop="dateModified">
+<meta content="2019-02-28 19:00:00 &#43;0300 MSK" itemprop="datePublished">
+<meta content="2019-02-28 19:00:00 &#43;0300 MSK" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -678,6 +670,14 @@
 
 
 
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/DmitriyVlasov/Blog/tree/master/samples/2019-02-28" target="_blank" rel="noopener">
+  Код
+</a>
+
 
 
 
@@ -689,7 +689,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="http://dmitriyvlasov.github.io/Presentations/review-fsharp-4.html#/" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://1drv.ms/p/s!AgCuaLvFOGbkj7w4AjL92umWKr-xeA" target="_blank" rel="noopener">
   Слайды
 </a>
 
@@ -699,28 +699,12 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://youtu.be/iOItE4hR6jg" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://www.facebook.com/alexander.ermakov.758/videos/988080561402683/?hc_ref=ARRPJMvHTc3WDqaDQRlEtolvpWTWBfZ6gZ8xOwuyESmZq0EDh3P39aSAbmfoz0AXuC4" target="_blank" rel="noopener">
   Видео
 </a>
 
 
 
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="http://fsharplang.ru" target="_blank" rel="noopener">
-    <i class="fab fa-telegram mr-1"></i>
-    F# russan
-  </a>
 
 
 </div>
@@ -734,7 +718,7 @@
 
     
       <h3>Аннотация</h3>
-      <p class="pub-abstract" itemprop="text">История разработки четвертой версии F# в лицах. Улучшения языка F# и среды исполнения. Улучшения основой библиотеки языка FSharp.Core. Интегрированная среда разработки — новые функции Visual Studio 2015 и плагина &ldquo;Visual F# Power Tools&rdquo;. Материалы и полезные сайты для старта изучения F#.</p>
+      <p class="pub-abstract" itemprop="text">Custom коннектор от нуля до единицы. Расскажем о кейсе собственного опыта написания custom-коннектора для Power BI к Mango Office специалистом «общего» профиля.</p>
     
 
     <div class="row">
@@ -744,12 +728,12 @@
           <div class="col-12 col-md-3 pub-row-heading">Дата</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
             
-            25.08.2015
+            28.02.2019
             <div class="talk-time">
               
-                20:00
+                19:00
                 
-                  &mdash; 21:00
+                  &mdash; 20:00
                 
               
             </div>
@@ -766,8 +750,8 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Событие</div>
           <div class="col-12 col-md-9">
-            <a href="https://spbdotnet.timepad.ru/event/233305/" target="_blank" rel="noopener">
-            SPB .NET Meetup №4
+            <a href="https://www.facebook.com/events/1158140777686168/" target="_blank" rel="noopener">
+            Awara IT и Russian MVP Community митап по Power BI
             </a>
           </div>
         </div>
@@ -794,6 +778,11 @@
 
     <div class="article-style">
       
+
+<h2 id="слайды">Слайды</h2>
+
+<iframe src="https://onedrive.live.com/embed?cid=E46638C5BB68AE00&resid=E46638C5BB68AE00%21253496&authkey=AF0Z7xX4vSLnxuc&em=2" width="610px" height="367px" frameborder="0" scrolling="no"></iframe>
+
     </div>
 
     
@@ -947,10 +936,9 @@
   
   
   <div class="post-nav-item">
-    <div class="meta-nav">Ранее</div>
-    <a href="/ru/talk/power-bi-and-sql-server-reporting-services/" rel="next">Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</a>
+    <div class="meta-nav">Далее</div>
+    <a href="/ru/talk/power-bi-and-sql-server-reporting-services/" rel="prev">Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</a>
   </div>
-  
   
 </div>
 

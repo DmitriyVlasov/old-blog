@@ -968,6 +968,20 @@ Having defined parsers for all the possible kind of JSON values, we can combine 
     </item>
     
     <item>
+      <title>Power BI Custom Connector от 0 к 1</title>
+      <link>https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/</link>
+      <pubDate>Thu, 28 Feb 2019 19:00:00 +0300</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/</guid>
+      <description>
+
+&lt;h2 id=&#34;слайды&#34;&gt;Слайды&lt;/h2&gt;
+
+&lt;iframe src=&#34;https://onedrive.live.com/embed?cid=E46638C5BB68AE00&amp;resid=E46638C5BB68AE00%21253496&amp;authkey=AF0Z7xX4vSLnxuc&amp;em=2&#34; width=&#34;610px&#34; height=&#34;367px&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Как на Power Query создать таблицу?</title>
       <link>https://DmitriyVlasov.ru/ru/post/how-to-create-a-table-on-power-query/</link>
       <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
@@ -1313,7 +1327,7 @@ Source
     <item>
       <title>Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</title>
       <link>https://DmitriyVlasov.ru/ru/talk/power-bi-and-sql-server-reporting-services/</link>
-      <pubDate>Tue, 05 Jun 2018 21:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Jun 2018 21:00:00 +0300</pubDate>
       
       <guid>https://DmitriyVlasov.ru/ru/talk/power-bi-and-sql-server-reporting-services/</guid>
       <description>
@@ -1327,7 +1341,7 @@ Source
 
 &lt;h2 id=&#34;слайды&#34;&gt;Слайды&lt;/h2&gt;
 
-&lt;iframe src=&#34;https://onedrive.live.com/embed?cid=E46638C5BB68AE00&amp;amp;resid=E46638C5BB68AE00%21248302&amp;amp;authkey=AHoB7-4B9XLbPyE&amp;amp;em=2&amp;amp;wdAr=1.7777777777777777&#34; width=&#34;610px&#34; height=&#34;367px&#34; frameborder=&#34;0&#34;&gt;Это внедренный файл &lt;a target=&#34;_blank&#34; href=&#34;https://office.com&#34;&gt;Microsoft Office&lt;/a&gt; на платформе &lt;a target=&#34;_blank&#34; href=&#34;https://office.com/webapps&#34;&gt;Office Online&lt;/a&gt;.&lt;/iframe&gt;
+&lt;iframe src=&#34;https://onedrive.live.com/embed?cid=E46638C5BB68AE00&amp;resid=E46638C5BB68AE00%21248302&amp;authkey=AHoB7-4B9XLbPyE&amp;em=2&#34; width=&#34;610px&#34; height=&#34;367px&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
@@ -3317,7 +3331,7 @@ COUNTROWS (
     <item>
       <title>Обзор F# 4.0</title>
       <link>https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/</link>
-      <pubDate>Tue, 25 Aug 2015 20:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Aug 2015 20:00:00 +0300</pubDate>
       
       <guid>https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/</guid>
       <description></description>

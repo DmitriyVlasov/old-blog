@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    <lastBuildDate>Tue, 05 Jun 2018 21:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Feb 2019 19:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://DmitriyVlasov.ru/ru/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Power BI Custom Connector от 0 к 1</title>
+      <link>https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/</link>
+      <pubDate>Thu, 28 Feb 2019 19:00:00 +0300</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/</guid>
+      <description>Custom коннектор от нуля до единицы. Расскажем о кейсе собственного опыта написания custom-коннектора для Power BI к Mango Office специалистом «общего» профиля.</description>
+    </item>
+    
+    <item>
       <title>Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</title>
       <link>https://DmitriyVlasov.ru/ru/talk/power-bi-and-sql-server-reporting-services/</link>
-      <pubDate>Tue, 05 Jun 2018 21:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Jun 2018 21:00:00 +0300</pubDate>
       
       <guid>https://DmitriyVlasov.ru/ru/talk/power-bi-and-sql-server-reporting-services/</guid>
       <description>Чем отличаются эти две технологии и какое у них будущее? Обсудим особенности каждой, нюансы лицензирования, сравним производительность.</description>
@@ -24,7 +33,7 @@
     <item>
       <title>Обзор F# 4.0</title>
       <link>https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/</link>
-      <pubDate>Tue, 25 Aug 2015 20:00:00 +0000</pubDate>
+      <pubDate>Tue, 25 Aug 2015 20:00:00 +0300</pubDate>
       
       <guid>https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/</guid>
       <description></description>

@@ -124,6 +124,26 @@
   </url>
   
   <url>
+    <loc>https://DmitriyVlasov.ru/ru/talk/power-bi-custom-connector-from-zero-to-one/</loc>
+    <lastmod>2019-02-28T19:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/talk/</loc>
+    <lastmod>2019-02-28T19:00:00+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://DmitriyVlasov.ru/en/talk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://DmitriyVlasov.ru/ru/talk/"
+                />
+  </url>
+  
+  <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/power-bi/</loc>
     <lastmod>2018-10-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -190,22 +210,7 @@
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/talk/power-bi-and-sql-server-reporting-services/</loc>
-    <lastmod>2018-06-05T21:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/talk/</loc>
-    <lastmod>2018-06-05T21:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://DmitriyVlasov.ru/en/talk/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://DmitriyVlasov.ru/ru/talk/"
-                />
+    <lastmod>2018-06-05T21:00:00+03:00</lastmod>
   </url>
   
   <url>
@@ -354,7 +359,7 @@
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/talk/review-fsharp-4/</loc>
-    <lastmod>2015-08-25T20:00:00+00:00</lastmod>
+    <lastmod>2015-08-25T20:00:00+03:00</lastmod>
   </url>
   
   <url>
