@@ -1,0 +1,16 @@
+{
+  "spellright.language": [
+    "en",
+    "ru"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "dot"
+  ],
+  "spellright.parserByClass": {
+    "dot": {
+      "parser": "code"
+    }
+  }
+}
