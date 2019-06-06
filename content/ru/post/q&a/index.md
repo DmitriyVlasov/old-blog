@@ -4,7 +4,7 @@ highlight = true
 math = false
 tags = ["Вопросы и Ответы", "1С", "Markdown" ]
 draft = false
-title = "Вопросы и ответы"
+title = "Короткие вопросы и ответы"
 
 [header]
   caption = ""
