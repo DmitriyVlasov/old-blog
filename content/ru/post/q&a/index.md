@@ -1,8 +1,8 @@
 +++
-date = "2019-06-05T00:00:00"
+date = "2019-06-18T00:00:00"
 highlight = true
 math = false
-tags = ["Вопросы и Ответы", "1С", "Markdown" ]
+tags = ["Вопросы и Ответы", "1С", "Markdown", "Excel", "надстройки Excel" ]
 draft = false
 title = "Короткие вопросы и ответы"
 
@@ -51,3 +51,9 @@ C:\Windows\SysWOW64\regsvr32 "C:\Program Files\1cv8\<ВЕРСИЯ_1С>\bin\comcn
 * Выполните
 * Если все прошло хорошо, получите сообщение вида:
 ![1c8-register-comcntr.dll-result](1c8-register-comcntr.dll-result.png)
+
+#### Я разрабатываю вкладку для Excel, она не загружается как понять почему?
+
+* В Excel по умолчанию ошибки пользовательского интерфейса скрываются.
+* Для того что бы отобразить, нужно зайти в **параметры Excel** \ Пункт меню **Дополнительно** \ Раздел **Общие** \ Поставить флажок **Показывать ошибки интерфейса пользователя надстроек**
+![excel-show-custom-ribbon-ui errors](excel-show-custom-ribbon-ui-errors.png)
