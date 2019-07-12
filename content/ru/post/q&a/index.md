@@ -57,3 +57,7 @@ C:\Windows\SysWOW64\regsvr32 "C:\Program Files\1cv8\<ВЕРСИЯ_1С>\bin\comcn
 * В Excel по умолчанию ошибки пользовательского интерфейса скрываются.
 * Для того что бы отобразить, нужно зайти в **параметры Excel** \ Пункт меню **Дополнительно** \ Раздел **Общие** \ Поставить флажок **Показывать ошибки интерфейса пользователя надстроек**
 ![excel-show-custom-ribbon-ui errors](excel-show-custom-ribbon-ui-errors.png)
+
+#### Я разрабатываю пользовательскую вкладку в Excel, как найти имена картинок для заполнения тега `imageMSO`?
+
+[Список иконок `imageMSO`](https://bert-toolkit.com/imagemso-list.html)
