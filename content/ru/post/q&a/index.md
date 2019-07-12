@@ -60,4 +60,4 @@ C:\Windows\SysWOW64\regsvr32 "C:\Program Files\1cv8\<ВЕРСИЯ_1С>\bin\comcn
 
 #### Я разрабатываю пользовательскую вкладку в Excel, как найти имена картинок для заполнения тега `imageMSO`?
 
-[Список иконок `imageMSO`](https://bert-toolkit.com/imagemso-list.html)
+* [Список иконок `imageMSO`](https://bert-toolkit.com/imagemso-list.html)
