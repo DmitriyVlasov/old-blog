@@ -1,5 +1,5 @@
 +++
-date = "2019-06-18T00:00:00"
+date = "2019-07-23T00:00:00"
 highlight = true
 math = false
 tags = ["Вопросы и Ответы", "1С", "Markdown", "Excel", "надстройки Excel" ]
@@ -61,3 +61,20 @@ C:\Windows\SysWOW64\regsvr32 "C:\Program Files\1cv8\<ВЕРСИЯ_1С>\bin\comcn
 #### Я разрабатываю пользовательскую вкладку в Excel, как найти имена картинок для заполнения тега `imageMSO`?
 
 * [Список иконок `imageMSO`](https://bert-toolkit.com/imagemso-list.html)
+
+#### Как завершить работу приложения в Windows из командной строки?
+
+* Задача: Нужно закрыть Excel и все открытые файлы без сохранения. Можно решить это с помощью команды `TASKKILL`.
+
+```
+TASKKILL /im excel.exe /t /f
+```
+
+* Подробнее о команде в официальной документации [`TASKKILL`](https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/taskkill).
+
+#### Как конвертировать файл flv в mp4?
+
+* Скачиваете и устанавливаете [ffmpeg](https://ffmpeg.org/download.html)
+* В командной строке выполняете команду вида `ffmpeg -i "input.flv" "output.mp4"`, где:
+  * `"input.flv"` - произвольное имя файла источника
+  * `"output.mp4"` - произвольное имя файла приемника.
