@@ -1,10 +1,10 @@
 +++
-date = "2019-09-14T10:00:00"
+date = "2019-07-23T00:00:00"
 highlight = true
 math = false
-tags = [ "Databricks", "course", "Beginner" ]
+tags = ["Databricks", "Курс", "Курс для начинающих", "101" ]
 draft = false
-title = "Курс введение в Databricks"
+title = "Курс введение в Azure Databricks"
 
 [header]
   caption = ""
@@ -14,9 +14,9 @@ title = "Курс введение в Databricks"
 ## Введение
 
 * [Адрес кластера Azure Databricks](https://westeurope.azuredatabricks.net/login.html?o=5439510797997457)
-* [Программа курса: Извлечение знаний и аналитических сведений из данных с помощью Azure Databricks](https://docs.microsoft.com/ru-ru/learn/paths/data-science/)
-** [Общие сведения об Azure Databricks](https://docs.microsoft.com/ru-ru/learn/modules/intro-to-azure-databricks/index)
-** [Разведочный анализ данных в Azure Databricks](https://docs.microsoft.com/ru-ru/learn/modules/perform-exploratory-data-analysis-with-azure-databricks/index)
+* Полная программа курса: [Извлечение знаний и аналитических сведений из данных с помощью Azure Databricks](https://docs.microsoft.com/ru-ru/learn/paths/data-science/)
+  1. [Общие сведения об Azure Databricks](https://docs.microsoft.com/ru-ru/learn/modules/intro-to-azure-databricks/index)
+  2. [Разведочный анализ данных в Azure Databricks](https://docs.microsoft.com/ru-ru/learn/modules/perform-exploratory-data-analysis-with-azure-databricks/index)
 * [После тренинга заполните пожалуйста анкету](https://forms.office.com/Pages/ResponsePage.aspx?id=Lk-Uiqpa3kC4qERf60hbfOPWxmmfrf9OinvDoc826f1UMElHMkk2NkRQWkRJN0tWUklFNUlWTkszUi4u)
 
 ## Подключение к кластеру
@@ -60,6 +60,6 @@ user28@vlasovdeoutlook.onmicrosoft.com
 user29@vlasovdeoutlook.onmicrosoft.com
 user30@vlasovdeoutlook.onmicrosoft.com
 
-### Занятые учетные записи
+#### Занятые учетные записи
 
 user01@vlasovdeoutlook.onmicrosoft.com
