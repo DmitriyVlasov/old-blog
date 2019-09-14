@@ -1,8 +1,8 @@
 +++
-date = "2019-09-14T10:00:00+03:00"
+date = "2019-09-14T10:00:00"
 highlight = true
 math = false
-tags = ["Databricks","course","Beginner"]
+tags = [ "Databricks", "course", "Beginner" ]
 draft = false
 title = "Курс введение в Databricks"
 
@@ -11,6 +11,7 @@ title = "Курс введение в Databricks"
   image = ""
 +++
 
+## Введение
 
 * [Адрес кластера Azure Databricks](https://westeurope.azuredatabricks.net/login.html?o=5439510797997457)
 * [Программа курса: Извлечение знаний и аналитических сведений из данных с помощью Azure Databricks](https://docs.microsoft.com/ru-ru/learn/paths/data-science/)
