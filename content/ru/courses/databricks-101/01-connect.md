@@ -1,25 +1,23 @@
-+++
-date = "2019-07-23T00:00:00"
-highlight = true
-math = false
-tags = ["Databricks", "Курс", "Курс для начинающих", "101" ]
-draft = false
-title = "Курс введение в Azure Databricks"
+---
+title: Подключение к кластеру
+linktitle: Подключение
+toc: true
+type: docs
+date: "2019-05-05T00:00:00+01:00"
+draft: false
+menu:
+  databricks-101:
+    parent: О курсе
+    weight: 2
 
-[header]
-  caption = ""
-  image = ""
-+++
+# Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
+weight: 1
+---
+## Видео
 
-## Введение
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zlFiwQnlHX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Адрес кластера Azure Databricks](https://westeurope.azuredatabricks.net/login.html?o=5439510797997457)
-* Полная программа курса: [Извлечение знаний и аналитических сведений из данных с помощью Azure Databricks](https://docs.microsoft.com/ru-ru/learn/paths/data-science/)
-  1. [Общие сведения об Azure Databricks](https://docs.microsoft.com/ru-ru/learn/modules/intro-to-azure-databricks/index)
-  2. [Разведочный анализ данных в Azure Databricks](https://docs.microsoft.com/ru-ru/learn/modules/perform-exploratory-data-analysis-with-azure-databricks/index)
-* [После тренинга заполните пожалуйста анкету](https://forms.office.com/Pages/ResponsePage.aspx?id=Lk-Uiqpa3kC4qERf60hbfOPWxmmfrf9OinvDoc826f1UMElHMkk2NkRQWkRJN0tWUklFNUlWTkszUi4u)
-
-## Подключение к кластеру
+## Инструкция
 
 1. [Войдите по ссылке](https://westeurope.azuredatabricks.net/login.html?o=5439510797997457)
 2. Выберете свободную учетную запись для обучения

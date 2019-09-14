@@ -37,10 +37,10 @@
     weight = 40
 
 # # Посмотреть подробнее как сделано:
-#   [[ru.menu.main]]
-#     name = "Курсы"
-#     url = "courses/"
-#     weight = 50
+  [[ru.menu.main]]
+    name = "Курсы"
+    url = "courses/"
+    weight = 50
 
   [[ru.menu.main]]
     name = "Контакты"
