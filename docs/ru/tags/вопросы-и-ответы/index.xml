@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Вопросы и Ответы on Дмитрий Власов</title>
@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    <lastBuildDate>Wed, 17 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Короткие вопросы и ответы</title>
+      <link>https://DmitriyVlasov.ru/ru/post/qa/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/post/qa/</guid>
+      <description>Где посмотреть возможности маркдаун? Учебник по markdown от разработчиков протокола Commonmark.
+Как регулировать размер изображения в маркдаун? Маркдаун этого не позволяет сделать. Используйте html тэг img, например так
+&amp;lt;img src=&amp;quot;image&amp;quot; width=&amp;quot;40%&amp;quot;&amp;gt;  
+Как посмотреть версию 1С 8?  Зайти в текущий клиент 1С. В верхнем левом углу выбрать кнопку &amp;ldquo;меню&amp;rdquo; \ Справка \ О программе.  Откроется окно &amp;ldquo;О программе&amp;rdquo;, смотрите версию:  Заходим в каталог: C:\Program Files\1cv8\ и выбираем каталог с именем найденной версии.</description>
+    </item>
     
     <item>
       <title>Как на Power Query создать таблицу?</title>

@@ -89,7 +89,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.9e398b7a64ee2c82769da9724cdbf0cc.css">
+  <link rel="stylesheet" href="/css/academic.min.4262dcf994120e09205278621ff7f02a.css">
 
   
 
@@ -346,6 +346,32 @@
         
         
         
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/courses/">
+            
+            <span>Курсы</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
           
           
           
@@ -574,15 +600,13 @@ Parameters
 
 <ul>
 <li>Создаем файл блокнота.</li>
-<li>Импортируем библиотеку работы с таблицами Pandas (структура аналогичная объекту Table в Power BI)</li>
-</ul>
+
+<li><p>Импортируем библиотеку работы с таблицами Pandas (структура аналогичная объекту Table в Power BI)</p>
 
 <pre><code class="language-python">import pandas as pd
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Объявляем переменную <code>Parameters</code> повторяющую структуру, таблицы с параметрами на Power Query (см. выше), это необходимо для отладки и проверки работоспособности скрипта.</li>
-</ul>
+<li><p>Объявляем переменную <code>Parameters</code> повторяющую структуру, таблицы с параметрами на Power Query (см. выше), это необходимо для отладки и проверки работоспособности скрипта.</p>
 
 <pre><code class="language-python">import pandas as pd
 
@@ -590,14 +614,15 @@ FromDate = &quot;01.07.2018&quot;
 ToDate = &quot;31.07.2018&quot;
 
 Parameters = pd.DataFrame(
-    [ 
-      [ 
-        FromDate, ToDate 
-      ] 
-    ],
-    columns = ['FromDate','ToDate'] 
+[ 
+  [ 
+    FromDate, ToDate 
+  ] 
+],
+columns = ['FromDate','ToDate'] 
 )
-</code></pre>
+</code></pre></li>
+</ul>
 
 <blockquote>
 <p>В рамках рассмотренного примера для простоты работы внутри скрипта на Python вручную создается таблица, а затем с помощью переданных параметров таблица отфильтровывается. Полученный результат далее возвращается в Power BI и может использоваться для дальнейшего анализа.</p>
@@ -605,55 +630,47 @@ Parameters = pd.DataFrame(
 
 <ul>
 <li>Далее реализовываем логику обработки скрипта.</li>
-<li>Для удобства переноса разработанного скрипта, обработки снова объявляем импорт библиотеки Pandas.</li>
-</ul>
+
+<li><p>Для удобства переноса разработанного скрипта, обработки снова объявляем импорт библиотеки Pandas.</p>
 
 <pre><code class="language-python">import pandas as pd
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Помним о том, что мы передали параметры в формате даты времени в текстовом формате ( объяснение подробнее <a href="#Обсуждение-решения">см ниже</a> )</li>
-</ul>
+<li><p>Помним о том, что мы передали параметры в формате даты времени в текстовом формате ( объяснение подробнее <a href="#Обсуждение-решения">см ниже</a> )</p>
 
 <pre><code class="language-python">Parameters['FromDate'] = pd.to_datetime( Parameters['FromDate'], format=&quot;%d.%m.%Y&quot; )
 Parameters['ToDate'] = pd.to_datetime( Parameters['ToDate'], format=&quot;%d.%m.%Y&quot; )
-</code></pre>
+</code></pre></li>
+</ul>
 
 <blockquote>
 <p>Если вам нужно настроить преобразование строки под ваш формат даты времени, то вы можете использовать для этого таблицу кодов форматов для <a href="https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior" target="_blank">2</a> или <a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior" target="_blank">3</a> Питона соответственно.</p>
 </blockquote>
 
 <ul>
-<li>Получаем данные из внешней системы. Для демо примера создаем вручную таблицу в Pandas</li>
-</ul>
+<li><p>Получаем данные из внешней системы. Для демо примера создаем вручную таблицу в Pandas</p>
 
 <pre><code class="language-python">Sales = pd.DataFrame( [
-        [&quot;01.07.2018&quot;, 10], 
-        [&quot;01.08.2018&quot;, 20], 
-        [&quot;01.09.2018&quot;, 30]
-    ], columns=['Date', 'Amount' ] 
+    [&quot;01.07.2018&quot;, 10], 
+    [&quot;01.08.2018&quot;, 20], 
+    [&quot;01.09.2018&quot;, 30]
+], columns=['Date', 'Amount' ] 
 )
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Для корректной работы сортировки и фильтрации данных по столбцу даты времени приводим, в исследуемых таблицах столбец к дате.<br /></li>
-</ul>
+<li><p>Для корректной работы сортировки и фильтрации данных по столбцу даты времени приводим, в исследуемых таблицах столбец к дате.</p>
 
 <pre><code class="language-python">Sales['Date'] = pd.to_datetime(Sales['Date'],format=&quot;%d.%m.%Y&quot;)
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>Применяем бизнес правила полученные от клиента и параметры, полученные из Power BI, к полученной в скрипте таблице</li>
-</ul>
+<li><p>Применяем бизнес правила полученные от клиента и параметры, полученные из Power BI, к полученной в скрипте таблице</p>
 
 <pre><code class="language-python">Result = Sales[ Sales['Date'] &gt; Parameters['FromDate'][0] ]
-</code></pre>
+</code></pre></li>
 
-<ul>
 <li><p>Средствами <a href="http://jupyter.org/" target="_blank">Jupyter Notebook</a> мы можем отладить и проверить полученные данные перед копированием полученного сприпта в Power BI.</p></li>
 
-<li><p>В результате получаем скрипт, подготовленный для передачи в Power BI</p></li>
-</ul>
+<li><p>В результате получаем скрипт, подготовленный для передачи в Power BI</p>
 
 <pre><code class="language-python"># Импортируем библиотеку работы с таблицами Pandas 
 import pandas as pd
@@ -666,33 +683,34 @@ Parameters['ToDate'] = pd.to_datetime( Parameters['ToDate'], format=&quot;%d.%m.
 
 # Получаем данные из внешней системы. Для демо примера просто создаем вручную таблицу в Pandas 
 Sales = pd.DataFrame( [
-        [&quot;01.07.2018&quot;, 10], 
-        [&quot;01.08.2018&quot;, 20], 
-        [&quot;01.09.2018&quot;, 30]
-    ], columns=['Date', 'Amount' ] 
+    [&quot;01.07.2018&quot;, 10], 
+    [&quot;01.08.2018&quot;, 20], 
+    [&quot;01.09.2018&quot;, 30]
+], columns=['Date', 'Amount' ] 
 )
 Sales['Date'] = pd.to_datetime(Sales['Date'],format=&quot;%d.%m.%Y&quot;)
 
 # Применяем бизнес правила и параметры полученные из Power BI к таблице и возвращаем результат
 Result = Sales[ Sales['Date'] &gt; Parameters['FromDate'][0] ]
-</code></pre>
+</code></pre></li>
+</ul>
 
 <h3 id="вызов-скрипта-на-python-из-power-bi">Вызов скрипта на Python из Power BI</h3>
 
 <ul>
-<li>Так как, на данный момент, в мастере создания скрипта на Python в Power BI нет возможности передать не обязательные параметры, для простоты создаем минимально рабочий пример для создания корректного запроса Power Query, который затем обновим разработанным выше скриптом.</li>
-</ul>
+<li><p>Так как, на данный момент, в мастере создания скрипта на Python в Power BI нет возможности передать не обязательные параметры, для простоты создаем минимально рабочий пример для создания корректного запроса Power Query, который затем обновим разработанным выше скриптом.</p>
 
 <pre><code class="language-python">import pandas as pd
 
 Dummy = pd.DataFrame( [ [ &quot;&quot; ] ], columns = ['Dummy'] )
 
-</code></pre>
+</code></pre></li>
 
-<ul>
-<li>В мастере создания запросов Power BI Desktop, выбираем из раскрывающегося списка скрипт на Python. Передам минимальный скрипт на Python написанный выше.</li>
-<li>В мастере выбираем флажком таблицу <code>Dummy</code> и нажимаем OK.</li>
-<li>Скрипт будет успешно создан.</li>
+<li><p>В мастере создания запросов Power BI Desktop, выбираем из раскрывающегося списка скрипт на Python. Передам минимальный скрипт на Python написанный выше.</p></li>
+
+<li><p>В мастере выбираем флажком таблицу <code>Dummy</code> и нажимаем OK.</p></li>
+
+<li><p>Скрипт будет успешно создан.</p></li>
 
 <li><p>Для передачи параметров нам придется перейти в расширенный редактор Power Query, где мы увидим следующий текст:</p>
 
@@ -1105,7 +1123,7 @@ Source
     
     
     
-    <script src="/js/academic.min.3258b3a711acd6208568ec000de4beec.js"></script>
+    <script src="/js/academic.min.ee8463f2a394889d45e169a983fe913d.js"></script>
 
   </body>
 </html>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Дмитрий Власов</title>
@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    <lastBuildDate>Wed, 17 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://DmitriyVlasov.ru/ru/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1С</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/1%D1%81/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/tags/1%D1%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Excel</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/excel/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/tags/excel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/markdown/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Вопросы и Ответы</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>надстройки Excel</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/%D0%BD%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-excel/</link>
+      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://DmitriyVlasov.ru/ru/tags/%D0%BD%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-excel/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Power BI</title>
@@ -27,15 +72,6 @@
       <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://DmitriyVlasov.ru/ru/tags/power-query/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Вопросы и Ответы</title>
-      <link>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</link>
-      <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</guid>
       <description></description>
     </item>
     
@@ -63,15 +99,6 @@
       <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>
       
       <guid>https://DmitriyVlasov.ru/ru/tags/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Excel</title>
-      <link>https://DmitriyVlasov.ru/ru/tags/excel/</link>
-      <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
-      
-      <guid>https://DmitriyVlasov.ru/ru/tags/excel/</guid>
       <description></description>
     </item>
     

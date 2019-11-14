@@ -1,55 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://DmitriyVlasov.ru/ru/courses/example/example1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://DmitriyVlasov.ru/en/courses/example/example1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://DmitriyVlasov.ru/ru/courses/example/example1/"
-                />
+    <loc>https://DmitriyVlasov.ru/ru/courses/databricks-101/</loc>
+    <lastmod>2019-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://DmitriyVlasov.ru/ru/courses/example/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://DmitriyVlasov.ru/en/courses/example/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://DmitriyVlasov.ru/ru/courses/example/"
-                />
+    <loc>https://DmitriyVlasov.ru/ru/courses/databricks-101/01-connect/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/01-preliminaries/</loc>
     <lastmod>2017-01-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/courses/example/example2/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://DmitriyVlasov.ru/en/courses/example/example2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://DmitriyVlasov.ru/ru/courses/example/example2/"
-                />
   </url>
   
   <url>
@@ -108,9 +73,43 @@
   </url>
   
   <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/1%D1%81/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/excel/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/markdown/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://DmitriyVlasov.ru/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://DmitriyVlasov.ru/ru/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://DmitriyVlasov.ru/ru/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -121,6 +120,41 @@
                 hreflang="ru"
                 href="https://DmitriyVlasov.ru/ru/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/post/qa/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/post/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://DmitriyVlasov.ru/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://DmitriyVlasov.ru/ru/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/%D0%BD%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-excel/</loc>
+    <lastmod>2019-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/courses/databricks-101/99-qa/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/courses/databricks-101/00-intro/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -146,35 +180,11 @@
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/power-bi/</loc>
     <lastmod>2018-10-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/power-query/</loc>
     <lastmod>2018-10-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/tags/</loc>
-    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://DmitriyVlasov.ru/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://DmitriyVlasov.ru/ru/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</loc>
-    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -183,24 +193,8 @@
   </url>
   
   <url>
-    <loc>https://DmitriyVlasov.ru/ru/post/</loc>
-    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://DmitriyVlasov.ru/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://DmitriyVlasov.ru/ru/post/"
-                />
-  </url>
-  
-  <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/python/</loc>
     <lastmod>2018-08-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -216,13 +210,11 @@
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/dax/</loc>
     <lastmod>2017-07-19T13:11:31+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</loc>
     <lastmod>2017-07-19T13:11:31+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -231,27 +223,18 @@
   </url>
   
   <url>
-    <loc>https://DmitriyVlasov.ru/ru/tags/excel/</loc>
-    <lastmod>2017-07-05T15:56:25+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/sql/</loc>
     <lastmod>2017-07-05T15:56:25+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/sql-server/</loc>
     <lastmod>2017-07-05T15:56:25+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/tabular/</loc>
     <lastmod>2017-07-05T15:56:25+03:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -267,19 +250,16 @@
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/devcon/</loc>
     <lastmod>2017-06-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/microsoft/</loc>
     <lastmod>2017-06-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B0/</loc>
     <lastmod>2017-06-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -290,31 +270,26 @@
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F/</loc>
     <lastmod>2017-06-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/</loc>
     <lastmod>2017-06-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/publication_types/5/</loc>
     <lastmod>2017-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/publication_types/6/</loc>
     <lastmod>2017-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/publication_types/</loc>
     <lastmod>2017-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -378,7 +353,6 @@
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/authors/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -393,7 +367,6 @@
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/categories/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -422,7 +395,6 @@
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/dmitriy-vlasov/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

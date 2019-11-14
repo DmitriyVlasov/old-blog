@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Дмитрий Власов">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Где посмотреть возможности маркдаун? Учебник по markdown от разработчиков протокола Commonmark.
+Как регулировать размер изображения в маркдаун? Маркдаун этого не позволяет сделать. Используйте html тэг img, например так
+&lt;img src=&quot;image&quot; width=&quot;40%&quot;&gt;  
+Как посмотреть версию 1С 8?  Зайти в текущий клиент 1С. В верхнем левом углу выбрать кнопку &ldquo;меню&rdquo; \ Справка \ О программе.  Откроется окно &ldquo;О программе&rdquo;, смотрите версию:  Заходим в каталог: C:\Program Files\1cv8\ и выбираем каталог с именем найденной версии.">
+
+  
+  <link rel="alternate" hreflang="ru-ru" href="https://DmitriyVlasov.ru/ru/post/qa/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.4262dcf994120e09205278621ff7f02a.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-91250239-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://DmitriyVlasov.ru/ru/post/qa/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Дмитрий Власов">
+  <meta property="og:url" content="https://DmitriyVlasov.ru/ru/post/qa/">
+  <meta property="og:title" content="Короткие вопросы и ответы | Дмитрий Власов">
+  <meta property="og:description" content="Где посмотреть возможности маркдаун? Учебник по markdown от разработчиков протокола Commonmark.
+Как регулировать размер изображения в маркдаун? Маркдаун этого не позволяет сделать. Используйте html тэг img, например так
+&lt;img src=&quot;image&quot; width=&quot;40%&quot;&gt;  
+Как посмотреть версию 1С 8?  Зайти в текущий клиент 1С. В верхнем левом углу выбрать кнопку &ldquo;меню&rdquo; \ Справка \ О программе.  Откроется окно &ldquo;О программе&rdquo;, смотрите версию:  Заходим в каталог: C:\Program Files\1cv8\ и выбираем каталог с именем найденной версии."><meta property="og:image" content="https://DmitriyVlasov.ru/img/icon-192.png">
+  <meta property="og:locale" content="ru-ru">
+  
+  <meta property="article:published_time" content="2019-07-23T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-07-23T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Короткие вопросы и ответы | Дмитрий Власов</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Поиск</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Поиск..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#about">
+            
+            <span>Обо мне</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#posts">
+            
+            <span>Статьи</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#talks">
+            
+            <span>Выступления</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#featured">
+            
+            <span>Публикации</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/courses/">
+            
+            <span>Курсы</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/ru/#contact">
+            
+            <span>Контакты</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Короткие вопросы и ответы</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2019-07-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-07-23 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>23.07.2019</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 мин. на чтение
+  </span>
+  
+
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u="
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    
+    <li>
+      <a class="email"
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h4 id="где-посмотреть-возможности-маркдаун">Где посмотреть возможности маркдаун?</h4>
+
+<p><a href="https://commonmark.org/help/tutorial/index.html" target="_blank">Учебник по markdown</a> от разработчиков протокола <a href="https://commonmark.org" target="_blank">Commonmark</a>.</p>
+
+<h4 id="как-регулировать-размер-изображения-в-маркдаун">Как регулировать размер изображения в маркдаун?</h4>
+
+<p><a href="(https://commonmark.org/help/tutorial/08-images.html)" target="_blank">Маркдаун</a> этого не позволяет сделать.
+<a href="https://github.com/hakimel/reveal.js/issues/1349" target="_blank">Используйте</a> html тэг <code>img</code>, например так</p>
+
+<pre><code>&lt;img src=&quot;image&quot; width=&quot;40%&quot;&gt;
+</code></pre>
+
+<p><a name="how-to-schow-1C8-version"></a></p>
+
+<h4 id="как-посмотреть-версию-1с-8">Как посмотреть версию 1С 8?</h4>
+
+<ul>
+<li>Зайти в текущий клиент 1С.</li>
+
+<li><p>В верхнем левом углу выбрать кнопку &ldquo;меню&rdquo; \ Справка \ О программе.
+<img src="1с8-about-path.png" width="60%"></p></li>
+
+<li><p>Откроется окно &ldquo;О программе&rdquo;, смотрите версию:
+<img src="1c-about.png" width="60%"></p></li>
+
+<li><p>Заходим в каталог: <code>C:\Program Files\1cv8\</code> и выбираем каталог с именем найденной версии.
+<img src="1c8-home-directory.png" width="60%"></p></li>
+</ul>
+
+<h4 id="как-зарегистрировать-библиотеку-1с-8-comcntr-dll">Как зарегистрировать библиотеку 1С 8 <code>comcntr.dll</code></h4>
+
+<ul>
+<li><a href="#how-to-schow-1C8-version">Определить</a> действующую версию 1С</li>
+<li>Запустить терминал <code>cmd</code> под учетной записью администратора</li>
+
+<li><p>Замените в тексте кода ниже <code>&lt;ВЕРСИЯ_1С&gt;</code> на найденную версию:</p>
+
+<pre><code class="language-cmd">C:\Windows\SysWOW64\regsvr32 &quot;C:\Program Files\1cv8\&lt;ВЕРСИЯ_1С&gt;\bin\comcntr.dll&quot;
+</code></pre></li>
+
+<li><p>Выполните</p></li>
+
+<li><p>Если все прошло хорошо, получите сообщение вида:
+<img src="1c8-register-comcntr.dll-result.png" alt="1c8-register-comcntr.dll-result" /></p></li>
+</ul>
+
+<h4 id="я-разрабатываю-вкладку-для-excel-она-не-загружается-как-понять-почему">Я разрабатываю вкладку для Excel, она не загружается как понять почему?</h4>
+
+<ul>
+<li>В Excel по умолчанию ошибки пользовательского интерфейса скрываются.</li>
+<li>Для того что бы отобразить, нужно зайти в <strong>параметры Excel</strong> \ Пункт меню <strong>Дополнительно</strong> \ Раздел <strong>Общие</strong> \ Поставить флажок <strong>Показывать ошибки интерфейса пользователя надстроек</strong>
+<img src="excel-show-custom-ribbon-ui-errors.png" alt="excel-show-custom-ribbon-ui errors" /></li>
+</ul>
+
+<h4 id="я-разрабатываю-пользовательскую-вкладку-в-excel-как-найти-имена-картинок-для-заполнения-тега-imagemso">Я разрабатываю пользовательскую вкладку в Excel, как найти имена картинок для заполнения тега <code>imageMSO</code>?</h4>
+
+<ul>
+<li><a href="https://bert-toolkit.com/imagemso-list.html" target="_blank">Список иконок <code>imageMSO</code></a></li>
+</ul>
+
+<h4 id="как-завершить-работу-приложения-в-windows-из-командной-строки">Как завершить работу приложения в Windows из командной строки?</h4>
+
+<ul>
+<li><p>Задача: Нужно закрыть Excel и все открытые файлы без сохранения. Можно решить это с помощью команды <code>TASKKILL</code>.</p>
+
+<pre><code>TASKKILL /im excel.exe /t /f
+</code></pre></li>
+
+<li><p>Подробнее о команде в официальной документации <a href="https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/taskkill" target="_blank"><code>TASKKILL</code></a>.</p></li>
+</ul>
+
+<h4 id="как-конвертировать-файл-flv-в-mp4">Как конвертировать файл flv в mp4?</h4>
+
+<ul>
+<li>Скачиваете и устанавливаете <a href="https://ffmpeg.org/download.html" target="_blank">ffmpeg</a></li>
+<li>В командной строке выполняете команду вида <code>ffmpeg -i &quot;input.flv&quot; &quot;output.mp4&quot;</code>, где:
+
+<ul>
+<li><code>&quot;input.flv&quot;</code> - произвольное имя файла источника</li>
+<li><code>&quot;output.mp4&quot;</code> - произвольное имя файла приемника.</li>
+</ul></li>
+</ul>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="">Вопросы и Ответы</a>
+  
+  <a class="badge badge-light" href="">1С</a>
+  
+  <a class="badge badge-light" href="/ru/tags/markdown/">Markdown</a>
+  
+  <a class="badge badge-light" href="/ru/tags/excel/">Excel</a>
+  
+  <a class="badge badge-light" href="">надстройки Excel</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/ru/authors/me/">Дмитрий Власов</a></h5>
+      <h6 class="card-subtitle">Старший BI разработчик</h6>
+      <p class="card-text" itemprop="description">Бизнес аналитика, функциональное программирование и машинное обучение.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/ru/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/DmitriyVlasov" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://vk.com/DmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-vk"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://facebook.com/MeDmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/DmitriyVlasovRu" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://linkedin.com/in/DmitriyVlasov" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Обзоры</h3>
+        <ul>
+          
+          <li><a href="/ru/post/how-to-create-a-table-on-power-query/">Как на Power Query создать таблицу?</a></li>
+          
+          <li><a href="/ru/post/handing-of-dax-blank/">Сравнение обработки пустых значений в DAX, Excel и SQL</a></li>
+          
+          <li><a href="/ru/post/dax-function-earlier/">Пример использования функции EARLIER</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Далее</div>
+    <a href="/ru/post/how-to-create-a-table-on-power-query/" rel="prev">Как на Power Query создать таблицу?</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Цитата</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Скачать
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/ru/index.json";
+      const i18n = {
+        'placeholder': "Поиск...",
+        'results': "Найдено",
+        'no_results': "Результатов не найдено"
+      };
+      const content_type = {
+        'post': "Статьи",
+        'project': "Проекты",
+        'publication' : "Публикации",
+        'talk' : "Выступления"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.ee8463f2a394889d45e169a983fe913d.js"></script>
+
+  </body>
+</html>
+
