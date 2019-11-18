@@ -7,8 +7,10 @@
   languageCode = "ru-ru"
   contentDir = "content/ru"
   title = "Дмитрий Власов"
-  address = "наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация"
-  office_hours = "С понедельника по пятницу 10:00 to 19:00"
+  address = { street = "наб.реки Мойки 37А", city = "Санкт-Петербург", postcode = "191186", country = "Российская Федерация", country_code = "RU"}
+  directions = "Вход со стороны реки Мойки. Подняться по лестнице. Перед стойкой охраны повернуть налево к лифтам. Подняться на пятый этаж. Пройти по коридору до конца на лево."
+  office_hours = ["С понедельника по пятницу 10:00 to 19:00"]
+  org_name = "Авара АйТи"
   description = "Заметки разработчика о жизни, Вселенной и всего такого."
 
   [[ru.menu.main]]
@@ -52,8 +54,10 @@
   languageCode = "en-us"
   contentDir = "content/en"
   title = "Dmitriy Vlasov"
-  address = "Awara IT, Moyka emb. 37A, St.Petersburg, Russia"
-  office_hours = "Monday to Friday 10:00 AM to 07:00 PM"
+  address = { street = "Moyka emb. 37A", city = "St.Petersburg", postcode = "191186", country = "Russia", country_code = "RU"}
+  directions = "Entrance from the Moika river. Climb the stairs. In front of the security Desk, turn left to the elevators. Go up to the fifth floor. Go down the corridor to the end on the left."
+  office_hours = ["Monday to Friday 10:00 AM to 07:00 PM"]
+  org_name = "Awara IT"
   description = "BI developer's Notes on the life of the universe and all that."
 
   [[en.menu.main]]

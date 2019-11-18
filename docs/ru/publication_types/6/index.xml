@@ -1,130 +1,841 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>6 on Дмитрий Власов</title>
+    <title>6 | Дмитрий Власов</title>
     <link>https://DmitriyVlasov.ru/ru/publication_types/6/</link>
-    <description>Recent content in 6 on Дмитрий Власов</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    <lastBuildDate>Sat, 28 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://DmitriyVlasov.ru/ru/publication_types/6/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://DmitriyVlasov.ru/ru/publication_types/6/index.xml" rel="self" type="application/rss+xml" />
+    <description>6</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Sat, 28 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <title>6</title>
+      <link>https://DmitriyVlasov.ru/ru/publication_types/6/</link>
+    </image>
     
     <item>
       <title>Глава 3. Синтаксический анализатор числа с плавающей точкой в скобках</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/</guid>
-      <description>Реализация синтаксических анализаторов с использованием библиотеки FParsec обычно означает, что высокоуровневые синтаксические анализаторы получены как комбинация низкоуровневых анализаторов. Вы начинаете с анализатора примитивов, предоставляемых библиотекой, а затем последовательно объединяете их в анализаторы более высокого уровня, пока вы, наконец, не имеете один синтаксический анализатор для полной обработки входных данных.
-В следующих главах мы продемонстрируем этот подход, обсуждая различные варианты примеров синтаксических анализаторов, которые построены друг из друга. В этой главе мы начнем с очень простого анализатора для числа с плавающей точкой в скобках:</description>
+      <description>&lt;p&gt;Реализация синтаксических анализаторов с использованием библиотеки FParsec обычно означает, что высокоуровневые синтаксические анализаторы получены как комбинация низкоуровневых анализаторов. Вы начинаете с анализатора примитивов, предоставляемых библиотекой, а затем последовательно объединяете их в анализаторы более высокого уровня, пока вы, наконец, не имеете один синтаксический анализатор для полной обработки входных данных.&lt;/p&gt;
+
+&lt;p&gt;В следующих главах мы продемонстрируем этот подход, обсуждая различные варианты примеров синтаксических анализаторов, которые построены друг из друга. В этой главе мы начнем с очень простого анализатора для числа с плавающей точкой в скобках:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let str s = pstring s
+let floatBetweenBrackets = str &amp;quot;[&amp;quot; &amp;gt;&amp;gt;. pfloat .&amp;gt;&amp;gt; str &amp;quot;]&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Если вы пытаетесь скомпилировать этот или другой фрагмент кода, и вы получаете ошибку компилятора F# &amp;ldquo;value restriction&amp;rdquo;, пожалуйста посмотрите &lt;a href=&#34;../10-fsharps-value-restriction&#34;&gt;главу 10 Ограничение значений F#&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Определение &lt;code&gt;str&lt;/code&gt; и &lt;code&gt;floatBetweenBrackets&lt;/code&gt; включает в себя три библиотечные функции, которые мы ранее не рассматривали: &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.pstring&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pstring&lt;/code&gt;&lt;/a&gt;, &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.:62::62:..&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;.&lt;/code&gt;&lt;/a&gt; и &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;.&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Функция&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val pstring: string -&amp;gt; Parser&amp;lt;string,&#39;u&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;принимает строку в качестве аргумента и возвращает синтаксический анализатор для этой строки. Когда анализатор применяется к входному потоку он проверяет соответствуют ли символы во входном потоке строке, заданной в аргументе. Если символы полностью совпадают со строкой, анализатор поглощает их, то есть пропускает и идет дальше. В противном случае он не исполнится и не поглотит входные данные. Когда анализатор успешно обрабатывает, он также возвращает данную строку в качестве результата анализатора, но, поскольку строка константа, вы будете редко использовать этот результат.&lt;/p&gt;
+
+&lt;p&gt;Функция &lt;code&gt;pstring&lt;/code&gt; не называется &lt;code&gt;string&lt;/code&gt;, потому что иначе она скроет встроенную в F# функцию &lt;code&gt;string&lt;/code&gt;. Как правило, имена синтаксических анализаторов в FParsec, которые конфликтуют со встроенными именами функций в F#, имеют префикс &amp;mdash; символ &lt;code&gt;р&lt;/code&gt;. Функция &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.pfloat&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pfloat&lt;/code&gt;&lt;/a&gt; еще один пример этого соглашения об именовании.&lt;/p&gt;
+
+&lt;p&gt;Для экономии нескольких нажатий клавиш, мы сокращаем &lt;code&gt;pstring&lt;/code&gt; как &lt;code&gt;str&lt;/code&gt;. Так, например, &lt;code&gt;str &amp;quot;[&amp;quot;&lt;/code&gt; это синтаксический анализатор, который пропускает символ &lt;code&gt;&#39;[&#39;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Бинарные операторы  &lt;code&gt;&amp;gt;&amp;gt;.&lt;/code&gt; и  &lt;code&gt;.&amp;gt;&amp;gt;&lt;/code&gt; имеет следующие типы:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val (&amp;gt;&amp;gt;.): Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;b,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;b,&#39;u&amp;gt;
+val (.&amp;gt;&amp;gt;): Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;b,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,&#39;u&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Как вы можете видеть из этих сигнатур, оба оператора являются комбинаторами синтаксических анализаторов, которые строят новый анализатор из двух аргументов &amp;mdash; синтаксических анализаторов. Синтаксический анализатор &lt;code&gt;p1 &amp;gt;&amp;gt;. p2&lt;/code&gt; разбирает &lt;code&gt;p1&lt;/code&gt; и &lt;code&gt;p2&lt;/code&gt; последовательно и возвращает результат &lt;code&gt;p2&lt;/code&gt;. Синтаксический анализатор &lt;code&gt;p1 .&amp;gt;&amp;gt; p2&lt;/code&gt; также разбирает &lt;code&gt;p1&lt;/code&gt; и &lt;code&gt;p2&lt;/code&gt; последовательно, но возвращает результат &lt;code&gt;p1&lt;/code&gt; вместо &lt;code&gt;p2&lt;/code&gt;. В каждом случае точка указывает на сторону синтаксического анализатора, результат которого возвращается. Объединив оба оператора в &lt;code&gt;p1 &amp;gt;&amp;gt;. р2 .&amp;gt;&amp;gt; p3&lt;/code&gt; мы получим синтаксический анализатор, который разбирает &lt;code&gt;p1&lt;/code&gt;, &lt;code&gt;p2&lt;/code&gt; и &lt;code&gt;p3&lt;/code&gt; последовательно и возвращает результат &lt;code&gt;p2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Касательно несколько неточной формулировки &amp;ldquo;разбирает &lt;code&gt;p1&lt;/code&gt; и &lt;code&gt;p2&lt;/code&gt; последовательно&amp;rdquo; мы на самом деле имели в виду: синтаксический анализатор &lt;code&gt;p1&lt;/code&gt; применяется к входным данным, и если &lt;code&gt;p1&lt;/code&gt; успешно исполнен, то &lt;code&gt;p2&lt;/code&gt; применяется к остальной части входных данных. В случае если любой из двух элементов синтаксического анализатора не исполнился, совокупный синтаксический анализатор сразу передает сообщение об ошибке.&lt;/p&gt;
+
+&lt;p&gt;В документации библиотеки FParsec мы часто используем такие выражения, как &amp;ldquo;синтаксический анализ &lt;code&gt;p&lt;/code&gt;&amp;rdquo; или &amp;ldquo;синтаксический анализ вхождения &lt;code&gt;p&lt;/code&gt;&amp;rdquo;. Вместо этого технически более точным &amp;ldquo;применяется синтаксический анализатор &lt;code&gt;p&lt;/code&gt; к остатку входных данных и если &lt;code&gt;p&lt;/code&gt; успешно исполнен&amp;hellip;&amp;ldquo;, надеясь, что точное значение очевидно из контекста.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Следующие тесты показывают, что &lt;code&gt;floatBetweenBrackets&lt;/code&gt; разбирает правильные входные данные, как и ожидалось, и дает информативные сообщения об ошибках, когда он сталкивается с неправильными входными данными:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test floatBetweenBrackets &amp;quot;[1.0]&amp;quot;;;
+Success: 1.0
+
+&amp;gt; test floatBetweenBrackets &amp;quot;[]&amp;quot;;;
+Failure: Error in Ln: 1 Col: 2
+[]
+ ^
+Expecting: floating-point number
+
+&amp;gt; test floatBetweenBrackets &amp;quot;[1.0&amp;quot;;;
+Failure: Error in Ln: 1 Col: 5
+[1.0
+    ^
+Note: The error occurred at the end of the input stream.
+Expecting: &#39;]&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;Обратите внимание, что все инфиксные F# операторы, которые начинаются с &lt;code&gt;&amp;lt;&lt;/code&gt; или &lt;code&gt;&amp;gt;&lt;/code&gt; (ведущие символы &lt;code&gt;.&lt;/code&gt; игнорируются) являются левоассоциативными.&lt;/li&gt;
+&lt;li&gt;Следовательно, &lt;code&gt;p1 &amp;gt;&amp;gt;. р2 .&amp;gt;&amp;gt; p3&lt;/code&gt; эквивалентно &lt;code&gt;(p1 &amp;gt;&amp;gt;. p2) .&amp;gt;&amp;gt; p3&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Тем не менее, в этом случае ассоциативность не имеет никакого влияния на совокупное поведение синтаксического анализатора.&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 4. Абстрактные синтаксические анализаторы</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/04-abstracting-parsers/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/04-abstracting-parsers/</guid>
-      <description>Одной из самых больших сильных сторон FParsec является легкость, с которой вы можете определить свои собственные абстрактные синтаксические анализаторы.
-Возьмем, к примеру floatBetweenBrackets из предыдущей главы. Если вы намерены также разобрать другие элементы между строк, вы можете определить свой собственный специализированный комбинатор для этой цели:
-let betweenStrings s1 s2 p = str s1 &amp;gt;&amp;gt;. p .&amp;gt;&amp;gt; str s2  Затем можно определить floatInBrackets и другие синтаксические анализаторы с помощью этого комбинатора:</description>
+      <description>&lt;p&gt;Одной из самых больших сильных сторон FParsec является легкость, с которой вы можете определить свои собственные абстрактные синтаксические анализаторы.&lt;/p&gt;
+
+&lt;p&gt;Возьмем, к примеру &lt;code&gt;floatBetweenBrackets&lt;/code&gt; из предыдущей главы. Если вы намерены также разобрать другие элементы между строк, вы можете определить свой собственный специализированный комбинатор для этой цели:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let betweenStrings s1 s2 p = str s1 &amp;gt;&amp;gt;. p .&amp;gt;&amp;gt; str s2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Затем можно определить &lt;code&gt;floatInBrackets&lt;/code&gt; и другие синтаксические анализаторы с помощью этого комбинатора:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let floatBetweenBrackets = pfloat |&amp;gt; betweenStrings &amp;quot;[&amp;quot; &amp;quot;]&amp;quot;
+let floatBetweenDoubleBrackets = pfloat |&amp;gt; betweenStrings &amp;quot;[[&amp;quot; &amp;quot;]]&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    В случае, если вы новичок в F#: &lt;code&gt;pfloat |&amp;gt; betweenStrings &amp;quot;[&amp;quot; &amp;quot;]&amp;quot;&lt;/code&gt; это просто еще один способ, чтобы написать &lt;code&gt;betweenStrings &amp;quot;[&amp;quot; &amp;quot;]&amp;quot; pfloat&lt;/code&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;В тот момент, как вы заметите, что вам часто нужно применять синтаксический анализатор между двумя другими, вы можете пойти дальше, представив функцию &lt;code&gt;betweenStrings&lt;/code&gt; следующим образом:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let between pBegin pEnd p  = pBegin &amp;gt;&amp;gt;. p .&amp;gt;&amp;gt; pEnd
+let betweenStrings s1 s2 p = p |&amp;gt; between (str s1) (str s2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;На самом деле, вам не нужно определять &lt;code&gt;between&lt;/code&gt;, потому что &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.between&#34; target=&#34;_blank&#34;&gt;это&lt;/a&gt; уже встроенный комбинатор FParsec.&lt;/p&gt;
+
+&lt;p&gt;Все это, конечно, простые примеры. Но поскольку FParsec это лишь библиотека F#, а не какой-то внешний инструмент для генерации синтаксического анализатора, нет никаких ограничений на абстракции, которые можно определять. Вы можете написать функции, которые принимают любые, необходимые вам, входные данные, делают на входных данных вычисления произвольной сложности, а затем возвращают синтаксический анализатор специального назначения или комбинатор синтаксических анализаторов.&lt;/p&gt;
+
+&lt;p&gt;Например, вы можете написать функцию, которая принимает шаблон регулярного выражения в качестве входных данных и возвращает &lt;code&gt;Parser&lt;/code&gt; для разбора входных данных, соответствующих этому шаблону. Эта функция может использовать другой синтаксический анализатор для разбора шаблона регулярного выражения в абстрактное синтаксическое дерево, а затем компилировать абстрактное синтаксическое дерево в функцию синтаксического анализатора специального назначения. Кроме того, она может построить регулярное выражение .NET из шаблона, а затем вернуть функцию синтаксического анализатора, которая использует интерфейс прикладного программирования модуля &lt;code&gt;CharStream&lt;/code&gt; библиотеки FParsec для непосредственного применения регулярного выражения к входному потоку (который является на самом деле встроенным синтаксический анализатором &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.regex&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;regex&lt;/code&gt;&lt;/a&gt; модуля &lt;code&gt;CharStream&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Другой пример &amp;mdash; расширяемые приложения синтаксического анализатора. При хранении функций синтаксического анализатора в словарях или других структурах данных и определении соответствующего расширенного протокола, вы можете разрешить подключаемым модулям динамически регистрировать новые синтаксические анализаторы или изменять существующие.&lt;/p&gt;
+
+&lt;p&gt;Возможности действительно бесконечны. Но прежде, чем вы сможете в полной мере использовать эти возможности, вам сначала необходимо ознакомиться с основами FParsec.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 5. Синтаксический анализатор списка чисел с плавающей точкой</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/</guid>
-      <description>Мы уже течение трех глав обсуждаем как делать синтаксический разбор одного числа с плавающей запятой, поэтому в этот раз мы попытаемся нечто более амбициозное: синтаксический разбор списка чисел с плавающей точкой.
-Предположим сначала, что нам нужно, чтобы делать синтаксический разбор последовательности чисел с плавающей точкой в скобках, т.е. текст в формате расширенной формы Бэкуса-Наура (далее РБНФ): (&amp;quot;[&amp;quot; float &amp;quot;]&amp;quot;)*. Допустимые входные строки в этом формате, например: &amp;quot;&amp;quot;, &amp;quot;[1.0]&amp;quot;, &amp;quot;[2][3][4]&amp;quot;.
-Поскольку у нас уже есть синтаксический анализатор для числа с плавающей точкой в скобках, нам нужен только способ неоднократно применять этот синтаксический анализатор для разбора последовательности.</description>
+      <description>&lt;p&gt;Мы уже течение трех глав обсуждаем как делать синтаксический разбор одного числа с плавающей запятой, поэтому в этот раз мы попытаемся нечто более амбициозное: синтаксический разбор списка чисел с плавающей точкой.&lt;/p&gt;
+
+&lt;p&gt;Предположим сначала, что нам нужно, чтобы делать синтаксический разбор последовательности чисел с плавающей точкой в скобках, т.е. текст в формате &lt;a href=&#34;https://ru.wikipedia.org/wiki/Расширенная_форма_Бэкуса_—_Наура&#34; target=&#34;_blank&#34;&gt;расширенной формы Бэкуса-Наура&lt;/a&gt; (далее РБНФ): &lt;code&gt;(&amp;quot;[&amp;quot; float &amp;quot;]&amp;quot;)*&lt;/code&gt;. Допустимые входные строки в этом формате, например: &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;[1.0]&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;[2][3][4]&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Поскольку у нас уже есть синтаксический анализатор для числа с плавающей точкой в скобках, нам нужен только способ неоднократно применять этот синтаксический анализатор для разбора последовательности. Именно это этого предназначен комбинатор &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.many&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;many&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val many: Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a list,&#39;u&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Синтаксический анализатор &lt;code&gt;many p&lt;/code&gt; повторно применяет синтаксический анализатор &lt;code&gt;p&lt;/code&gt; до тех пор пока &lt;code&gt;p&lt;/code&gt; не потерпит неудачу, другими словами он &amp;ldquo;жадно&amp;rdquo; разбирает максимально возможное количество вхождений &lt;code&gt;p&lt;/code&gt;. Результаты &lt;code&gt;p&lt;/code&gt; возвращаются в виде списка в порядке появления.&lt;/p&gt;
+
+&lt;p&gt;Несколько простых тестов показывают, что &lt;code&gt;many floatInBrackets&lt;/code&gt; работает, как ожидалось:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test (many floatBetweenBrackets) &amp;quot;&amp;quot;;;
+Success: []
+
+&amp;gt; test (many floatBetweenBrackets) &amp;quot;[1.0]&amp;quot;;;
+Success: [1.0]
+
+&amp;gt; test (many floatBetweenBrackets) &amp;quot;[2][3][4]&amp;quot;;;
+Success: [2.0; 3.0; 4.0]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если в результате &lt;em&gt;потребления входных данных&lt;/em&gt; &lt;code&gt;floatBetweenBrackets&lt;/code&gt; вызывает исключение, то комбинированный синтаксический анализатор также вызывает исключение:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test (many floatBetweenBrackets) &amp;quot;[1][2.0E]&amp;quot;;;
+
+Failure: Error in Ln: 1 Col: 9
+[1][2.0E]
+        ^
+Expecting: decimal digit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Обратите внимание, что &lt;code&gt;many&lt;/code&gt; также успешно исполняется для пустой последовательности. Если вы хотите, чтобы требовался, по крайней мере, один элемент во входной последовательности, вы сможете использовать вместо этого &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.many1&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;many1&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test (many1 floatBetweenBrackets) &amp;quot;(1)&amp;quot;;;
+Failure: Error in Ln: 1 Col: 1
+(1)
+^
+Expecting: &#39;[&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;Если вы предпочитаете, чтобы последнее сообщение об ошибке было сформулировано в терминах более высокого уровневого синтаксического анализатора &lt;code&gt;floatBetweenBrackets&lt;/code&gt; вместо низкоуровневого синтаксического анализатора &lt;code&gt;str &amp;quot;[&amp;quot;&lt;/code&gt;, вы можете использовать оператор &lt;code&gt;&amp;lt;?&amp;gt;&lt;/code&gt;, как в следующем примере:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test (many1 (floatBetweenBrackets &amp;lt;?&amp;gt; &amp;quot;float between brackets&amp;quot;)) &amp;quot;(1)&amp;quot;;;
+Failure: Error in Ln: 1 Col: 1
+(1)
+^
+Expecting: float between brackets
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Пожалуйста, смотрите главу &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/customizing-error-messages.html&#34; target=&#34;_blank&#34;&gt;5.8 Customizing error messages&lt;sup&gt;en&lt;/sup&gt;&lt;/a&gt; руководства пользователя, чтобы узнать больше о настройке сообщений об ошибках.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Если вам не нужен результат работы синтаксического анализатора и просто хотите пропустить полученный список, вы можете использовать оптимизированные комбинаторы &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.skipMany&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;skipMany&lt;/code&gt;&lt;/a&gt; или &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.skipMany1&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;skipMany1&lt;/code&gt;&lt;/a&gt; вместо &lt;code&gt;many&lt;/code&gt; и &lt;code&gt;many1&lt;/code&gt; .&lt;/p&gt;
+
+&lt;p&gt;Другим часто используемым комбинатором для синтаксического разбора последовательностей является &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.sepBy&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;sepBy&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val sepBy: Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;b,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a list, &#39;u&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;sepBy&lt;/code&gt; принимает два параметра синтаксический анализатор «элемент» и «разделитель» и возвращает синтаксический анализатор для списка элементов. В нотации РНБН &lt;code&gt;sepBy p pSep&lt;/code&gt; может быть записана как &lt;code&gt;(p (pSep p)*)?&lt;/code&gt;, Подобно &lt;code&gt;many&lt;/code&gt;, существует &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#interface.sepBy-parsers&#34; target=&#34;_blank&#34;&gt;несколько вариантов&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; &lt;code&gt;sepBy&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;С помощью &lt;code&gt;sepBy&lt;/code&gt; мы можем сделать синтаксический разбор более реального формата списка чисел, где числа с плавающей точкой разделены запятой. Формате РНБН:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-EBNF&#34;&gt;floatList: &amp;quot;[&amp;quot; (float (&amp;quot;,&amp;quot; float)*)? &amp;quot;]&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Допустимыми строками в этом формате являются, например: &lt;code&gt;&amp;quot;[]&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;[1.0]&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;[2,3,4]&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Дословной реализацией этого формата будет следующий синтаксический анализатор:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let floatList = str &amp;quot;[&amp;quot; &amp;gt;&amp;gt;. sepBy pfloat (str &amp;quot;,&amp;quot;) .&amp;gt;&amp;gt; str &amp;quot;]&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Тестирование &lt;code&gt;floatList&lt;/code&gt; с корректными строками дает ожидаемый результат:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test floatList &amp;quot;[]&amp;quot;;;
+Success: []
+&amp;gt; test floatList &amp;quot;[1.0]&amp;quot;;;
+Success: [1.0]
+&amp;gt; test floatList &amp;quot;[4,5,6]&amp;quot;;;
+Success: [4.0; 5.0; 6.0]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Тестирование с не корректными строками показывает, что &lt;code&gt;floatList&lt;/code&gt; создает полезные сообщения об ошибках:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test floatList &amp;quot;[1.0,]&amp;quot;;;
+Failure: Error in Ln: 1 Col: 6
+[1.0,]
+     ^
+Expecting: floating-point number
+
+&amp;gt; test floatList &amp;quot;[1.0,2.0&amp;quot;;;
+Failure: Error in Ln: 1 Col: 9
+[1.0,2.0
+        ^
+Note: The error occurred at the end of the input stream.
+Expecting: &#39;,&#39; or &#39;]&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 6. Обработка пробелов</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/06-handling-whitespace/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/06-handling-whitespace/</guid>
-      <description>FParsec обрабатывает пробелы (пробелы, табуляции, новые строки и т. д.) Так же, как и любой другой ввод, поэтому наш синтаксический анализатор floatList еще не умеет работать с пробелами:
-&amp;gt; test floatBetweenBrackets &amp;quot;[1.0, 2.0]&amp;quot;;; Failure: Error in Ln: 1 Col: 5 [1.0, 2.0] ^ Expecting: &#39;]&#39;  Если мы хотим, чтобы синтаксический анализатор игнорировал пробелы, нам нужно сделать это явным образом.
-Во-первых, нам нужно определить, что мы хотим принять в качестве пробела.</description>
+      <description>&lt;p&gt;FParsec обрабатывает пробелы (пробелы, табуляции, новые строки и т. д.) Так же, как и любой другой ввод, поэтому наш синтаксический анализатор &lt;code&gt;floatList&lt;/code&gt; еще не умеет работать с пробелами:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test floatBetweenBrackets &amp;quot;[1.0, 2.0]&amp;quot;;;
+Failure: Error in Ln: 1 Col: 5
+[1.0, 2.0]
+    ^
+Expecting: &#39;]&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если мы хотим, чтобы синтаксический анализатор игнорировал пробелы, нам нужно сделать это явным образом.&lt;/p&gt;
+
+&lt;p&gt;Во-первых, нам нужно определить, что мы хотим принять в качестве пробела. Для простоты мы просто используем встроенный синтаксическим анализатором &lt;code&gt;spaces&lt;/code&gt;, который пропускает любую (возможно, пустую) последовательность символов &lt;code&gt;&#39; &#39;&lt;/code&gt;, &lt;code&gt;&#39;\t&#39;&lt;/code&gt; , &lt;code&gt;&#39;\r&#39;&lt;/code&gt; или &lt;code&gt;&#39;\n&#39;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let ws = spaces
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Затем нам нужно добавить синтаксический анализатор &lt;code&gt;ws&lt;/code&gt; во все места, где мы хотим игнорировать пробелы. В общем случае удобно пропустить пробелы &lt;em&gt;после&lt;/em&gt; вхождения отдельного элемента, т.е. Пропускать конечные, а не ведущие пробелы, потому что это уменьшает необходимость в обратной трассировке (подробнее см. ниже). В результате мы добавляем &lt;code&gt;ws&lt;/code&gt; в два места, чтобы пропустить любые пробелы после скобок или цифр:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let str_ws s = pstring s .&amp;gt;&amp;gt; ws
+let float_ws = pfloat .&amp;gt;&amp;gt; ws
+let numberList = str_ws &amp;quot;[&amp;quot; &amp;gt;&amp;gt;. sepBy float_ws (str_ws &amp;quot;,&amp;quot;) .&amp;gt;&amp;gt; str_ws &amp;quot;]&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Простой тест показывает, что &lt;code&gt;numberList&lt;/code&gt; игнорирует пробелы:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test numberList @&amp;quot;[ 1 ,
+                          2 ] &amp;quot;;;
+Success: [1.0; 2.0]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если мы привнесем ошибку во второй строке, то увидим, что FParsec автоматически отслеживает текущее положение столбца и строки синтаксического анализа текста:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test numberList @&amp;quot;[ 1,
+                         2; 3]&amp;quot;;;
+
+Failure: Error in Ln: 2 Col: 27
+                         2; 3]
+                          ^
+Expecting: &#39;,&#39; or &#39;]&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Наш синтаксический анализатор &lt;code&gt;numberList&lt;/code&gt; прежнему не пропускает ведущие пробелы, потому что это необязательно, когда мы сопоставляем его с другими синтаксическими анализаторами, которые пропускают все конечные пробелы. Если бы мы хотели разобрать весь поток ввода только с числами с плавающей запятой, мы могли бы использовать следующий синтаксический анализатор:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let numberListFile = ws &amp;gt;&amp;gt;. numberList .&amp;gt;&amp;gt; eof
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Синтаксический анализатор конца файла &lt;code&gt;eof&lt;/code&gt; будет генерировать ошибку, если конец потока не был достигнут. Это полезно для обеспечения того, чтобы весь входной поток был потреблен. Без анализатора &lt;code&gt;eof&lt;/code&gt; следующий тест будет работать без ошибки:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test numberListFile &amp;quot; [1, 2, 3] [4]&amp;quot;;;
+Failure: Error in Ln: 1 Col: 12
+ [1, 2, 3] [4]
+           ^
+Expecting: end of input
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 7. Синтаксический анализатор строковых данных</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/07-parsing-string-data/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/07-parsing-string-data/</guid>
-      <description>FParsec содержит различные встроенные синтаксические анализаторы для символов, строк, чисел и пробелов. В этой главе мы представим несколько синтаксических анализаторов символов и строк. Обзор всех доступных синтаксических анализаторов см. в руководстве пользователяen.
-Вы уже видели несколько применений синтаксического анализатора pstring (сокращенно str ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор pstring успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:</description>
+      <description>&lt;p&gt;FParsec содержит различные встроенные синтаксические анализаторы для символов, строк, чисел и пробелов. В этой главе мы представим несколько синтаксических анализаторов символов и строк. Обзор всех доступных синтаксических анализаторов см. в &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/parser-overview.html&#34; target=&#34;_blank&#34;&gt;руководстве пользователя&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Вы уже видели несколько применений синтаксического анализатора &lt;code&gt;pstring&lt;/code&gt; (сокращенно &lt;code&gt;str&lt;/code&gt; ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор &lt;code&gt;pstring&lt;/code&gt; успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test (many (str &amp;quot;a&amp;quot; &amp;lt;|&amp;gt; str &amp;quot;b&amp;quot;)) &amp;quot;abba&amp;quot;;;
+Success: [&amp;quot;a&amp;quot;; &amp;quot;b&amp;quot;; &amp;quot;b&amp;quot;; &amp;quot;a&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;В этом примере мы так же использовали синтаксический анализатор &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt; для объединения двух альтернативных анализаторов. Мы обсудим этот комбинатор более подробно ниже.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Мы говорим, что &lt;code&gt;pstring&lt;/code&gt; и &lt;code&gt;pstring &amp;quot;a&amp;quot;&lt;/code&gt; это «синтаксические анализаторы». Но строго говоря, &lt;code&gt;pstring&lt;/code&gt; - это функция, принимающая строку и возвращающая &lt;code&gt;Parser&lt;/code&gt;, но удобнее про нее говорить как (параметрический) синтаксический анализатор.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Когда вам не нужен результат синтаксического анализатора &lt;code&gt;pstring&lt;/code&gt;, вы можете в качестве альтернативы использовать синтаксический анализатор &lt;code&gt;skipString&lt;/code&gt;, который возвращает &lt;code&gt;unit&lt;/code&gt; значение &lt;code&gt;()&lt;/code&gt; вместо строки аргумента. В приведенном примере для производительности не имеет значения, используете ли вы &lt;code&gt;pstring&lt;/code&gt; или &lt;code&gt;skipString&lt;/code&gt;, так как возвращаемая строка является константой. Однако для большинства других встроенных синтаксических анализаторов и комбинаторов вы должны предпочесть варианты с префиксом в имени &lt;code&gt;skip&lt;/code&gt;, когда вам не нужны значения результата синтаксического анализатора, поскольку они, как правило, будут быстрее. Если вы посмотрите обзор &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/parser-overview.html&#34; target=&#34;_blank&#34;&gt;библиотеки FParsec&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, вы увидите варианты &lt;code&gt;skip&lt;/code&gt; для многих встроенных синтаксических анализаторов и комбинаторов.&lt;/p&gt;
+
+&lt;p&gt;Если вы хотите проанализировать строку без учета регистра, вы можете использовать &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.pstringCI&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pstringCI&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; и &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.skipStringCI&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;skipStringCI&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;. Например:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test (skipStringCI &amp;quot;&amp;lt;float&amp;gt;&amp;quot; &amp;gt;&amp;gt;. pfloat) &amp;quot;&amp;lt;FLOAT&amp;gt;1.0&amp;quot;;;
+Success: 1.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Часто нужно разбирать строковые переменные, чьи символы должны удовлетворять определенным критериям. Например, идентификаторы в языках программирования часто должны начинаться с буквы или подчеркивания, а затем необходимо продолжать буквы, цифры или символы подчеркивания. Чтобы проанализировать такой идентификатор, вы можете использовать следующий синтаксический анализатор:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let identifier =
+    let isIdentifierFirstChar c = isLetter c || c = &#39;_&#39;
+    let isIdentifierChar c = isLetter c || isDigit c || c = &#39;_&#39;
+
+    many1Satisfy2L isIdentifierFirstChar isIdentifierChar &amp;quot;identifier&amp;quot;
+    .&amp;gt;&amp;gt; ws // Пропускает завершающие пробелы
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Здесь мы использовали синтаксический анализатор &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy2L&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;many1Satisfy2L&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, который является одним из нескольких примитивов для синтаксического анализа строк на основе предикатов символов (т.е. функций, которые принимают символ на входе и возвращают логическое значение). Он анализирует любую последовательность одного или нескольких символов (отсюда и &lt;code&gt;many1&lt;/code&gt; в имени), чей первый символ удовлетворяет первой предикатной функции, а остальные символы удовлетворяют второму предикату (отсюда &lt;code&gt;Satisfy2&lt;/code&gt;). Строковая метка, указанная в качестве третьего аргумента (следовательно, &lt;code&gt;L&lt;/code&gt;), используется в сообщении об ошибке для описания ожидаемого ввода.&lt;/p&gt;
+
+&lt;p&gt;Следующие тесты показывают, как работает этот анализатор:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test identifier &amp;quot;_&amp;quot;;;
+Success: &amp;quot;_&amp;quot;
+&amp;gt; test identifier &amp;quot;_test1=&amp;quot;;;
+Success: &amp;quot;_test1&amp;quot;
+&amp;gt; test identifier &amp;quot;1&amp;quot;;;
+Failure: Error in Ln: 1 Col: 1
+1
+^
+Expecting: identifier
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Если вы хотите анализировать идентификаторы на основе синтаксиса &lt;a href=&#34;https://en.wikipedia.org/wiki/Unicode_character_property&#34; target=&#34;_blank&#34;&gt;Unicode XID&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, рассмотрите возможность использования встроенного анализатора &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.identifier&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;identifier&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Многие строковые форматы достаточно сложны, поэтому вам нужно объединить несколько примитивов символьного синтаксического анализатора и строкового синтаксического анализатора. Например, рассмотрим следующий пример анализа строки в формате РНБН:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;  normalChar:    any char except &#39;\&#39; and &#39;&amp;quot;&#39;
+
+  escapedChar:   &#39;\\&#39; (&#39;\\&#39;|&#39;&amp;quot;&#39;|&#39;n&#39;|&#39;r&#39;|&#39;t&#39;)
+
+  stringLiteral: &#39;&amp;quot;&#39; ( normalChar | escapedChar )* &#39;&amp;quot;&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Прямой перевод этой грамматики в FParsec выглядит так:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let stringLiteral =
+  let normalChar = 
+    let anyCharExcept c = c &amp;lt;&amp;gt; &#39;\\&#39; &amp;amp;&amp;amp; c &amp;lt;&amp;gt; &#39;&amp;quot;&#39;
+    satisfy anyCharExcept
+  let escapedChar = 
+    let unescape c = 
+      match c with
+      | &#39;n&#39; -&amp;gt; &#39;\n&#39;
+      | &#39;r&#39; -&amp;gt; &#39;\r&#39;
+      | &#39;t&#39; -&amp;gt; &#39;\t&#39;
+      | c   -&amp;gt; c
+    pstring &amp;quot;\\&amp;quot; &amp;gt;&amp;gt;. (anyOf &amp;quot;\\nrt\&amp;quot;&amp;quot; |&amp;gt;&amp;gt; unescape)
+  let quote = pstring &amp;quot;\&amp;quot;&amp;quot; 
+  between quote quote ( manyChars (normalChar &amp;lt;|&amp;gt; escapedChar) )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;В этом примере появилось несколько новых функций библиотеки. Давайте рассмотрим их подробнее:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Функция &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.satisfy&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;satisfy&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; разбирает любой символ, который удовлетворяет заданному в параметрах предикату.&lt;/li&gt;
+&lt;li&gt;Функция &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.anyOf&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;anyOf&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; разбирает любой символ, содержащийся в строке аргумента.&lt;/li&gt;
+&lt;li&gt;Комбинатор конвейера &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.:124::62::62:&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;|&amp;gt;&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; применяет функцию с правой стороны (&lt;code&gt;unescape&lt;/code&gt;) к результату синтаксического анализатора с левой стороны (&lt;code&gt;anyOf &amp;quot;\\nrt\&amp;quot;&amp;quot;&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Комбинатор выбора &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.:60::124::62:&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; применяет синтаксический анализатор с правой стороны, если синтаксический анализатор с левой стороны терпит неудачу, так что &lt;code&gt;normalChar &amp;lt;|&amp;gt; escapedChar&lt;/code&gt; может анализировать как обычные, так и экранированные символы. (Мы обсудим этот комбинатор более подробно через две главы далее).&lt;/li&gt;
+&lt;li&gt;Функция &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.manyChars&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;manyChars&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; анализирует последовательность символов с заданным символьным синтаксическим анализатором и возвращает его как строку.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Давайте протестируем синтаксический анализатор &lt;code&gt;stringLiteral&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test stringLiteral &amp;quot;\&amp;quot;abc\&amp;quot;&amp;quot;;;
+Success: &amp;quot;abc&amp;quot;
+&amp;gt; test stringLiteral &amp;quot;\&amp;quot;abc\\\&amp;quot;def\\\\ghi&amp;quot;;;
+Success: &amp;quot;abc&amp;quot;def\ghi&amp;quot;
+&amp;gt; test stringLiteral &amp;quot;\&amp;quot;abc\\def\&amp;quot;&amp;quot;;;
+Failure: Error in Ln: 1 Col: 6
+&amp;quot;abc\def&amp;quot;
+     ^
+Expecting: any char in ‘\nrt&amp;quot;’
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Вместо разбора строкового литерала посимвольно мы могли бы также разобрать его построчно:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let stringLiteral2 =
+  let normalString = 
+    let anyCharExcept c = c &amp;lt;&amp;gt; &#39;\\&#39; &amp;amp;&amp;amp; c &amp;lt;&amp;gt; &#39;&amp;quot;&#39;
+    many1Satisfy anyCharExcept
+  let escapedChar = 
+    let unescape c = 
+      match c with
+      | &#39;n&#39; -&amp;gt; &#39;\n&#39;
+      | &#39;r&#39; -&amp;gt; &#39;\r&#39;
+      | &#39;t&#39; -&amp;gt; &#39;\t&#39;
+      | c   -&amp;gt; c
+    pstring &amp;quot;\\&amp;quot; &amp;gt;&amp;gt;. (anyOf &amp;quot;\\nrt\&amp;quot;&amp;quot; |&amp;gt;&amp;gt; unescape)
+  let quote = pstring &amp;quot;\&amp;quot;&amp;quot; 
+  between quote quote ( manyStrings (normalString &amp;lt;|&amp;gt; escapedChar) )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Здесь мы использовали комбинатор &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.manyStrings&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;manyStrings&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; , который анализирует последовательность строк с заданным синтаксическим анализатором строк и возвращает объединённую строку.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Мы должны настроить синтаксический анализатор &lt;code&gt;normalString&lt;/code&gt; что бы он требовал по крайней мере один символ, т.е. нужно использовать &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;many1Satisfy&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; вместо &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.manySatisfy&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;manySatisfy&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; . В противном случае &lt;code&gt;normalString&lt;/code&gt; успешно выполниться, даже если нет входных данных, &lt;code&gt;escapedChar&lt;/code&gt; никогда не вызовется вызываться, а &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.manyStrings&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;manyStrings&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; в конечном итоге вызовет исключение для предотвращения бесконечного цикла.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Синтаксический анализ строки с использованием оптимизированного синтаксического анализатора, такого как &lt;code&gt;many1Satisfy&lt;/code&gt;, обычно немного быстрее, чем синтаксический анализ его с помощью &lt;code&gt;manyChars&lt;/code&gt; и &lt;code&gt;satisfy&lt;/code&gt;. В этом случае мы можем оптимизировать наш синтаксический анализатор еще немного - как только мы поймем, что два нормальных фрагмента строк должны быть разделены хотя бы одним экранированным символом:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let stringLiteral3 =
+  let normalString = 
+    let anyCharExcept c = c &amp;lt;&amp;gt; &#39;\\&#39; &amp;amp;&amp;amp; c &amp;lt;&amp;gt; &#39;&amp;quot;&#39;
+    manySatisfy anyCharExcept
+  let escapedChar = 
+    let unescape c = 
+      match c with
+      | &#39;n&#39; -&amp;gt; &#39;\n&#39;
+      | &#39;r&#39; -&amp;gt; &#39;\r&#39;
+      | &#39;t&#39; -&amp;gt; &#39;\t&#39;
+      | c   -&amp;gt; c
+    pstring &amp;quot;\\&amp;quot; &amp;gt;&amp;gt;. (anyOf &amp;quot;\\nrt\&amp;quot;&amp;quot; |&amp;gt;&amp;gt; unescape)
+  let quote = pstring &amp;quot;\&amp;quot;&amp;quot; 
+  between quote quote ( stringsSepBy normalString escapedChar) )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Синтаксический анализатор &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.stringsSepBy&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;stringsSepBy&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; анализирует последовательность строк (первый аргумент), разделенных другими строками (второй аргумент). Он возвращает все разобранные строки, включая строки разделителя, в виде новой объединённой строки.&lt;/p&gt;
+
+&lt;p&gt;Обратите внимание, что &lt;code&gt;stringLiteral3&lt;/code&gt; использует &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;manySatisfy&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; вместо &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;many1Satisfy&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; в своем определении &lt;code&gt;normalString&lt;/code&gt;, так что он может анализировать экранированные символы, которые не разделены обычными символами. Это приведет к бесконечному циклу, потому что &lt;code&gt;escapedChar&lt;/code&gt; не будет исполнено при отсутствии входных данных.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 8. Использование последовательности синтаксических анализаторов</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/</guid>
-      <description>Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация &amp;gt;&amp;gt;.en и .&amp;gt;&amp;gt;en операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать pipe2en, &amp;hellip;, pipe5en, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.
-Например, с комбинатором pipe2en</description>
+      <description>&lt;p&gt;Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.:62::62:..&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;.&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; и &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;.&amp;gt;&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pipe2&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, &amp;hellip;, &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe5&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pipe5&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.&lt;/p&gt;
+
+&lt;p&gt;Например, с комбинатором &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pipe2&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val pipe2: Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;b,&#39;u&amp;gt; -&amp;gt; (&#39;a -&amp;gt; b -&amp;gt; &#39;c) -&amp;gt; Parser&amp;lt;&#39;c,&#39;u&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Вы можете построить синтаксический анализатор &lt;code&gt;pipe2 p1 p2 f&lt;/code&gt; который последовательно применяет два синтаксических анализатора &lt;code&gt;p1&lt;/code&gt; и &lt;code&gt;p2&lt;/code&gt;, а затем возвращает результат применения функции &lt;code&gt;f x1 x2&lt;/code&gt;, где &lt;code&gt;x1&lt;/code&gt; и &lt;code&gt;x2&lt;/code&gt; - результаты, возвращаемые &lt;code&gt;p1&lt;/code&gt; и &lt;code&gt;p2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;В следующем примере мы используем &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pipe2&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; для синтаксического анализа произведения из двух чисел:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let product = 
+  pipe2 float_ws (str_ws &amp;quot;*&amp;quot; &amp;gt;&amp;gt;. float_ws) (fun x y -&amp;gt; x * y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test product &amp;quot;3 * 5&amp;quot;;;
+Success: 15.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;pipe2-5&lt;/code&gt; особенно полезны для построения объектов Абстрактного синтаксического дерева (далее АСТ). В следующем примере мы используем &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe3&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pipe3&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; для анализа определения строковой константы в объекте &lt;code&gt;StringConstant&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;type StringConstant = StringConstant of string * string
+
+let stringConstant = 
+  pipe3 identifier (str_ws &amp;quot;=&amp;quot;) stringLiteral (fun id _ str -&amp;gt; StringConstant(id, str))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test stringConstant &amp;quot;myString = \&amp;quot;stringValue\&amp;quot;&amp;quot;;;
+Success: StringConstant (&amp;quot;myString&amp;quot;,&amp;quot;stringValue&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если вы просто хотите вернуть проанализированные значения в виде кортежа, вы можете использовать предопределенные функции &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;tuple2&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;&amp;hellip;&lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;tuple5&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;. Например, &lt;code&gt;tuple2 p1 p2&lt;/code&gt; эквивалентен  &lt;code&gt;pipe2 p1 p2 ( fun x1 x2 -&amp;gt; ( x1 , x2 ) )&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Синтаксический анализатор &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;tuple2&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; также доступен в виде комбинатора &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:..&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;.&amp;gt;&amp;gt;.&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;. Так что вы можете написать  &lt;code&gt;p1 .&amp;gt;&amp;gt;. p2&lt;/code&gt; вместо &lt;code&gt;tuple2 p1 p2&lt;/code&gt;. В следующем примере мы проанализируем пару разделенных запятыми чисел с этим оператором:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test (float_ws .&amp;gt;&amp;gt;. (str_ws &amp;quot;,&amp;quot; &amp;gt;&amp;gt;. float_ws)) &amp;quot;123, 456&amp;quot;;;
+Success: (123.0, 456.0)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Надеемся, что вы уже интуитивно понимаете шаблон записи &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;em&gt;одна-или-две-точки&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Если вам нужен синтаксический анализатор &lt;code&gt;pipe&lt;/code&gt; или &lt;code&gt;tuple&lt;/code&gt; более чем c пятью аргументами, вы можете легко построить его с помощью существующих. Например, у вас есть идея: определить синтаксический анализатор &lt;code&gt;pipe7&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let pipe7 p1 p2 p3 p4 p5 p6 p7 f =
+    pipe4 p1 p2 p3 (tuple4 p4 p5 p6 p7)
+          (fun x1 x2 x3 (x4, x5, x6, x7) -&amp;gt; f x1 x2 x3 x4 x5 x6 x7)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 9. Использование альтернативных синтаксических анализов</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/09-parsing-alternatives/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/09-parsing-alternatives/</guid>
-      <description>В главе 7 &amp;ldquo;Синтаксический анализатор строковых данных&amp;rdquo; мы вкратце представили комбинатор выбора &amp;lt;|&amp;gt;en :
-val (&amp;lt;|&amp;gt;): Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,u&amp;gt;  Этот комбинатор позволяет вам поддерживать несколько альтернативных вариантов.
-Например, в главе 7 мы использовали &amp;lt;|&amp;gt; для объединения синтаксического анализатора для неэкранированных символов и анализатора для экранированных символов в новый анализатор, который поддерживает оба варианта: normalChar &amp;lt;|&amp;gt; escapedChar.
-Другим примером, показывающим, как работает &amp;lt;|&amp;gt; является следующий синтаксический анализатор для разбора строкового представления булевых значений:</description>
+      <description>&lt;p&gt;В главе 7 &amp;ldquo;&lt;a href=&#34;../07-parsing-string-data&#34;&gt;Синтаксический анализатор строковых данных&lt;/a&gt;&amp;rdquo; мы вкратце представили комбинатор выбора &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.:60::124::62:&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val (&amp;lt;|&amp;gt;): Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,&#39;u&amp;gt; -&amp;gt; Parser&amp;lt;&#39;a,u&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Этот комбинатор позволяет вам поддерживать несколько альтернативных вариантов.&lt;/p&gt;
+
+&lt;p&gt;Например, в &lt;a href=&#34;../07-parsing-string-data&#34;&gt;главе 7&lt;/a&gt; мы использовали &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt; для объединения синтаксического анализатора для неэкранированных символов и анализатора для экранированных символов в новый анализатор, который поддерживает оба варианта: &lt;code&gt;normalChar &amp;lt;|&amp;gt; escapedChar&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Другим примером, показывающим, как работает &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt; является следующий синтаксический анализатор для разбора строкового представления булевых значений:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let boolean = 
+  (stringReturn &amp;quot;true&amp;quot;  true) &amp;lt;|&amp;gt;
+  (stringReturn &amp;quot;false&amp;quot; false)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Здесь мы использовали синтаксический анализатор &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.stringReturn&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;stringReturn&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, который берет в качестве первого аргумента строку, и, в случае успеха, возвращает значение, указанное в качестве второго аргумента.&lt;/p&gt;
+
+&lt;p&gt;Протестируем синтаксический анализатор &lt;code&gt;boolean&lt;/code&gt; на примерах:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test boolean &amp;quot;false&amp;quot;;;
+Success: false
+&amp;gt; test boolean &amp;quot;true&amp;quot;;;
+Success: true
+&amp;gt; test boolean &amp;quot;tru&amp;quot;;;
+Failure: Error in Ln: 1 Col: 1
+tru
+^
+Expecting: &#39;false&#39; or &#39;true&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Поведение комбинатора &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt; имеет две важные характеристики:
+* &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt; Правая часть синтаксического анализатора выполняется, если синтаксический анализатор левой части завершился с не фатальной ошибкой и без изменения состояния. Комбинатор не реализует правило самого длинного совпадения.
+* Однако, комбинатор пытается использовать правый синтаксический анализатор, если левый синтаксический анализатор при завершении вызывает &lt;em&gt;нет данных для обработки&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Следствием второго пункта является то, что следующий тест завершился неудачно, потому что синтаксический анализатор в левой части &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt; получает пробелы перед сбоем:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test ((ws &amp;gt;&amp;gt;. str &amp;quot;a&amp;quot;) &amp;lt;|&amp;gt; (ws &amp;gt;&amp;gt;. str &amp;quot;b&amp;quot;)) &amp;quot; b&amp;quot;;;
+Failure: Error in Ln: 1 Col: 2
+ b
+ ^
+Expecting: &#39;a&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;К счастью, мы можем легко исправить этот синтаксический анализатор, выделив &lt;code&gt;ws&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;&amp;gt; test (ws &amp;gt;&amp;gt;. (str &amp;quot;a&amp;quot; &amp;lt;|&amp;gt; str &amp;quot;b&amp;quot;)) &amp;quot; b&amp;quot;;;
+Success: &amp;quot;b&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если вам интересно, почему &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt; ведет себя таким образом и как вы можете обрабатывать ситуации, в которых вам нужно чтобы  &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt; пытался исполнять альтернативный синтаксический анализатор, даже если первый синтаксический анализатор вызвал ошибку после обработки входных данных смотрите главы &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/parsing-alternatives.html&#34; target=&#34;_blank&#34;&gt;5.6 Parsing alternatives&lt;/a&gt; и &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/looking-ahead-and-backtracking.html&#34; target=&#34;_blank&#34;&gt;5.7 Looking ahead and backtracking&lt;/a&gt; в руководстве пользователя.&lt;/p&gt;
+
+&lt;p&gt;Если вы хотите использовать более двух альтернативных синтаксических анализаторов, вы можете комбинировать несколько операторов &lt;code&gt;&amp;lt;|&amp;gt;&lt;/code&gt;, например, в &lt;code&gt;p1 &amp;lt;|&amp;gt; p2 &amp;lt;|&amp;gt; p3 &amp;lt;|&amp;gt; ...&lt;/code&gt;, или вы можете использовать комбинатор &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.choice&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;choice&lt;/code&gt;&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, который принимает последовательность синтаксических анализаторов в качестве аргумента, например &lt;code&gt;choice [ p1 ; p2 ; p3 ; ... ]&lt;/code&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 10. Ограничение значений F#</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/10-fsharps-value-restriction/</guid>
-      <description>Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.
- Если вы найдете содержимое главы слишком техническим на данный момент, просто перейдите к следующей главе и вернитесь позже, когда вы в первый раз увидите сообщение компилятора, в котором упоминается value restriction.</description>
+      <description>&lt;p&gt;Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Если вы найдете содержимое главы слишком техническим на данный момент, просто перейдите к следующей главе и вернитесь позже, когда вы в первый раз увидите сообщение компилятора, в котором упоминается &lt;em&gt;value restriction&lt;/em&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ограничение значений F# является причиной того, что следующий фрагмент кода не компилируется&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;open FParsec
+let p = pstring &amp;quot;test&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Но следующий фрагмент скомпилирован без проблем (Предполагаем, что вы ссылались на две библиотеки FParsec):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;open FParsec
+let p = pstring &amp;quot;test&amp;quot;
+run p &amp;quot;input&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ошибка компилятора, сгенерированная для первого примера будет примерно следующая:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;error FS0030: Value restriction.
+The value &#39;p&#39; has been inferred to have generic type
+    val p : Parser&amp;lt;string,&#39;_a&amp;gt;
+Either make the arguments to &#39;p&#39; explicit or,
+if you do not intend for it to be generic, add a type annotation.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Когда вы работаете с библиотекой FParsec, вы рано или поздно увидите это или похожие сообщения об ошибке, в частности, если вы работаете в интерактивной консоли. К счастью для ошибок такого рода, как правило, легко найти обходной путь.&lt;/p&gt;
+
+&lt;p&gt;Проблема с первым примером выше заключается в том, что компилятор F# выводит значение &lt;code&gt;p&lt;/code&gt; как имеющее неопределенное значение общего типа, хотя F# не допускает значение общего типа в этой ситуации. Функция &lt;code&gt;pstring&lt;/code&gt; возвращает значение типа &lt;code&gt;Parser&amp;lt;string, &#39;u&amp;gt;&lt;/code&gt;, где &lt;code&gt;&#39;u&lt;/code&gt; - параметр типа представляющий собой пользовательское состояние типа &lt;code&gt;CharStream&lt;/code&gt;. Так как в первом примере выше, нет значений содержащих этот параметр типа, компилятор указывает тип результата как &lt;code&gt;Parser&amp;lt;string, &#39;_a&amp;gt;&lt;/code&gt; для синтаксического анализатора &lt;code&gt;p&lt;/code&gt;, где &lt;code&gt;&#39;_a&lt;/code&gt; представляет не определенный параметр общего типа.&lt;/p&gt;
+
+&lt;p&gt;Во втором примере эта проблема не возникает, поскольку использование &lt;code&gt;p&lt;/code&gt; в качестве первого аргумента функции &lt;code&gt;run&lt;/code&gt; определяет тип пользовательского состояния. Поскольку &lt;code&gt;run&lt;/code&gt; принимает только синтаксические анализаторы типа &lt;code&gt;Parser&amp;lt;&#39;t, unit&amp;gt;&lt;/code&gt;, компилятор выводит определенный тип &lt;code&gt;Parser&amp;lt;string, unit&amp;gt;&lt;/code&gt; для &lt;code&gt;p&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;В примере ниже предлагается два способа обработки ограничения значений в программах FParsec:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Либо убедитесь, что тип значения синтаксического анализатора ограничен не обобщенным типом путем дальнейшего использования значения этого синтаксического анализатора &lt;em&gt;в одном блоке компиляции&lt;/em&gt;,&lt;/li&gt;
+&lt;li&gt;Или предоставьте явную аннотацию типа, чтобы вручную ограничивать тип значения синтаксического анализатора (обычно для всего модуля синтаксического анализа достаточно нескольких аннотаций типа в ключевых точках).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Часто бывает удобно определить аббревиатуры типа следующего вида:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;type UserState = unit // Конечно не обязательно должен быть unit типом
+type Parser&amp;lt;&#39;t&amp;gt; = Parser&amp;lt;&#39;t, UserState&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;С такими аббревиатурами, типы аннотаций становятся такими же простыми, как&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let p : Parser&amp;lt;_&amp;gt; = pstring &amp;quot;test&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Конечно, ограничение значения типа синтаксического анализатора до определенного типа - это только решение, если вам действительно не нужен общий тип. Если вам нужен общий тип, вам придется применять другие методы, как это описано, например, в документации по языку &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dotnet/fsharp/language-reference/generics/automatic-generalization&#34; target=&#34;_blank&#34;&gt;F#&lt;/a&gt; или в статье &lt;a href=&#34;http://blogs.msdn.com/b/mulambda/archive/2010/05/01/value-restriction-in-f.aspx&#34; target=&#34;_blank&#34;&gt;Finer Points of F# Value Restriction&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; в блоге Дмитрия Ломова. Однако значения &lt;code&gt;Parser&lt;/code&gt; FParsec (непараметрические функции синтаксического анализатора) обычно используются только в контексте конкретного использования синтаксического анализатора с фиксированным типом состояния пользователя. В этой ситуации ограничение типа действительно является подходящей мерой, чтобы избежать ошибок ограничения значения.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 11. Синтаксический анализ JSON</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/11-parsing-json/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/11-parsing-json/</guid>
-      <description>Now that we have discussed the basics of FParsec we are well prepared to work through a real world parser example: a JSON parser.
-JSON (JavaScript Object Notation) is a text-based data interchange format with a simple and lightweight syntax. You can find descriptions of the syntax on json.org and in RFC 4626.
-In many applications one only has to deal with JSON files describing one particular kind of object. In such a context it sometimes can be appropriate to write a specialized parser just for that specific kind of JSON file.</description>
+      <description>&lt;p&gt;Now that we have discussed the basics of FParsec we are well prepared to work through a real world parser example: a JSON parser.&lt;/p&gt;
+
+&lt;p&gt;JSON (JavaScript Object Notation) is a text-based data interchange format with a simple and lightweight syntax. You can find descriptions of the syntax on &lt;a href=&#34;http://json.org&#34; target=&#34;_blank&#34;&gt;json.org&lt;/a&gt; and in &lt;a href=&#34;http://www.ietf.org/rfc/rfc4627.txt&#34; target=&#34;_blank&#34;&gt;RFC 4626&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In many applications one only has to deal with JSON files describing one particular kind of object. In such a context it sometimes can be appropriate to write a specialized parser just for that specific kind of JSON file. In this tutorial, however, we will follow a more general approach. We will implement a parser that can parse any general JSON file into an AST, i.e. an intermediate data structure describing the contents of the file. Applications can then conveniently query this data structure and extract the information they need. This is an approach comparable to that of XML parsers which build a data structure describing the document tree of an XML document. The great advantage of this approach is that the JSON parser itself becomes reusable and the document specific parsing logic can be expressed in the form of simple functions processing the AST of the JSON document.&lt;/p&gt;
+
+&lt;p&gt;The natural way to implement an AST in F# is with the help of a discriminated union type. If you look at the &lt;a href=&#34;http://json.org&#34; target=&#34;_blank&#34;&gt;JSON specification&lt;/a&gt;, you can see that a JSON value can be a string, a number, a boolean, null, a comma-separated list of values in square brackets, or an object with a sequence of key-value pairs in curly brackets.&lt;/p&gt;
+
+&lt;p&gt;In our parser we will use the following union type to represent JSON values:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;type Json = JString of string
+          | JNumber of float
+          | JBool   of bool
+          | JNull
+          | JList   of Json list
+          | JObject of Map&amp;lt;string, Json&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here we&amp;rsquo;ve chosen the F# &lt;code&gt;list&lt;/code&gt; type to represent a sequence of values and the &lt;code&gt;Map&lt;/code&gt; type to represent a sequence of key-value pairs, because these types are particularly convenient to process in F#.[fn If you need to parse huge sequences and objects, it might be more appropriate to use an array and dictionary for JList and JObject respectively.] Note that the &lt;code&gt;Json&lt;/code&gt; type is recursive, since both &lt;code&gt;JList&lt;/code&gt; and &lt;code&gt;JObject&lt;/code&gt; values can themselves contain &lt;code&gt;Json&lt;/code&gt; values. Our parser will have to reflect this recursive structure.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;###Tip
+If you&amp;rsquo;re new to FParsec and have a little time, it would be a good exercise to try to implement the JSON parser on your own (with the help of the reference documentation). This tutorial already covered almost everything you need and the JSON grammar is simple enough that this shouldn&amp;rsquo;t take too much time. Of course, you can always peek at the implementation below if you get stuck.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;We start the actual parser implementation by covering the simple &lt;code&gt;null&lt;/code&gt; and boolean cases:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jnull = stringReturn &amp;quot;null&amp;quot; JNull
+let jool =      (stringReturn &amp;quot;true&amp;quot;  (JBool true))
+            &amp;lt;|&amp;gt; (stringReturn &amp;quot;false&amp;quot; (JBool false))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Handling the number case is just as simple, because the JSON number format is based on the typical floating-point number format used in many programming languages and hence can be parsed with FParsec&amp;rsquo;s built-in &lt;code&gt;pfloat&lt;/code&gt; parser:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jnumber = pfloat |&amp;gt;&amp;gt; JNumber
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Note that F# allows us to pass the object constructor &lt;code&gt;JNumber&lt;/code&gt; as a function argument.)&lt;/p&gt;
+
+&lt;p&gt;If you compare the precise number format supported by &lt;code&gt;pfloat&lt;/code&gt; with that in the JSON spec, you&amp;rsquo;ll see that &lt;code&gt;pfloat&lt;/code&gt; supports a superset of the JSON format. In contrast to the JSON format the &lt;code&gt;pfloat&lt;/code&gt; parser also recognizes &lt;code&gt;NaN&lt;/code&gt; and &lt;code&gt;Infinity&lt;/code&gt; values, accepts a leading plus sign, accepts leading zeros and even supports the hexadecimal float format of Java and C99. Depending on the context this behaviour can be considered a feature or a limitation of the parser. For most applications it probably doesn&amp;rsquo;t matter, and the JSON RFC clearly states that a JSON parser may support a superset of the JSON syntax. However, if you&amp;rsquo;d rather only support the exact JSON number format, you can implement such a float parser rather easily based on the configurable &lt;code&gt;numberLiteral&lt;/code&gt; parser (just have a look at how this is currently done in the &lt;code&gt;pfloat&lt;/code&gt; source).&lt;/p&gt;
+
+&lt;p&gt;The JSON string format takes a little more effort to implement, but we&amp;rsquo;ve already parsed a similar format with the &lt;code&gt;stringLiteral&lt;/code&gt; parsers in &lt;a href=&#34;#Parsing string data&#34;&gt;Parsing string data&lt;/a&gt;, so we can just adapt one of those parsers for our purpose:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let stringLiteral =
+    let escape =  anyOf &amp;quot;\&amp;quot;\\/bfnrt&amp;quot;
+                  |&amp;gt;&amp;gt; function
+                      | &#39;b&#39; -&amp;gt; &amp;quot;\b&amp;quot;
+                      | &#39;f&#39; -&amp;gt; &amp;quot;\u000C&amp;quot;
+                      | &#39;n&#39; -&amp;gt; &amp;quot;\n&amp;quot;
+                      | &#39;r&#39; -&amp;gt; &amp;quot;\r&amp;quot;
+                      | &#39;t&#39; -&amp;gt; &amp;quot;\t&amp;quot;
+                      | c   -&amp;gt; string c // every other char is mapped to itself
+
+    let unicodeEscape =
+    	/// converts a hex char ([0-9a-fA-F]) to its integer number (0-15)
+        let hex2int c = (int c &amp;amp;&amp;amp;&amp;amp; 15) + (int c &amp;gt;&amp;gt;&amp;gt; 6)*9
+
+        str &amp;quot;u&amp;quot; &amp;gt;&amp;gt;. pipe4 hex hex hex hex (fun h3 h2 h1 h0 -&amp;gt;
+            (hex2int h3)*4096 + (hex2int h2)*256 + (hex2int h1)*16 + hex2int h0
+            |&amp;gt; char |&amp;gt; string
+        )
+
+    let escapedCharSnippet = str &amp;quot;\\&amp;quot; &amp;gt;&amp;gt;. (escape &amp;lt;|&amp;gt; unicodeEscape)
+    let normalCharSnippet  = manySatisfy (fun c -&amp;gt; c &amp;lt;&amp;gt; &#39;&amp;quot;&#39; &amp;amp;&amp;amp; c &amp;lt;&amp;gt; &#39;\\&#39;)
+
+    between (str &amp;quot;\&amp;quot;&amp;quot;) (str &amp;quot;\&amp;quot;&amp;quot;)
+            (stringsSepBy normalCharSnippet escapedCharSnippet)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;stringLiteral&lt;/code&gt; parses string literals as a sequence of normal char snippets separated by escaped char snippets. A normal char snippet is any sequence of chars that does not contain the chars &lt;code&gt;&#39;&amp;quot;&#39;&lt;/code&gt; and &lt;code&gt;&#39;\\&#39;&lt;/code&gt;. An escaped char snippet consists of a backslash followed by any of the chars &lt;code&gt;&#39;\\&#39;&lt;/code&gt;, &lt;code&gt;&#39;\&amp;quot;&#39;&lt;/code&gt;, &lt;code&gt;&#39;/&#39;&lt;/code&gt;, &lt;code&gt;&#39;b&#39;&lt;/code&gt;, &lt;code&gt;&#39;f&#39;&lt;/code&gt;, &lt;code&gt;&#39;n&#39;&lt;/code&gt;, &lt;code&gt;&#39;r&#39;&lt;/code&gt;, &lt;code&gt;&#39;t&#39;&lt;/code&gt;, or an Unicode escape. An Unicode escape consists of an &lt;code&gt;&#39;u&#39;&lt;/code&gt; followed by four hex chars representing an UTF-16 code point.&lt;/p&gt;
+
+&lt;p&gt;[#createParserForwardedToRef-example]
+The grammar rules for JSON lists and objects are recursive, because any list or object can contain itself any kind of JSON value. Hence, in order to write parsers for the list and object grammar rules, we need a way to refer to the parser for any kind of JSON value, even though we haven&amp;rsquo;t yet constructed this parser. Like it is so often in computing, we can solve this problem by introducing an extra indirection:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jvalue, jvalueRef = createParserForwardedToRef&amp;lt;Json, unit&amp;gt;()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you might have guessed from the name, &lt;code&gt;createParserForwardedToRef&lt;/code&gt; creates a parser (&lt;code&gt;jvalue&lt;/code&gt;) that forwards all invocations to the parser in a reference cell (&lt;code&gt;jvalueRef&lt;/code&gt;). Initially, the reference cell holds a dummy parser, but since the reference cell is mutable, we can later replace the dummy parser with the actual value parser, once we have finished constructing it.&lt;/p&gt;
+
+&lt;p&gt;The JSON RFC sensibly only permits spaces, (horizontal) tabs, line feeds and carriage returns as whitespace characters, which allows us to use the built-in &lt;code&gt;spaces&lt;/code&gt; parser for parsing whitespace:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let ws = spaces
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Both JSON lists and objects are syntactically represented as a comma-separated lists of &amp;ldquo;elements&amp;rdquo; between brackets, where whitespace is allowed before and after any bracket, comma and list element. We can conveniently parse such lists with the following helper function:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let listBetweenStrings sOpen sClose pElement f =
+    between (str sOpen) (str sClose)
+            (ws &amp;gt;&amp;gt;. sepBy (pElement .&amp;gt;&amp;gt; ws) (str &amp;quot;,&amp;quot; &amp;gt;&amp;gt;. ws) |&amp;gt;&amp;gt; f)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This function takes four arguments: an opening string, a closing string, an element parser and a function that is applied to the parsed list of elements.&lt;/p&gt;
+
+&lt;p&gt;With the help of this function we can define the parser for a JSON list as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jlist   = listBetweenStrings &amp;quot;[&amp;quot; &amp;quot;]&amp;quot; jvalue JList
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;JSON objects are lists of key-value pairs, so we need a parser for a key-value pair:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let keyValue = stringLiteral .&amp;gt;&amp;gt;. (ws &amp;gt;&amp;gt;. str &amp;quot;:&amp;quot; &amp;gt;&amp;gt;. ws &amp;gt;&amp;gt;. jvalue)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Remember, the points on both sides of &lt;code&gt;.&amp;gt;&amp;gt;.&lt;/code&gt; indicate that the results of the two parsers on both sides are returned as a tuple.)&lt;/p&gt;
+
+&lt;p&gt;By passing the &lt;code&gt;keyValue&lt;/code&gt; parser to &lt;code&gt;listBetweenStrings&lt;/code&gt; we obtain a parser for JSON objects:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let jobject = listBetweenStrings &amp;quot;{&amp;quot; &amp;quot;}&amp;quot; keyValue (Map.ofList &amp;gt;&amp;gt; JObject)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;[#json-value-parser]
+Having defined parsers for all the possible kind of JSON values, we can combine the different cases with a &lt;code&gt;choice&lt;/code&gt; parser to obtain the finished parser for JSON values:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;do jvalueRef := choice [jobject
+                        jlist
+                        jstring
+                        jnumber
+                        jtrue
+                        jfalse
+                        jnull]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;jvalue&lt;/code&gt; parser doesn&amp;rsquo;t accept leading or trailing whitespace, so we need to define our parser for complete JSON documents as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let json = ws &amp;gt;&amp;gt;. jvalue .&amp;gt;&amp;gt; ws .&amp;gt;&amp;gt; eof
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This parser will try to consume a complete JSON input stream and, if successful, will return a &lt;code&gt;Json&lt;/code&gt; AST of the input as the parser result&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s it, we&amp;rsquo;re finished with our JSON parser. If you want to try this parser out on some sample input, please take a look at the JSON project in the &lt;strong&gt;Samples&lt;/strong&gt; folder.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Глава 12. Куда дальше?</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/12-what-now/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/12-what-now/</guid>
-      <description>If this tutorial has whet your appetite for a more in-depth introduction to FParsec, just head over to the user&amp;rsquo;s guide. If you can&amp;rsquo;t wait to write your own parser, then bookmark the parser overview page, maybe take a short look at the example parsers in the Samples folder and just start hacking. You can always consult the user&amp;rsquo;s guide at a later point should you get stuck somewhere.</description>
+      <description>&lt;p&gt;If this tutorial has whet your appetite for a more in-depth introduction to FParsec, just head over to the &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/&#34; target=&#34;_blank&#34;&gt;user&amp;rsquo;s guide&lt;/a&gt;. If you can&amp;rsquo;t wait to write your own parser, then bookmark the &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/parser-overview.html&#34; target=&#34;_blank&#34;&gt;parser overview&lt;/a&gt; page, maybe take a short look at the example parsers in the &lt;strong&gt;Samples&lt;/strong&gt; folder and just start hacking. You can always consult the user&amp;rsquo;s guide at a later point should you get stuck somewhere.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Учебник библиотеки FParsec</title>
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/fparsec-tutorial/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/fparsec-tutorial/</guid>
-      <description>Введение Этот учебник знакомит вас с основными понятиями библиотеки FParsec. Наша цель &amp;mdash; дать вам возможность попробовать создать приложения синтаксического разбора с помощью библиотеки FParsec. Мы охватим только основные идеи и дадим беглый обзор библиотеки по APIen. Но, надеемся, это будет достаточной основой для того, чтобы вы могли в дальнейшем использовать FParsec самостоятельно с помощью: руководства пользователяen, справочника по APIen и примеров синтаксических анализаторов в папке Samplesen.
-Благодарности Благодарю мою жену Ольгу за помощь в переводе, стилистической выверке и редактуре теста.</description>
+      <description>
+
+&lt;h1 id=&#34;введение&#34;&gt;Введение&lt;/h1&gt;
+
+&lt;p&gt;Этот учебник знакомит вас с основными понятиями библиотеки FParsec. Наша цель &amp;mdash; дать вам возможность попробовать создать приложения синтаксического разбора с помощью библиотеки FParsec. Мы охватим только основные идеи и дадим беглый обзор библиотеки по &lt;a href=&#34;https://ru.wikipedia.org/wiki/API&#34; target=&#34;_blank&#34;&gt;API&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;. Но, надеемся, это будет достаточной основой для того, чтобы вы могли в дальнейшем использовать FParsec самостоятельно с помощью: &lt;a href=&#34;http://www.quanttec.com/fparsec/users-guide/&#34; target=&#34;_blank&#34;&gt;руководства пользователя&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;, &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/&#34; target=&#34;_blank&#34;&gt;справочника по API&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt; и примеров синтаксических анализаторов в папке &lt;a href=&#34;https://bitbucket.org/fparsec/main/src/c234349e7b738e09a1b9eb53f5f1ef77d584f09b/Samples/?at=default&#34; target=&#34;_blank&#34;&gt;Samples&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;благодарности&#34;&gt;Благодарности&lt;/h2&gt;
+
+&lt;p&gt;Благодарю мою жену Ольгу за помощь в переводе, стилистической выверке и редактуре теста.&lt;/p&gt;
+
+&lt;h1 id=&#34;оглавление&#34;&gt;Оглавление&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/01-preliminaries/&#34; target=&#34;_blank&#34;&gt;Вступление&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/02-parsing-a-single-float/&#34; target=&#34;_blank&#34;&gt;Синтаксический анализатор числа с плавающей точкой&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/&#34; target=&#34;_blank&#34;&gt;Синтаксический анализатор числа с плавающей точкой в скобках&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/04-abstracting-parsers/&#34; target=&#34;_blank&#34;&gt;Абстрактные синтаксические анализаторы&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/&#34; target=&#34;_blank&#34;&gt;Синтаксический анализатор списка чисел с плавающей точкой&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/06-handling-whitespace/&#34; target=&#34;_blank&#34;&gt;Обработка пробелов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/07-parsing-string-data/&#34; target=&#34;_blank&#34;&gt;Синтаксический анализатор строковых данных&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/&#34; target=&#34;_blank&#34;&gt;Использование последовательности синтаксических анализаторов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/09-parsing-alternatives/&#34; target=&#34;_blank&#34;&gt;Использование альтернативных синтаксических анализов&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/10-fsharps-value-restriction/&#34; target=&#34;_blank&#34;&gt;Ограничение значений F#&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/11-parsing-json/&#34; target=&#34;_blank&#34;&gt;Синтаксический анализ JSON&lt;/a&gt; (В работе)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/12-what-now/&#34; target=&#34;_blank&#34;&gt;Куда дальше?&lt;/a&gt; (В работе)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;учебник-на-других-языках&#34;&gt;Учебник на других языках&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stephan-tolksdorf&#34; target=&#34;_blank&#34;&gt;Стефан Тольксдорф&lt;/a&gt;, авторский текст на &lt;a href=&#34;http://www.quanttec.com/fparsec/tutorial.html&#34; target=&#34;_blank&#34;&gt;английском языке&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/gab_km&#34; target=&#34;_blank&#34;&gt;Gab_km&lt;/a&gt;, перевод на &lt;a href=&#34;http://blog.livedoor.jp/gab_km/archives/1437534.html&#34; target=&#34;_blank&#34;&gt;японский язык&lt;/a&gt;.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

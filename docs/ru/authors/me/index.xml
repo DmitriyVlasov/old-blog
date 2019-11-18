@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Дмитрий Власов</title>
     <link>https://DmitriyVlasov.ru/ru/authors/me/</link>
-    <description>Recent content on Дмитрий Власов</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    
-	<atom:link href="https://DmitriyVlasov.ru/ru/authors/me/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://DmitriyVlasov.ru/ru/authors/me/index.xml" rel="self" type="application/rss+xml" />
+    <description>Дмитрий Власов</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
+    <image>
+      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <title>Дмитрий Власов</title>
+      <link>https://DmitriyVlasov.ru/ru/authors/me/</link>
+    </image>
     
   </channel>
 </rss>

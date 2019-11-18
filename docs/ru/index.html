@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="ru-ru">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.3.0">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
 
   
 
@@ -39,21 +39,9 @@
 
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
   
-  
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#795548">
   
 
   
@@ -62,8 +50,8 @@
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
     
@@ -73,12 +61,14 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai-sublime.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
 
     
 
@@ -86,41 +76,66 @@
 
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
   
 
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.4262dcf994120e09205278621ff7f02a.css">
+  
+  <link rel="stylesheet" href="/css/academic.css">
 
   
 
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91250239-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-91250239-1', {});
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-91250239-1', 'auto');
-      
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
-  
+
 
   
   <link rel="alternate" href="/ru/index.xml" type="application/rss+xml" title="Дмитрий Власов">
-  <link rel="feed" href="/ru/index.xml" type="application/rss+xml" title="Дмитрий Власов">
   
 
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="manifest" href="/ru/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="https://DmitriyVlasov.ru/ru/">
@@ -132,25 +147,52 @@
     
     
   
+  
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Дмитрий Власов">
   <meta property="og:url" content="https://DmitriyVlasov.ru/ru/">
   <meta property="og:title" content="Дмитрий Власов">
   <meta property="og:description" content="Заметки разработчика о жизни, Вселенной и всего такого."><meta property="og:image" content="https://DmitriyVlasov.ru/img/icon-192.png">
-  <meta property="og:locale" content="ru-ru">
+  <meta property="twitter:image" content="https://DmitriyVlasov.ru/img/icon-192.png"><meta property="og:locale" content="ru-ru">
   
-  <meta property="og:updated_time" content="2019-07-23T00:00:00&#43;00:00">
-  
-
+    <meta property="og:updated_time" content="2019-07-23T00:00:00&#43;00:00">
   
 
   
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://DmitriyVlasov.ru/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://DmitriyVlasov.ru/"
+}
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
 
   <title>Дмитрий Власов</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
   <aside class="search-results" id="search">
   <div class="container">
     <section class="search-header">
@@ -166,8 +208,8 @@
 
       <div id="search-box">
         
-        <input name="q" id="search-query" placeholder="Поиск..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        <input name="q" id="search-query" placeholder="Поиск ..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
         
       </div>
 
@@ -183,8 +225,8 @@
 </aside>
 
 
-
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
@@ -227,11 +269,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/#about" data-target="#about">
-            
-            <span>Обо мне</span>
-            
-          </a>
+          <a class="nav-link " href="/ru/#about" data-target="#about"><span>Обо мне</span></a>
         </li>
 
         
@@ -260,11 +298,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/#posts" data-target="#posts">
-            
-            <span>Статьи</span>
-            
-          </a>
+          <a class="nav-link " href="/ru/#posts" data-target="#posts"><span>Статьи</span></a>
         </li>
 
         
@@ -293,11 +327,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/#talks" data-target="#talks">
-            
-            <span>Выступления</span>
-            
-          </a>
+          <a class="nav-link " href="/ru/#talks" data-target="#talks"><span>Выступления</span></a>
         </li>
 
         
@@ -326,11 +356,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/#featured" data-target="#featured">
-            
-            <span>Публикации</span>
-            
-          </a>
+          <a class="nav-link " href="/ru/#featured" data-target="#featured"><span>Публикации</span></a>
         </li>
 
         
@@ -352,11 +378,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/courses/">
-            
-            <span>Курсы</span>
-            
-          </a>
+          <a class="nav-link " href="/ru/courses/"><span>Курсы</span></a>
         </li>
 
         
@@ -385,11 +407,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/#contact" data-target="#contact">
-            
-            <span>Контакты</span>
-            
-          </a>
+          <a class="nav-link " href="/ru/#contact" data-target="#contact"><span>Контакты</span></a>
         </li>
 
         
@@ -411,8 +429,7 @@
         
         <li class="nav-item dropdown">
           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-            <i class="fas fa-globe" aria-hidden="true"></i>
-            <span>Русский</span>
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i><span>Русский</span>
           </a>
           <ul class="dropdown-menu">
             
@@ -437,6 +454,17 @@
     </div>
   </div>
 </nav>
+
+
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -476,7 +504,14 @@
 
   
   
-  <section id="about" class="home-section wg-about   " >
+  
+  
+  
+
+  
+  
+
+  <section id="about" class="home-section wg-about   "  >
     <div class="container">
       
 
@@ -493,29 +528,27 @@
 
 
 
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
+<div class="row">
   <div class="col-12 col-lg-4">
     <div id="profile">
 
       
       
-      <img class="portrait" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+      <img class="portrait" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
       
 
       <div class="portrait-title">
-        <h2 itemprop="name">Дмитрий Власов</h2>
-        <h3 itemprop="jobTitle">Старший BI разработчик</h3>
+        <h2>Дмитрий Власов</h2>
+        <h3>Старший BI разработчик</h3>
 
         
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="http://awara-it.com/ru_RU/" target="_blank" itemprop="url" rel="noopener">
-          <span itemprop="name">Авара АйТи</span>
+        <h3>
+          <a href="http://awara-it.com/ru_RU/" target="_blank" rel="noopener">
+          <span>Авара АйТи</span>
           </a>
         </h3>
         
       </div>
-
-      <link itemprop="url" href="">
 
       <ul class="network-icon" aria-hidden="true">
         
@@ -531,7 +564,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="/ru/#contact" >
+          <a href="/ru/#contact" >
             <i class="fas fa-envelope big-icon"></i>
           </a>
         </li>
@@ -548,7 +581,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://github.com/DmitriyVlasov" target="_blank" rel="noopener">
+          <a href="https://github.com/DmitriyVlasov" target="_blank" rel="noopener">
             <i class="fab fa-github big-icon"></i>
           </a>
         </li>
@@ -565,7 +598,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://vk.com/DmitriyVlasovRu" target="_blank" rel="noopener">
+          <a href="https://vk.com/DmitriyVlasovRu" target="_blank" rel="noopener">
             <i class="fab fa-vk big-icon"></i>
           </a>
         </li>
@@ -582,7 +615,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://facebook.com/MeDmitriyVlasovRu" target="_blank" rel="noopener">
+          <a href="https://facebook.com/MeDmitriyVlasovRu" target="_blank" rel="noopener">
             <i class="fab fa-facebook big-icon"></i>
           </a>
         </li>
@@ -599,7 +632,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://twitter.com/DmitriyVlasovRu" target="_blank" rel="noopener">
+          <a href="https://twitter.com/DmitriyVlasovRu" target="_blank" rel="noopener">
             <i class="fab fa-twitter big-icon"></i>
           </a>
         </li>
@@ -616,7 +649,7 @@
           
         
         <li>
-          <a itemprop="sameAs" href="https://linkedin.com/in/DmitriyVlasov" target="_blank" rel="noopener">
+          <a href="https://linkedin.com/in/DmitriyVlasov" target="_blank" rel="noopener">
             <i class="fab fa-linkedin big-icon"></i>
           </a>
         </li>
@@ -625,7 +658,7 @@
 
     </div>
   </div>
-  <div class="col-12 col-lg-8" itemprop="description">
+  <div class="col-12 col-lg-8">
 
     
     <h1>Биография</h1>
@@ -685,7 +718,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -710,7 +742,14 @@
 
   
   
-  <section id="experience" class="home-section wg-experience   " >
+  
+  
+  
+
+  
+  
+
+  <section id="experience" class="home-section wg-experience   "  >
     <div class="container">
       
 
@@ -747,17 +786,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий разработчик BI</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.volgagas.com/ru/" target="_blank" rel="noopener">Волгагаз</a>, г.Саратов
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Нефтедобывающая отрасль</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.volgagas.com/ru/" target="_blank" rel="noopener">Волгагаз</a></h4>
             <div class="text-muted exp-meta">
               02.2019 –
               
-                Настоящее время
+                Настоящий
+              
+              
+                <span class="middot-divider"></span>
+                <span>г.Саратов</span>
               
             </div>
             <div class="card-text"><ul>
@@ -789,17 +826,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий разработчик BI</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://nt-serv.com" target="_blank" rel="noopener">NewTech Services</a>, г.Москва
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Нефтедобывающая отрасль</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://nt-serv.com" target="_blank" rel="noopener">NewTech Services</a></h4>
             <div class="text-muted exp-meta">
               07.2018 –
               
-                Настоящее время
+                Настоящий
+              
+              
+                <span class="middot-divider"></span>
+                <span>г.Москва</span>
               
             </div>
             <div class="card-text"><ul>
@@ -830,17 +865,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий разработчик BI</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="http://uniqbro.ru" target="_blank" rel="noopener">UniqBro</a>, г. Пермь
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Сфера услуг</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://uniqbro.ru" target="_blank" rel="noopener">UniqBro</a></h4>
             <div class="text-muted exp-meta">
               04.2018 –
               
-                Настоящее время
+                Настоящий
+              
+              
+                <span class="middot-divider"></span>
+                <span>г. Пермь</span>
               
             </div>
             <div class="card-text"><ul>
@@ -872,17 +905,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий разработчик BI</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="http://vyborgec.ru" target="_blank" rel="noopener">Агрохолдинг Выборжец</a>, Ленинградская область
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Сельское хозяйство</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://vyborgec.ru" target="_blank" rel="noopener">Агрохолдинг Выборжец</a></h4>
             <div class="text-muted exp-meta">
               04.2018 –
               
-                Настоящее время
+                Настоящий
+              
+              
+                <span class="middot-divider"></span>
+                <span>Ленинградская область</span>
               
             </div>
             <div class="card-text"><ul>
@@ -914,17 +945,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий разработчик BI</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="http://www.scandicbuilders.com" target="_blank" rel="noopener">Scandic Construction</a>, г. СанктПетербург
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Производство строительных конструкций</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://www.scandicbuilders.com" target="_blank" rel="noopener">Scandic Construction</a></h4>
             <div class="text-muted exp-meta">
               10.2017 –
               
                 02.2018
+              
+              
+                <span class="middot-divider"></span>
+                <span>г. СанктПетербург</span>
               
             </div>
             <div class="card-text"><ul>
@@ -956,17 +985,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий разработчик BI</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.reimashop.ru/about-reima/" target="_blank" rel="noopener">Reima</a>, г. Москва
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Легкая промышленность</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.reimashop.ru/about-reima/" target="_blank" rel="noopener">Reima</a></h4>
             <div class="text-muted exp-meta">
               09.2017 –
               
                 10.2017
+              
+              
+                <span class="middot-divider"></span>
+                <span>г. Москва</span>
               
             </div>
             <div class="card-text"><ul>
@@ -998,17 +1025,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий разработчик BI</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://kronshtadt.ru" target="_blank" rel="noopener">Группа «Кронштадт»</a>, г. Санкт-Петербург
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Наукоемкое оборудование</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://kronshtadt.ru" target="_blank" rel="noopener">Группа «Кронштадт»</a></h4>
             <div class="text-muted exp-meta">
               06.2017 –
               
                 06.2017
+              
+              
+                <span class="middot-divider"></span>
+                <span>г. Санкт-Петербург</span>
               
             </div>
             <div class="card-text"><ul>
@@ -1040,17 +1065,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий разработчик Nav</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.profi-credit.ru/" target="_blank" rel="noopener">«Profi Real Group»</a>, г. Санкт-Петербург
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Fintech, Кредитная организация</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://www.profi-credit.ru/" target="_blank" rel="noopener">«Profi Real Group»</a></h4>
             <div class="text-muted exp-meta">
               09.2016 –
               
                 05.2017
+              
+              
+                <span class="middot-divider"></span>
+                <span>г. Санкт-Петербург</span>
               
             </div>
             <div class="card-text"><h6 id="достижения">Достижения</h6>
@@ -1128,17 +1151,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Ведущий бизнес-аналитик</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="http://btcgroup.ru" target="_blank" rel="noopener">ОАО «БТК Групп»</a>, г. Санкт-Петербург
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Легкая промышленность</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://btcgroup.ru" target="_blank" rel="noopener">ОАО «БТК Групп»</a></h4>
             <div class="text-muted exp-meta">
               08.2008 –
               
                 08.2016
+              
+              
+                <span class="middot-divider"></span>
+                <span>г. Санкт-Петербург</span>
               
             </div>
             <div class="card-text"><h6 id="достижения">Достижения</h6>
@@ -1220,17 +1241,15 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title exp-title text-muted mt-0 mb-1">Консультант по внедрению ERP-систем</h4>
-            <h4 class="card-title exp-company text-muted my-0"><a href="https://parus.com" target="_blank" rel="noopener">Центр Информационных Технологий и Консалтинга Парус</a>, г. Санкт-Петербург
-            </h4>
-            <div class="text-muted exp-meta">
-               
-              <span>Консалтинг</span>
-              
-            </div>
+            <h4 class="card-title exp-company text-muted my-0"><a href="https://parus.com" target="_blank" rel="noopener">Центр Информационных Технологий и Консалтинга Парус</a></h4>
             <div class="text-muted exp-meta">
               06.2002 –
               
                 08.2006
+              
+              
+                <span class="middot-divider"></span>
+                <span>г. Санкт-Петербург</span>
               
             </div>
             <div class="card-text"><h6 id="достижения">Достижения</h6>
@@ -1304,7 +1323,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -1329,7 +1347,14 @@
 
   
   
-  <section id="accomplishments" class="home-section wg-accomplishments   " >
+  
+  
+  
+
+  
+  
+
+  <section id="accomplishments" class="home-section wg-accomplishments   "  >
     <div class="container">
       
 
@@ -1478,7 +1503,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -1503,7 +1527,14 @@
 
   
   
-  <section id="posts" class="home-section wg-pages   " >
+  
+  
+  
+
+  
+  
+
+  <section id="posts" class="home-section wg-pages   "  >
     <div class="container">
       
 
@@ -1566,7 +1597,6 @@
 
 
 
-  
 
 
 
@@ -1575,15 +1605,15 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/post/qa/" itemprop="url">Короткие вопросы и ответы</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/post/qa/" >Короткие вопросы и ответы</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Где посмотреть возможности маркдаун? Учебник по markdown от разработчиков протокола Commonmark.
 Как регулировать размер изображения в …
     </div>
@@ -1597,10 +1627,6 @@
         
 
 
-
-<meta content="2019-07-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-07-23 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -1612,7 +1638,7 @@
     
       
     
-    <time>23.07.2019</time>
+    23.07.2019
   </span>
   
 
@@ -1621,16 +1647,15 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 мин. на чтение
+    2 мин. для прочтения
   </span>
   
 
   
   
-
-  
   
 
+  
   
 
 </div>
@@ -1658,7 +1683,6 @@
 
 
 
-  
 
 
 
@@ -1667,15 +1691,15 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/post/how-to-create-a-table-on-power-query/" itemprop="url">Как на Power Query создать таблицу?</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/post/how-to-create-a-table-on-power-query/" >Как на Power Query создать таблицу?</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Встроенные средства языка  В этом варианте используем встроенную в язык функцию #table. Функция принимает два варианта параметров: …
     </div>
     
@@ -1688,10 +1712,6 @@
         
 
 
-
-<meta content="2018-10-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2018-10-17 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -1703,7 +1723,7 @@
     
       
     
-    <time>17.10.2018</time>
+    17.10.2018
   </span>
   
 
@@ -1712,16 +1732,15 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 мин. на чтение
+    2 мин. для прочтения
   </span>
   
 
   
   
-
-  
   
 
+  
   
 
 </div>
@@ -1749,7 +1768,6 @@
 
 
 
-  
 
 
 
@@ -1758,15 +1776,15 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/post/power-bi-use-python-script-with-parameters/" itemprop="url">Передача Параметров из Power BI в скрипт на Python</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/post/power-bi-use-python-script-with-parameters/" >Передача Параметров из Power BI в скрипт на Python</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Предисловие После установки августовского релиза Power BI  я очень обрадовался, увидев поддержку Python. Как раз в работе оказался …
     </div>
     
@@ -1779,10 +1797,6 @@
         
 
 
-
-<meta content="2018-08-20 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2018-08-20 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -1794,7 +1808,7 @@
     
       
     
-    <time>20.08.2018</time>
+    20.08.2018
   </span>
   
 
@@ -1803,16 +1817,15 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    6 мин. на чтение
+    6 мин. для прочтения
   </span>
   
 
   
   
-
-  
   
 
+  
   
 
 </div>
@@ -1840,7 +1853,6 @@
 
 
 
-  
 
 
 
@@ -1849,15 +1861,15 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/post/dax-functions/" itemprop="url">Обзор всех функций DAX</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/post/dax-functions/" >Обзор всех функций DAX</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Предисловие Приводится обзор всех существующих функций DAX. Основное назначение статьи максимально возможно упростить обзор и изучение, …
     </div>
     
@@ -1870,10 +1882,6 @@
         
 
 
-
-<meta content="2017-07-19 13:11:31 &#43;0300 MSK" itemprop="datePublished">
-<meta content="2017-07-19 13:11:31 &#43;0300 MSK" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -1885,7 +1893,7 @@
     
       
     
-    <time>19.07.2017</time>
+    19.07.2017
   </span>
   
 
@@ -1894,16 +1902,15 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    16 мин. на чтение
+    16 мин. для прочтения
   </span>
   
 
   
   
-
-  
   
 
+  
   
 
 </div>
@@ -1931,7 +1938,6 @@
 
 
 
-  
 
 
 
@@ -1940,15 +1946,15 @@
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/post/handing-of-dax-blank/" itemprop="url">Сравнение обработки пустых значений в DAX, Excel и SQL</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/post/handing-of-dax-blank/" >Сравнение обработки пустых значений в DAX, Excel и SQL</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Пустое значение в:
  SQL это null; Excel это не заполненная ячейка; DAX это blank.  В DAX также существует функция blank() возвращающее …
     </div>
@@ -1962,10 +1968,6 @@
         
 
 
-
-<meta content="2017-07-05 15:56:25 &#43;0300 MSK" itemprop="datePublished">
-<meta content="2017-07-05 15:56:25 &#43;0300 MSK" itemprop="dateModified">
-
 <div class="article-metadata">
 
   
@@ -1977,7 +1979,7 @@
     
       
     
-    <time>05.07.2017</time>
+    05.07.2017
   </span>
   
 
@@ -1986,16 +1988,15 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 мин. на чтение
+    1 мин. для прочтения
   </span>
   
 
   
   
-
-  
   
 
+  
   
 
 </div>
@@ -2029,7 +2030,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -2054,7 +2054,14 @@
 
   
   
-  <section id="talks" class="home-section wg-pages   " >
+  
+  
+  
+
+  
+  
+
+  <section id="talks" class="home-section wg-pages   "  >
     <div class="container">
       
 
@@ -2117,26 +2124,26 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/talk/power-bi-custom-connector-from-zero-to-one/" itemprop="url">Power BI Custom Connector от 0 к 1</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/talk/power-bi-custom-connector-from-zero-to-one/" >Power BI Custom Connector от 0 к 1</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Custom коннектор от нуля до единицы. Расскажем о кейсе собственного опыта написания custom-коннектора для Power BI к Mango Office …
     </div>
     
@@ -2145,12 +2152,12 @@
 
       
       <div>
-        <span itemprop="startDate">
-           28.02.2019  19:00  &mdash; 20:00  
+        <span>
+          28.02.2019 19:00 &mdash; 20:00
         </span>
-            
+        
         <span class="middot-divider"></span>
-        <span itemprop="location">Санкт-Петербург, Российская Федерация</span>
+        <span>Санкт-Петербург, Российская Федерация</span>
         
       </div>
       
@@ -2221,8 +2228,8 @@
     
     
     
-    <a href="/ru/talk/power-bi-custom-connector-from-zero-to-one/">
-      <img src="/ru/talk/power-bi-custom-connector-from-zero-to-one/featured_hu2fbf0ed34f072e1b8c8f15a89aa75cb2_150181_150x0_resize_q90_lanczos.jpg" itemprop="image">
+    <a href="/ru/talk/power-bi-custom-connector-from-zero-to-one/" >
+      <img src="/ru/talk/power-bi-custom-connector-from-zero-to-one/featured_hu2fbf0ed34f072e1b8c8f15a89aa75cb2_150181_150x0_resize_q90_lanczos.jpg" alt="">
     </a>
     
   </div>
@@ -2239,26 +2246,26 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/talk/power-bi-and-sql-server-reporting-services/" itemprop="url">Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/talk/power-bi-and-sql-server-reporting-services/" >Microsoft PowerBI как альтернатива SQL Server Reporting Services: вместо или вместе?</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Чем отличаются эти две технологии и какое у них будущее? Обсудим особенности каждой, нюансы лицензирования, сравним производительность.
     </div>
     
@@ -2267,12 +2274,12 @@
 
       
       <div>
-        <span itemprop="startDate">
-           05.06.2018  21:00  &mdash; 22:00  
+        <span>
+          05.06.2018 21:00 &mdash; 22:00
         </span>
-            
+        
         <span class="middot-divider"></span>
-        <span itemprop="location">Санкт-Петербург, Российская Федерация</span>
+        <span>Санкт-Петербург, Российская Федерация</span>
         
       </div>
       
@@ -2335,8 +2342,8 @@
     
     
     
-    <a href="/ru/talk/power-bi-and-sql-server-reporting-services/">
-      <img src="/ru/talk/power-bi-and-sql-server-reporting-services/featured_hu0074d62970902203501e2f002215040c_31003_150x0_resize_q90_lanczos.jpg" itemprop="image">
+    <a href="/ru/talk/power-bi-and-sql-server-reporting-services/" >
+      <img src="/ru/talk/power-bi-and-sql-server-reporting-services/featured_hu0074d62970902203501e2f002215040c_31003_150x0_resize_q90_lanczos.jpg" alt="">
     </a>
     
   </div>
@@ -2353,26 +2360,26 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/talk/review-fsharp-4/" itemprop="url">Обзор F# 4.0</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/talk/review-fsharp-4/" >Обзор F# 4.0</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       История разработки четвертой версии F# в лицах. Улучшения языка F# и среды исполнения. Улучшения основой библиотеки языка FSharp.Core. …
     </div>
     
@@ -2381,12 +2388,12 @@
 
       
       <div>
-        <span itemprop="startDate">
-           25.08.2015  20:00  &mdash; 21:00  
+        <span>
+          25.08.2015 20:00 &mdash; 21:00
         </span>
-            
+        
         <span class="middot-divider"></span>
-        <span itemprop="location">Санкт-Петербург, Российская Федерация</span>
+        <span>Санкт-Петербург, Российская Федерация</span>
         
       </div>
       
@@ -2465,8 +2472,8 @@
     
     
     
-    <a href="/ru/talk/review-fsharp-4/">
-      <img src="/ru/talk/review-fsharp-4/featured_hu36338e1587dc404b9e66dab61962948d_137568_150x0_resize_q90_lanczos.jpg" itemprop="image">
+    <a href="/ru/talk/review-fsharp-4/" >
+      <img src="/ru/talk/review-fsharp-4/featured_hu36338e1587dc404b9e66dab61962948d_137568_150x0_resize_q90_lanczos.jpg" alt="">
     </a>
     
   </div>
@@ -2482,7 +2489,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -2507,7 +2513,14 @@
 
   
   
-  <section id="featured" class="home-section wg-featured   " >
+  
+  
+  
+
+  
+  
+
+  <section id="featured" class="home-section wg-featured   "  >
     <div class="container">
       
 
@@ -2550,8 +2563,6 @@
 
 
 
-
-  
   
 
 
@@ -2561,15 +2572,11 @@
   
 
 
-<div class="card-simple" itemscope itemtype="http://schema.org/ScholarlyArticle">
+<div class="card-simple">
 
   
     
 
-
-
-<meta content="2017-01-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2017-01-28 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -2582,7 +2589,8 @@
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person">Стефан Тольксдорф</span>, <span itemprop="author name" itemtype="http://schema.org/Person">Дмитрий Власов</span>
+  
+  <span>Стефан Тольксдорф</span>, <span>Дмитрий Власов</span>
 
   </div>
   
@@ -2594,7 +2602,7 @@
     
       
     
-    <time>01.2017</time>
+    01.2017
   </span>
   
 
@@ -2611,10 +2619,9 @@
 
   
   
-
-  
   
 
+  
   
 
 </div>
@@ -2625,13 +2632,13 @@
   
   
 
-  <h3 class="article-title mb-1 mt-3" itemprop="name">
-    <a href="/ru/publication/fparsec-tutorial/fparsec-tutorial/" itemprop="url">Учебник библиотеки FParsec</a>
+  <h3 class="article-title mb-1 mt-3">
+    <a href="/ru/publication/fparsec-tutorial/fparsec-tutorial/">Учебник библиотеки FParsec</a>
   </h3>
 
   
-  <div class="article-style" itemprop="articleBody">
-    Этот учебник знакомит вас с основными понятиями библиотеки FParsec. Цель этого учебника это дать вам возможность попробовать создать приложения синтаксического разбора с помощью библиотеки FParsec. Что будет достаточной основой для того, чтобы вы могли в дальнейшем использовать FParsec самостоятельно с помощью руководства пользователя, справочника по API и примеров синтаксических анализаторов.
+  <div class="article-style">
+    <p>Этот учебник знакомит вас с основными понятиями библиотеки FParsec. Цель этого учебника это дать вам возможность попробовать создать приложения синтаксического разбора с помощью библиотеки FParsec. Что будет достаточной основой для того, чтобы вы могли в дальнейшем использовать FParsec самостоятельно с помощью руководства пользователя, справочника по API и примеров синтаксических анализаторов.</p>
   </div>
   
 
@@ -2684,7 +2691,7 @@
     
   
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.quanttec.com/fparsec/tutorial.html" target="_blank" rel="noopener">
-  Источник документа
+  Исходный документ
 </a>
 
 
@@ -2703,7 +2710,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -2728,7 +2734,14 @@
 
   
   
-  <section id="publications" class="home-section wg-pages   " >
+  
+  
+  
+
+  
+  
+
+  <section id="publications" class="home-section wg-pages   "  >
     <div class="container">
       
 
@@ -2779,12 +2792,12 @@
   </div>
   <div class="col-12 col-lg-8">
 
-    <p><div class="alert alert-note">
+    <div class="alert alert-note">
   <div>
     Быстро обнаружить соответствующего содержания, <a href="https://DmitriyVlasov.ru/ru/publication/" target="_blank">фильтрация публикаций</a>.
   </div>
 </div>
-</p>
+
 
     
       
@@ -2796,26 +2809,26 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/publication/fparsec-tutorial/01-preliminaries/" itemprop="url">Глава 1. Вступление</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/publication/fparsec-tutorial/01-preliminaries/" >Глава 1. Вступление</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       FParsec состоит из двух библиотек: FParsec.dll и FParsecCS.dll. Для использования FParsec в вашем проекте, вы можете или установить из …
     </div>
     
@@ -2860,7 +2873,7 @@
     
   
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.quanttec.com/fparsec/tutorial.html#preliminaries" target="_blank" rel="noopener">
-  Источник документа
+  Исходный документ
 </a>
 
 
@@ -2887,26 +2900,26 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/publication/fparsec-tutorial/02-parsing-a-single-float/" itemprop="url">Глава 2. Синтаксический анализатор числа с плавающей точкой</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/publication/fparsec-tutorial/02-parsing-a-single-float/" >Глава 2. Синтаксический анализатор числа с плавающей точкой</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Синтаксический разбор входного потока включает два этапа: 1. построение синтаксического анализатора и 1. применение анализатора к …
     </div>
     
@@ -2951,7 +2964,7 @@
     
   
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.quanttec.com/fparsec/tutorial.html#parsing-a-single-float" target="_blank" rel="noopener">
-  Источник документа
+  Исходный документ
 </a>
 
 
@@ -2978,26 +2991,26 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/" itemprop="url">Глава 3. Синтаксический анализатор числа с плавающей точкой в скобках</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/publication/fparsec-tutorial/03-parsing-a-float-between-brackets/" >Глава 3. Синтаксический анализатор числа с плавающей точкой в скобках</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Реализация синтаксических анализаторов с использованием библиотеки FParsec обычно означает, что высокоуровневые синтаксические …
     </div>
     
@@ -3042,7 +3055,7 @@
     
   
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.quanttec.com/fparsec/tutorial.html#parsing-a-float-between-brackets" target="_blank" rel="noopener">
-  Источник документа
+  Исходный документ
 </a>
 
 
@@ -3069,26 +3082,26 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/publication/fparsec-tutorial/04-abstracting-parsers/" itemprop="url">Глава 4. Абстрактные синтаксические анализаторы</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/publication/fparsec-tutorial/04-abstracting-parsers/" >Глава 4. Абстрактные синтаксические анализаторы</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Одной из самых больших сильных сторон FParsec является легкость, с которой вы можете определить свои собственные абстрактные …
     </div>
     
@@ -3133,7 +3146,7 @@
     
   
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.quanttec.com/fparsec/tutorial.html#abstracting-parsers" target="_blank" rel="noopener">
-  Источник документа
+  Исходный документ
 </a>
 
 
@@ -3160,26 +3173,26 @@
 
 
 
+
   
-  
-  
-
-
-
-
-
   
 
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+
+
+
+  
+
+
+<div class="media stream-item">
   <div class="media-body">
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/" itemprop="url">Глава 5. Синтаксический анализатор списка чисел с плавающей точкой</a>
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/ru/publication/fparsec-tutorial/05-parsing-a-list-of-floats/" >Глава 5. Синтаксический анализатор списка чисел с плавающей точкой</a>
     </h3>
 
     
-    <div class="article-style" itemprop="articleBody">
+    <div class="article-style">
       Мы уже течение трех глав обсуждаем как делать синтаксический разбор одного числа с плавающей запятой, поэтому в этот раз мы попытаемся …
     </div>
     
@@ -3224,7 +3237,7 @@
     
   
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.quanttec.com/fparsec/tutorial.html#parsing-a-list-of-floats" target="_blank" rel="noopener">
-  Источник документа
+  Исходный документ
 </a>
 
 
@@ -3257,7 +3270,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -3282,9 +3294,31 @@
 
   
   
-  <section id="tags" class="home-section wg-tag-cloud   " >
+  
+  
+  
+
+  
+  
+
+  <section id="tags" class="home-section wg-tag-cloud   "  >
     <div class="container">
       
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
 
 <div class="row">
@@ -3296,8 +3330,6 @@
     
 
     
-      
-      
 
       
       
@@ -3315,7 +3347,7 @@
           
           
           
-          <a href="/ru/tags/dax/" style="font-size:1.8423502277012793rem">DAX</a>
+          <a href="/ru/tags/dax/" style="font-size:3.4944362512259657rem">DAX</a>
         
           
           
@@ -3325,7 +3357,7 @@
           
           
           
-          <a href="/ru/tags/excel/" style="font-size:1.8423502277012793rem">Excel</a>
+          <a href="/ru/tags/excel/" style="font-size:3.4944362512259657rem">Excel</a>
         
           
           
@@ -3340,7 +3372,7 @@
           
           
           
-          <a href="/ru/tags/power-bi/" style="font-size:2.3270154828966763rem">Power BI</a>
+          <a href="/ru/tags/power-bi/" style="font-size:4.747277761308515rem">Power BI</a>
         
           
           
@@ -3370,7 +3402,7 @@
           
           
           
-          <a href="/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/" style="font-size:1.4576497722987207rem">Вопросы и Ответы</a>
+          <a href="/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/" style="font-size:2.5rem">Вопросы и Ответы</a>
         
           
           
@@ -3385,17 +3417,17 @@
           
           
           
-          <a href="/ru/tags/%D0%BD%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-excel/" style="font-size:0.8rem">надстройки Excel</a>
-        
-          
-          
-          
           <a href="/ru/tags/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/" style="font-size:0.8rem">Обзор</a>
         
           
           
           
           <a href="/ru/tags/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/" style="font-size:0.8rem">Школа</a>
+        
+          
+          
+          
+          <a href="/ru/tags/%D0%BD%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BA%D0%B8-excel/" style="font-size:0.8rem">надстройки Excel</a>
         
       </div>
     
@@ -3405,7 +3437,6 @@
 
     </div>
   </section>
-  
 
   
   
@@ -3430,9 +3461,17 @@
 
   
   
-  <section id="contact" class="home-section wg-contact   " >
+  
+  
+  
+
+  
+  
+
+  <section id="contact" class="home-section wg-contact   "  >
     <div class="container">
       
+
 
 
 
@@ -3460,8 +3499,8 @@
           <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Имя" required>
         </div>
         <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Электронная почта</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Электронная почта" required>
+          <label class="sr-only" for="inputEmail">адрес электронной почты</label>
+          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="адрес электронной почты" required>
         </div>
         <div class="form-group">
           <label class="sr-only" for="inputMessage">Сообщение</label>
@@ -3472,21 +3511,36 @@
     </div>
     
 
-    <ul class="fa-ul" itemscope>
+    <ul class="fa-ul">
 
       
 
       
       <li>
         <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-        <span id="person-telephone" itemprop="telephone"><a href="tel:&#43;7%20%28904%29%20601-95-40">&#43;7 (904) 601-95-40</a></span>
+        <span id="person-telephone"><a href="tel:&#43;7%20%28904%29%20601-95-40">&#43;7 (904) 601-95-40</a></span>
       </li>
       
 
       
+      
+        
+        
+        
+        
+        
+        
+        
+        <li>
+          <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+          <span id="person-address">наб.реки Мойки 37А, Санкт-Петербург, 191186, Российская Федерация</span>
+        </li>
+      
+
+      
       <li>
-        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-        <span id="person-address" itemprop="address">наб.реки Мойки 37А, Санкт-Петербург, Российская Федерация</span>
+        <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
+        <span>Вход со стороны реки Мойки. Подняться по лестнице. Перед стойкой охраны повернуть налево к лифтам. Подняться на пятый этаж. Пройти по коридору до конца на лево.</span>
       </li>
       
 
@@ -3497,6 +3551,11 @@
       </li>
       
 
+      
+      <li>
+        <i class="fa-li fas fa-calendar-check fa-2x" aria-hidden="true"></i>
+        <a href="https://google.com/calendar" target="_blank" rel="noopener">Назначить встречу</a>
+      </li>
       
 
       
@@ -3528,12 +3587,22 @@
       
       <li>
         <i class="fa-li fab fa-skype fa-2x" aria-hidden="true"></i>
-        <a href="skype:vlasovde@outlook.com?call" >vlasov.dmitriy</a>
+        <a href="skype:vlasovde@outlook.com?call" >Vlasov.Dmitriy</a>
       </li>
       
 
     </ul>
 
+    
+    <div class="d-none">
+      <input id="map-provider" value="2">
+      <input id="map-lat" value="59.940533">
+      <input id="map-lng" value="30.318976">
+      <input id="map-dir" value="наб.реки Мойки 37А, Санкт-Петербург, 191186, Российская Федерация">
+      <input id="map-zoom" value="15">
+      <input id="map-api-key" value="">
+    </div>
+    <div id="map"></div>
     
 
   </div>
@@ -3541,63 +3610,15 @@
 
     </div>
   </section>
-  
 
 
-<div class="container">
-  <footer class="site-footer">
-  
 
-  <p class="powered-by">
-    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+      
 
     
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
     
-  </p>
-</footer>
-
-</div>
-
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Цитата</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Скачать
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
     
-
-    
+    <script src="/js/mathjax-config.js"></script>
     
 
     
@@ -3606,23 +3627,31 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
+      
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/fsharp.min.js"></script>
         
       
 
       
       
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
     
 
     
     
-
-    
-    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
     
 
     
@@ -3632,13 +3661,13 @@
 
     
     
+    
+    
+    
+    
     <script>
-      const search_index_filename = "/ru/index.json";
-      const i18n = {
-        'placeholder': "Поиск...",
-        'results': "Найдено",
-        'no_results': "Результатов не найдено"
-      };
+      const search_config = {"indexURI":"/ru/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"результат не найден","placeholder":"Поиск ...","results":"результат найден"};
       const content_type = {
         'post': "Статьи",
         'project': "Проекты",
@@ -3677,6 +3706,9 @@
 
     
     
+
+    
+    
     
     
     
@@ -3689,9 +3721,68 @@
     
     
     
-    <script src="/js/academic.min.ee8463f2a394889d45e169a983fe913d.js"></script>
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
 
-  </body>
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Процетировать</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Копия
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Скачать
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
-
-

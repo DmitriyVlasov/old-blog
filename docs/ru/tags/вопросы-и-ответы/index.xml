@@ -1,36 +1,199 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Вопросы и Ответы on Дмитрий Власов</title>
+    <title>Вопросы и Ответы | Дмитрий Власов</title>
     <link>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</link>
-    <description>Recent content in Вопросы и Ответы on Дмитрий Власов</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/index.xml" rel="self" type="application/rss+xml" />
+    <description>Вопросы и Ответы</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <title>Вопросы и Ответы</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</link>
+    </image>
     
     <item>
       <title>Короткие вопросы и ответы</title>
       <link>https://DmitriyVlasov.ru/ru/post/qa/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/post/qa/</guid>
-      <description>Где посмотреть возможности маркдаун? Учебник по markdown от разработчиков протокола Commonmark.
-Как регулировать размер изображения в маркдаун? Маркдаун этого не позволяет сделать. Используйте html тэг img, например так
-&amp;lt;img src=&amp;quot;image&amp;quot; width=&amp;quot;40%&amp;quot;&amp;gt;  
-Как посмотреть версию 1С 8?  Зайти в текущий клиент 1С. В верхнем левом углу выбрать кнопку &amp;ldquo;меню&amp;rdquo; \ Справка \ О программе.  Откроется окно &amp;ldquo;О программе&amp;rdquo;, смотрите версию:  Заходим в каталог: C:\Program Files\1cv8\ и выбираем каталог с именем найденной версии.</description>
+      <description>
+
+&lt;h4 id=&#34;где-посмотреть-возможности-маркдаун&#34;&gt;Где посмотреть возможности маркдаун?&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/tutorial/index.html&#34; target=&#34;_blank&#34;&gt;Учебник по markdown&lt;/a&gt; от разработчиков протокола &lt;a href=&#34;https://commonmark.org&#34; target=&#34;_blank&#34;&gt;Commonmark&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;как-регулировать-размер-изображения-в-маркдаун&#34;&gt;Как регулировать размер изображения в маркдаун?&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;(https://commonmark.org/help/tutorial/08-images.html)&#34; target=&#34;_blank&#34;&gt;Маркдаун&lt;/a&gt; этого не позволяет сделать.
+&lt;a href=&#34;https://github.com/hakimel/reveal.js/issues/1349&#34; target=&#34;_blank&#34;&gt;Используйте&lt;/a&gt; html тэг &lt;code&gt;img&lt;/code&gt;, например так&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;image&amp;quot; width=&amp;quot;40%&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a name=&#34;how-to-schow-1C8-version&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;как-посмотреть-версию-1с-8&#34;&gt;Как посмотреть версию 1С 8?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Зайти в текущий клиент 1С.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;В верхнем левом углу выбрать кнопку &amp;ldquo;меню&amp;rdquo; \ Справка \ О программе.
+&lt;img src=&#34;1с8-about-path.png&#34; width=&#34;60%&#34;&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Откроется окно &amp;ldquo;О программе&amp;rdquo;, смотрите версию:
+&lt;img src=&#34;1c-about.png&#34; width=&#34;60%&#34;&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Заходим в каталог: &lt;code&gt;C:\Program Files\1cv8\&lt;/code&gt; и выбираем каталог с именем найденной версии.
+&lt;img src=&#34;1c8-home-directory.png&#34; width=&#34;60%&#34;&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;как-зарегистрировать-библиотеку-1с-8-comcntr-dll&#34;&gt;Как зарегистрировать библиотеку 1С 8 &lt;code&gt;comcntr.dll&lt;/code&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#how-to-schow-1C8-version&#34;&gt;Определить&lt;/a&gt; действующую версию 1С&lt;/li&gt;
+&lt;li&gt;Запустить терминал &lt;code&gt;cmd&lt;/code&gt; под учетной записью администратора&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Замените в тексте кода ниже &lt;code&gt;&amp;lt;ВЕРСИЯ_1С&amp;gt;&lt;/code&gt; на найденную версию:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;C:\Windows\SysWOW64\regsvr32 &amp;quot;C:\Program Files\1cv8\&amp;lt;ВЕРСИЯ_1С&amp;gt;\bin\comcntr.dll&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Выполните&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Если все прошло хорошо, получите сообщение вида:
+&lt;img src=&#34;1c8-register-comcntr.dll-result.png&#34; alt=&#34;1c8-register-comcntr.dll-result&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;я-разрабатываю-вкладку-для-excel-она-не-загружается-как-понять-почему&#34;&gt;Я разрабатываю вкладку для Excel, она не загружается как понять почему?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В Excel по умолчанию ошибки пользовательского интерфейса скрываются.&lt;/li&gt;
+&lt;li&gt;Для того что бы отобразить, нужно зайти в &lt;strong&gt;параметры Excel&lt;/strong&gt; \ Пункт меню &lt;strong&gt;Дополнительно&lt;/strong&gt; \ Раздел &lt;strong&gt;Общие&lt;/strong&gt; \ Поставить флажок &lt;strong&gt;Показывать ошибки интерфейса пользователя надстроек&lt;/strong&gt;
+&lt;img src=&#34;excel-show-custom-ribbon-ui-errors.png&#34; alt=&#34;excel-show-custom-ribbon-ui errors&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;я-разрабатываю-пользовательскую-вкладку-в-excel-как-найти-имена-картинок-для-заполнения-тега-imagemso&#34;&gt;Я разрабатываю пользовательскую вкладку в Excel, как найти имена картинок для заполнения тега &lt;code&gt;imageMSO&lt;/code&gt;?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bert-toolkit.com/imagemso-list.html&#34; target=&#34;_blank&#34;&gt;Список иконок &lt;code&gt;imageMSO&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;как-завершить-работу-приложения-в-windows-из-командной-строки&#34;&gt;Как завершить работу приложения в Windows из командной строки?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Задача: Нужно закрыть Excel и все открытые файлы без сохранения. Можно решить это с помощью команды &lt;code&gt;TASKKILL&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;TASKKILL /im excel.exe /t /f
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Подробнее о команде в официальной документации &lt;a href=&#34;https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/taskkill&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;TASKKILL&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;как-конвертировать-файл-flv-в-mp4&#34;&gt;Как конвертировать файл flv в mp4?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34; target=&#34;_blank&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;В командной строке выполняете команду вида &lt;code&gt;ffmpeg -i &amp;quot;input.flv&amp;quot; &amp;quot;output.mp4&amp;quot;&lt;/code&gt;, где:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;input.flv&amp;quot;&lt;/code&gt; - произвольное имя файла источника&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;output.mp4&amp;quot;&lt;/code&gt; - произвольное имя файла приемника.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Как на Power Query создать таблицу?</title>
       <link>https://DmitriyVlasov.ru/ru/post/how-to-create-a-table-on-power-query/</link>
       <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/post/how-to-create-a-table-on-power-query/</guid>
-      <description>Встроенные средства языка  В этом варианте используем встроенную в язык функцию #table. Функция принимает два варианта параметров:  Первый параметр список имен полей, Второй список списков записей таблицы (см. Создание таблицы на основании списка полей) Первый параметр тип описывающий тип таблицы в виде перечисления в записи имен полей и их типов, Второй параметр список списков записей таблицы (см. Создание таблицы на основании ее типа).</description>
+      <description>
+
+&lt;h2 id=&#34;встроенные-средства-языка&#34;&gt;Встроенные средства языка&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В этом варианте используем встроенную в язык функцию &lt;code&gt;#table&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Функция принимает два варианта параметров:
+
+&lt;ul&gt;
+&lt;li&gt;Первый параметр список имен полей, Второй список списков записей таблицы (см. &lt;a href=&#34;#fromFielList&#34;&gt;Создание таблицы на основании списка полей&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Первый параметр тип описывающий тип таблицы в виде перечисления в записи имен полей и их типов, Второй параметр список списков записей таблицы (см. &lt;a href=&#34;#fromTableType&#34;&gt;Создание таблицы на основании ее типа&lt;/a&gt;).&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a name=&#34;fromFielList&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;создание-таблицы-на-основании-списка-полей&#34;&gt;Создание таблицы на основании списка полей&lt;/h3&gt;
+
+&lt;p&gt;Используем этот вариант если мы хотим создать таблицу и просто знаем какой то перечень полей и примерные значения для нее.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Мы можем просто определить таблицу и передав пустой список вторым параметром просто создать пустую таблицу&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#table(
+// Список имен полей 
+{ &amp;quot;Digit&amp;quot;, &amp;quot;Name&amp;quot; },
+// Пустой список
+{} 
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Или добавить какие то статические данные:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#table(
+// Список имен полей 
+{ &amp;quot;Digit&amp;quot;, &amp;quot;Name&amp;quot; },
+// Список списков записей таблицы
+{
+  {1,&amp;quot;one&amp;quot;}, 
+  {2,&amp;quot;two&amp;quot;}, 
+  {3,&amp;quot;three&amp;quot;}
+} 
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a name=&#34;fromTableType&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;создание-таблицы-на-основании-ее-типа&#34;&gt;Создание таблицы на основании ее типа&lt;/h3&gt;
+
+&lt;p&gt;Используем этот вариант если мы хотим создать таблицу и уже на первом этапе определить с какими типами полей в дальнейшем мы хотим работать.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Мы можем просто определить таблицу и передав пустой список вторым параметром просто создать пустую таблицу&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#table(
+// Тип описывающий таблицу через определения в записи типов ее полей:
+type table [Digit = number, Name = text], 
+// Пустой список
+{}
+} 
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Или добавить какие то статические данные:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#table(
+// Тип описывающий таблицу через определения в записи типов ее полей:
+  type table [Digit = number, Name = text], 
+// Список списков записей таблицы
+  {
+    {1,&amp;quot;one&amp;quot;}, 
+    {2,&amp;quot;two&amp;quot;}, 
+    {3,&amp;quot;three&amp;quot;}
+  } 
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;использованные-источники&#34;&gt;Использованные источники&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/query-bi/m/power-query-m-language-specification&#34; target=&#34;_blank&#34;&gt;Power Query M language specification&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

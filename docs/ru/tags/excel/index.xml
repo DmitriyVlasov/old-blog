@@ -1,49 +1,316 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Excel on Дмитрий Власов</title>
+    <title>Excel | Дмитрий Власов</title>
     <link>https://DmitriyVlasov.ru/ru/tags/excel/</link>
-    <description>Recent content in Excel on Дмитрий Власов</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    <lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://DmitriyVlasov.ru/ru/tags/excel/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    <description>Excel</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <title>Excel</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/excel/</link>
+    </image>
     
     <item>
       <title>Короткие вопросы и ответы</title>
       <link>https://DmitriyVlasov.ru/ru/post/qa/</link>
       <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/post/qa/</guid>
-      <description>Где посмотреть возможности маркдаун? Учебник по markdown от разработчиков протокола Commonmark.
-Как регулировать размер изображения в маркдаун? Маркдаун этого не позволяет сделать. Используйте html тэг img, например так
-&amp;lt;img src=&amp;quot;image&amp;quot; width=&amp;quot;40%&amp;quot;&amp;gt;  
-Как посмотреть версию 1С 8?  Зайти в текущий клиент 1С. В верхнем левом углу выбрать кнопку &amp;ldquo;меню&amp;rdquo; \ Справка \ О программе.  Откроется окно &amp;ldquo;О программе&amp;rdquo;, смотрите версию:  Заходим в каталог: C:\Program Files\1cv8\ и выбираем каталог с именем найденной версии.</description>
+      <description>
+
+&lt;h4 id=&#34;где-посмотреть-возможности-маркдаун&#34;&gt;Где посмотреть возможности маркдаун?&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/tutorial/index.html&#34; target=&#34;_blank&#34;&gt;Учебник по markdown&lt;/a&gt; от разработчиков протокола &lt;a href=&#34;https://commonmark.org&#34; target=&#34;_blank&#34;&gt;Commonmark&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;как-регулировать-размер-изображения-в-маркдаун&#34;&gt;Как регулировать размер изображения в маркдаун?&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;(https://commonmark.org/help/tutorial/08-images.html)&#34; target=&#34;_blank&#34;&gt;Маркдаун&lt;/a&gt; этого не позволяет сделать.
+&lt;a href=&#34;https://github.com/hakimel/reveal.js/issues/1349&#34; target=&#34;_blank&#34;&gt;Используйте&lt;/a&gt; html тэг &lt;code&gt;img&lt;/code&gt;, например так&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;image&amp;quot; width=&amp;quot;40%&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a name=&#34;how-to-schow-1C8-version&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;как-посмотреть-версию-1с-8&#34;&gt;Как посмотреть версию 1С 8?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Зайти в текущий клиент 1С.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;В верхнем левом углу выбрать кнопку &amp;ldquo;меню&amp;rdquo; \ Справка \ О программе.
+&lt;img src=&#34;1с8-about-path.png&#34; width=&#34;60%&#34;&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Откроется окно &amp;ldquo;О программе&amp;rdquo;, смотрите версию:
+&lt;img src=&#34;1c-about.png&#34; width=&#34;60%&#34;&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Заходим в каталог: &lt;code&gt;C:\Program Files\1cv8\&lt;/code&gt; и выбираем каталог с именем найденной версии.
+&lt;img src=&#34;1c8-home-directory.png&#34; width=&#34;60%&#34;&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;как-зарегистрировать-библиотеку-1с-8-comcntr-dll&#34;&gt;Как зарегистрировать библиотеку 1С 8 &lt;code&gt;comcntr.dll&lt;/code&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#how-to-schow-1C8-version&#34;&gt;Определить&lt;/a&gt; действующую версию 1С&lt;/li&gt;
+&lt;li&gt;Запустить терминал &lt;code&gt;cmd&lt;/code&gt; под учетной записью администратора&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Замените в тексте кода ниже &lt;code&gt;&amp;lt;ВЕРСИЯ_1С&amp;gt;&lt;/code&gt; на найденную версию:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;C:\Windows\SysWOW64\regsvr32 &amp;quot;C:\Program Files\1cv8\&amp;lt;ВЕРСИЯ_1С&amp;gt;\bin\comcntr.dll&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Выполните&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Если все прошло хорошо, получите сообщение вида:
+&lt;img src=&#34;1c8-register-comcntr.dll-result.png&#34; alt=&#34;1c8-register-comcntr.dll-result&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;я-разрабатываю-вкладку-для-excel-она-не-загружается-как-понять-почему&#34;&gt;Я разрабатываю вкладку для Excel, она не загружается как понять почему?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В Excel по умолчанию ошибки пользовательского интерфейса скрываются.&lt;/li&gt;
+&lt;li&gt;Для того что бы отобразить, нужно зайти в &lt;strong&gt;параметры Excel&lt;/strong&gt; \ Пункт меню &lt;strong&gt;Дополнительно&lt;/strong&gt; \ Раздел &lt;strong&gt;Общие&lt;/strong&gt; \ Поставить флажок &lt;strong&gt;Показывать ошибки интерфейса пользователя надстроек&lt;/strong&gt;
+&lt;img src=&#34;excel-show-custom-ribbon-ui-errors.png&#34; alt=&#34;excel-show-custom-ribbon-ui errors&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;я-разрабатываю-пользовательскую-вкладку-в-excel-как-найти-имена-картинок-для-заполнения-тега-imagemso&#34;&gt;Я разрабатываю пользовательскую вкладку в Excel, как найти имена картинок для заполнения тега &lt;code&gt;imageMSO&lt;/code&gt;?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bert-toolkit.com/imagemso-list.html&#34; target=&#34;_blank&#34;&gt;Список иконок &lt;code&gt;imageMSO&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;как-завершить-работу-приложения-в-windows-из-командной-строки&#34;&gt;Как завершить работу приложения в Windows из командной строки?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Задача: Нужно закрыть Excel и все открытые файлы без сохранения. Можно решить это с помощью команды &lt;code&gt;TASKKILL&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;TASKKILL /im excel.exe /t /f
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Подробнее о команде в официальной документации &lt;a href=&#34;https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/taskkill&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;TASKKILL&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;как-конвертировать-файл-flv-в-mp4&#34;&gt;Как конвертировать файл flv в mp4?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34; target=&#34;_blank&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;В командной строке выполняете команду вида &lt;code&gt;ffmpeg -i &amp;quot;input.flv&amp;quot; &amp;quot;output.mp4&amp;quot;&lt;/code&gt;, где:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;input.flv&amp;quot;&lt;/code&gt; - произвольное имя файла источника&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;quot;output.mp4&amp;quot;&lt;/code&gt; - произвольное имя файла приемника.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Сравнение обработки пустых значений в DAX, Excel и SQL</title>
       <link>https://DmitriyVlasov.ru/ru/post/handing-of-dax-blank/</link>
       <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/post/handing-of-dax-blank/</guid>
-      <description>Пустое значение в:
- SQL это null; Excel это не заполненная ячейка; DAX это blank.  В DAX также существует функция blank() возвращающее пустое значение.
-Таблица сравнения поведения пустого значения в разных окружениях
-   Выражение DAX Excel SQL1     blank + blank blank 0 (ноль) blank   blank + 5 5 5 blank   blank * 5 blank 0 (ноль) blank   5 / blank infinity error blank   0 / blank nan error blank   blank / blank blank error blank   false or blank false false -   false and blank false false -   true or blank true true -   true and blank false true -   blank or blank blank error -   blank and blank blank error -    Источники  docs.</description>
+      <description>
+
+&lt;p&gt;Пустое значение в:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SQL это &lt;code&gt;null&lt;/code&gt;;&lt;/li&gt;
+&lt;li&gt;Excel это не заполненная ячейка;&lt;/li&gt;
+&lt;li&gt;DAX это blank.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;В DAX также существует функция &lt;a href=&#34;(https://msdn.microsoft.com/ru-ru/library/ee634820.aspx)&#34; target=&#34;_blank&#34;&gt;blank()&lt;/a&gt; возвращающее пустое значение.&lt;/p&gt;
+
+&lt;p&gt;Таблица сравнения поведения пустого значения в разных окружениях&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Выражение&lt;/th&gt;
+&lt;th&gt;DAX&lt;/th&gt;
+&lt;th&gt;Excel&lt;/th&gt;
+&lt;th&gt;SQL&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;blank  +  blank&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;td&gt;0 (ноль)&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;blank  +  5&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;blank  *  5&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;td&gt;0 (ноль)&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5      /  blank&lt;/td&gt;
+&lt;td&gt;infinity&lt;/td&gt;
+&lt;td&gt;error&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;0      /  blank&lt;/td&gt;
+&lt;td&gt;nan&lt;/td&gt;
+&lt;td&gt;error&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;blank  /  blank&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;td&gt;error&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;false or  blank&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;false and blank&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;true  or  blank&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;true  and blank&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;blank or  blank&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;td&gt;error&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;blank and blank&lt;/td&gt;
+&lt;td&gt;blank&lt;/td&gt;
+&lt;td&gt;error&lt;/td&gt;
+&lt;td&gt;-&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&#34;источники&#34;&gt;Источники&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/sql/analysis-services/tabular-models/data-types-supported-ssas-tabular#a-namebkmkhandblanksa-handling-of-blanks-empty-strings-and-zero-values&#34; target=&#34;_blank&#34;&gt;docs.microsoft.com, Handling of Blanks, Empty Strings, and Zero Values&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/ee634820.aspx&#34; target=&#34;_blank&#34;&gt;MSDN, Функция BLANK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;В SQL Server отсутствует логический тип данных. Поэтому в явном виде логические операции и таблицы истинности в SQL не применимы. Хотя в предложении &lt;code&gt;WHERE&lt;/code&gt; и есть выражения &lt;code&gt;or&lt;/code&gt; или &lt;code&gt;and&lt;/code&gt; Которые позволяют объединять между выражения возвращающие логический контекст.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
       <title>Пример использования функции EARLIER</title>
       <link>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</link>
       <pubDate>Wed, 05 Jul 2017 11:37:05 +0300</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</guid>
-      <description>Синтаксис EARLIER(column, [number])  Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
-Пример = COUNTROWS ( FILTER ( ProductSubcategory; EARLIER ( ProductSubcategory[TotalSubcategorySales] ) &amp;lt; ProductSubcategory[TotalSubcategorySales] ) ) + 1   Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице.</description>
+      <description>
+
+&lt;h1 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;EARLIER(column, [number])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;параметры&#34;&gt;Параметры&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Параметр&lt;/th&gt;
+&lt;th&gt;Обязательный&lt;/th&gt;
+&lt;th&gt;Описание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;column&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Да&lt;/td&gt;
+&lt;td&gt;Столбец или выражение, результатом которого служит столбец.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Нет&lt;/td&gt;
+&lt;td&gt;Следующий внешний этап вычисления. По умолчанию 1.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;возвращаемое-значение&#34;&gt;Возвращаемое значение&lt;/h2&gt;
+
+&lt;p&gt;Текущее значение строки из столбца &lt;code&gt;column&lt;/code&gt; на расстоянии в &lt;code&gt;number&lt;/code&gt; внешних этапов вычисления.&lt;/p&gt;
+
+&lt;h1 id=&#34;пример&#34;&gt;Пример&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-dax&#34;&gt;=
+COUNTROWS (
+    FILTER (
+        ProductSubcategory;
+        EARLIER ( ProductSubcategory[TotalSubcategorySales] )
+            &amp;lt; ProductSubcategory[TotalSubcategorySales]
+    )
+)
+    + 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; получает значение TotalSubcategorySales для текущей строки в таблице. В данном случае, поскольку процесс только начинается, это первая строка в таблице.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EARLIER([TotalSubcategorySales])&lt;/code&gt; дает результат $ 156 176.88 — текущая строка во внешнем цикле.&lt;/li&gt;
+&lt;li&gt;Теперь функция &lt;code&gt;FILTER&lt;/code&gt; возвращает таблицу, где все строки имеют значение TotalSubcategorySales, превышающее $ 156 176.88 (текущее значение &lt;code&gt;EARLIER&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Функция &lt;code&gt;COUNTROWS&lt;/code&gt; подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;Формула вычисляемого столбца переходит к следующей строке, и шаги с 1 по 4 повторяются. Эти шаги повторяются до конца таблицы.&lt;/li&gt;
+&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Прибавлять единицу необходимо, чтобы предотвратить появление &lt;a href=&#34;../handing-of-dax-blank&#34;&gt;пустого значения&lt;/a&gt; в качестве значения с верхним рангом.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
     </item>
     
   </channel>

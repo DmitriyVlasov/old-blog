@@ -1,24 +1,256 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Дмитрий Власов</title>
+    <title>Python | Дмитрий Власов</title>
     <link>https://DmitriyVlasov.ru/ru/tags/python/</link>
-    <description>Recent content in Python on Дмитрий Власов</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    <lastBuildDate>Mon, 20 Aug 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://DmitriyVlasov.ru/ru/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>Python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 20 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <title>Python</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/python/</link>
+    </image>
     
     <item>
       <title>Передача Параметров из Power BI в скрипт на Python</title>
       <link>https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/</link>
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/</guid>
-      <description>Предисловие После установки августовского релиза Power BI  я очень обрадовался, увидев поддержку Python. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, поддержка шифрования в Power BI есть только в кастомных дата коннекторах, и отсутствует в Power Query для Power BI Desktop.</description>
+      <description>
+
+&lt;h2 id=&#34;предисловие&#34;&gt;Предисловие&lt;/h2&gt;
+
+&lt;p&gt;После установки &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary&#34; target=&#34;_blank&#34;&gt;августовского релиза Power BI &lt;/a&gt; я очень обрадовался, увидев поддержку &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#python&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, &lt;a href=&#34;https://blog.crossjoin.co.uk/2017/11/06/which-m-functions-are-only-available-to-custom-data-connectors/&#34; target=&#34;_blank&#34;&gt;поддержка шифрования в Power BI&lt;/a&gt; есть только в &lt;a href=&#34;https://github.com/Microsoft/DataConnectors&#34; target=&#34;_blank&#34;&gt;кастомных дата коннекторах&lt;/a&gt;, и отсутствует в Power Query для Power BI Desktop. А при всем моем теплом отношении к языку R, связываться с ним лишний раз, мне бы не хотелось. Поэтому поддержке Python в Power BI я был рад очень.&lt;/p&gt;
+
+&lt;h2 id=&#34;задача&#34;&gt;Задача&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Настроить управление поведением скрипта на Python через параметры отчета Power BI Desktop.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;демонстрационный-отчет-в-power-bi-online&#34;&gt;Демонстрационный отчет в Power BI Online&lt;/h2&gt;
+
+&lt;iframe width=&#34;800&#34; height=&#34;600&#34; src=&#34;https://app.powerbi.com/view?r=eyJrIjoiNDNkZWM5OTgtZjRkMS00YzVkLTkxYjAtYjdmZDA2NzQ0YjdjIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9&#34; frameborder=&#34;0&#34; allowFullScreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;описание-решения&#34;&gt;Описание решения&lt;/h2&gt;
+
+&lt;h3 id=&#34;предварительные-требования&#34;&gt;Предварительные требования&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;У вас установлена &lt;a href=&#34;https://www.anaconda.com/download/&#34; target=&#34;_blank&#34;&gt;Anaconda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;В Power BI включена &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#python&#34; target=&#34;_blank&#34;&gt;поддержка Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Запуск в терминале &lt;code&gt;jupyter notebook&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Откройте перед глазами памятку по &lt;a href=&#34;https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;подготовка-в-power-bi&#34;&gt;Подготовка в Power BI&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В файле Power BI создаем параметры отчета.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Оборачиваем параметры отчета в таблицу с необходимой структурой. Если используются параметры типа &lt;code&gt;date&lt;/code&gt;/&lt;code&gt;datetime&lt;/code&gt;, то предварительно их приводим к строке:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let
+Parameters = Table.FromRows(
+{ 
+  { 
+    Date.ToText( FromDate, &amp;quot;dd.MM.yyyy&amp;quot; ), 
+    Date.ToText( ToDate,   &amp;quot;dd.MM.yyyy&amp;quot; ) 
+  } 
+},
+type table [ FromDate = text, ToDate = text ] 
+)
+in
+Parameters
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;разработка-скрипта-python&#34;&gt;Разработка скрипта Python&lt;/h3&gt;
+
+&lt;p&gt;В моем примере скрипт на Python будем разрабатывать в инструменте, популярном у аналитиков данных &lt;a href=&#34;http://jupyter.org/&#34; target=&#34;_blank&#34;&gt;Jupyter Notebook&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Создаем файл блокнота.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Импортируем библиотеку работы с таблицами Pandas (структура аналогичная объекту Table в Power BI)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Объявляем переменную &lt;code&gt;Parameters&lt;/code&gt; повторяющую структуру, таблицы с параметрами на Power Query (см. выше), это необходимо для отладки и проверки работоспособности скрипта.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+
+FromDate = &amp;quot;01.07.2018&amp;quot;
+ToDate = &amp;quot;31.07.2018&amp;quot;
+
+Parameters = pd.DataFrame(
+[ 
+  [ 
+    FromDate, ToDate 
+  ] 
+],
+columns = [&#39;FromDate&#39;,&#39;ToDate&#39;] 
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;В рамках рассмотренного примера для простоты работы внутри скрипта на Python вручную создается таблица, а затем с помощью переданных параметров таблица отфильтровывается. Полученный результат далее возвращается в Power BI и может использоваться для дальнейшего анализа.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Далее реализовываем логику обработки скрипта.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Для удобства переноса разработанного скрипта, обработки снова объявляем импорт библиотеки Pandas.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Помним о том, что мы передали параметры в формате даты времени в текстовом формате ( объяснение подробнее &lt;a href=&#34;#Обсуждение-решения&#34;&gt;см ниже&lt;/a&gt; )&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;Parameters[&#39;FromDate&#39;] = pd.to_datetime( Parameters[&#39;FromDate&#39;], format=&amp;quot;%d.%m.%Y&amp;quot; )
+Parameters[&#39;ToDate&#39;] = pd.to_datetime( Parameters[&#39;ToDate&#39;], format=&amp;quot;%d.%m.%Y&amp;quot; )
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Если вам нужно настроить преобразование строки под ваш формат даты времени, то вы можете использовать для этого таблицу кодов форматов для &lt;a href=&#34;https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior&#34; target=&#34;_blank&#34;&gt;2&lt;/a&gt; или &lt;a href=&#34;https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior&#34; target=&#34;_blank&#34;&gt;3&lt;/a&gt; Питона соответственно.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Получаем данные из внешней системы. Для демо примера создаем вручную таблицу в Pandas&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;Sales = pd.DataFrame( [
+    [&amp;quot;01.07.2018&amp;quot;, 10], 
+    [&amp;quot;01.08.2018&amp;quot;, 20], 
+    [&amp;quot;01.09.2018&amp;quot;, 30]
+], columns=[&#39;Date&#39;, &#39;Amount&#39; ] 
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Для корректной работы сортировки и фильтрации данных по столбцу даты времени приводим, в исследуемых таблицах столбец к дате.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;Sales[&#39;Date&#39;] = pd.to_datetime(Sales[&#39;Date&#39;],format=&amp;quot;%d.%m.%Y&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Применяем бизнес правила полученные от клиента и параметры, полученные из Power BI, к полученной в скрипте таблице&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;Result = Sales[ Sales[&#39;Date&#39;] &amp;gt; Parameters[&#39;FromDate&#39;][0] ]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Средствами &lt;a href=&#34;http://jupyter.org/&#34; target=&#34;_blank&#34;&gt;Jupyter Notebook&lt;/a&gt; мы можем отладить и проверить полученные данные перед копированием полученного сприпта в Power BI.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;В результате получаем скрипт, подготовленный для передачи в Power BI&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Импортируем библиотеку работы с таблицами Pandas 
+import pandas as pd
+
+# Готовим параметры для использования
+# Так как параметры даты, времени внутрь Python из Power BI передаются не совсем корректно (с ошибкой).
+# Удобно параметры даты передать в строковом виде, а затем привести обрратно в дате.
+Parameters[&#39;FromDate&#39;] = pd.to_datetime( Parameters[&#39;FromDate&#39;], format=&amp;quot;%d.%m.%Y&amp;quot; )
+Parameters[&#39;ToDate&#39;] = pd.to_datetime( Parameters[&#39;ToDate&#39;], format=&amp;quot;%d.%m.%Y&amp;quot; )
+
+# Получаем данные из внешней системы. Для демо примера просто создаем вручную таблицу в Pandas 
+Sales = pd.DataFrame( [
+    [&amp;quot;01.07.2018&amp;quot;, 10], 
+    [&amp;quot;01.08.2018&amp;quot;, 20], 
+    [&amp;quot;01.09.2018&amp;quot;, 30]
+], columns=[&#39;Date&#39;, &#39;Amount&#39; ] 
+)
+Sales[&#39;Date&#39;] = pd.to_datetime(Sales[&#39;Date&#39;],format=&amp;quot;%d.%m.%Y&amp;quot;)
+
+# Применяем бизнес правила и параметры полученные из Power BI к таблице и возвращаем результат
+Result = Sales[ Sales[&#39;Date&#39;] &amp;gt; Parameters[&#39;FromDate&#39;][0] ]
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;вызов-скрипта-на-python-из-power-bi&#34;&gt;Вызов скрипта на Python из Power BI&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Так как, на данный момент, в мастере создания скрипта на Python в Power BI нет возможности передать не обязательные параметры, для простоты создаем минимально рабочий пример для создания корректного запроса Power Query, который затем обновим разработанным выше скриптом.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+
+Dummy = pd.DataFrame( [ [ &amp;quot;&amp;quot; ] ], columns = [&#39;Dummy&#39;] )
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;В мастере создания запросов Power BI Desktop, выбираем из раскрывающегося списка скрипт на Python. Передам минимальный скрипт на Python написанный выше.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;В мастере выбираем флажком таблицу &lt;code&gt;Dummy&lt;/code&gt; и нажимаем OK.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Скрипт будет успешно создан.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Для передачи параметров нам придется перейти в расширенный редактор Power Query, где мы увидим следующий текст:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let
+Source = Python.Execute(&amp;quot;import pandas as pd#(lf)#(lf)Dummy = pd.DataFrame( [ [ &amp;quot;&amp;quot;&amp;quot;&amp;quot; ] ], columns = [&#39;Dummy&#39;] )#(lf)&amp;quot;),
+Dummy1 = Source{[Name=&amp;quot;Dummy&amp;quot;]}[Value]
+in
+Dummy1
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Последний шаг навигации нам пока что не нужен, уберем его.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let
+Source = Python.Execute(&amp;quot;import pandas as pd#(lf)#(lf)Dummy = pd.DataFrame( [ [ &amp;quot;&amp;quot;&amp;quot;&amp;quot; ] ], columns = [&#39;Dummy&#39;] )#(lf)&amp;quot;)
+in
+Source
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Передадим параметры из Power Query в пустой скрипт. С помощью ручного редактирования в расширенном редакторе Power Query добавим второй параметр вида &lt;code&gt;[ Parameters = Parameters ]&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;В результате получится следующий запроса на Power Query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let
+Source = Python.Execute(&amp;quot;import pandas as pd#(lf)#(lf)Dummy = pd.DataFrame( [ [ &amp;quot;&amp;quot;&amp;quot;&amp;quot; ] ], columns = [&#39;Dummy&#39;] )#(lf)&amp;quot;, [ Parameters = Parameters ])
+in
+Source
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Power Query предупредит что мы изменили определение скрипта. Мы должны согласиться с изменениями. В результате нам будет доступно для навигации две записи каждая из которых содержит таблицу.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Отредактируем с помощью мастера запрос и вставим разработанный на предыдущем шаге скрипт, нажав на шестеренку напросив пункта Source.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;В результате получится следующий запроса на Power Query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let
+Source = Python.Execute(&amp;quot;import pandas as pd#(lf)import datetime as dt#(lf)#(lf)Parameters[&#39;FromDate&#39;] = pd.to_datetime( Parameters[&#39;FromDate&#39;], format=&amp;quot;&amp;quot;%d.%m.%Y&amp;quot;&amp;quot; )#(lf)Parameters[&#39;ToDate&#39;] = pd.to_datetime( Parameters[&#39;ToDate&#39;], format=&amp;quot;&amp;quot;%d.%m.%Y&amp;quot;&amp;quot; )#(lf)#(lf)Sales = pd.DataFrame( [#(lf)        [dt.date(2018,7,1), 10], #(lf)        [dt.date(2018,8,1), 20], #(lf)        [dt.date(2018,9,1), 30]#(lf)    ], columns=[&#39;Date&#39;, &#39;Amount&#39; ] #(lf))#(lf)#(lf)Sales[&#39;Date&#39;] = pd.to_datetime(Sales[&#39;Date&#39;])#(lf)#(lf)Result = Sales[ Sales[&#39;Date&#39;] &amp;gt; Parameters[&#39;FromDate&#39;][0] ]&amp;quot;,[ Parameters = Parameters ])
+in
+Source
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Обратите внимание на то, что все наше красивое форматирование в python Power BI Desktop собрал в одну строку. Так что если далее потребуется дорабатывать наш скрипт мы вернемся в Jupyter и последовательно проделаем шаги: исправим, отладим и так же передадим его через буфер обмена в Power BI Desktop.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;В результате у нас будет доступны все источники данных в формате &lt;code&gt;DataFrame&lt;/code&gt; которые мы объявили в скрипте и далее средствами Power Query как мы привыкли будем обрабатывать таблицы и объединять их в модель.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;материалы&#34;&gt;Материалы&lt;/h3&gt;
+
+&lt;p&gt;Для удобства исследования статьи привожу готовый файл срипта и пример на Power BI:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DmitriyVlasov/Blog/blob/master/samples/2018-08-20/sample-power-bi-use-python-script-with-parameters.pbix&#34; target=&#34;_blank&#34;&gt;Решение на Power BI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DmitriyVlasov/Blog/blob/master/samples/2018-08-20/sample-power-bi-use-python-script-with-parameters.ipynb&#34; target=&#34;_blank&#34;&gt;Файл скрипта на python в формате jupiter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://app.powerbi.com/view?r=eyJrIjoiNDNkZWM5OTgtZjRkMS00YzVkLTkxYjAtYjdmZDA2NzQ0YjdjIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9&#34; target=&#34;_blank&#34;&gt;Ссылка на интерактивный отчет в Power BI online&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;обсуждение-решения&#34;&gt;Обсуждение решения&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Из описания помощи к функции power query &lt;code&gt;Python.Execute&lt;/code&gt; видно, что функция получает два параметра &lt;code&gt;function (script as text, optional arguments as nullable record) as table&lt;/code&gt;. Обязательный &lt;code&gt;script&lt;/code&gt; собственно текст скрипта на Python и не обязательный &lt;code&gt;arguments&lt;/code&gt;. Опытным путем понял, что корректным форматом передачи аргументов внутрь скрипта является таблица. Таким образом для передачи аргументов нужно создать запись у которой есть хотя-бы одно значение содержащее таблицу. В нашем случае мы создали запись вида &lt;code&gt;[ Parameters = Parameters ]&lt;/code&gt;. Где справа ключ записи, а справа ссылка на таблицу содержащую параметры.&lt;/li&gt;
+&lt;li&gt;При подготовке примера оказалось что у Power BI при передаче параметров есть особенность работы с типом &lt;code&gt;date&lt;/code&gt;/&lt;code&gt;datetime&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Дату и время в power query нужно приводить к строке.&lt;/li&gt;
+&lt;li&gt;А внутри скрипта на python приводить обратно к типу &lt;code&gt;date&lt;/code&gt;/&lt;code&gt;datetime&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

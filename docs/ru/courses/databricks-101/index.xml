@@ -1,42 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Введение в Azure Databricks on Дмитрий Власов</title>
+    <title>Введение в Azure Databricks | Дмитрий Власов</title>
     <link>https://DmitriyVlasov.ru/ru/courses/databricks-101/</link>
-    <description>Recent content in Введение в Azure Databricks on Дмитрий Власов</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    <copyright>&amp;copy; [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright>
-    <lastBuildDate>Sat, 14 Sep 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://DmitriyVlasov.ru/ru/courses/databricks-101/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://DmitriyVlasov.ru/ru/courses/databricks-101/index.xml" rel="self" type="application/rss+xml" />
+    <description>Введение в Azure Databricks</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Sat, 14 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <title>Введение в Azure Databricks</title>
+      <link>https://DmitriyVlasov.ru/ru/courses/databricks-101/</link>
+    </image>
     
     <item>
       <title>Подключение к кластеру</title>
       <link>https://DmitriyVlasov.ru/ru/courses/databricks-101/01-connect/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/courses/databricks-101/01-connect/</guid>
-      <description> Видео  </description>
+      <description>
+
+&lt;h2 id=&#34;видео&#34;&gt;Видео&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zlFiwQnlHX8&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
     </item>
     
     <item>
       <title>Вопросы и ответы</title>
       <link>https://DmitriyVlasov.ru/ru/courses/databricks-101/99-qa/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/courses/databricks-101/99-qa/</guid>
-      <description> В этом разделе будут расположены ответы на вопросы слушателей курса.  </description>
+      <description>&lt;ul&gt;
+&lt;li&gt;В этом разделе будут расположены ответы на вопросы слушателей курса.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Презентация обзор &#34;Azure Databricks&#34;</title>
       <link>https://DmitriyVlasov.ru/ru/courses/databricks-101/00-intro/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      
       <guid>https://DmitriyVlasov.ru/ru/courses/databricks-101/00-intro/</guid>
-      <description> </description>
+      <description>&lt;iframe src=&#34;https://onedrive.live.com/embed?cid=E46638C5BB68AE00&amp;resid=E46638C5BB68AE00%21254121&amp;authkey=AGi28HrlEI0E0y4&amp;em=2&#34; width=&#34;402&#34; height=&#34;327&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+</description>
     </item>
     
   </channel>
