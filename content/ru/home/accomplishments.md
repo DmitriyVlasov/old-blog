@@ -19,6 +19,16 @@ date_format = "01.2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  organization = "MongoDB University"
+  organization_url = "https://university.mongodb.com"
+  title = "M001: MongoDB Basics"
+  url = "https://university.mongodb.com/courses/M001/about"
+  certificate_url = "http://university.mongodb.com/course_completion/490cd4a6-3cef-42b1-8d75-019ac8fdccb4"
+  date_start = "2020-01-30"
+  date_end = ""
+  description = """Курс "MongoDB Basics" предназначен для новичков в MongoDB. Если вы слышали о MongoDB и хотите узнать больше или планируете проект с использованием MongoDB, и вам нужно быстро начать, это курс для вас. Темы: как установить MongoDB; как использовать Compass, графический интерфейс MongoDB; модель документа MongoDB и базовый дизайн схемы; язык запросов MongoDB; как использовать Atlas -база данных MongoDB в облаке."""
+
+[[item]]
   organization = "Московский физико-технический институт & Yandex"
   organization_url = "https://www.coursera.org"
   title = "Поиск структуры в данных"

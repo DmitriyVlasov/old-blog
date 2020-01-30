@@ -18,6 +18,15 @@ date_format = "01.2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[[item]]
+  organization = "MongoDB University"
+  organization_url = "https://university.mongodb.com"
+  title = "M001: MongoDB Basics"
+  url = "https://university.mongodb.com/courses/M001/about"
+  certificate_url = "http://university.mongodb.com/course_completion/490cd4a6-3cef-42b1-8d75-019ac8fdccb4"
+  date_start = "2020-01-30"
+  date_end = ""
+  description = """MongoDB Basics is designed for learners brand new to MongoDB. If you've heard about MongoDB and want to know more or are planning a MongoDB project and need to get a quick start, this is the course for you. Themes: How to install MongoDB; How to use Compass, the MongoDB GUI; The MongoDB document model and basic schema design; The MongoDB query language; How to use Atlas, MongoDB's hosted database as a service offering."""
 
 [[item]]
   organization = "Moscow Institute of physics and technology & Yandex"
