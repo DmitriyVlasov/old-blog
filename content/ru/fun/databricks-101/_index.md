@@ -1,12 +1,12 @@
 ---
 # Course title, summary, and position.
-linktitle: Введение в Azure Databricks
+linktitle: Черновик курса \"Введение в Azure Databricks\"
 summary: Узнайте, как применить Azure Databricks для реализации методов прогнозной и аналитической обработки данных, таких как исследовательский анализ данных, обучение моделей, анализ текста и глубокое обучение.
 
 weight: 1
 
 # Page metadata.
-title: Введение в Azure Databricks
+title: Курс "Введение в Azure Databricks"
 date: "2019-09-14T00:00:00Z"
 lastmod: "2019-09-14T00:00:00Z"
 draft: false  # Is this a draft? true/false
