@@ -1,5 +1,5 @@
 ---
-title: Развлечения
+title: Интересы
 
 # Optional header image (relative to `static/img/` folder).
 header:

@@ -40,8 +40,8 @@
 
 # # Посмотреть подробнее как сделано:
   [[ru.menu.main]]
-    name = "Развлечения"
-    url = "fun/"
+    name = "Интересы"
+    url = "domain/"
     weight = 50
 
   [[ru.menu.main]]
