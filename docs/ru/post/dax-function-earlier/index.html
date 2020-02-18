@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -28,8 +28,8 @@
   
     
   
-  <meta name="description" content="Синтаксис EARLIER(column, [number])  Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
-Пример = COUNTROWS ( FILTER ( ProductSubcategory; EARLIER ( ProductSubcategory[TotalSubcategorySales] ) &lt; ProductSubcategory[TotalSubcategorySales] ) ) &#43; 1   Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице.">
+  <meta name="description" content="Синтаксис EARLIER(column, [number])Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
+Пример =COUNTROWS (FILTER (ProductSubcategory;EARLIER ( ProductSubcategory[TotalSubcategorySales] )&lt; ProductSubcategory[TotalSubcategorySales]))&#43; 1 Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице.">
 
   
   <link rel="alternate" hreflang="ru-ru" href="https://DmitriyVlasov.ru/ru/post/dax-function-earlier/">
@@ -41,6 +41,12 @@
   
   
   <meta name="theme-color" content="#795548">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -69,6 +75,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -132,11 +250,12 @@
   
 
   <link rel="manifest" href="/ru/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://DmitriyVlasov.ru/ru/post/dax-function-earlier/">
 
+  
   
   
   
@@ -150,9 +269,9 @@
   <meta property="og:site_name" content="Дмитрий Власов">
   <meta property="og:url" content="https://DmitriyVlasov.ru/ru/post/dax-function-earlier/">
   <meta property="og:title" content="Пример использования функции EARLIER | Дмитрий Власов">
-  <meta property="og:description" content="Синтаксис EARLIER(column, [number])  Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
-Пример = COUNTROWS ( FILTER ( ProductSubcategory; EARLIER ( ProductSubcategory[TotalSubcategorySales] ) &lt; ProductSubcategory[TotalSubcategorySales] ) ) &#43; 1   Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице."><meta property="og:image" content="https://DmitriyVlasov.ru/img/icon-192.png">
-  <meta property="twitter:image" content="https://DmitriyVlasov.ru/img/icon-192.png"><meta property="og:locale" content="ru-ru">
+  <meta property="og:description" content="Синтаксис EARLIER(column, [number])Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
+Пример =COUNTROWS (FILTER (ProductSubcategory;EARLIER ( ProductSubcategory[TotalSubcategorySales] )&lt; ProductSubcategory[TotalSubcategorySales]))&#43; 1 Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице."><meta property="og:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="ru-ru">
   
     
       <meta property="article:published_time" content="2017-07-05T11:37:05&#43;03:00">
@@ -200,10 +319,10 @@
     "name": "Авара АйТи",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://DmitriyVlasov.ru/img/icon-512.png"
+      "url": "img/https://DmitriyVlasov.ru/"
     }
   },
-  "description": "Синтаксис EARLIER(column, [number])  Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.\nПример = COUNTROWS ( FILTER ( ProductSubcategory; EARLIER ( ProductSubcategory[TotalSubcategorySales] ) \u0026lt; ProductSubcategory[TotalSubcategorySales] ) ) + 1   Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице."
+  "description": "Синтаксис EARLIER(column, [number])\rПараметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.\nПример =\rCOUNTROWS (\rFILTER (\rProductSubcategory;\rEARLIER ( ProductSubcategory[TotalSubcategorySales] )\r\u0026lt; ProductSubcategory[TotalSubcategorySales]\r)\r)\r+ 1\r Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице."
 }
 </script>
 
@@ -260,24 +379,36 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -412,7 +543,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/courses/"><span>Курсы</span></a>
+          <a class="nav-link " href="/ru/domain/"><span>Интересы</span></a>
         </li>
 
         
@@ -448,29 +579,28 @@
         
 
       
+
+        
       </ul>
-      <ul class="navbar-nav ml-auto">
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
       
 
-        
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
+      
 
-        
+    </ul>
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
-    </div>
   </div>
 </nav>
 
@@ -560,15 +690,9 @@
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<h1 id="синтаксис">Синтаксис</h1>
-
+      <h1 id="синтаксис">Синтаксис</h1>
 <pre><code>EARLIER(column, [number])
-</code></pre>
-
-<h2 id="параметры">Параметры</h2>
-
+</code></pre><h2 id="параметры">Параметры</h2>
 <table>
 <thead>
 <tr>
@@ -577,14 +701,12 @@
 <th>Описание</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>column</code></td>
 <td>Да</td>
 <td>Столбец или выражение, результатом которого служит столбец.</td>
 </tr>
-
 <tr>
 <td><code>number</code></td>
 <td>Нет</td>
@@ -592,14 +714,10 @@
 </tr>
 </tbody>
 </table>
-
 <h2 id="возвращаемое-значение">Возвращаемое значение</h2>
-
 <p>Текущее значение строки из столбца <code>column</code> на расстоянии в <code>number</code> внешних этапов вычисления.</p>
-
 <h1 id="пример">Пример</h1>
-
-<pre><code class="language-dax">=
+<pre><code class="language-dax" data-lang="dax">=
 COUNTROWS (
     FILTER (
         ProductSubcategory;
@@ -608,25 +726,22 @@ COUNTROWS (
     )
 )
     + 1
-</code></pre>
-
-<ol>
+</code></pre><ol>
 <li>Функция <code>EARLIER</code> получает значение TotalSubcategorySales для текущей строки в таблице. В данном случае, поскольку процесс только начинается, это первая строка в таблице.</li>
 <li><code>EARLIER([TotalSubcategorySales])</code> дает результат $ 156 176.88 — текущая строка во внешнем цикле.</li>
 <li>Теперь функция <code>FILTER</code> возвращает таблицу, где все строки имеют значение TotalSubcategorySales, превышающее $ 156 176.88 (текущее значение <code>EARLIER</code>).</li>
-<li>Функция <code>COUNTROWS</code> подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.</li>
+<li>Функция <code>COUNTROWS</code> подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</li>
 <li>Формула вычисляемого столбца переходит к следующей строке, и шаги с 1 по 4 повторяются. Эти шаги повторяются до конца таблицы.</li>
 <li>Функция <code>EARLIER</code> всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.</li>
 </ol>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:1">Прибавлять единицу необходимо, чтобы предотвратить появление <a href="../handing-of-dax-blank">пустого значения</a> в качестве значения с верхним рангом.
- <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>Прибавлять единицу необходимо, чтобы предотвратить появление <a href="../handing-of-dax-blank">пустого значения</a> в качестве значения с верхним рангом. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 
     </div>
 
@@ -759,7 +874,7 @@ COUNTROWS (
   <div class="media author-card content-widget-hr">
     
       
-      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu0f3384a45cfed84d836ae65623f6317a_1784134_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -918,19 +1033,13 @@ COUNTROWS (
     
     
     
-    <script src="/js/mathjax-config.js"></script>
-    
-
-    
-    
-    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.3/mermaid.min.js" integrity="" crossorigin="anonymous" title="mermaid"></script>
       
 
       
@@ -943,10 +1052,6 @@ COUNTROWS (
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -956,7 +1061,7 @@ COUNTROWS (
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
     
 
     
@@ -1021,7 +1126,7 @@ COUNTROWS (
     
     
     
-    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
 
     
 
@@ -1037,7 +1142,7 @@ COUNTROWS (
   
 
   <p class="powered-by">
-    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
+    © <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A2%D0%B5%D0%BA%D1%81%D1%82_%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%B8_Creative_Commons_Attribution-ShareAlike_3.0_Unported">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1063,7 +1168,7 @@ COUNTROWS (
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Процетировать</h5>
+        <h5 class="modal-title">Процитировать</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

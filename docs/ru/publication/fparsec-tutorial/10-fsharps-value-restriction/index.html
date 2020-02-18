@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -29,7 +29,8 @@
     
   
   <meta name="description" content="Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.
- Если вы найдете содержимое главы слишком техническим на данный момент, просто перейдите к следующей главе и вернитесь позже, когда вы в первый раз увидите сообщение компилятора, в котором упоминается value restriction.">
+Ограничение значений F# является причиной того, что следующий фрагмент кода не компилируется
+open FParseclet p = pstring &#34;test&#34;Но следующий фрагмент скомпилирован без проблем (Предполагаем, что вы ссылались на две библиотеки FParsec):">
 
   
   <link rel="alternate" hreflang="ru-ru" href="https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/10-fsharps-value-restriction/">
@@ -41,6 +42,12 @@
   
   
   <meta name="theme-color" content="#795548">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -69,6 +76,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -132,11 +251,12 @@
   
 
   <link rel="manifest" href="/ru/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/10-fsharps-value-restriction/">
 
+  
   
   
   
@@ -151,8 +271,9 @@
   <meta property="og:url" content="https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/10-fsharps-value-restriction/">
   <meta property="og:title" content="Глава 10. Ограничение значений F# | Дмитрий Власов">
   <meta property="og:description" content="Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.
- Если вы найдете содержимое главы слишком техническим на данный момент, просто перейдите к следующей главе и вернитесь позже, когда вы в первый раз увидите сообщение компилятора, в котором упоминается value restriction."><meta property="og:image" content="https://DmitriyVlasov.ru/img/icon-192.png">
-  <meta property="twitter:image" content="https://DmitriyVlasov.ru/img/icon-192.png"><meta property="og:locale" content="ru-ru">
+Ограничение значений F# является причиной того, что следующий фрагмент кода не компилируется
+open FParseclet p = pstring &#34;test&#34;Но следующий фрагмент скомпилирован без проблем (Предполагаем, что вы ссылались на две библиотеки FParsec):"><meta property="og:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="ru-ru">
   
     
       <meta property="article:published_time" content="2017-01-28T00:00:00&#43;00:00">
@@ -198,10 +319,10 @@
     "name": "Авара АйТи",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://DmitriyVlasov.ru/img/icon-512.png"
+      "url": "img/https://DmitriyVlasov.ru/"
     }
   },
-  "description": "Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.\n Если вы найдете содержимое главы слишком техническим на данный момент, просто перейдите к следующей главе и вернитесь позже, когда вы в первый раз увидите сообщение компилятора, в котором упоминается value restriction."
+  "description": "Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.\nОграничение значений F# является причиной того, что следующий фрагмент кода не компилируется\nopen FParsec\rlet p = pstring \u0026#34;test\u0026#34;\rНо следующий фрагмент скомпилирован без проблем (Предполагаем, что вы ссылались на две библиотеки FParsec):"
 }
 </script>
 
@@ -258,24 +379,36 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -410,7 +543,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/courses/"><span>Курсы</span></a>
+          <a class="nav-link " href="/ru/domain/"><span>Интересы</span></a>
         </li>
 
         
@@ -446,29 +579,28 @@
         
 
       
+
+        
       </ul>
-      <ul class="navbar-nav ml-auto">
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
       
 
-        
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
+      
 
-        
+    </ul>
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
-    </div>
   </div>
 </nav>
 
@@ -633,60 +765,34 @@
     <div class="space-below"></div>
 
     <div class="article-style"><p>Когда вы начинаете писать собственные синтаксические анализаторы с помощью библиотеки FParsec или пытаетесь скомпилировать некоторые отдельные фрагменты кода из учебника, вы столкнетесь с особенностями компилятора, которые часто вызывают некоторые затруднения среди новых пользователей F# и FParsec: ограничение значений. В этом разделе мы объясним ограничение значений и способ его обработки в ваших программах FParsec.</p>
-
-<div class="alert alert-note">
-  <div>
-    Если вы найдете содержимое главы слишком техническим на данный момент, просто перейдите к следующей главе и вернитесь позже, когда вы в первый раз увидите сообщение компилятора, в котором упоминается <em>value restriction</em>.
-  </div>
-</div>
-
+<!-- raw HTML omitted -->
 <p>Ограничение значений F# является причиной того, что следующий фрагмент кода не компилируется</p>
-
-<pre><code class="language-fsharp">open FParsec
-let p = pstring &quot;test&quot;
-</code></pre>
-
-<p>Но следующий фрагмент скомпилирован без проблем (Предполагаем, что вы ссылались на две библиотеки FParsec):</p>
-
-<pre><code class="language-fsharp">open FParsec
-let p = pstring &quot;test&quot;
-run p &quot;input&quot;
-</code></pre>
-
-<p>Ошибка компилятора, сгенерированная для первого примера будет примерно следующая:</p>
-
-<pre><code class="language-fsharp">error FS0030: Value restriction.
-The value 'p' has been inferred to have generic type
-    val p : Parser&lt;string,'_a&gt;
-Either make the arguments to 'p' explicit or,
-if you do not intend for it to be generic, add a type annotation.
-</code></pre>
-
-<p>Когда вы работаете с библиотекой FParsec, вы рано или поздно увидите это или похожие сообщения об ошибке, в частности, если вы работаете в интерактивной консоли. К счастью для ошибок такого рода, как правило, легко найти обходной путь.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">open</span> FParsec
+<span style="color:#66d9ef">let</span> p <span style="color:#f92672">=</span> pstring <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">test</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>Но следующий фрагмент скомпилирован без проблем (Предполагаем, что вы ссылались на две библиотеки FParsec):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">open</span> FParsec
+<span style="color:#66d9ef">let</span> p <span style="color:#f92672">=</span> pstring <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">test</span><span style="color:#e6db74">&#34;</span>
+run p <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">input</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>Ошибка компилятора, сгенерированная для первого примера будет примерно следующая:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp">error FS0030<span style="color:#f92672">:</span> Value restriction<span style="color:#f92672">.</span>
+The value <span style="color:#e6db74">&#39;p&#39;</span> has been inferred <span style="color:#66d9ef">to</span> have generic <span style="color:#66d9ef">type</span>
+    <span style="color:#a6e22e">val</span> p <span style="color:#f92672">:</span> Parser<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">string</span><span style="color:#f92672">,</span><span style="color:#66d9ef">&#39;</span><span style="color:#f92672">_</span>a<span style="color:#f92672">&gt;</span>
+Either make the arguments <span style="color:#66d9ef">to</span> <span style="color:#e6db74">&#39;p&#39;</span> explicit <span style="color:#f92672">or</span><span style="color:#f92672">,</span>
+<span style="color:#66d9ef">if</span> you <span style="color:#66d9ef">do</span> <span style="color:#f92672">not</span> intend <span style="color:#66d9ef">for</span> it <span style="color:#66d9ef">to</span> be generic<span style="color:#f92672">,</span> add a <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">annotation</span><span style="color:#f92672">.</span>
+</code></pre></div><p>Когда вы работаете с библиотекой FParsec, вы рано или поздно увидите это или похожие сообщения об ошибке, в частности, если вы работаете в интерактивной консоли. К счастью для ошибок такого рода, как правило, легко найти обходной путь.</p>
 <p>Проблема с первым примером выше заключается в том, что компилятор F# выводит значение <code>p</code> как имеющее неопределенное значение общего типа, хотя F# не допускает значение общего типа в этой ситуации. Функция <code>pstring</code> возвращает значение типа <code>Parser&lt;string, 'u&gt;</code>, где <code>'u</code> - параметр типа представляющий собой пользовательское состояние типа <code>CharStream</code>. Так как в первом примере выше, нет значений содержащих этот параметр типа, компилятор указывает тип результата как <code>Parser&lt;string, '_a&gt;</code> для синтаксического анализатора <code>p</code>, где <code>'_a</code> представляет не определенный параметр общего типа.</p>
-
 <p>Во втором примере эта проблема не возникает, поскольку использование <code>p</code> в качестве первого аргумента функции <code>run</code> определяет тип пользовательского состояния. Поскольку <code>run</code> принимает только синтаксические анализаторы типа <code>Parser&lt;'t, unit&gt;</code>, компилятор выводит определенный тип <code>Parser&lt;string, unit&gt;</code> для <code>p</code>.</p>
-
 <p>В примере ниже предлагается два способа обработки ограничения значений в программах FParsec:</p>
-
 <ul>
 <li>Либо убедитесь, что тип значения синтаксического анализатора ограничен не обобщенным типом путем дальнейшего использования значения этого синтаксического анализатора <em>в одном блоке компиляции</em>,</li>
 <li>Или предоставьте явную аннотацию типа, чтобы вручную ограничивать тип значения синтаксического анализатора (обычно для всего модуля синтаксического анализа достаточно нескольких аннотаций типа в ключевых точках).</li>
 </ul>
-
 <p>Часто бывает удобно определить аббревиатуры типа следующего вида:</p>
-
-<pre><code class="language-fsharp">type UserState = unit // Конечно не обязательно должен быть unit типом
-type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
-</code></pre>
-
-<p>С такими аббревиатурами, типы аннотаций становятся такими же простыми, как</p>
-
-<pre><code class="language-fsharp">let p : Parser&lt;_&gt; = pstring &quot;test&quot;
-</code></pre>
-
-<p>Конечно, ограничение значения типа синтаксического анализатора до определенного типа - это только решение, если вам действительно не нужен общий тип. Если вам нужен общий тип, вам придется применять другие методы, как это описано, например, в документации по языку <a href="https://docs.microsoft.com/ru-ru/dotnet/fsharp/language-reference/generics/automatic-generalization" target="_blank">F#</a> или в статье <a href="http://blogs.msdn.com/b/mulambda/archive/2010/05/01/value-restriction-in-f.aspx" target="_blank">Finer Points of F# Value Restriction</a><sup>en</sup> в блоге Дмитрия Ломова. Однако значения <code>Parser</code> FParsec (непараметрические функции синтаксического анализатора) обычно используются только в контексте конкретного использования синтаксического анализатора с фиксированным типом состояния пользователя. В этой ситуации ограничение типа действительно является подходящей мерой, чтобы избежать ошибок ограничения значения.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">UserState</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">unit</span> <span style="color:#75715e">// Конечно не обязательно должен быть unit типом
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Parser</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">&#39;</span>t<span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> Parser<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">&#39;</span>t<span style="color:#f92672">,</span> UserState<span style="color:#f92672">&gt;</span>
+</code></pre></div><p>С такими аббревиатурами, типы аннотаций становятся такими же простыми, как</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">let</span> p <span style="color:#f92672">:</span> Parser<span style="color:#f92672">&lt;</span><span style="color:#f92672">_</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">=</span> pstring <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">test</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>Конечно, ограничение значения типа синтаксического анализатора до определенного типа - это только решение, если вам действительно не нужен общий тип. Если вам нужен общий тип, вам придется применять другие методы, как это описано, например, в документации по языку <a href="https://docs.microsoft.com/ru-ru/dotnet/fsharp/language-reference/generics/automatic-generalization">F#</a> или в статье <a href="http://blogs.msdn.com/b/mulambda/archive/2010/05/01/value-restriction-in-f.aspx">Finer Points of F# Value Restriction</a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> в блоге Дмитрия Ломова. Однако значения <code>Parser</code> FParsec (непараметрические функции синтаксического анализатора) обычно используются только в контексте конкретного использования синтаксического анализатора с фиксированным типом состояния пользователя. В этой ситуации ограничение типа действительно является подходящей мерой, чтобы избежать ошибок ограничения значения.</p>
 </div>
 
     
@@ -808,7 +914,7 @@ type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
   <div class="media author-card content-widget-hr">
     
       
-      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu0f3384a45cfed84d836ae65623f6317a_1784134_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -967,19 +1073,13 @@ type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
     
     
     
-    <script src="/js/mathjax-config.js"></script>
-    
-
-    
-    
-    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.3/mermaid.min.js" integrity="" crossorigin="anonymous" title="mermaid"></script>
       
 
       
@@ -992,10 +1092,6 @@ type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -1005,7 +1101,7 @@ type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
     
 
     
@@ -1070,7 +1166,7 @@ type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
     
     
     
-    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
 
     
 
@@ -1086,7 +1182,7 @@ type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
   
 
   <p class="powered-by">
-    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
+    © <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A2%D0%B5%D0%BA%D1%81%D1%82_%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%B8_Creative_Commons_Attribution-ShareAlike_3.0_Unported">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1112,7 +1208,7 @@ type Parser&lt;'t&gt; = Parser&lt;'t, UserState&gt;
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Процетировать</h5>
+        <h5 class="modal-title">Процитировать</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

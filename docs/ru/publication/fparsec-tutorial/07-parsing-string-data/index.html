@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -46,6 +46,12 @@
   
   
   
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
@@ -69,6 +75,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -132,11 +250,12 @@
   
 
   <link rel="manifest" href="/ru/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/07-parsing-string-data/">
 
+  
   
   
   
@@ -151,8 +270,8 @@
   <meta property="og:url" content="https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/07-parsing-string-data/">
   <meta property="og:title" content="Глава 7. Синтаксический анализатор строковых данных | Дмитрий Власов">
   <meta property="og:description" content="FParsec содержит различные встроенные синтаксические анализаторы для символов, строк, чисел и пробелов. В этой главе мы представим несколько синтаксических анализаторов символов и строк. Обзор всех доступных синтаксических анализаторов см. в руководстве пользователяen.
-Вы уже видели несколько применений синтаксического анализатора pstring (сокращенно str ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор pstring успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:"><meta property="og:image" content="https://DmitriyVlasov.ru/img/icon-192.png">
-  <meta property="twitter:image" content="https://DmitriyVlasov.ru/img/icon-192.png"><meta property="og:locale" content="ru-ru">
+Вы уже видели несколько применений синтаксического анализатора pstring (сокращенно str ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор pstring успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:"><meta property="og:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="ru-ru">
   
     
       <meta property="article:published_time" content="2017-01-28T00:00:00&#43;00:00">
@@ -198,7 +317,7 @@
     "name": "Авара АйТи",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://DmitriyVlasov.ru/img/icon-512.png"
+      "url": "img/https://DmitriyVlasov.ru/"
     }
   },
   "description": "FParsec содержит различные встроенные синтаксические анализаторы для символов, строк, чисел и пробелов. В этой главе мы представим несколько синтаксических анализаторов символов и строк. Обзор всех доступных синтаксических анализаторов см. в руководстве пользователяen.\nВы уже видели несколько применений синтаксического анализатора pstring (сокращенно str ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор pstring успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:"
@@ -258,24 +377,36 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -410,7 +541,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/courses/"><span>Курсы</span></a>
+          <a class="nav-link " href="/ru/domain/"><span>Интересы</span></a>
         </li>
 
         
@@ -446,29 +577,28 @@
         
 
       
+
+        
       </ul>
-      <ul class="navbar-nav ml-auto">
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
       
 
-        
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
+      
 
-        
+    </ul>
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
-    </div>
   </div>
 </nav>
 
@@ -632,158 +762,108 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p>FParsec содержит различные встроенные синтаксические анализаторы для символов, строк, чисел и пробелов. В этой главе мы представим несколько синтаксических анализаторов символов и строк. Обзор всех доступных синтаксических анализаторов см. в <a href="http://www.quanttec.com/fparsec/reference/parser-overview.html" target="_blank">руководстве пользователя</a><sup>en</sup>.</p>
-
+    <div class="article-style"><p>FParsec содержит различные встроенные синтаксические анализаторы для символов, строк, чисел и пробелов. В этой главе мы представим несколько синтаксических анализаторов символов и строк. Обзор всех доступных синтаксических анализаторов см. в <a href="http://www.quanttec.com/fparsec/reference/parser-overview.html">руководстве пользователя</a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->.</p>
 <p>Вы уже видели несколько применений синтаксического анализатора <code>pstring</code> (сокращенно <code>str</code> ), который просто пропускает строку определенного формата на входе. Когда синтаксический анализатор <code>pstring</code> успешно выполнился, он также возвращает пропущенную строку в качестве результата анализатора. Следующий пример демонстрирует это:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#f92672">&gt;</span> test <span style="color:#f92672">(</span>many <span style="color:#f92672">(</span>str <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&lt;</span><span style="color:#f92672">|</span><span style="color:#f92672">&gt;</span> str <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">abba</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">a</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">]</span>
+</code></pre></div><p>В этом примере мы так же использовали синтаксический анализатор <code>&lt;|&gt;</code> для объединения двух альтернативных анализаторов. Мы обсудим этот комбинатор более подробно ниже.</p>
+<!-- raw HTML omitted -->
+<p>Когда вам не нужен результат синтаксического анализатора <code>pstring</code>, вы можете в качестве альтернативы использовать синтаксический анализатор <code>skipString</code>, который возвращает <code>unit</code> значение <code>()</code> вместо строки аргумента. В приведенном примере для производительности не имеет значения, используете ли вы <code>pstring</code> или <code>skipString</code>, так как возвращаемая строка является константой. Однако для большинства других встроенных синтаксических анализаторов и комбинаторов вы должны предпочесть варианты с префиксом в имени <code>skip</code>, когда вам не нужны значения результата синтаксического анализатора, поскольку они, как правило, будут быстрее. Если вы посмотрите обзор <a href="http://www.quanttec.com/fparsec/reference/parser-overview.html">библиотеки FParsec</a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->, вы увидите варианты <code>skip</code> для многих встроенных синтаксических анализаторов и комбинаторов.</p>
+<p>Если вы хотите проанализировать строку без учета регистра, вы можете использовать <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.pstringCI"><code>pstringCI</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> и <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.skipStringCI"><code>skipStringCI</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->. Например:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#f92672">&gt;</span> test <span style="color:#f92672">(</span>skipStringCI <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&lt;float&gt;</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">.</span> pfloat<span style="color:#f92672">)</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&lt;FLOAT&gt;1.0</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> 1<span style="color:#f92672">.</span>0
+</code></pre></div><p>Часто нужно разбирать строковые переменные, чьи символы должны удовлетворять определенным критериям. Например, идентификаторы в языках программирования часто должны начинаться с буквы или подчеркивания, а затем необходимо продолжать буквы, цифры или символы подчеркивания. Чтобы проанализировать такой идентификатор, вы можете использовать следующий синтаксический анализатор:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">let</span> identifier <span style="color:#f92672">=</span>
+    <span style="color:#66d9ef">let</span> isIdentifierFirstChar c <span style="color:#f92672">=</span> isLetter c <span style="color:#f92672">|</span><span style="color:#f92672">|</span> c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;_&#39;</span>
+    <span style="color:#66d9ef">let</span> isIdentifierChar c <span style="color:#f92672">=</span> isLetter c <span style="color:#f92672">|</span><span style="color:#f92672">|</span> isDigit c <span style="color:#f92672">|</span><span style="color:#f92672">|</span> c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;_&#39;</span>
 
-<pre><code class="language-fsharp">&gt; test (many (str &quot;a&quot; &lt;|&gt; str &quot;b&quot;)) &quot;abba&quot;;;
-Success: [&quot;a&quot;; &quot;b&quot;; &quot;b&quot;; &quot;a&quot;]
-</code></pre>
-
-<p>В этом примере мы так же использовали синтаксический анализатор <code>&lt;|&gt;</code> для объединения двух альтернативных анализаторов. Мы обсудим этот комбинатор более подробно ниже.</p>
-
-<div class="alert alert-note">
-  <div>
-    Мы говорим, что <code>pstring</code> и <code>pstring &quot;a&quot;</code> это «синтаксические анализаторы». Но строго говоря, <code>pstring</code> - это функция, принимающая строку и возвращающая <code>Parser</code>, но удобнее про нее говорить как (параметрический) синтаксический анализатор.
-  </div>
-</div>
-
-<p>Когда вам не нужен результат синтаксического анализатора <code>pstring</code>, вы можете в качестве альтернативы использовать синтаксический анализатор <code>skipString</code>, который возвращает <code>unit</code> значение <code>()</code> вместо строки аргумента. В приведенном примере для производительности не имеет значения, используете ли вы <code>pstring</code> или <code>skipString</code>, так как возвращаемая строка является константой. Однако для большинства других встроенных синтаксических анализаторов и комбинаторов вы должны предпочесть варианты с префиксом в имени <code>skip</code>, когда вам не нужны значения результата синтаксического анализатора, поскольку они, как правило, будут быстрее. Если вы посмотрите обзор <a href="http://www.quanttec.com/fparsec/reference/parser-overview.html" target="_blank">библиотеки FParsec</a><sup>en</sup>, вы увидите варианты <code>skip</code> для многих встроенных синтаксических анализаторов и комбинаторов.</p>
-
-<p>Если вы хотите проанализировать строку без учета регистра, вы можете использовать <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.pstringCI" target="_blank"><code>pstringCI</code></a><sup>en</sup> и <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.skipStringCI" target="_blank"><code>skipStringCI</code></a><sup>en</sup>. Например:</p>
-
-<pre><code class="language-fsharp">&gt; test (skipStringCI &quot;&lt;float&gt;&quot; &gt;&gt;. pfloat) &quot;&lt;FLOAT&gt;1.0&quot;;;
-Success: 1.0
-</code></pre>
-
-<p>Часто нужно разбирать строковые переменные, чьи символы должны удовлетворять определенным критериям. Например, идентификаторы в языках программирования часто должны начинаться с буквы или подчеркивания, а затем необходимо продолжать буквы, цифры или символы подчеркивания. Чтобы проанализировать такой идентификатор, вы можете использовать следующий синтаксический анализатор:</p>
-
-<pre><code class="language-fsharp">let identifier =
-    let isIdentifierFirstChar c = isLetter c || c = '_'
-    let isIdentifierChar c = isLetter c || isDigit c || c = '_'
-
-    many1Satisfy2L isIdentifierFirstChar isIdentifierChar &quot;identifier&quot;
-    .&gt;&gt; ws // Пропускает завершающие пробелы
-</code></pre>
-
-<p>Здесь мы использовали синтаксический анализатор <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy2L" target="_blank"><code>many1Satisfy2L</code></a><sup>en</sup>, который является одним из нескольких примитивов для синтаксического анализа строк на основе предикатов символов (т.е. функций, которые принимают символ на входе и возвращают логическое значение). Он анализирует любую последовательность одного или нескольких символов (отсюда и <code>many1</code> в имени), чей первый символ удовлетворяет первой предикатной функции, а остальные символы удовлетворяют второму предикату (отсюда <code>Satisfy2</code>). Строковая метка, указанная в качестве третьего аргумента (следовательно, <code>L</code>), используется в сообщении об ошибке для описания ожидаемого ввода.</p>
-
+    many1Satisfy2L isIdentifierFirstChar isIdentifierChar <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">identifier</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#f92672">.</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span> ws <span style="color:#75715e">// Пропускает завершающие пробелы
+</span></code></pre></div><p>Здесь мы использовали синтаксический анализатор <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy2L"><code>many1Satisfy2L</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->, который является одним из нескольких примитивов для синтаксического анализа строк на основе предикатов символов (т.е. функций, которые принимают символ на входе и возвращают логическое значение). Он анализирует любую последовательность одного или нескольких символов (отсюда и <code>many1</code> в имени), чей первый символ удовлетворяет первой предикатной функции, а остальные символы удовлетворяют второму предикату (отсюда <code>Satisfy2</code>). Строковая метка, указанная в качестве третьего аргумента (следовательно, <code>L</code>), используется в сообщении об ошибке для описания ожидаемого ввода.</p>
 <p>Следующие тесты показывают, как работает этот анализатор:</p>
-
-<pre><code class="language-fsharp">&gt; test identifier &quot;_&quot;;;
-Success: &quot;_&quot;
-&gt; test identifier &quot;_test1=&quot;;;
-Success: &quot;_test1&quot;
-&gt; test identifier &quot;1&quot;;;
-Failure: Error in Ln: 1 Col: 1
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#f92672">&gt;</span> test identifier <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">_</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">_</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">&gt;</span> test identifier <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">_test1=</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">_test1</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">&gt;</span> test identifier <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">1</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Failure<span style="color:#f92672">:</span> Error <span style="color:#66d9ef">in</span> Ln<span style="color:#f92672">:</span> 1 Col<span style="color:#f92672">:</span> 1
 1
-^
-Expecting: identifier
-</code></pre>
-
-<div class="alert alert-note">
-  <div>
-    Если вы хотите анализировать идентификаторы на основе синтаксиса <a href="https://en.wikipedia.org/wiki/Unicode_character_property" target="_blank">Unicode XID</a><sup>en</sup>, рассмотрите возможность использования встроенного анализатора <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.identifier" target="_blank"><code>identifier</code></a><sup>en</sup>.
-  </div>
-</div>
-
+<span style="color:#f92672">^</span>
+Expecting<span style="color:#f92672">:</span> identifier
+</code></pre></div><!-- raw HTML omitted -->
 <p>Многие строковые форматы достаточно сложны, поэтому вам нужно объединить несколько примитивов символьного синтаксического анализатора и строкового синтаксического анализатора. Например, рассмотрим следующий пример анализа строки в формате РНБН:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp">  normalChar<span style="color:#f92672">:</span>    any <span style="color:#66d9ef">char</span> except <span style="color:#e6db74">&#39;\&#39;</span> <span style="color:#f92672">and</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>
 
-<pre><code class="language-fsharp">  normalChar:    any char except '\' and '&quot;'
+  escapedChar<span style="color:#f92672">:</span>   <span style="color:#e6db74">&#39;\\&#39;</span> <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;\\&#39;</span><span style="color:#f92672">|</span><span style="color:#e6db74">&#39;&#34;&#39;</span><span style="color:#f92672">|</span><span style="color:#e6db74">&#39;n&#39;</span><span style="color:#f92672">|</span><span style="color:#e6db74">&#39;r&#39;</span><span style="color:#f92672">|</span><span style="color:#e6db74">&#39;t&#39;</span><span style="color:#f92672">)</span>
 
-  escapedChar:   '\\' ('\\'|'&quot;'|'n'|'r'|'t')
-
-  stringLiteral: '&quot;' ( normalChar | escapedChar )* '&quot;'
-</code></pre>
-
-<p>Прямой перевод этой грамматики в FParsec выглядит так:</p>
-
-<pre><code class="language-fsharp">let stringLiteral =
-  let normalChar = 
-    let anyCharExcept c = c &lt;&gt; '\\' &amp;&amp; c &lt;&gt; '&quot;'
+  stringLiteral<span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#34;&#39;</span> <span style="color:#f92672">(</span> normalChar <span style="color:#f92672">|</span> escapedChar <span style="color:#f92672">)</span><span style="color:#f92672">*</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>
+</code></pre></div><p>Прямой перевод этой грамматики в FParsec выглядит так:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">let</span> stringLiteral <span style="color:#f92672">=</span>
+  <span style="color:#66d9ef">let</span> normalChar <span style="color:#f92672">=</span> 
+    <span style="color:#66d9ef">let</span> anyCharExcept c <span style="color:#f92672">=</span> c <span style="color:#f92672">&lt;</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;\\&#39;</span> <span style="color:#f92672">&amp;&amp;</span> c <span style="color:#f92672">&lt;</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>
     satisfy anyCharExcept
-  let escapedChar = 
-    let unescape c = 
-      match c with
-      | 'n' -&gt; '\n'
-      | 'r' -&gt; '\r'
-      | 't' -&gt; '\t'
-      | c   -&gt; c
-    pstring &quot;\\&quot; &gt;&gt;. (anyOf &quot;\\nrt\&quot;&quot; |&gt;&gt; unescape)
-  let quote = pstring &quot;\&quot;&quot; 
-  between quote quote ( manyChars (normalChar &lt;|&gt; escapedChar) )
-</code></pre>
-
-<p>В этом примере появилось несколько новых функций библиотеки. Давайте рассмотрим их подробнее:</p>
-
+  <span style="color:#66d9ef">let</span> escapedChar <span style="color:#f92672">=</span> 
+    <span style="color:#66d9ef">let</span> unescape c <span style="color:#f92672">=</span> 
+      <span style="color:#66d9ef">match</span> c <span style="color:#66d9ef">with</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;n&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;r&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\r&#39;</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;t&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\t&#39;</span>
+      <span style="color:#f92672">|</span> c   <span style="color:#f92672">-&gt;</span> c
+    pstring <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">.</span> <span style="color:#f92672">(</span>anyOf <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">nrt</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">|</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span> unescape<span style="color:#f92672">)</span>
+  <span style="color:#66d9ef">let</span> quote <span style="color:#f92672">=</span> pstring <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span> 
+  between quote quote <span style="color:#f92672">(</span> manyChars <span style="color:#f92672">(</span>normalChar <span style="color:#f92672">&lt;</span><span style="color:#f92672">|</span><span style="color:#f92672">&gt;</span> escapedChar<span style="color:#f92672">)</span> <span style="color:#f92672">)</span>
+</code></pre></div><p>В этом примере появилось несколько новых функций библиотеки. Давайте рассмотрим их подробнее:</p>
 <ul>
-<li>Функция <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.satisfy" target="_blank"><code>satisfy</code></a><sup>en</sup> разбирает любой символ, который удовлетворяет заданному в параметрах предикату.</li>
-<li>Функция <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.anyOf" target="_blank"><code>anyOf</code></a><sup>en</sup> разбирает любой символ, содержащийся в строке аргумента.</li>
-<li>Комбинатор конвейера <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.:124::62::62:" target="_blank"><code>|&gt;&gt;</code></a><sup>en</sup> применяет функцию с правой стороны (<code>unescape</code>) к результату синтаксического анализатора с левой стороны (<code>anyOf &quot;\\nrt\&quot;&quot;</code>).</li>
-<li>Комбинатор выбора <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.:60::124::62:" target="_blank"><code>&lt;|&gt;</code></a><sup>en</sup> применяет синтаксический анализатор с правой стороны, если синтаксический анализатор с левой стороны терпит неудачу, так что <code>normalChar &lt;|&gt; escapedChar</code> может анализировать как обычные, так и экранированные символы. (Мы обсудим этот комбинатор более подробно через две главы далее).</li>
-<li>Функция <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.manyChars" target="_blank"><code>manyChars</code></a><sup>en</sup> анализирует последовательность символов с заданным символьным синтаксическим анализатором и возвращает его как строку.</li>
+<li>Функция <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.satisfy"><code>satisfy</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> разбирает любой символ, который удовлетворяет заданному в параметрах предикату.</li>
+<li>Функция <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.anyOf"><code>anyOf</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> разбирает любой символ, содержащийся в строке аргумента.</li>
+<li>Комбинатор конвейера <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.:124::62::62:"><code>|&gt;&gt;</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> применяет функцию с правой стороны (<code>unescape</code>) к результату синтаксического анализатора с левой стороны (<code>anyOf &quot;\\nrt\&quot;&quot;</code>).</li>
+<li>Комбинатор выбора <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.:60::124::62:"><code>&lt;|&gt;</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> применяет синтаксический анализатор с правой стороны, если синтаксический анализатор с левой стороны терпит неудачу, так что <code>normalChar &lt;|&gt; escapedChar</code> может анализировать как обычные, так и экранированные символы. (Мы обсудим этот комбинатор более подробно через две главы далее).</li>
+<li>Функция <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.manyChars"><code>manyChars</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> анализирует последовательность символов с заданным символьным синтаксическим анализатором и возвращает его как строку.</li>
 </ul>
-
 <p>Давайте протестируем синтаксический анализатор <code>stringLiteral</code>:</p>
-
-<pre><code class="language-fsharp">&gt; test stringLiteral &quot;\&quot;abc\&quot;&quot;;;
-Success: &quot;abc&quot;
-&gt; test stringLiteral &quot;\&quot;abc\\\&quot;def\\\\ghi&quot;;;
-Success: &quot;abc&quot;def\ghi&quot;
-&gt; test stringLiteral &quot;\&quot;abc\\def\&quot;&quot;;;
-Failure: Error in Ln: 1 Col: 6
-&quot;abc\def&quot;
-     ^
-Expecting: any char in ‘\nrt&quot;’
-</code></pre>
-
-<p>Вместо разбора строкового литерала посимвольно мы могли бы также разобрать его построчно:</p>
-
-<pre><code class="language-fsharp">let stringLiteral2 =
-  let normalString = 
-    let anyCharExcept c = c &lt;&gt; '\\' &amp;&amp; c &lt;&gt; '&quot;'
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#f92672">&gt;</span> test stringLiteral <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">abc</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">abc</span><span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">&gt;</span> test stringLiteral <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">abc</span><span style="color:#ae81ff">\\</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">def</span><span style="color:#ae81ff">\\</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">ghi</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">abc</span><span style="color:#e6db74">&#34;</span>def<span style="color:#960050;background-color:#1e0010">\</span>ghi<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">&gt; test stringLiteral </span><span style="color:#e6db74">&#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">abc</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">def</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Failure<span style="color:#f92672">:</span> Error <span style="color:#66d9ef">in</span> Ln<span style="color:#f92672">:</span> 1 Col<span style="color:#f92672">:</span> 6
+<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">abc</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">def</span><span style="color:#e6db74">&#34;</span>
+     <span style="color:#f92672">^</span>
+Expecting<span style="color:#f92672">:</span> any <span style="color:#66d9ef">char</span> <span style="color:#66d9ef">in</span> <span style="color:#960050;background-color:#1e0010">‘</span><span style="color:#960050;background-color:#1e0010">\</span>nrt<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">’
+</span></code></pre></div><p>Вместо разбора строкового литерала посимвольно мы могли бы также разобрать его построчно:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">let</span> stringLiteral2 <span style="color:#f92672">=</span>
+  <span style="color:#66d9ef">let</span> normalString <span style="color:#f92672">=</span> 
+    <span style="color:#66d9ef">let</span> anyCharExcept c <span style="color:#f92672">=</span> c <span style="color:#f92672">&lt;</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;\\&#39;</span> <span style="color:#f92672">&amp;&amp;</span> c <span style="color:#f92672">&lt;</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>
     many1Satisfy anyCharExcept
-  let escapedChar = 
-    let unescape c = 
-      match c with
-      | 'n' -&gt; '\n'
-      | 'r' -&gt; '\r'
-      | 't' -&gt; '\t'
-      | c   -&gt; c
-    pstring &quot;\\&quot; &gt;&gt;. (anyOf &quot;\\nrt\&quot;&quot; |&gt;&gt; unescape)
-  let quote = pstring &quot;\&quot;&quot; 
-  between quote quote ( manyStrings (normalString &lt;|&gt; escapedChar) )
-</code></pre>
-
-<p>Здесь мы использовали комбинатор <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.manyStrings" target="_blank"><code>manyStrings</code></a><sup>en</sup> , который анализирует последовательность строк с заданным синтаксическим анализатором строк и возвращает объединённую строку.</p>
-
-<div class="alert alert-note">
-  <div>
-    Мы должны настроить синтаксический анализатор <code>normalString</code> что бы он требовал по крайней мере один символ, т.е. нужно использовать <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy" target="_blank"><code>many1Satisfy</code></a><sup>en</sup> вместо <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.manySatisfy" target="_blank"><code>manySatisfy</code></a><sup>en</sup> . В противном случае <code>normalString</code> успешно выполниться, даже если нет входных данных, <code>escapedChar</code> никогда не вызовется вызываться, а <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.manyStrings" target="_blank"><code>manyStrings</code></a><sup>en</sup> в конечном итоге вызовет исключение для предотвращения бесконечного цикла.
-  </div>
-</div>
-
+  <span style="color:#66d9ef">let</span> escapedChar <span style="color:#f92672">=</span> 
+    <span style="color:#66d9ef">let</span> unescape c <span style="color:#f92672">=</span> 
+      <span style="color:#66d9ef">match</span> c <span style="color:#66d9ef">with</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;n&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;r&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\r&#39;</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;t&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\t&#39;</span>
+      <span style="color:#f92672">|</span> c   <span style="color:#f92672">-&gt;</span> c
+    pstring <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">.</span> <span style="color:#f92672">(</span>anyOf <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">nrt</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">|</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span> unescape<span style="color:#f92672">)</span>
+  <span style="color:#66d9ef">let</span> quote <span style="color:#f92672">=</span> pstring <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span> 
+  between quote quote <span style="color:#f92672">(</span> manyStrings <span style="color:#f92672">(</span>normalString <span style="color:#f92672">&lt;</span><span style="color:#f92672">|</span><span style="color:#f92672">&gt;</span> escapedChar<span style="color:#f92672">)</span> <span style="color:#f92672">)</span>
+</code></pre></div><p>Здесь мы использовали комбинатор <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.manyStrings"><code>manyStrings</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> , который анализирует последовательность строк с заданным синтаксическим анализатором строк и возвращает объединённую строку.</p>
+<!-- raw HTML omitted -->
 <p>Синтаксический анализ строки с использованием оптимизированного синтаксического анализатора, такого как <code>many1Satisfy</code>, обычно немного быстрее, чем синтаксический анализ его с помощью <code>manyChars</code> и <code>satisfy</code>. В этом случае мы можем оптимизировать наш синтаксический анализатор еще немного - как только мы поймем, что два нормальных фрагмента строк должны быть разделены хотя бы одним экранированным символом:</p>
-
-<pre><code class="language-fsharp">let stringLiteral3 =
-  let normalString = 
-    let anyCharExcept c = c &lt;&gt; '\\' &amp;&amp; c &lt;&gt; '&quot;'
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">let</span> stringLiteral3 <span style="color:#f92672">=</span>
+  <span style="color:#66d9ef">let</span> normalString <span style="color:#f92672">=</span> 
+    <span style="color:#66d9ef">let</span> anyCharExcept c <span style="color:#f92672">=</span> c <span style="color:#f92672">&lt;</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;\\&#39;</span> <span style="color:#f92672">&amp;&amp;</span> c <span style="color:#f92672">&lt;</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#39;&#34;&#39;</span>
     manySatisfy anyCharExcept
-  let escapedChar = 
-    let unescape c = 
-      match c with
-      | 'n' -&gt; '\n'
-      | 'r' -&gt; '\r'
-      | 't' -&gt; '\t'
-      | c   -&gt; c
-    pstring &quot;\\&quot; &gt;&gt;. (anyOf &quot;\\nrt\&quot;&quot; |&gt;&gt; unescape)
-  let quote = pstring &quot;\&quot;&quot; 
-  between quote quote ( stringsSepBy normalString escapedChar) )
-</code></pre>
-
-<p>Синтаксический анализатор <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.stringsSepBy" target="_blank"><code>stringsSepBy</code></a><sup>en</sup> анализирует последовательность строк (первый аргумент), разделенных другими строками (второй аргумент). Он возвращает все разобранные строки, включая строки разделителя, в виде новой объединённой строки.</p>
-
-<p>Обратите внимание, что <code>stringLiteral3</code> использует <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy" target="_blank"><code>manySatisfy</code></a><sup>en</sup> вместо <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy" target="_blank"><code>many1Satisfy</code></a><sup>en</sup> в своем определении <code>normalString</code>, так что он может анализировать экранированные символы, которые не разделены обычными символами. Это приведет к бесконечному циклу, потому что <code>escapedChar</code> не будет исполнено при отсутствии входных данных.</p>
+  <span style="color:#66d9ef">let</span> escapedChar <span style="color:#f92672">=</span> 
+    <span style="color:#66d9ef">let</span> unescape c <span style="color:#f92672">=</span> 
+      <span style="color:#66d9ef">match</span> c <span style="color:#66d9ef">with</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;n&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\n&#39;</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;r&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\r&#39;</span>
+      <span style="color:#f92672">|</span> <span style="color:#e6db74">&#39;t&#39;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;\t&#39;</span>
+      <span style="color:#f92672">|</span> c   <span style="color:#f92672">-&gt;</span> c
+    pstring <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">.</span> <span style="color:#f92672">(</span>anyOf <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">nrt</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">|</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span> unescape<span style="color:#f92672">)</span>
+  <span style="color:#66d9ef">let</span> quote <span style="color:#f92672">=</span> pstring <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span> 
+  between quote quote <span style="color:#f92672">(</span> stringsSepBy normalString escapedChar<span style="color:#f92672">)</span> <span style="color:#f92672">)</span>
+</code></pre></div><p>Синтаксический анализатор <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.stringsSepBy"><code>stringsSepBy</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> анализирует последовательность строк (первый аргумент), разделенных другими строками (второй аргумент). Он возвращает все разобранные строки, включая строки разделителя, в виде новой объединённой строки.</p>
+<p>Обратите внимание, что <code>stringLiteral3</code> использует <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy"><code>manySatisfy</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> вместо <a href="http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1Satisfy"><code>many1Satisfy</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> в своем определении <code>normalString</code>, так что он может анализировать экранированные символы, которые не разделены обычными символами. Это приведет к бесконечному циклу, потому что <code>escapedChar</code> не будет исполнено при отсутствии входных данных.</p>
 </div>
 
     
@@ -905,7 +985,7 @@ Expecting: any char in ‘\nrt&quot;’
   <div class="media author-card content-widget-hr">
     
       
-      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu0f3384a45cfed84d836ae65623f6317a_1784134_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -1064,19 +1144,13 @@ Expecting: any char in ‘\nrt&quot;’
     
     
     
-    <script src="/js/mathjax-config.js"></script>
-    
-
-    
-    
-    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.3/mermaid.min.js" integrity="" crossorigin="anonymous" title="mermaid"></script>
       
 
       
@@ -1089,10 +1163,6 @@ Expecting: any char in ‘\nrt&quot;’
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -1102,7 +1172,7 @@ Expecting: any char in ‘\nrt&quot;’
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
     
 
     
@@ -1167,7 +1237,7 @@ Expecting: any char in ‘\nrt&quot;’
     
     
     
-    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
 
     
 
@@ -1183,7 +1253,7 @@ Expecting: any char in ‘\nrt&quot;’
   
 
   <p class="powered-by">
-    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
+    © <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A2%D0%B5%D0%BA%D1%81%D1%82_%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%B8_Creative_Commons_Attribution-ShareAlike_3.0_Unported">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1209,7 +1279,7 @@ Expecting: any char in ‘\nrt&quot;’
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Процетировать</h5>
+        <h5 class="modal-title">Процитировать</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

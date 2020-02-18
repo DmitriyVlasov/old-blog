@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>use cases | Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/tags/use-cases/</link>
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/use-cases/index.xml" rel="self" type="application/rss+xml" />
+    <description>use cases</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
+      <title>use cases</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/use-cases/</link>
+    </image>
+    
+    <item>
+      <title>ArchiMate</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/memo/archimate/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/memo/archimate/</guid>
+      <description>&lt;p&gt;Примеры использования диаграмм ArchiMate смотрите обширную статью: &lt;a href=&#34;https://www.hosiaisluoma.fi/blog/archimate-examples/&#34;&gt;ArchiMate Examples&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

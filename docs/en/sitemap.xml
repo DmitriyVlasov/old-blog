@@ -76,16 +76,6 @@
   
   <url>
     <loc>https://DmitriyVlasov.ru/en/courses/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://DmitriyVlasov.ru/ru/courses/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://DmitriyVlasov.ru/en/courses/"
-                />
   </url>
   
   <url>

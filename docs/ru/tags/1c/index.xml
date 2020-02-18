@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1C | Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/tags/1c/</link>
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/1c/index.xml" rel="self" type="application/rss+xml" />
+    <description>1C</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
+      <title>1C</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/1c/</link>
+    </image>
+    
+    <item>
+      <title>1C</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/memo/1c/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/memo/1c/</guid>
+      <description>&lt;h2 id=&#34;как-посмотреть-версию-1с-8&#34;&gt;Как посмотреть версию 1С 8?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Зайти в текущий клиент 1С.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;В верхнем левом углу выбрать кнопку &amp;ldquo;меню&amp;rdquo; \ Справка \ О программе.
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Откроется окно &amp;ldquo;О программе&amp;rdquo;, смотрите версию:
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Заходим в каталог: &lt;code&gt;C:\Program Files\1cv8\&lt;/code&gt; и выбираем каталог с именем найденной версии.
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;как-зарегистрировать-библиотеку-1с-8-comcntrdll&#34;&gt;Как зарегистрировать библиотеку 1С 8 &lt;code&gt;comcntr.dll&lt;/code&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#how-to-schow-1C8-version&#34;&gt;Определить&lt;/a&gt; действующую версию 1С&lt;/li&gt;
+&lt;li&gt;Запустить терминал &lt;code&gt;cmd&lt;/code&gt; под учетной записью администратора&lt;/li&gt;
+&lt;li&gt;Замените в тексте кода ниже &lt;code&gt;&amp;lt;ВЕРСИЯ_1С&amp;gt;&lt;/code&gt; на найденную версию:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;C:\Windows\SysWOW64\regsvr32&lt;span style=&#34;color:#75715e&#34;&gt; &amp;#34;C:\Program Files\1cv8\&amp;lt;ВЕРСИЯ_1С&amp;gt;\bin\comcntr.dll&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Выполните&lt;/li&gt;
+&lt;li&gt;Если все прошло хорошо, получите сообщение вида:
+&lt;img src=&#34;1c8-register-comcntr.dll-result.png&#34; alt=&#34;1c8-register-comcntr.dll-result&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

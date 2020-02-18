@@ -7,7 +7,7 @@
     <description>5</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Sat, 28 Jan 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>5</title>
       <link>https://DmitriyVlasov.ru/ru/publication_types/5/</link>
     </image>
@@ -17,26 +17,18 @@
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/01-preliminaries/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/01-preliminaries/</guid>
-      <description>&lt;p&gt;FParsec состоит из двух библиотек: &lt;em&gt;FParsec.dll&lt;/em&gt; и &lt;em&gt;FParsecCS.dll&lt;/em&gt;. Для использования FParsec в вашем проекте, вы можете или установить из &lt;a href=&#34;http://nuget.org&#34; target=&#34;_blank&#34;&gt;nuget&lt;/a&gt; (см. подробнее варианты установки &lt;a href=&#34;http://www.quanttec.com/fparsec/download-and-installation.html#nuget-packages&#34; target=&#34;_blank&#34;&gt;nuget-пакетов&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;), или собрать два DLL файла FParsec из исходного кода. Самый простой способ собрать FParsec из исходного кода это использовать файлы решений Visual Studio в каталогах &lt;strong&gt;=Build/VS&lt;/strong&gt; &lt;a href=&#34;https://github.com/stephan-tolksdorf/fparsec/archive/master.zip&#34; target=&#34;_blank&#34;&gt;исходного кода пакета&lt;/a&gt;, например, в каталоге &lt;strong&gt;Build/VS11&lt;/strong&gt; для Visual Studio 2012. Любой проект, который использует библиотеку FParsec должен ссылаться на оба файла DLL. Смотри подробнее в руководстве пользователя главу &lt;a href=&#34;http://www.quanttec.com/fparsec/download-and-installation.html&#34; target=&#34;_blank&#34;&gt;Загрузка и установка&lt;/a&gt;&lt;sup&gt;en&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Все типы и модули библиотеки FParsec объявлены в пространстве имен &lt;code&gt;FParsec&lt;/code&gt;. Это пространство имен содержит несколько базовых классов (например, &lt;code&gt;CharStream&lt;/code&gt; и &lt;code&gt;Reply&lt;/code&gt;) и четыре F# модуля, а именно:
-- &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Primitives&lt;/code&gt;&lt;/a&gt;, содержащий основные определения типов и комбинаторов синтаксического анализа,
-- &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CharParsers&lt;/code&gt;&lt;/a&gt;, содержащий синтаксические анализаторы для символов, строк, чисел и функций для применения синтаксических анализаторов для входных потоков,
-- &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.Error&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Error&lt;/code&gt;&lt;/a&gt;, содержащий типы и вспомогательные функции для создания, обработки, форматирования сообщений об ошибках синтаксического анализа,
-- &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/staticmapping.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;StaticMapping&lt;/code&gt;&lt;/a&gt;, содержащий функции для создания оптимизированных функций отображения между ключами и значениями.&lt;/p&gt;
-
+      <description>&lt;p&gt;FParsec состоит из двух библиотек: &lt;em&gt;FParsec.dll&lt;/em&gt; и &lt;em&gt;FParsecCS.dll&lt;/em&gt;. Для использования FParsec в вашем проекте, вы можете или установить из &lt;a href=&#34;http://nuget.org&#34;&gt;nuget&lt;/a&gt; (см. подробнее варианты установки &lt;a href=&#34;http://www.quanttec.com/fparsec/download-and-installation.html#nuget-packages&#34;&gt;nuget-пакетов&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;en&lt;!-- raw HTML omitted --&gt;), или собрать два DLL файла FParsec из исходного кода. Самый простой способ собрать FParsec из исходного кода это использовать файлы решений Visual Studio в каталогах &lt;strong&gt;=Build/VS&lt;/strong&gt; &lt;a href=&#34;https://github.com/stephan-tolksdorf/fparsec/archive/master.zip&#34;&gt;исходного кода пакета&lt;/a&gt;, например, в каталоге &lt;strong&gt;Build/VS11&lt;/strong&gt; для Visual Studio 2012. Любой проект, который использует библиотеку FParsec должен ссылаться на оба файла DLL. Смотри подробнее в руководстве пользователя главу &lt;a href=&#34;http://www.quanttec.com/fparsec/download-and-installation.html&#34;&gt;Загрузка и установка&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;en&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
+&lt;p&gt;Все типы и модули библиотеки FParsec объявлены в пространстве имен &lt;code&gt;FParsec&lt;/code&gt;. Это пространство имен содержит несколько базовых классов (например, &lt;code&gt;CharStream&lt;/code&gt; и &lt;code&gt;Reply&lt;/code&gt;) и четыре F# модуля, а именно:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html&#34;&gt;&lt;code&gt;Primitives&lt;/code&gt;&lt;/a&gt;, содержащий основные определения типов и комбинаторов синтаксического анализа,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html&#34;&gt;&lt;code&gt;CharParsers&lt;/code&gt;&lt;/a&gt;, содержащий синтаксические анализаторы для символов, строк, чисел и функций для применения синтаксических анализаторов для входных потоков,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.Error&#34;&gt;&lt;code&gt;Error&lt;/code&gt;&lt;/a&gt;, содержащий типы и вспомогательные функции для создания, обработки, форматирования сообщений об ошибках синтаксического анализа,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.quanttec.com/fparsec/reference/staticmapping.html&#34;&gt;&lt;code&gt;StaticMapping&lt;/code&gt;&lt;/a&gt;, содержащий функции для создания оптимизированных функций отображения между ключами и значениями.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Во всех примерах в этом учебнике предполагается, что вы открыли пространство имен &lt;code&gt;FParsec&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;open FParsec
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;При открытии пространства имен &lt;code&gt;FParsec&lt;/code&gt; также автоматически открываются модули &lt;code&gt;Primitives&lt;/code&gt;, &lt;code&gt;CharParsers&lt;/code&gt; и &lt;code&gt;Error&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Все примеры кода в этом учебнике содержатся в проекте &lt;a href=&#34;https://bitbucket.org/fparsec/main/src/c234349e7b738e09a1b9eb53f5f1ef77d584f09b/Samples/Tutorial/tutorial.fs?at=default&#34; target=&#34;_blank&#34;&gt;Samples/Tutorial&lt;/a&gt;. Читая учебник может быть весьма полезным держать этот проект открытым в окне редактора Visual Studio. Например, вы можете навести курсор мыши на идентификатор, чтобы получить всплывающее окно Intellisense с выведенным типом. А если вам интересно, как функция библиотеки реализована, вы можете открыть контекстное меню и выбрать &lt;em&gt;Перейти к определению (F12)&lt;/em&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;open&lt;/span&gt; FParsec
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;При открытии пространства имен &lt;code&gt;FParsec&lt;/code&gt; также автоматически открываются модули &lt;code&gt;Primitives&lt;/code&gt;, &lt;code&gt;CharParsers&lt;/code&gt; и &lt;code&gt;Error&lt;/code&gt;.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
 </description>
     </item>
     
@@ -45,58 +37,36 @@
       <link>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/02-parsing-a-single-float/</link>
       <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/02-parsing-a-single-float/</guid>
-      <description>&lt;p&gt;Синтаксический разбор входного потока включает два этапа:
-  1. построение синтаксического анализатора и
-  1. применение анализатора к входному потоку.&lt;/p&gt;
-
+      <description>&lt;p&gt;Синтаксический разбор входного потока включает два этапа:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;построение синтаксического анализатора и&lt;/li&gt;
+&lt;li&gt;применение анализатора к входному потоку.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;Давайте начнем с простого примера: синтаксический разбор строки представляющей собой отдельное число с плавающей точкой.
-В этом случае первый шаг &amp;mdash; построение синтаксического анализатора, просто, поскольку модуль &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;CharParsers&lt;/code&gt;&lt;/a&gt; уже поставляется со встроенным анализатором числа с плавающей точкой:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val pfloat: Parser&amp;lt;float,&#39;u&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Универсальный тип &lt;code&gt;Parser&amp;lt;&#39;Result,&#39;UserState&amp;gt;&lt;/code&gt; является типом всех синтаксических анализаторов в библиотеке FParsec. Если вы перейдете по следующей гиперссылке, вы увидите, что &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.Parser&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;Parser&lt;/code&gt;&lt;/a&gt; является &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/dd233246.aspx&#34; target=&#34;_blank&#34;&gt;синонимом&lt;/a&gt; для функционального типа. Однако, на данный момент мы не должны вдаваться в подробности типа &lt;code&gt;Parser&lt;/code&gt;. Достаточно отметить, что первый аргумент типа представляет тип результата синтаксического анализа. Итак, в рассматриваемом случае тип функции &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.pfloat&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;pfloat&lt;/code&gt;&lt;/a&gt; говорит нам, что, если синтаксический анализ успешно завершен, функция возвращает число с плавающей точкой типа &lt;code&gt;float&lt;/code&gt;. Мы не будем использовать пользовательское состояние синтаксического анализатора (&lt;code&gt;UserState&lt;/code&gt;) в этом уроке, так что, на данный момент, вы можете просто игнорировать второй аргумент типа.&lt;/p&gt;
-
-&lt;p&gt;Чтобы применить синтаксический анализатор &lt;code&gt;pfloat&lt;/code&gt; к строке, мы можем использовать функцию &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.run&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;run&lt;/code&gt;&lt;/a&gt; из модуля &lt;code&gt;CharParsers&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;val run: Parser&amp;lt;&#39;Result, unit&amp;gt; -&amp;gt; string -&amp;gt; ParserResult&amp;lt;&#39;Result,unit&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Функция &lt;code&gt;run&lt;/code&gt;, простейшая из &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#interface.runparser-functions&#34; target=&#34;_blank&#34;&gt;ряда&lt;/a&gt; функций модуля &lt;code&gt;CharParsers&lt;/code&gt;, используется для запуска синтаксических анализаторов по входным данным. Другие функции позволяют вам, например, запускать синтаксические анализаторы по содержимому файла или потоку ввода-вывода (&lt;code&gt;System.IO.Stream&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Функция &lt;code&gt;run&lt;/code&gt; применяет синтаксический анализатор, переданный в качестве первого аргумента к строке переданной в качестве второго аргумента и возвращает возвращенное синтаксическим анализатором значение в виде &lt;code&gt;ParserResult&lt;/code&gt;. Тип &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.ParserResult&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;ParserResult&lt;/code&gt;&lt;/a&gt; является типом размеченного объединения с двумя вариантами: &lt;code&gt;Success&lt;/code&gt; и &lt;code&gt;Failure&lt;/code&gt;. В случае, если синтаксический анализатор успешно выполнен, &lt;code&gt;ParserResult&lt;/code&gt; содержит результирующее значение, в противном случае он содержит сообщение об ошибке.&lt;/p&gt;
-
+В этом случае первый шаг — построение синтаксического анализатора, просто, поскольку модуль &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html&#34;&gt;&lt;code&gt;CharParsers&lt;/code&gt;&lt;/a&gt; уже поставляется со встроенным анализатором числа с плавающей точкой:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; pfloat&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; Parser&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;#39;&lt;/span&gt;u&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Универсальный тип &lt;code&gt;Parser&amp;lt;&#39;Result,&#39;UserState&amp;gt;&lt;/code&gt; является типом всех синтаксических анализаторов в библиотеке FParsec. Если вы перейдете по следующей гиперссылке, вы увидите, что &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/primitives.html#members.Parser&#34;&gt;&lt;code&gt;Parser&lt;/code&gt;&lt;/a&gt; является &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/dd233246.aspx&#34;&gt;синонимом&lt;/a&gt; для функционального типа. Однако, на данный момент мы не должны вдаваться в подробности типа &lt;code&gt;Parser&lt;/code&gt;. Достаточно отметить, что первый аргумент типа представляет тип результата синтаксического анализа. Итак, в рассматриваемом случае тип функции &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.pfloat&#34;&gt;&lt;code&gt;pfloat&lt;/code&gt;&lt;/a&gt; говорит нам, что, если синтаксический анализ успешно завершен, функция возвращает число с плавающей точкой типа &lt;code&gt;float&lt;/code&gt;. Мы не будем использовать пользовательское состояние синтаксического анализатора (&lt;code&gt;UserState&lt;/code&gt;) в этом уроке, так что, на данный момент, вы можете просто игнорировать второй аргумент типа.&lt;/p&gt;
+&lt;p&gt;Чтобы применить синтаксический анализатор &lt;code&gt;pfloat&lt;/code&gt; к строке, мы можем использовать функцию &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.run&#34;&gt;&lt;code&gt;run&lt;/code&gt;&lt;/a&gt; из модуля &lt;code&gt;CharParsers&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; run&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; Parser&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;#39;&lt;/span&gt;Result&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;unit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;string&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; ParserResult&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;#39;&lt;/span&gt;Result&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;unit&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Функция &lt;code&gt;run&lt;/code&gt;, простейшая из [ряда] (&lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#interface.runparser-functions&#34;&gt;http://www.quanttec.com/fparsec/reference/charparsers.html#interface.runparser-functions&lt;/a&gt;) функций модуля &lt;code&gt;CharParsers&lt;/code&gt;, используется для запуска синтаксических анализаторов по входным данным. Другие функции позволяют вам, например, запускать синтаксические анализаторы по содержимому файла или потоку ввода-вывода (&lt;code&gt;System.IO.Stream&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Функция &lt;code&gt;run&lt;/code&gt; применяет синтаксический анализатор, переданный в качестве первого аргумента к строке переданной в качестве второго аргумента и возвращает возвращенное синтаксическим анализатором значение в виде &lt;code&gt;ParserResult&lt;/code&gt;. Тип &lt;a href=&#34;http://www.quanttec.com/fparsec/reference/charparsers.html#members.ParserResult&#34;&gt;&lt;code&gt;ParserResult&lt;/code&gt;&lt;/a&gt; является типом размеченного объединения с двумя вариантами: &lt;code&gt;Success&lt;/code&gt; и &lt;code&gt;Failure&lt;/code&gt;. В случае, если синтаксический анализатор успешно выполнен, &lt;code&gt;ParserResult&lt;/code&gt; содержит результирующее значение, в противном случае он содержит сообщение об ошибке.&lt;/p&gt;
 &lt;p&gt;Для упрощения тестирования мы напишем маленькую вспомогательную функцию, которая выводит на печать значение результата или сообщение об ошибке:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;let test p str =
-    match run p str with
-    | Success(result, _, _)   -&amp;gt; printfn &amp;quot;Success: %A&amp;quot; result
-    | Failure(errorMsg, _, _) -&amp;gt; printfn &amp;quot;Failure: %s&amp;quot; errorMsg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Используя вспомогательную функцию, мы можем протестировать &lt;code&gt;pfloat&lt;/code&gt; выполнив:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;test pfloat &amp;quot;1.25&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;что дает в результате:&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; test p str &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;match&lt;/span&gt; run p str &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Success&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;result&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;_&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;_&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;   &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; printfn &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Success: %A&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; result
+    &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; Failure&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;errorMsg&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;_&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;_&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; printfn &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Failure: %s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; errorMsg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Используя вспомогательную функцию, мы можем протестировать &lt;code&gt;pfloat&lt;/code&gt; выполнив:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;test pfloat &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;1.25&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;что дает в результате:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Success: 1.25
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Тестирование &lt;code&gt;pfloat&lt;/code&gt; с числовым литералом, который имеет недопустимый знак экспоненты&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-fsharp&#34;&gt;test pfloat &amp;quot;1.25E 3&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;дает сообщение об ошибке&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Тестирование &lt;code&gt;pfloat&lt;/code&gt; с числовым литералом, который имеет недопустимый знак экспоненты&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fsharp&#34; data-lang=&#34;fsharp&#34;&gt;test pfloat &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;1.25E 3&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;дает сообщение об ошибке&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Failure: Error in Ln: 1 Col: 6
 1.25E 3
      ^
 Expecting: decimal digit
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

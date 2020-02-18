@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.5.0">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -28,8 +28,8 @@
   
     
   
-  <meta name="description" content="Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация &gt;&gt;.en и .&gt;&gt;en операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать pipe2en, &hellip;, pipe5en, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.
-Например, с комбинатором pipe2en">
+  <meta name="description" content="Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация &gt;&gt;.enи .&gt;&gt;enоператоров поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать pipe2en, &hellip;, pipe5en, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.
+Например, с комбинатором pipe2enval pipe2: Parser&lt;&#39;a,&#39;u&gt; -&gt; Parser&lt;&#39;b,&#39;u&gt; -&gt; (&#39;a -&gt; b -&gt; &#39;c) -&gt; Parser&lt;&#39;c,&#39;u&gt;Вы можете построить синтаксический анализатор pipe2 p1 p2 f который последовательно применяет два синтаксических анализатора p1 и p2, а затем возвращает результат применения функции f x1 x2, где x1 и x2 - результаты, возвращаемые p1 и p2.">
 
   
   <link rel="alternate" hreflang="ru-ru" href="https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/">
@@ -41,6 +41,12 @@
   
   
   <meta name="theme-color" content="#795548">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -69,6 +75,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
     
 
   
@@ -132,11 +250,12 @@
   
 
   <link rel="manifest" href="/ru/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/">
 
+  
   
   
   
@@ -150,9 +269,9 @@
   <meta property="og:site_name" content="Дмитрий Власов">
   <meta property="og:url" content="https://DmitriyVlasov.ru/ru/publication/fparsec-tutorial/08-sequentially-applying-parsers/">
   <meta property="og:title" content="Глава 8. Использование последовательности синтаксических анализаторов | Дмитрий Власов">
-  <meta property="og:description" content="Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация &gt;&gt;.en и .&gt;&gt;en операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать pipe2en, &hellip;, pipe5en, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.
-Например, с комбинатором pipe2en"><meta property="og:image" content="https://DmitriyVlasov.ru/img/icon-192.png">
-  <meta property="twitter:image" content="https://DmitriyVlasov.ru/img/icon-192.png"><meta property="og:locale" content="ru-ru">
+  <meta property="og:description" content="Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация &gt;&gt;.enи .&gt;&gt;enоператоров поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать pipe2en, &hellip;, pipe5en, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.
+Например, с комбинатором pipe2enval pipe2: Parser&lt;&#39;a,&#39;u&gt; -&gt; Parser&lt;&#39;b,&#39;u&gt; -&gt; (&#39;a -&gt; b -&gt; &#39;c) -&gt; Parser&lt;&#39;c,&#39;u&gt;Вы можете построить синтаксический анализатор pipe2 p1 p2 f который последовательно применяет два синтаксических анализатора p1 и p2, а затем возвращает результат применения функции f x1 x2, где x1 и x2 - результаты, возвращаемые p1 и p2."><meta property="og:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="ru-ru">
   
     
       <meta property="article:published_time" content="2017-01-28T00:00:00&#43;00:00">
@@ -198,10 +317,10 @@
     "name": "Авара АйТи",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://DmitriyVlasov.ru/img/icon-512.png"
+      "url": "img/https://DmitriyVlasov.ru/"
     }
   },
-  "description": "Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация \u0026gt;\u0026gt;.en и .\u0026gt;\u0026gt;en операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать pipe2en, \u0026hellip;, pipe5en, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.\nНапример, с комбинатором pipe2en"
+  "description": "Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация \u0026gt;\u0026gt;.enи .\u0026gt;\u0026gt;enоператоров поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать pipe2en, \u0026hellip;, pipe5en, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.\nНапример, с комбинатором pipe2enval pipe2: Parser\u0026lt;\u0026#39;a,\u0026#39;u\u0026gt; -\u0026gt; Parser\u0026lt;\u0026#39;b,\u0026#39;u\u0026gt; -\u0026gt; (\u0026#39;a -\u0026gt; b -\u0026gt; \u0026#39;c) -\u0026gt; Parser\u0026lt;\u0026#39;c,\u0026#39;u\u0026gt;\rВы можете построить синтаксический анализатор pipe2 p1 p2 f который последовательно применяет два синтаксических анализатора p1 и p2, а затем возвращает результат применения функции f x1 x2, где x1 и x2 - результаты, возвращаемые p1 и p2."
 }
 </script>
 
@@ -258,24 +377,36 @@
 
 
   
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
+    
+    <div class="d-none d-lg-inline-flex">
       <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
+    </div>
+    
 
     
-    <div class="collapse navbar-collapse" id="navbar">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Переключить навигацию">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/ru/">Дмитрий Власов</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
@@ -410,7 +541,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/courses/"><span>Курсы</span></a>
+          <a class="nav-link " href="/ru/domain/"><span>Интересы</span></a>
         </li>
 
         
@@ -446,29 +577,28 @@
         
 
       
+
+        
       </ul>
-      <ul class="navbar-nav ml-auto">
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
       
 
-        
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
+      
 
-        
+    </ul>
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
-    </div>
   </div>
 </nav>
 
@@ -632,54 +762,32 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><p>Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.:62::62:.." target="_blank"><code>&gt;&gt;.</code></a><sup>en</sup> и <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:" target="_blank"><code>.&gt;&gt;</code></a><sup>en</sup> операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2" target="_blank"><code>pipe2</code></a><sup>en</sup>, &hellip;, <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe5" target="_blank"><code>pipe5</code></a><sup>en</sup>, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.</p>
+    <div class="article-style"><p>Всякий раз, когда вам нужно применять несколько синтаксических анализаторов в последовательности, а нужен только результат одного из них, подходящая комбинация <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.:62::62:.."><code>&gt;&gt;.</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> и <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:"><code>.&gt;&gt;</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> операторов поможет выполнить эту работу. Однако этих комбинаторов не хватит, если вам нужен результат более чем одного из задействованных синтаксических анализаторов. В этом случае вы можете использовать <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2"><code>pipe2</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->, &hellip;, <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe5"><code>pipe5</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->, которые последовательно применяют несколько синтаксических анализаторов и передают все отдельные результаты функции, которая вычисляет итоговый результат.</p>
+<p>Например, с комбинатором <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2"><code>pipe2</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">val</span> pipe2<span style="color:#f92672">:</span> Parser<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">&#39;</span>a<span style="color:#f92672">,</span><span style="color:#66d9ef">&#39;</span>u<span style="color:#f92672">&gt;</span> <span style="color:#f92672">-&gt;</span> Parser<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">&#39;</span>b<span style="color:#f92672">,</span><span style="color:#66d9ef">&#39;</span>u<span style="color:#f92672">&gt;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">&#39;</span>a <span style="color:#f92672">-&gt;</span> b <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">&#39;</span>c<span style="color:#f92672">)</span> <span style="color:#f92672">-&gt;</span> Parser<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">&#39;</span>c<span style="color:#f92672">,</span><span style="color:#66d9ef">&#39;</span>u<span style="color:#f92672">&gt;</span>
+</code></pre></div><p>Вы можете построить синтаксический анализатор <code>pipe2 p1 p2 f</code> который последовательно применяет два синтаксических анализатора <code>p1</code> и <code>p2</code>, а затем возвращает результат применения функции <code>f x1 x2</code>, где <code>x1</code> и <code>x2</code> - результаты, возвращаемые <code>p1</code> и <code>p2</code>.</p>
+<p>В следующем примере мы используем <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2"><code>pipe2</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> для синтаксического анализа произведения из двух чисел:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">let</span> product <span style="color:#f92672">=</span> 
+  pipe2 float_ws <span style="color:#f92672">(</span>str_ws <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">*</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">.</span> float_ws<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">fun</span> x y <span style="color:#f92672">-&gt;</span> x <span style="color:#f92672">*</span> y<span style="color:#f92672">)</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#f92672">&gt;</span> test product <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">3 * 5</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> 15<span style="color:#f92672">.</span>0
+</code></pre></div><p><code>pipe2-5</code> особенно полезны для построения объектов Абстрактного синтаксического дерева (далее АСТ). В следующем примере мы используем <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe3"><code>pipe3</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> для анализа определения строковой константы в объекте <code>StringConstant</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">StringConstant</span> <span style="color:#f92672">=</span> StringConstant <span style="color:#66d9ef">of</span> <span style="color:#66d9ef">string</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">string</span>
 
-<p>Например, с комбинатором <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2" target="_blank"><code>pipe2</code></a><sup>en</sup></p>
-
-<pre><code class="language-fsharp">val pipe2: Parser&lt;'a,'u&gt; -&gt; Parser&lt;'b,'u&gt; -&gt; ('a -&gt; b -&gt; 'c) -&gt; Parser&lt;'c,'u&gt;
-</code></pre>
-
-<p>Вы можете построить синтаксический анализатор <code>pipe2 p1 p2 f</code> который последовательно применяет два синтаксических анализатора <code>p1</code> и <code>p2</code>, а затем возвращает результат применения функции <code>f x1 x2</code>, где <code>x1</code> и <code>x2</code> - результаты, возвращаемые <code>p1</code> и <code>p2</code>.</p>
-
-<p>В следующем примере мы используем <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe2" target="_blank"><code>pipe2</code></a><sup>en</sup> для синтаксического анализа произведения из двух чисел:</p>
-
-<pre><code class="language-fsharp">let product = 
-  pipe2 float_ws (str_ws &quot;*&quot; &gt;&gt;. float_ws) (fun x y -&gt; x * y)
-</code></pre>
-
-<pre><code class="language-fsharp">&gt; test product &quot;3 * 5&quot;;;
-Success: 15.0
-</code></pre>
-
-<p><code>pipe2-5</code> особенно полезны для построения объектов Абстрактного синтаксического дерева (далее АСТ). В следующем примере мы используем <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.pipe3" target="_blank"><code>pipe3</code></a><sup>en</sup> для анализа определения строковой константы в объекте <code>StringConstant</code>:</p>
-
-<pre><code class="language-fsharp">type StringConstant = StringConstant of string * string
-
-let stringConstant = 
-  pipe3 identifier (str_ws &quot;=&quot;) stringLiteral (fun id _ str -&gt; StringConstant(id, str))
-</code></pre>
-
-<pre><code class="language-fsharp">&gt; test stringConstant &quot;myString = \&quot;stringValue\&quot;&quot;;;
-Success: StringConstant (&quot;myString&quot;,&quot;stringValue&quot;)
-</code></pre>
-
-<p>Если вы просто хотите вернуть проанализированные значения в виде кортежа, вы можете использовать предопределенные функции <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2" target="_blank"><code>tuple2</code></a><sup>en</sup>&hellip;<a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2" target="_blank"><code>tuple5</code></a><sup>en</sup>. Например, <code>tuple2 p1 p2</code> эквивалентен  <code>pipe2 p1 p2 ( fun x1 x2 -&gt; ( x1 , x2 ) )</code>.</p>
-
-<p>Синтаксический анализатор <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2" target="_blank"><code>tuple2</code></a><sup>en</sup> также доступен в виде комбинатора <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:.." target="_blank"><code>.&gt;&gt;.</code></a><sup>en</sup>. Так что вы можете написать  <code>p1 .&gt;&gt;. p2</code> вместо <code>tuple2 p1 p2</code>. В следующем примере мы проанализируем пару разделенных запятыми чисел с этим оператором:</p>
-
-<pre><code class="language-fsharp">&gt; test (float_ws .&gt;&gt;. (str_ws &quot;,&quot; &gt;&gt;. float_ws)) &quot;123, 456&quot;;;
-Success: (123.0, 456.0)
-</code></pre>
-
-<p>Надеемся, что вы уже интуитивно понимаете шаблон записи <code>&gt;&gt;</code><em>одна-или-две-точки</em>.</p>
-
+<span style="color:#66d9ef">let</span> stringConstant <span style="color:#f92672">=</span> 
+  pipe3 identifier <span style="color:#f92672">(</span>str_ws <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">=</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span> stringLiteral <span style="color:#f92672">(</span><span style="color:#66d9ef">fun</span> id <span style="color:#f92672">_</span> str <span style="color:#f92672">-&gt;</span> StringConstant<span style="color:#f92672">(</span>id<span style="color:#f92672">,</span> str<span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#f92672">&gt;</span> test stringConstant <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myString = </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">stringValue</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> StringConstant <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">myString</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">,</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">stringValue</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span>
+</code></pre></div><p>Если вы просто хотите вернуть проанализированные значения в виде кортежа, вы можете использовать предопределенные функции <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2"><code>tuple2</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->&hellip;<a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2"><code>tuple5</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->. Например, <code>tuple2 p1 p2</code> эквивалентен  <code>pipe2 p1 p2 ( fun x1 x2 -&gt; ( x1 , x2 ) )</code>.</p>
+<p>Синтаксический анализатор <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members.tuple2"><code>tuple2</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted --> также доступен в виде комбинатора <a href="http://www.quanttec.com/fparsec/reference/primitives.html#members...:62::62:.."><code>.&gt;&gt;.</code></a><!-- raw HTML omitted -->en<!-- raw HTML omitted -->. Так что вы можете написать  <code>p1 .&gt;&gt;. p2</code> вместо <code>tuple2 p1 p2</code>. В следующем примере мы проанализируем пару разделенных запятыми чисел с этим оператором:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#f92672">&gt;</span> test <span style="color:#f92672">(</span>float_ws <span style="color:#f92672">.</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">.</span> <span style="color:#f92672">(</span>str_ws <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">,</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">.</span> float_ws<span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">123, 456</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">;;</span>
+Success<span style="color:#f92672">:</span> <span style="color:#f92672">(</span>123<span style="color:#f92672">.</span>0<span style="color:#f92672">,</span> 456<span style="color:#f92672">.</span>0<span style="color:#f92672">)</span>
+</code></pre></div><p>Надеемся, что вы уже интуитивно понимаете шаблон записи <code>&gt;&gt;</code><em>одна-или-две-точки</em>.</p>
 <p>Если вам нужен синтаксический анализатор <code>pipe</code> или <code>tuple</code> более чем c пятью аргументами, вы можете легко построить его с помощью существующих. Например, у вас есть идея: определить синтаксический анализатор <code>pipe7</code>.</p>
-
-<pre><code class="language-fsharp">let pipe7 p1 p2 p3 p4 p5 p6 p7 f =
-    pipe4 p1 p2 p3 (tuple4 p4 p5 p6 p7)
-          (fun x1 x2 x3 (x4, x5, x6, x7) -&gt; f x1 x2 x3 x4 x5 x6 x7)
-</code></pre>
-</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fsharp" data-lang="fsharp"><span style="color:#66d9ef">let</span> pipe7 p1 p2 p3 p4 p5 p6 p7 f <span style="color:#f92672">=</span>
+    pipe4 p1 p2 p3 <span style="color:#f92672">(</span>tuple4 p4 p5 p6 p7<span style="color:#f92672">)</span>
+          <span style="color:#f92672">(</span><span style="color:#66d9ef">fun</span> x1 x2 x3 <span style="color:#f92672">(</span>x4<span style="color:#f92672">,</span> x5<span style="color:#f92672">,</span> x6<span style="color:#f92672">,</span> x7<span style="color:#f92672">)</span> <span style="color:#f92672">-&gt;</span> f x1 x2 x3 x4 x5 x6 x7<span style="color:#f92672">)</span>
+</code></pre></div></div>
 
     
 
@@ -800,7 +908,7 @@ Success: (123.0, 456.0)
   <div class="media author-card content-widget-hr">
     
       
-      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu1ac581d3490e8c29042b721a1eeb77c7_137942_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+      <img class="portrait mr-3" src="/ru/authors/me/avatar_hu0f3384a45cfed84d836ae65623f6317a_1784134_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -959,19 +1067,13 @@ Success: (123.0, 456.0)
     
     
     
-    <script src="/js/mathjax-config.js"></script>
-    
-
-    
-    
-    
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.3.1/mermaid.min.js" integrity="sha256-vOIuDSYDirTfyr+S2MjFnhOz6Rgiz4ODFAHATG0rFxw=" crossorigin="anonymous" title="mermaid"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.3/mermaid.min.js" integrity="" crossorigin="anonymous" title="mermaid"></script>
       
 
       
@@ -984,10 +1086,6 @@ Success: (123.0, 456.0)
         
       
 
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-      
     
 
     
@@ -997,7 +1095,7 @@ Success: (123.0, 456.0)
 
     
     
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>const code_highlighting = true;</script>
     
 
     
@@ -1062,7 +1160,7 @@ Success: (123.0, 456.0)
     
     
     
-    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
 
     
 
@@ -1078,7 +1176,7 @@ Success: (123.0, 456.0)
   
 
   <p class="powered-by">
-    &copy; <a href="https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
+    © <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A2%D0%B5%D0%BA%D1%81%D1%82_%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%B8_Creative_Commons_Attribution-ShareAlike_3.0_Unported">Creative Commons Attribution-ShareAlike 3.0 Unported</a> &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1104,7 +1202,7 @@ Success: (123.0, 456.0)
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Процетировать</h5>
+        <h5 class="modal-title">Процитировать</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

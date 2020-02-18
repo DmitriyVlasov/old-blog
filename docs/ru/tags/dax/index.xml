@@ -7,7 +7,7 @@
     <description>DAX</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Wed, 19 Jul 2017 13:11:31 +0300</lastBuildDate>
     <image>
-      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>DAX</title>
       <link>https://DmitriyVlasov.ru/ru/tags/dax/</link>
     </image>
@@ -17,18 +17,11 @@
       <link>https://DmitriyVlasov.ru/ru/post/dax-functions/</link>
       <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/post/dax-functions/</guid>
-      <description>
-
-&lt;p&gt;&lt;a name=&#34;TOC&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;предисловие&#34;&gt;Предисловие&lt;/h1&gt;
-
 &lt;p&gt;Приводится обзор всех существующих функций DAX. Основное назначение статьи максимально возможно упростить обзор и изучение, навигацию и ориентирование по всем существующим функциям DAX в одной статье. По мере появления в статью будут добавляться новые DAX функции.&lt;/p&gt;
-
 &lt;h1 id=&#34;содержание&#34;&gt;Содержание&lt;/h1&gt;
-
 &lt;h2 id=&#34;краткое-содержание&#34;&gt;Краткое содержание&lt;/h2&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#logicFunction&#34;&gt;Логические&lt;/a&gt; функции&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#textFunction&#34;&gt;Текстовые&lt;/a&gt; функции&lt;/li&gt;
@@ -41,70 +34,65 @@
 &lt;li&gt;&lt;a href=&#34;#otherFunction&#34;&gt;Прочие&lt;/a&gt; функции&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#syntaxElement&#34;&gt;Синтаксические элементы&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h2 id=&#34;подробное-содержание&#34;&gt;Подробное содержание&lt;/h2&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#logicFunction&#34;&gt;Логические функции&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#textFunction&#34;&gt;Текстовые функции&lt;/a&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#baseTextFunction&#34;&gt;Базовые операции со стоками&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#formatTextFunction&#34;&gt;Форматирование и преобразование типов&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#searchAndReplaceTextFunction&#34;&gt;Поиск и замена&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#mathFunction&#34;&gt;Математические и тригонометрические функции&lt;/a&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#baseMathFunction&#34;&gt;Базовые операции с числами&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#roundMathFunction&#34;&gt;Округление&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#randomMathFunction&#34;&gt;Операции со случайными числами&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#trigMathFunction&#34;&gt;Тригонометрические функции и константы&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#dateTimeFunction&#34;&gt;Функции даты и времени&lt;/a&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#baseDateTimeFunction&#34;&gt;Базовые операции с датой и временем&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#constructorDateTimeFunction&#34;&gt;Конструкторы даты и времени&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#extendDateTimeFunction&#34;&gt;Расширенные операции с датой&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#dateTimeLogicFunction&#34;&gt;Интеллектуальные операции со временем&lt;/a&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#returnColDateTimeLogicFunction&#34;&gt;Функции возвращающие столбец дат&lt;/a&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#returnColPart1DateTimeLogicFunction&#34;&gt;Операции с периодами&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#returnColPart2DateTimeLogicFunction&#34;&gt;Операции днем, месяцем, кварталом и годом&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#returnCellPart1DateTimeLogicFunction&#34;&gt;Функции возвращающие ячейку с датой&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#returnCellPart2DateTimeLogicFunction&#34;&gt;Функции возвращающие ячейку со значением&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#returnValueDateTimeLogicFunction&#34;&gt;Функции возвращающие скалярное значение&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#informationFunction&#34;&gt;Информационные функции&lt;/a&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#userInformationFunction&#34;&gt;Информация о пользжователе&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#errorHanding&#34;&gt;Обработка ошибок&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#filterFunction&#34;&gt;Функции фильтрации&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#agregateAndstatFunction&#34;&gt;Агрегатные и статистические функции&lt;/a&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#agregareTableFunction&#34;&gt;Агрегатные функции над таблицами&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#agregareColumnFunction&#34;&gt;Агрегатные функции над столбцами и выражениями&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#statFunction&#34;&gt;Статистические функции над столбцами и выражениями&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#notesAgregateAndstatFunction&#34;&gt;Замечания к агрегатным и статистическим функциям&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#patentChildFunction&#34;&gt;Функции над иерархическими данными&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#otherFunction&#34;&gt;Прочие функции&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#syntaxElement&#34;&gt;Синтаксические элементы&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;a name=&#34;logicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;логические-функции&#34;&gt;Логические функции&lt;/h1&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -112,57 +100,43 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee635034&#34; target=&#34;_blank&#34;&gt;TRUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee635034&#34;&gt;TRUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает логическое значение &lt;code&gt;true&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634894&#34; target=&#34;_blank&#34;&gt;FALSE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634894&#34;&gt;FALSE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает логическое значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634379&#34; target=&#34;_blank&#34;&gt;AND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634379&#34;&gt;AND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет значения аргументов и возвращает значение &lt;code&gt;true&lt;/code&gt;, если оба аргумента имеют значение &lt;code&gt;true&lt;/code&gt;. В противном случае возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634951&#34; target=&#34;_blank&#34;&gt;OR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634951&#34;&gt;OR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли один из аргументов &lt;code&gt;true&lt;/code&gt;, и если да, то возвращает значение &lt;code&gt;true&lt;/code&gt;. Функция возвращает значение &lt;code&gt;false&lt;/code&gt;, если оба аргумента имеют значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634884&#34; target=&#34;_blank&#34;&gt;NOT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634884&#34;&gt;NOT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Изменяет значение &lt;code&gt;false&lt;/code&gt; на &lt;code&gt;true&lt;/code&gt;, а &lt;code&gt;true&lt;/code&gt; на &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634824&#34; target=&#34;_blank&#34;&gt;IF&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634824&#34;&gt;IF&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет выполнение условия, указанного в первом аргументе. Возвращает одно значение, если условие равно &lt;code&gt;true&lt;/code&gt;, и другое значение, если условие равно &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492166&#34; target=&#34;_blank&#34;&gt;SWITCH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492166&#34;&gt;SWITCH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет выражение на основе списка значений и возвращает одно из нескольких возможных результирующих выражений.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;textFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;текстовые-функции&#34;&gt;Текстовые функции&lt;/h1&gt;
-
 &lt;p&gt;Текстовые функции, основаны на библиотеке строковых функций в Excel. C помощью этих функций можно вернуть часть строки, искать текст в строке или объединить строковые значения, а так же для управления форматами дат, времени и чисел.&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;baseTextFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;базовые-операции-со-стоками&#34;&gt;Базовые операции со стоками&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -170,54 +144,43 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634811&#34; target=&#34;_blank&#34;&gt;CONCATENATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634811&#34;&gt;CONCATENATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Соединяет две текстовые строки в одну текстовую строку (Чаще удобнее использовать оператор &lt;code&gt;&amp;amp;&lt;/code&gt;).&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt163697.aspx&#34; target=&#34;_blank&#34;&gt;CONCATENATEX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt163697.aspx&#34;&gt;CONCATENATEX&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Функция работает над таблицей и возвращает текстовую строку. Сначала  для каждой записи таблицы вычисляет выражение, а затем сводит все вычесленные записи таблицы в одну строку с учетом разделителя из параметров.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634898&#34; target=&#34;_blank&#34;&gt;REPT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634898&#34;&gt;REPT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Повторяет текст заданное количество раз.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634781&#34; target=&#34;_blank&#34;&gt;LEFT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634781&#34;&gt;LEFT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает указанное количество символов с начала текстовой строки.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634358&#34; target=&#34;_blank&#34;&gt;RIGHT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634358&#34;&gt;RIGHT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Функция RIGHT возвращает последний символ или последние символы текстовой строки, в зависимости от указанного количества символов.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634558&#34; target=&#34;_blank&#34;&gt;TRIM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634558&#34;&gt;TRIM&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Удаляет все пробелы из текста, за исключением единичных пробелов между словами.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634251&#34; target=&#34;_blank&#34;&gt;LOWER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634251&#34;&gt;LOWER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует все буквы в текстовой строке в нижний регистр.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634377&#34; target=&#34;_blank&#34;&gt;UPPER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634377&#34;&gt;UPPER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует все буквы в текстовой строке в верхний регистр.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;formatTextFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;форматирование-и-преобразование-типов&#34;&gt;Форматирование и преобразование типов&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -225,34 +188,27 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634924&#34; target=&#34;_blank&#34;&gt;FORMAT&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Преобразует значение в текст в указанном числовом формате. (см. также предопределенные форматы &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634561&#34; target=&#34;_blank&#34;&gt;чисел&lt;/a&gt; и &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634813&#34; target=&#34;_blank&#34;&gt;даты и времени&lt;/a&gt;. Пользовательские форматы &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634206&#34; target=&#34;_blank&#34;&gt;чисел&lt;/a&gt; и &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634398&#34; target=&#34;_blank&#34;&gt;даты и времени&lt;/a&gt;)&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634924&#34;&gt;FORMAT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Преобразует значение в текст в указанном числовом формате. (см. также предопределенные форматы &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634561&#34;&gt;чисел&lt;/a&gt; и &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634813&#34;&gt;даты и времени&lt;/a&gt;. Пользовательские форматы &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634206&#34;&gt;чисел&lt;/a&gt; и &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634398&#34;&gt;даты и времени&lt;/a&gt;)&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634924&#34; target=&#34;_blank&#34;&gt;FIXED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634924&#34;&gt;FIXED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует значение в текст в указанном числовом формате.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634584&#34; target=&#34;_blank&#34;&gt;VALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634584&#34;&gt;VALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует текстовую строку, представляющую число, в число.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492191&#34; target=&#34;_blank&#34;&gt;CURRENCY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492191&#34;&gt;CURRENCY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет аргумент и возвращает результат как тип данных currency.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;searchAndReplaceTextFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;поиск-и-замена&#34;&gt;Поиск и замена&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -260,67 +216,51 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt825189.aspx&#34; target=&#34;_blank&#34;&gt;UNICHAR&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает символ Юникод по его числовому значению. Работает аналогично функции Excel &lt;a href=&#34;https://goo.gl/33djp8&#34; target=&#34;_blank&#34;&gt;ЮНИСИМВ&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt825189.aspx&#34;&gt;UNICHAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает символ Юникод по его числовому значению. Работает аналогично функции Excel &lt;a href=&#34;https://goo.gl/33djp8&#34;&gt;ЮНИСИМВ&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;UNICODE&lt;/td&gt;
 &lt;td&gt;Возвращает число (код знака), соответствующее первому знаку в тексте.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634917&#34; target=&#34;_blank&#34;&gt;LEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634917&#34;&gt;LEN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число символов в текстовой строке.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634235&#34; target=&#34;_blank&#34;&gt;SEARCH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634235&#34;&gt;SEARCH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает номер позиции, начиная с которой обнаружена подстрока. Поиск идет слева на право без учета регистра и с учетом диакритических знаков.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634882&#34; target=&#34;_blank&#34;&gt;FIND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634882&#34;&gt;FIND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает начальный номер позиции, начиная с которой обнаружена подстрока. Поиск идет с учетом регистра.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634548&#34; target=&#34;_blank&#34;&gt;MID&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634548&#34;&gt;MID&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает строку символов из середины текстовой строки с учетом начальной позиции и длины.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634374&#34; target=&#34;_blank&#34;&gt;REPLACE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634374&#34;&gt;REPLACE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Заменяет часть текстовой строки другой текстовой строкой на основе указанного числа символов.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634233&#34; target=&#34;_blank&#34;&gt;SUBSTITUTE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634233&#34;&gt;SUBSTITUTE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Заменяет существующий текст новым в текстовой строке.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634408&#34; target=&#34;_blank&#34;&gt;EXACT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634408&#34;&gt;EXACT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Сравнивает две текстовые строки и возвращает &lt;code&gt;true&lt;/code&gt;, если они полностью одинаковые, и &lt;code&gt;false&lt;/code&gt; в противном случае. Функция учитывает регистр, но не учитывает отличия форматирования. Можно использовать функцию, чтобы проверить входящий в документ текст.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;mathFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;математические-и-тригонометрические-функции&#34;&gt;Математические и тригонометрические функции&lt;/h1&gt;
-
 &lt;p&gt;Математические функции в DAX похожи на математические и тригонометрические функции Excel. Однако имеются некоторые отличия в типах числовых данных.&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;baseMathFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;базовые-операции-с-числами&#34;&gt;Базовые операции с числами&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -328,34 +268,27 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634559&#34; target=&#34;_blank&#34;&gt;SQRT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634559&#34;&gt;SQRT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает квадратный корень числа.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634921&#34; target=&#34;_blank&#34;&gt;POWER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634921&#34;&gt;POWER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает результат возведения числа в степень.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634249&#34; target=&#34;_blank&#34;&gt;SIGN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634249&#34;&gt;SIGN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Определяет знак числа, результата вычисления или значения в столбце. Функция возвращает значение 1, если число положительное, значение 0 (ноль), если число равно нулю, и значение -1, если число отрицательное.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634382&#34; target=&#34;_blank&#34;&gt;QUOTIENT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634382&#34;&gt;QUOTIENT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Выполняет деление и возвращает только целочисленную часть результата. Эта функция используется, если не нужно учитывать остаток от деления.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;roundMathFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;округление&#34;&gt;Округление&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -363,64 +296,51 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634566&#34; target=&#34;_blank&#34;&gt;ABS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634566&#34;&gt;ABS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает абсолютное значение числа.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634373&#34; target=&#34;_blank&#34;&gt;INT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634373&#34;&gt;INT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в меньшую сторону до ближайшего целого.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634402&#34; target=&#34;_blank&#34;&gt;ROUND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634402&#34;&gt;ROUND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число до указанного количества разрядов.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634963&#34; target=&#34;_blank&#34;&gt;ROUNDDOWN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634963&#34;&gt;ROUNDDOWN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число вниз, к нулю.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634948&#34; target=&#34;_blank&#34;&gt;ROUNDUP&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634948&#34;&gt;ROUNDUP&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в большую сторону, от 0 (нуля).&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634815&#34; target=&#34;_blank&#34;&gt;FLOOR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634815&#34;&gt;FLOOR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в меньшую сторону (к нулю) до ближайшего числа, кратного заданной значимости.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634541&#34; target=&#34;_blank&#34;&gt;CEILING&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634541&#34;&gt;CEILING&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в большую сторону до ближайшего целого или до ближайшего числа, кратного заданной значимости.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg413419&#34; target=&#34;_blank&#34;&gt;ISO.CEILING&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg413419&#34;&gt;ISO.CEILING&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в большую сторону до ближайшего целого или до ближайшего числа, кратного заданной значимости.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634553&#34; target=&#34;_blank&#34;&gt;MROUND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634553&#34;&gt;MROUND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число, округленное до кратного заданной значимости.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634907&#34; target=&#34;_blank&#34;&gt;TRUNC&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634907&#34;&gt;TRUNC&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Усекает число до целого, удаляя дробную часть.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;randomMathFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;операции-со-случайными-числами&#34;&gt;Операции со случайными числами&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -428,24 +348,19 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634783&#34; target=&#34;_blank&#34;&gt;RAND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634783&#34;&gt;RAND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает случайное число, большее или равное 0 и меньшее 1, с равномерным распределением. Возвращаемое число изменяется каждый раз при пересчете ячейки, содержащей данную функцию.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634569&#34; target=&#34;_blank&#34;&gt;RANDBETWEEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634569&#34;&gt;RANDBETWEEN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает случайное число, расположенное в интервале между двумя заданными числами.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;trigMathFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;тригонометрические-функции-и-константы&#34;&gt;Тригонометрические функции и константы&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -453,52 +368,39 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634817&#34; target=&#34;_blank&#34;&gt;PI&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634817&#34;&gt;PI&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число $Pi$ с точностью до 15 знака.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634774&#34; target=&#34;_blank&#34;&gt;LOG&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634774&#34;&gt;LOG&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает логарифм числа по указанному основанию.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634578&#34; target=&#34;_blank&#34;&gt;LOG10&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634578&#34;&gt;LOG10&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает логарифм числа по основанию 10.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634772&#34; target=&#34;_blank&#34;&gt;LN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634772&#34;&gt;LN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает натуральный логарифм числа. Натуральные логарифмы вычисляются по основанию $e$.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634208&#34; target=&#34;_blank&#34;&gt;EXP&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634208&#34;&gt;EXP&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение выражения $e^n$, где $n$ - заданное в параметрах число.  Функция &lt;code&gt;EXP&lt;/code&gt; обратна функции &lt;code&gt;LN&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634540&#34; target=&#34;_blank&#34;&gt;FACT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634540&#34;&gt;FACT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает факториал числа.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;dateTimeFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;функции-даты-и-времени&#34;&gt;Функции даты и времени&lt;/h1&gt;
-
 &lt;p&gt;Многие функции даты и времени в DAX схожи с функциями даты и времени Excel. Однако в функциях DAX используется тип данных &lt;code&gt;datetime&lt;/code&gt; Microsoft SQL Server.&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;baseDateTimeFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;базовые-операции-с-датой-и-временем&#34;&gt;Базовые операции с датой и временем&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -506,54 +408,43 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634567&#34; target=&#34;_blank&#34;&gt;YEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634567&#34;&gt;YEAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает для заданной даты год в виде четырехзначного числа от 1900 до 9999.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634914&#34; target=&#34;_blank&#34;&gt;MONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634914&#34;&gt;MONTH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает месяц в виде числа от 1 до 12.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634390&#34; target=&#34;_blank&#34;&gt;DAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634390&#34;&gt;DAY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает день месяца в виде числа от 1 до 31.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634800&#34; target=&#34;_blank&#34;&gt;HOUR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634800&#34;&gt;HOUR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение часа в виде числа от 0 до 23.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634776&#34; target=&#34;_blank&#34;&gt;MINUTE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634776&#34;&gt;MINUTE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число минут от 0 до 59 по заданному значению даты и времени.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634889&#34; target=&#34;_blank&#34;&gt;SECOND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634889&#34;&gt;SECOND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает для заданного значения времени число секунд в виде числа от 0 до 59.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634550&#34; target=&#34;_blank&#34;&gt;WEEKDAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634550&#34;&gt;WEEKDAY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число от 1 до 7, определяющее день недели для даты. По умолчанию дни недели считаются от воскресенья (1) до субботы (7).&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634572&#34; target=&#34;_blank&#34;&gt;WEEKNUM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634572&#34;&gt;WEEKNUM&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает номер недели для заданных даты и года в соответствии со значением тип возврата. Номер недели указывает числовую позицию недели относительно начала года.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;constructorDateTimeFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;конструкторы-даты-и-времени&#34;&gt;Конструкторы даты и времени&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -561,44 +452,35 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634927&#34; target=&#34;_blank&#34;&gt;DATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634927&#34;&gt;DATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует год, месяц, день, заданный в виде чисел в дату формате &lt;code&gt;datetime&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634564&#34; target=&#34;_blank&#34;&gt;TIME&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634564&#34;&gt;TIME&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует часы, минуты и секунды, заданные в виде чисел, во время в формате &lt;code&gt;datetime&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634543&#34; target=&#34;_blank&#34;&gt;DATEVALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634543&#34;&gt;DATEVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует дату из текстового формата в дату в формате &lt;code&gt;datetime&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee635036&#34; target=&#34;_blank&#34;&gt;TIMEVALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee635036&#34;&gt;TIMEVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует время из текстового формата во время в формате &lt;code&gt;datetime&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634554&#34; target=&#34;_blank&#34;&gt;TODAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634554&#34;&gt;TODAY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает текущую дату без времени.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634891&#34; target=&#34;_blank&#34;&gt;NOW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634891&#34;&gt;NOW&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает текущую дату и время.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;extendDateTimeFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;расширенные-операции-с-датой&#34;&gt;Расширенные операции с датой&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -606,52 +488,36 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/dn802538.aspx&#34; target=&#34;_blank&#34;&gt;DATEDIFF&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/dn802538.aspx&#34;&gt;DATEDIFF&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает интервал времени между двумя датами. (Тип интервала указывается в параметре Interval) Интервал может принимать следующие значения: &lt;code&gt;second&lt;/code&gt;, &lt;code&gt;minute&lt;/code&gt;, &lt;code&gt;hour&lt;/code&gt;, &lt;code&gt;day&lt;/code&gt;, &lt;code&gt;week&lt;/code&gt;, &lt;code&gt;month&lt;/code&gt;, &lt;code&gt;quarter&lt;/code&gt;, &lt;code&gt;year&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634405&#34; target=&#34;_blank&#34;&gt;YEARFRAC&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634405&#34;&gt;YEARFRAC&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет долю года, представленную числом целых дней между двумя датами. Функция позволяет определить долю преимуществ или обязательств за целый год, приходящуюся на указанный срок.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634544&#34; target=&#34;_blank&#34;&gt;EDATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634544&#34;&gt;EDATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает дату, отстоящую от заданной даты на указанное число месяцев (до или после). С помощью функции вычисляются сроки обязательств и платежей, приходящиеся на тот же день месяца, что и начало расчетного периода.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634394&#34; target=&#34;_blank&#34;&gt;EOMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634394&#34;&gt;EOMONTH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает дату окончания месяца (до или после указанного числа месяцев). С помощью функции вычисляются сроки обязательств и платежей, приходящиеся на конец месяца.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;dateTimeLogicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;интеллектуальные-операции-со-временем&#34;&gt;Интеллектуальные операции со временем&lt;/h1&gt;
-
 &lt;p&gt;Интеллектуальные операции со временем, поддерживают методы анализа бизнес-аналитики и позволяют работать с данными с использованием временных периодов, таких как дни, месяцы, кварталы и годы.&lt;/p&gt;
-
 &lt;p&gt;Эти функции позволяют выполнять вычисления с использованием встроенных наборов знаний о календарях и датах.&lt;/p&gt;
-
 &lt;p&gt;Используя диапазоны времени и дат вместе со статистическими выражениями можно создавать осмысленные сравнения по сравнимым периодам времени для продаж, количеству товара и так далее.&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;returnColDateTimeLogicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;функции-возвращающие-столбец-дат&#34;&gt;Функции возвращающие столбец дат&lt;/h2&gt;
-
 &lt;p&gt;Столбец дат это таблица содержащую один столбец со значениями даты.&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;returnColPart1DateTimeLogicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h3 id=&#34;операции-с-периодами&#34;&gt;Операции с периодами&lt;/h3&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -659,39 +525,31 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634905&#34; target=&#34;_blank&#34;&gt;DATEADD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634905&#34;&gt;DATEADD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, сдвинутых в будущее или в прошлое от дат в текущем контексте на указанное количество интервалов.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634557&#34; target=&#34;_blank&#34;&gt;DATESBETWEEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634557&#34;&gt;DATESBETWEEN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, за период с начальной до конечной даты.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634539&#34; target=&#34;_blank&#34;&gt;DATESINPERIOD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634539&#34;&gt;DATESINPERIOD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, который начинается с начальной даты и продолжается определенное количество интервалов.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634873&#34; target=&#34;_blank&#34;&gt;PARALLELPERIOD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634873&#34;&gt;PARALLELPERIOD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, со сдвинутыми на несколько интервалов вперед или назад датами, от дат из столбца параметров в текущем контексте.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634972&#34; target=&#34;_blank&#34;&gt;SAMEPERIODLASTYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634972&#34;&gt;SAMEPERIODLASTYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, со сдвинутыми на один год назад от дат, из столбца параметров в текущем контексте.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;returnColPart2DateTimeLogicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h3 id=&#34;операции-днем-месяцем-кварталом-и-годом&#34;&gt;Операции днем, месяцем, кварталом и годом&lt;/h3&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -702,40 +560,33 @@
 &lt;th&gt;Год&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Текущий&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634359&#34; target=&#34;_blank&#34;&gt;DATESMTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634901&#34; target=&#34;_blank&#34;&gt;DATESQTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634221&#34; target=&#34;_blank&#34;&gt;DATESYTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634359&#34;&gt;DATESMTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634901&#34;&gt;DATESQTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634221&#34;&gt;DATESYTD&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Предыдущий&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634803&#34; target=&#34;_blank&#34;&gt;PREVIOUSDAY&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634758&#34; target=&#34;_blank&#34;&gt;PREVIOUSMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634385&#34; target=&#34;_blank&#34;&gt;PREVIOUSQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634770&#34; target=&#34;_blank&#34;&gt;PREVIOUSYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634803&#34;&gt;PREVIOUSDAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634758&#34;&gt;PREVIOUSMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634385&#34;&gt;PREVIOUSQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634770&#34;&gt;PREVIOUSYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Следующий&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634542&#34; target=&#34;_blank&#34;&gt;NEXTDAY&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634392&#34; target=&#34;_blank&#34;&gt;NEXTMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634878&#34; target=&#34;_blank&#34;&gt;NEXTQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634212&#34; target=&#34;_blank&#34;&gt;NEXTYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634542&#34;&gt;NEXTDAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634392&#34;&gt;NEXTMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634878&#34;&gt;NEXTQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634212&#34;&gt;NEXTYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;returnCellPart1DateTimeLogicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;функции-возвращающие-ячейку-с-датой&#34;&gt;Функции возвращающие ячейку с датой&lt;/h2&gt;
-
 &lt;p&gt;Ячейка это таблица с одним столбцом и одной строкой.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -746,32 +597,26 @@
 &lt;th&gt;Год&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Первый&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634806&#34; target=&#34;_blank&#34;&gt;FIRSTDATE&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634954&#34; target=&#34;_blank&#34;&gt;STARTOFMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634935&#34; target=&#34;_blank&#34;&gt;STARTOFQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634797&#34; target=&#34;_blank&#34;&gt;STARTOFYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634806&#34;&gt;FIRSTDATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634954&#34;&gt;STARTOFMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634935&#34;&gt;STARTOFQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634797&#34;&gt;STARTOFYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Последний&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634380&#34; target=&#34;_blank&#34;&gt;LASTDATE&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634239&#34; target=&#34;_blank&#34;&gt;ENDOFMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634243&#34; target=&#34;_blank&#34;&gt;ENDOFQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634245&#34; target=&#34;_blank&#34;&gt;ENDOFYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634380&#34;&gt;LASTDATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634239&#34;&gt;ENDOFMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634243&#34;&gt;ENDOFQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634245&#34;&gt;ENDOFYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;returnCellPart2DateTimeLogicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;функции-возвращающие-ячейку-со-значением&#34;&gt;Функции возвращающие ячейку со значением&lt;/h2&gt;
-
 &lt;p&gt;Ячейка это таблица с одним столбцом и одной строкой.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -779,24 +624,19 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634210&#34; target=&#34;_blank&#34;&gt;FIRSTNONBLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634210&#34;&gt;FIRSTNONBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает первое значение в столбце column (с фильтрацией по текущему контексту), где выражение не является пустым.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634247&#34; target=&#34;_blank&#34;&gt;LASTNONBLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634247&#34;&gt;LASTNONBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает последнее значение в столбце column (с фильтрацией по текущему контексту), где выражение не является пустым.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;returnValueDateTimeLogicFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;функции-возвращающие-скалярное-значение&#34;&gt;Функции возвращающие скалярное значение&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -806,39 +646,31 @@
 &lt;th&gt;Год&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Сальдо на начало&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634224&#34; target=&#34;_blank&#34;&gt;OPENINGBALANCEMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634931&#34; target=&#34;_blank&#34;&gt;OPENINGBALANCEQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634886&#34; target=&#34;_blank&#34;&gt;OPENINGBALANCEYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634224&#34;&gt;OPENINGBALANCEMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634931&#34;&gt;OPENINGBALANCEQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634886&#34;&gt;OPENINGBALANCEYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Оборот&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634560&#34; target=&#34;_blank&#34;&gt;TOTALMTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634579&#34; target=&#34;_blank&#34;&gt;TOTALQTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634400&#34; target=&#34;_blank&#34;&gt;TOTALYTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634560&#34;&gt;TOTALMTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634579&#34;&gt;TOTALQTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634400&#34;&gt;TOTALYTD&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Сальдо на конец&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634215&#34; target=&#34;_blank&#34;&gt;CLOSINGBALANCEMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634876&#34; target=&#34;_blank&#34;&gt;CLOSINGBALANCEQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634562&#34; target=&#34;_blank&#34;&gt;CLOSINGBALANCEYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634215&#34;&gt;CLOSINGBALANCEMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634876&#34;&gt;CLOSINGBALANCEQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634562&#34;&gt;CLOSINGBALANCEYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;informationFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;информационные-функции&#34;&gt;Информационные функции&lt;/h1&gt;
-
 &lt;p&gt;Информационная функция проверяет ячейку или строку, указанные в качестве аргумента, и сообщает, соответствует ли значение ожидаемому типу.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -846,94 +678,75 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634204&#34; target=&#34;_blank&#34;&gt;ISBLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634204&#34;&gt;ISBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, пустое ли значение, и возвращает значение &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802550&#34; target=&#34;_blank&#34;&gt;ISEMPTY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802550&#34;&gt;ISEMPTY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если таблица пустая.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634580&#34; target=&#34;_blank&#34;&gt;ISLOGICAL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634580&#34;&gt;ISLOGICAL&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли значение ошибкой, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634370&#34; target=&#34;_blank&#34;&gt;ISTEXT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634370&#34;&gt;ISTEXT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли значение текстом, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634563&#34; target=&#34;_blank&#34;&gt;ISNONTEXT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634563&#34;&gt;ISNONTEXT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, не является ли значение текстом (пустые ячейки не являются текстом), и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634911&#34; target=&#34;_blank&#34;&gt;ISNUMBER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634911&#34;&gt;ISNUMBER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли значение числом, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171515.aspx&#34; target=&#34;_blank&#34;&gt;ISEVEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171515.aspx&#34;&gt;ISEVEN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение ИСТИНА, если число четное, и значение ЛОЖЬ, если нечетное.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171506.aspx&#34; target=&#34;_blank&#34;&gt;ISODD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171506.aspx&#34;&gt;ISODD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение ИСТИНА, если число нечетное, и значение ЛОЖЬ, если четное.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492163&#34; target=&#34;_blank&#34;&gt;ISFILTERED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492163&#34;&gt;ISFILTERED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если columnName фильтруется напрямую. Если для столбца не задан фильтр или если фильтрация происходит потому, что выполняется фильтрация другого столбца в той же или в связанной таблице, функция возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492197&#34; target=&#34;_blank&#34;&gt;ISCROSSFILTERED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492197&#34;&gt;ISCROSSFILTERED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt; при фильтрации по столбцу columnName или другому столбцу в этой же или связанной таблице.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;[ISSUBTOTAL]()&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;&#34;&gt;ISSUBTOTAL&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если текущая строка содержит подытог для заданного столбца, в противном случае возвращает &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/dn802535.aspx&#34; target=&#34;_blank&#34;&gt;ISONORAFTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/dn802535.aspx&#34;&gt;ISONORAFTER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Логическая функция, которая эмулирует поведение предложения &lt;code&gt;Start At&lt;/code&gt; и возвращает &lt;code&gt;true&lt;/code&gt; для строки, которая соответствует всем параметрам условия. Эта функция принимает переменное число аргументов кратное трем (т.н. троек), первые два аргумента в тройке - это сравниваемые выражения, а третий аргумент указывает порядок сортировки. Порядок сортировки по увеличению (по умолчанию) или уменьшению.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492183&#34; target=&#34;_blank&#34;&gt;CONTAINS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492183&#34;&gt;CONTAINS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если значения для всех столбцов, на которые имеются ссылки, существуют или содержатся в этих столбцах; в противном случае возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34; target=&#34;_blank&#34;&gt;CONTAINSROW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34;&gt;CONTAINSROW&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если существует по меньшей мере одна строка, в которой все столбцы имеют указанные значения.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492135&#34; target=&#34;_blank&#34;&gt;HASONEFILTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492135&#34;&gt;HASONEFILTER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если число значений, отсортированных по columnName, равно одному; в противном случае возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492190&#34; target=&#34;_blank&#34;&gt;HASONEVALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492190&#34;&gt;HASONEVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt; при фильтрации содержимого столбца columnName до одного уникального значения. В противном случае возвращается значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;userInformationFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;информация-о-пользователе&#34;&gt;Информация о пользователе&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -941,29 +754,23 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh230954.aspx&#34; target=&#34;_blank&#34;&gt;USERNAME&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh230954.aspx&#34;&gt;USERNAME&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает имя домена и имя пользователя из учетных данных, предоставленных системе при подключении.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;[USEROBJECTID]()&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;&#34;&gt;USEROBJECTID&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает идентификатор объекта текущего пользователя из Azure AD для сервера анализа данных Azure и идентификатор безопасности текущего пользователя для локального сервера анализа данных.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;[USERPRINCIPALNAME]()&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;&#34;&gt;USERPRINCIPALNAME&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает имя субъекта-пользователя.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;errorHanding&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;обработка-ошибок&#34;&gt;Обработка ошибок&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -971,33 +778,25 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;ERROR&lt;/td&gt;
 &lt;td&gt;Принимает текстовое сообщение и порождает ошибку. Может использовать в формулах для описания недопустимого состояния пользовательских данных.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634214&#34; target=&#34;_blank&#34;&gt;ISERROR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634214&#34;&gt;ISERROR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли значение ошибкой, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634765&#34; target=&#34;_blank&#34;&gt;IFERROR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634765&#34;&gt;IFERROR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет выражение и возвращает указанное значение, если выражение ошибочно. В противном случае возвращает значение выражения.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;filterFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;функции-фильтрации&#34;&gt;Функции фильтрации&lt;/h1&gt;
-
-&lt;p&gt;Функции фильтра и значений DAX относятся к самым мощным и сложным, значительно отличаясь от функций Excel. Функции поиска работают с использованием таблиц и связей, как в базе данных. Функции фильтрации дают возможность управлять контекстом данных для создания динамических вычислений. Описание контекста см. в разделе &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg413423&#34; target=&#34;_blank&#34;&gt;Контекст в формулах DAX&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;Функции фильтра и значений DAX относятся к самым мощным и сложным, значительно отличаясь от функций Excel. Функции поиска работают с использованием таблиц и связей, как в базе данных. Функции фильтрации дают возможность управлять контекстом данных для создания динамических вычислений. Описание контекста см. в разделе &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg413423&#34;&gt;Контекст в формулах DAX&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1005,108 +804,84 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492170&#34; target=&#34;_blank&#34;&gt;LOOKUPVALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492170&#34;&gt;LOOKUPVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение в столбце result_columnName для строки, соответствующей всем критериям, указанным с помощью параметров search_columnName и search_value.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634825&#34; target=&#34;_blank&#34;&gt;CALCULATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634825&#34;&gt;CALCULATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет выражение в контексте, изменяемом указанными фильтрами.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634760&#34; target=&#34;_blank&#34;&gt;CALCULATETABLE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634760&#34;&gt;CALCULATETABLE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет табличное выражение в контексте, изменяемом данными фильтрами.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634202&#34; target=&#34;_blank&#34;&gt;RELATED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634202&#34;&gt;RELATED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает связанное значение из другой таблицы.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634226&#34; target=&#34;_blank&#34;&gt;RELATEDTABLE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634226&#34;&gt;RELATEDTABLE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет табличное выражение в контексте, изменяемом данными фильтрами.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634802&#34; target=&#34;_blank&#34;&gt;ALL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634802&#34;&gt;ALL&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает все строки в таблице или все значения в столбце, не учитывая применяемые фильтры. Эта функция полезна для очистки фильтров и создания вычислений по всем строкам таблицы.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634795&#34; target=&#34;_blank&#34;&gt;ALLEXCEPT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634795&#34;&gt;ALLEXCEPT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Удаляет все фильтры контекста в таблице, кроме фильтров, примененных к указанным столбцам.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634793&#34; target=&#34;_blank&#34;&gt;ALLNOBLANKROW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634793&#34;&gt;ALLNOBLANKROW&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Из родительской таблицы связи возвращает все непустые строки либо все различные значения столбца, за исключением пустых строк, не учитывая существующие фильтры контекста.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492186&#34; target=&#34;_blank&#34;&gt;ALLSELECTED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492186&#34;&gt;ALLSELECTED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Удаляет фильтры содержимого из столбцов и строк в текущем запросе, сохраняя все остальные фильтры содержимого и явные фильтры. Функция ALLSELECTED возвращает содержимое, представляющее все строки и столбцы в запросе, сохраняя явные фильтры и фильтры содержимого, не относящиеся к фильтрам строк и столбцов. Эту функцию можно использовать для получения визуальных итогов в запросах.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634966&#34; target=&#34;_blank&#34;&gt;FILTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634966&#34;&gt;FILTER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает таблицу, представляющую подмножество другой таблицы или выражения.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492172&#34; target=&#34;_blank&#34;&gt;FILTERS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492172&#34;&gt;FILTERS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значения, которые напрямую применяются в качестве фильтров к столбцу columnName.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634943&#34; target=&#34;_blank&#34;&gt;DISTINCT&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает таблицу из одного столбца, содержащую уникальные значения из указанного столбца. Другими словами, повторяющиеся значения удаляются, и возвращаются только уникальные значения. &lt;br&gt;&lt;br&gt; &lt;strong&gt;Примечание&lt;/strong&gt; &lt;br&gt;&lt;br&gt; Эту функцию нельзя использовать для возвращения результатов в ячейку или столбец на листе. Функция DISTINCT вкладывается в формулу, чтобы получить список уникальных значений, который можно передать другой функции, а затем выполнить подсчет, суммирование или другие операции.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634943&#34;&gt;DISTINCT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает таблицу из одного столбца, содержащую уникальные значения из указанного столбца. Другими словами, повторяющиеся значения удаляются, и возвращаются только уникальные значения. &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;strong&gt;Примечание&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; Эту функцию нельзя использовать для возвращения результатов в ячейку или столбец на листе. Функция DISTINCT вкладывается в формулу, чтобы получить список уникальных значений, который можно передать другой функции, а затем выполнить подсчет, суммирование или другие операции.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634547&#34; target=&#34;_blank&#34;&gt;VALUES&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает таблицу с одним столбцом, содержащую уникальные значения из указанного столбца или таблицы. Другими словами, повторяющиеся значения удаляются, и возвращаются только уникальные значения. &lt;br&gt;&lt;br&gt; &lt;strong&gt;Примечание&lt;/strong&gt; &lt;br&gt;&lt;br&gt; Эту функцию нельзя использовать для возвращения результатов в ячейку или столбец на листе. Она служит в качестве промежуточной функции, вложенной в формулу, чтобы получить список уникальных значений, которые можно подсчитать или использовать для фильтрации или суммирования других значений.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634547&#34;&gt;VALUES&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает таблицу с одним столбцом, содержащую уникальные значения из указанного столбца или таблицы. Другими словами, повторяющиеся значения удаляются, и возвращаются только уникальные значения. &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;strong&gt;Примечание&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; Эту функцию нельзя использовать для возвращения результатов в ячейку или столбец на листе. Она служит в качестве промежуточной функции, вложенной в формулу, чтобы получить список уникальных значений, которые можно подсчитать или использовать для фильтрации или суммирования других значений.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634551&#34; target=&#34;_blank&#34;&gt;EARLIER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает текущее значение указанного столбца на внешнем этапе вычисления для данного столбца. &lt;br&gt;&lt;br&gt; Функция EARLIER полезна для вложенных вычислений, когда необходимо указать в качестве входного определенное значение и в зависимости от него проводить вычисления. В Microsoft Excel такие вычисления можно выполнять только в контексте текущей строки, однако в DAX можно сохранить входное значение, а затем выполнить вычисление с использованием данных из всей таблицы. &lt;br&gt;&lt;br&gt; Функция EARLIER используется главным образом в контексте вычисляемых столбцов.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634551&#34;&gt;EARLIER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает текущее значение указанного столбца на внешнем этапе вычисления для данного столбца. &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; Функция EARLIER полезна для вложенных вычислений, когда необходимо указать в качестве входного определенное значение и в зависимости от него проводить вычисления. В Microsoft Excel такие вычисления можно выполнять только в контексте текущей строки, однако в DAX можно сохранить входное значение, а затем выполнить вычисление с использованием данных из всей таблицы. &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; Функция EARLIER используется главным образом в контексте вычисляемых столбцов.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634779&#34; target=&#34;_blank&#34;&gt;EARLIEST&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634779&#34;&gt;EARLIEST&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает текущее значение указанного столбца на внешнем этапе вычисления для данного столбца.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh213140.aspx&#34; target=&#34;_blank&#34;&gt;CUSTOMDATA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh213140.aspx&#34;&gt;CUSTOMDATA&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает содержимое свойства &lt;code&gt;CustomData&lt;/code&gt; в строке подключения.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;agregateAndstatFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;агрегатные-и-статистические-функции&#34;&gt;Агрегатные и статистические функции&lt;/h1&gt;
-
 &lt;p&gt;Язык выражений анализа данных предоставляет множество функций для вычисления агрегированных выражений. Эти функции:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Схожи со статистическими функциями, используемыми в Microsoft Excel.&lt;/li&gt;
 &lt;li&gt;Выполняют статистические выражения.&lt;/li&gt;
 &lt;li&gt;Позволяют отфильтровать столбец, прежде чем выполнять статистическую обработку или создавать статистические выражения на основе связанных таблиц.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;a name=&#34;agregareTableFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;агрегатные-функции-над-таблицами&#34;&gt;Агрегатные функции над таблицами&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1114,251 +889,212 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492204&#34; target=&#34;_blank&#34;&gt;ADDCOLUMNS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492204&#34;&gt;ADDCOLUMNS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Добавляет вычисляемые столбцы к выбранной таблице или табличному выражению.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634574&#34; target=&#34;_blank&#34;&gt;COUNTROWS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634574&#34;&gt;COUNTROWS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает количество строк в таблице.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492184&#34; target=&#34;_blank&#34;&gt;ROW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492184&#34;&gt;ROW&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает однострочную таблицу. Эта таблица содержит значения, являющиеся результатом выражения, заданного для каждого столбца.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492198&#34; target=&#34;_blank&#34;&gt;TOPN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492198&#34;&gt;TOPN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает первые $N$ строк таблицы.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492171&#34; target=&#34;_blank&#34;&gt;SUMMARIZE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492171&#34;&gt;SUMMARIZE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает сводную таблицу с вычисленными итогами для перечня сгруппированных столбцов.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163696&#34; target=&#34;_blank&#34;&gt;SUMMARIZECOLUMNS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163696&#34;&gt;SUMMARIZECOLUMNS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает таблицу-сводку по набору групп.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163693&#34; target=&#34;_blank&#34;&gt;GROUPBY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163693&#34;&gt;GROUPBY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Функция &lt;code&gt;GROUPBY&lt;/code&gt; аналогична функции &lt;code&gt;SUMMARIZE&lt;/code&gt;. Однако &lt;code&gt;GROUPBY&lt;/code&gt; не выполняет неявный &lt;code&gt;CALCULATE&lt;/code&gt; для любых добавочных столбцов, которые он добавляет. &lt;code&gt;GROUPBY&lt;/code&gt; разрешает использовать новую функцию &lt;code&gt;CURRENTGROUP()&lt;/code&gt; внутри функций агрегации в добавочных столбцах, которые она добавляет. &lt;code&gt;GROUPBY&lt;/code&gt; пытается повторно использовать данные, которые были сгруппированы, что делает его высокоэффективным.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492168&#34; target=&#34;_blank&#34;&gt;CROSSJOIN&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает &lt;a href=&#34;https://ru.wikipedia.org/wiki/Прямое_произведение&#34; target=&#34;_blank&#34;&gt;декартово произведение&lt;/a&gt; $1 + N$ таблиц, где $N &amp;gt;= 1$.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492168&#34;&gt;CROSSJOIN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5&#34;&gt;декартово произведение&lt;/a&gt; $1 + N$ таблиц, где $N &amp;gt;= 1$.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492196&#34; target=&#34;_blank&#34;&gt;GENERATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492196&#34;&gt;GENERATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает декартово произведение всех строк в таблице 1 и таблицы, являющейся результатом вычисления таблицы 2 в контексте текущей строки из таблицы 1.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492206&#34; target=&#34;_blank&#34;&gt;GENERATEALL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492206&#34;&gt;GENERATEALL&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Аналогично &lt;code&gt;GENERATE&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243783&#34; target=&#34;_blank&#34;&gt;INTERSECT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243783&#34;&gt;INTERSECT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает пересечение строк двух таблиц, сохраняя дубликаты.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802543&#34; target=&#34;_blank&#34;&gt;NATURALINNERJOIN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802543&#34;&gt;NATURALINNERJOIN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Выполняет внутреннее соединение таблицы с другой таблицей. Таблицы объединены в общие столбцы (по имени) в двух таблицах. Если две таблицы не имеют общих имен столбцов, возвращается ошибка.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802527&#34; target=&#34;_blank&#34;&gt;NATURALLEFTOUTERJOIN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802527&#34;&gt;NATURALLEFTOUTERJOIN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Выполняет внутреннее соединение таблицы с другой таблицей. Таблицы объединены в общие столбцы (по имени) в двух таблицах. Если две таблицы не имеют общих имен столбцов, возвращается ошибка.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802530&#34; target=&#34;_blank&#34;&gt;UNION&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802530&#34;&gt;UNION&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Создает таблицу объединения (объединения) из пары таблиц.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243784&#34; target=&#34;_blank&#34;&gt;EXCEPT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243784&#34;&gt;EXCEPT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает строки одной таблицы, которых не существует в другой таблице.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a name=&#34;datatableFunction&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt674921.aspx&#34; target=&#34;_blank&#34;&gt;DATATABLE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt674921.aspx&#34;&gt;DATATABLE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Создает таблицу с константными значениями средствами языка DAX. Полезно для использования в случае создания короткого редко изменчивого справочника на уровне DAX.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;agregareColumnFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;агрегатные-функции-над-столбцами-и-выражениями&#34;&gt;Агрегатные функции над столбцами и выражениями&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Описание&lt;/th&gt;
-&lt;th&gt;Обычные&lt;sup&gt;&lt;a href=&#34;#normalFunc&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-&lt;th&gt;Тип A&lt;sup&gt;&lt;a href=&#34;#typeAFunc&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-&lt;th&gt;Тип X&lt;sup&gt;&lt;a href=&#34;#typeXFunc&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-&lt;th&gt;Тип AX&lt;sup&gt;&lt;a href=&#34;#typeAXFunc&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
+&lt;th&gt;Обычные&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;#normalFunc&#34;&gt;1&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+&lt;th&gt;Тип A&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;#typeAFunc&#34;&gt;2&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+&lt;th&gt;Тип X&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;#typeXFunc&#34;&gt;3&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+&lt;th&gt;Тип AX&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;#typeAXFunc&#34;&gt;4&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Сумма&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634387&#34; target=&#34;_blank&#34;&gt;SUM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634387&#34;&gt;SUM&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634959&#34; target=&#34;_blank&#34;&gt;SUMX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634959&#34;&gt;SUMX&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Среднее&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634231&#34; target=&#34;_blank&#34;&gt;AVERAGE&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634809&#34; target=&#34;_blank&#34;&gt;AVERAGE&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634546&#34; target=&#34;_blank&#34;&gt;AVERAGE&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634231&#34;&gt;AVERAGE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634809&#34;&gt;AVERAGE&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634546&#34;&gt;AVERAGE&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Минимум&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634870&#34; target=&#34;_blank&#34;&gt;MIN&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634789&#34; target=&#34;_blank&#34;&gt;MIN&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634576&#34; target=&#34;_blank&#34;&gt;MIN&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634870&#34;&gt;MIN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634789&#34;&gt;MIN&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634576&#34;&gt;MIN&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Максимум&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634228&#34; target=&#34;_blank&#34;&gt;MAX&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634582&#34; target=&#34;_blank&#34;&gt;MAX&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634576&#34; target=&#34;_blank&#34;&gt;MAX&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634228&#34;&gt;MAX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634582&#34;&gt;MAX&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634576&#34;&gt;MAX&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Количество значений&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634791&#34; target=&#34;_blank&#34;&gt;COUNT&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634956&#34; target=&#34;_blank&#34;&gt;COUNT&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634549&#34; target=&#34;_blank&#34;&gt;COUNT&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634219&#34; target=&#34;_blank&#34;&gt;COUNT&lt;strong&gt;AX&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634791&#34;&gt;COUNT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634956&#34;&gt;COUNT&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634549&#34;&gt;COUNT&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634219&#34;&gt;COUNT&lt;strong&gt;AX&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Количество пустых значений&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634230&#34; target=&#34;_blank&#34;&gt;COUNTBLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634230&#34;&gt;COUNTBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Количество разных значений&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492142&#34; target=&#34;_blank&#34;&gt;DISTINCTCOUNT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492142&#34;&gt;DISTINCTCOUNT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;statFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;статистические-функции-над-столбцами-и-выражениями&#34;&gt;Статистические функции над столбцами и выражениями&lt;/h2&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Описание&lt;/th&gt;
-&lt;th&gt;Обычные&lt;sup&gt;&lt;a href=&#34;#normalFunc&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
-&lt;th&gt;Тип X&lt;sup&gt;&lt;a href=&#34;#typeXFunc&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
+&lt;th&gt;Обычные&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;#normalFunc&#34;&gt;1&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
+&lt;th&gt;Тип X&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;#typeXFunc&#34;&gt;3&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Ранг&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492169&#34; target=&#34;_blank&#34;&gt;RANK.EQ&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492185&#34; target=&#34;_blank&#34;&gt;RANK&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492169&#34;&gt;RANK.EQ&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492185&#34;&gt;RANK&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Дисперсия всей совокупности&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492143&#34; target=&#34;_blank&#34;&gt;VAR.P&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492202&#34; target=&#34;_blank&#34;&gt;VAR&lt;strong&gt;X&lt;/strong&gt;.P&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492143&#34;&gt;VAR.P&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492202&#34;&gt;VAR&lt;strong&gt;X&lt;/strong&gt;.P&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Дисперсия выборки&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492133&#34; target=&#34;_blank&#34;&gt;VAR.S&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492132&#34; target=&#34;_blank&#34;&gt;VAR&lt;strong&gt;X&lt;/strong&gt;.S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492133&#34;&gt;VAR.S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492132&#34;&gt;VAR&lt;strong&gt;X&lt;/strong&gt;.S&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Стандартное отклонение всей совокупности&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492207&#34; target=&#34;_blank&#34;&gt;STDEV.P&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492208&#34; target=&#34;_blank&#34;&gt;STDEV&lt;strong&gt;X&lt;/strong&gt;.P&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492207&#34;&gt;STDEV.P&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492208&#34;&gt;STDEV&lt;strong&gt;X&lt;/strong&gt;.P&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Стандартное отклонение выборки&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492150&#34; target=&#34;_blank&#34;&gt;STDEV.S&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492205&#34; target=&#34;_blank&#34;&gt;STDEV&lt;strong&gt;X&lt;/strong&gt;.S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492150&#34;&gt;STDEV.S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492205&#34;&gt;STDEV&lt;strong&gt;X&lt;/strong&gt;.S&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;p&gt;&lt;a name=&#34;notesAgregateAndstatFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;замечания-к-агрегатным-и-статистическим-функциям&#34;&gt;Замечания к агрегатным и статистическим функциям&lt;/h2&gt;
-
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Обычные&lt;/strong&gt; &lt;a name=&#34;normalFunc&#34;&gt;&lt;/a&gt; - Позволяет вычислить функцию над столбцом. Принимает только числовые значения. &lt;strong&gt;Не производит преобразование данных&lt;/strong&gt; из других типов данных в число, если ячейка содержит:
-
+&lt;li&gt;&lt;strong&gt;Обычные&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; - Позволяет вычислить функцию над столбцом. Принимает только числовые значения. &lt;strong&gt;Не производит преобразование данных&lt;/strong&gt; из других типов данных в число, если ячейка содержит:&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;текст - функция не вычисляется и возвращает пусто;&lt;/li&gt;
 &lt;li&gt;логическое значение - ячейка игнорируется.&lt;/li&gt;
 &lt;li&gt;пустое значение - ячейка игнорируется.&lt;/li&gt;
 &lt;li&gt;нулевое значение - ячейка учитывается в расчете.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Тип A&lt;/strong&gt; &lt;a name=&#34;typeAFunc&#34;&gt;&lt;/a&gt; - Позволяет вычислить функцию над столбцом. Производит преобразование данных других типов к числу (в отличии от &lt;a href=&#34;#normalFunc&#34;&gt;обычных функций&lt;/a&gt;). Если ячейка содержит:
-
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Тип A&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; - Позволяет вычислить функцию над столбцом. Производит преобразование данных других типов к числу (в отличии от &lt;a href=&#34;#normalFunc&#34;&gt;обычных функций&lt;/a&gt;). Если ячейка содержит:&lt;/li&gt;
+&lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;текст - если возможно производится преобразование к числу, иначе&lt;/li&gt;
 &lt;li&gt;логическое значение - истина = 1, ложь = 0;
 возвращается;&lt;/li&gt;
 &lt;li&gt;пустое значение - ячейка игнорируется.&lt;/li&gt;
 &lt;li&gt;нулевое значение - ячейка учитывается в расчете.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Тип X&lt;/strong&gt;  &lt;a name=&#34;typeXFunc&#34;&gt;&lt;/a&gt; - Позволяет вычислить функцию над выражением, а не над столбцом отличии от &lt;a href=&#34;#normalFunc&#34;&gt;обычных функций&lt;/a&gt; и функций &lt;a href=&#34;#typeAFunc&#34;&gt;типа A&lt;/a&gt;. В принципе обработки не числовых значений аналогичная &lt;a href=&#34;#normalFunc&#34;&gt;обычной функции&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Тип AX&lt;/strong&gt; &lt;a name=&#34;typeAXFunc&#34;&gt;&lt;/a&gt; - Позволяет вычислить функцию над выражением, а не над столбцом отличии от &lt;a href=&#34;#normalFunc&#34;&gt;обычных функций&lt;/a&gt; и функций &lt;a href=&#34;#typeAFunc&#34;&gt;типа A&lt;/a&gt;. В принципе обработки не числовых значений аналогичная  функциям &lt;a href=&#34;#typeAFunc&#34;&gt;типа A&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Тип X&lt;/strong&gt;  &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; - Позволяет вычислить функцию над выражением, а не над столбцом отличии от &lt;a href=&#34;#normalFunc&#34;&gt;обычных функций&lt;/a&gt; и функций &lt;a href=&#34;#typeAFunc&#34;&gt;типа A&lt;/a&gt;. В принципе обработки не числовых значений аналогичная &lt;a href=&#34;#normalFunc&#34;&gt;обычной функции&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Тип AX&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; - Позволяет вычислить функцию над выражением, а не над столбцом отличии от &lt;a href=&#34;#normalFunc&#34;&gt;обычных функций&lt;/a&gt; и функций &lt;a href=&#34;#typeAFunc&#34;&gt;типа A&lt;/a&gt;. В принципе обработки не числовых значений аналогичная  функциям &lt;a href=&#34;#typeAFunc&#34;&gt;типа A&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;patentChildFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;функции-над-иерархическими-данными&#34;&gt;Функции над иерархическими данными&lt;/h1&gt;
-
 &lt;p&gt;Функции для управления данными, представленными в моделях в виде иерархии типа «родители-потомки». Эти функции можно использовать для получения следующих данных:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Общее количество родительских элементов строки, количество уровней в иерархии до родительского элемента верхнего уровня,&lt;/li&gt;
 &lt;li&gt;Идентификатор родительского элемента, расположенного на n уровней выше текущей строки,&lt;/li&gt;
 &lt;li&gt;Идентификатор n-потомка, считая от верхнего уровня иерархии.&lt;/li&gt;
-&lt;li&gt;Определить, является ли определенный родительский элемент элементом иерархии текущей строки. (см. &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492192&#34; target=&#34;_blank&#34;&gt;подробнее&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Определить, является ли определенный родительский элемент элементом иерархии текущей строки. (см. &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492192&#34;&gt;подробнее&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1366,43 +1102,33 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492167&#34; target=&#34;_blank&#34;&gt;PATH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492167&#34;&gt;PATH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает строку текста с разделителями, содержащую идентификаторы всех родительских элементов текущего идентификатора, с самого старого до текущего.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492187&#34; target=&#34;_blank&#34;&gt;PATHLENGTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492187&#34;&gt;PATHLENGTH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает количество родительских элементов указанного элемента в заданных результатах функции PATH, включая сам элемент.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492182&#34; target=&#34;_blank&#34;&gt;PATHCONTAINS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492182&#34;&gt;PATHCONTAINS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если указанный объект item существует в указанном объекте path.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492134&#34; target=&#34;_blank&#34;&gt;PATHITEM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492134&#34;&gt;PATHITEM&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает элемент с указанным параметром position из строки результатов вычисления функции PATH. Позиции считаются слева направо.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492199&#34; target=&#34;_blank&#34;&gt;PATHITEMREVERSE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492199&#34;&gt;PATHITEMREVERSE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает элемент с указанным параметром position из строки результатов вычисления функции PATH. Позиции вычисляются в направлении справа налево.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;otherFunction&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;прочие-функции&#34;&gt;Прочие функции&lt;/h1&gt;
-
 &lt;p&gt;эти функции выполняют уникальные действия, которые не могут быть определены ни одной из других категорий, к которым принадлежит большинство функций.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1410,25 +1136,18 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634820&#34; target=&#34;_blank&#34;&gt;BLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634820&#34;&gt;BLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает пустое значение.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&#34;syntaxElement&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;синтаксические-элементы&#34;&gt;Синтаксические элементы&lt;/h1&gt;
-
 &lt;p&gt;Несмотря на то что DAX является библиотекой функций ее эволюционное развитие привело разработчиков к необходимости введения удобных синтаксических элементов характерных для языков программирования.&lt;/p&gt;
-
 &lt;p&gt;Например выражение &lt;code&gt;VAR ... RETURN&lt;/code&gt; успешно используется для уменьшения сложности написания и чтения DAX функций с помощью  построения промежуточных вычислений. А типы данных используются при построении справочника на уровне DAX с помощью функции &lt;a href=&#34;#datatableFunction&#34;&gt;DATATABLE&lt;/a&gt;.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1436,55 +1155,45 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34; target=&#34;_blank&#34;&gt;VAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34;&gt;VAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Сохраняет результат выражения как именованную переменную, которая затем может быть передана как аргумент другим выражениям. Когда результирующие значения были рассчитаны для выражения переменных, эти значения не изменяются, даже если эта переменная указана в другом выражении.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34; target=&#34;_blank&#34;&gt;IN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34;&gt;IN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если существует по меньшей мере одно значение, в которой все столбцы имеют указанные значения.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34; target=&#34;_blank&#34;&gt;RETURN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34;&gt;RETURN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает результат вычисления формулы используется совместно с выражением &lt;code&gt;VAR&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;INTEGER&lt;/td&gt;
 &lt;td&gt;Целое число&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;DOUBLE&lt;/td&gt;
 &lt;td&gt;Число с плавающей точкой&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;STRING&lt;/td&gt;
 &lt;td&gt;Строка&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;BOOLEAN&lt;/td&gt;
 &lt;td&gt;Логическая переменная&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;CURRENCY&lt;/td&gt;
 &lt;td&gt;Валюта&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;DATETIME&lt;/td&gt;
 &lt;td&gt;Дата время&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
@@ -1494,30 +1203,23 @@
       <link>https://DmitriyVlasov.ru/ru/post/handing-of-dax-blank/</link>
       <pubDate>Wed, 05 Jul 2017 15:56:25 +0300</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/post/handing-of-dax-blank/</guid>
-      <description>
-
-&lt;p&gt;Пустое значение в:&lt;/p&gt;
-
+      <description>&lt;p&gt;Пустое значение в:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;SQL это &lt;code&gt;null&lt;/code&gt;;&lt;/li&gt;
 &lt;li&gt;Excel это не заполненная ячейка;&lt;/li&gt;
 &lt;li&gt;DAX это blank.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;В DAX также существует функция &lt;a href=&#34;(https://msdn.microsoft.com/ru-ru/library/ee634820.aspx)&#34; target=&#34;_blank&#34;&gt;blank()&lt;/a&gt; возвращающее пустое значение.&lt;/p&gt;
-
+&lt;p&gt;В DAX также существует функция &lt;a href=&#34;(https://msdn.microsoft.com/ru-ru/library/ee634820.aspx)&#34;&gt;blank()&lt;/a&gt; возвращающее пустое значение.&lt;/p&gt;
 &lt;p&gt;Таблица сравнения поведения пустого значения в разных окружениях&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Выражение&lt;/th&gt;
 &lt;th&gt;DAX&lt;/th&gt;
 &lt;th&gt;Excel&lt;/th&gt;
-&lt;th&gt;SQL&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
+&lt;th&gt;SQL&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;blank  +  blank&lt;/td&gt;
@@ -1525,77 +1227,66 @@
 &lt;td&gt;0 (ноль)&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;blank  +  5&lt;/td&gt;
 &lt;td&gt;5&lt;/td&gt;
 &lt;td&gt;5&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;blank  *  5&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;td&gt;0 (ноль)&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;5      /  blank&lt;/td&gt;
 &lt;td&gt;infinity&lt;/td&gt;
 &lt;td&gt;error&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;0      /  blank&lt;/td&gt;
 &lt;td&gt;nan&lt;/td&gt;
 &lt;td&gt;error&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;blank  /  blank&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;td&gt;error&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;false or  blank&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;false and blank&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;true  or  blank&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;true  and blank&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;blank or  blank&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
 &lt;td&gt;error&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;blank and blank&lt;/td&gt;
 &lt;td&gt;blank&lt;/td&gt;
@@ -1604,22 +1295,19 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h1 id=&#34;источники&#34;&gt;Источники&lt;/h1&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/sql/analysis-services/tabular-models/data-types-supported-ssas-tabular#a-namebkmkhandblanksa-handling-of-blanks-empty-strings-and-zero-values&#34; target=&#34;_blank&#34;&gt;docs.microsoft.com, Handling of Blanks, Empty Strings, and Zero Values&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/ee634820.aspx&#34; target=&#34;_blank&#34;&gt;MSDN, Функция BLANK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/sql/analysis-services/tabular-models/data-types-supported-ssas-tabular#a-namebkmkhandblanksa-handling-of-blanks-empty-strings-and-zero-values&#34;&gt;docs.microsoft.com, Handling of Blanks, Empty Strings, and Zero Values&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/ee634820.aspx&#34;&gt;MSDN, Функция BLANK&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;В SQL Server отсутствует логический тип данных. Поэтому в явном виде логические операции и таблицы истинности в SQL не применимы. Хотя в предложении &lt;code&gt;WHERE&lt;/code&gt; и есть выражения &lt;code&gt;or&lt;/code&gt; или &lt;code&gt;and&lt;/code&gt; Которые позволяют объединять между выражения возвращающие логический контекст.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;В SQL Server отсутствует логический тип данных. Поэтому в явном виде логические операции и таблицы истинности в SQL не применимы. Хотя в предложении &lt;code&gt;WHERE&lt;/code&gt; и есть выражения &lt;code&gt;or&lt;/code&gt; или &lt;code&gt;and&lt;/code&gt; Которые позволяют объединять между выражения возвращающие логический контекст. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     
@@ -1628,15 +1316,9 @@
       <link>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</link>
       <pubDate>Wed, 05 Jul 2017 11:37:05 +0300</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</guid>
-      <description>
-
-&lt;h1 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h1&gt;
-
+      <description>&lt;h1 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h1&gt;
 &lt;pre&gt;&lt;code&gt;EARLIER(column, [number])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;параметры&#34;&gt;Параметры&lt;/h2&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;параметры&#34;&gt;Параметры&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1645,14 +1327,12 @@
 &lt;th&gt;Описание&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;column&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Да&lt;/td&gt;
 &lt;td&gt;Столбец или выражение, результатом которого служит столбец.&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Нет&lt;/td&gt;
@@ -1660,14 +1340,10 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h2 id=&#34;возвращаемое-значение&#34;&gt;Возвращаемое значение&lt;/h2&gt;
-
 &lt;p&gt;Текущее значение строки из столбца &lt;code&gt;column&lt;/code&gt; на расстоянии в &lt;code&gt;number&lt;/code&gt; внешних этапов вычисления.&lt;/p&gt;
-
 &lt;h1 id=&#34;пример&#34;&gt;Пример&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-dax&#34;&gt;=
+&lt;pre&gt;&lt;code class=&#34;language-dax&#34; data-lang=&#34;dax&#34;&gt;=
 COUNTROWS (
     FILTER (
         ProductSubcategory;
@@ -1676,25 +1352,22 @@ COUNTROWS (
     )
 )
     + 1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
 &lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; получает значение TotalSubcategorySales для текущей строки в таблице. В данном случае, поскольку процесс только начинается, это первая строка в таблице.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;EARLIER([TotalSubcategorySales])&lt;/code&gt; дает результат $ 156 176.88 — текущая строка во внешнем цикле.&lt;/li&gt;
 &lt;li&gt;Теперь функция &lt;code&gt;FILTER&lt;/code&gt; возвращает таблицу, где все строки имеют значение TotalSubcategorySales, превышающее $ 156 176.88 (текущее значение &lt;code&gt;EARLIER&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Функция &lt;code&gt;COUNTROWS&lt;/code&gt; подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;Функция &lt;code&gt;COUNTROWS&lt;/code&gt; подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
 &lt;li&gt;Формула вычисляемого столбца переходит к следующей строке, и шаги с 1 по 4 повторяются. Эти шаги повторяются до конца таблицы.&lt;/li&gt;
 &lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Прибавлять единицу необходимо, чтобы предотвратить появление &lt;a href=&#34;../handing-of-dax-blank&#34;&gt;пустого значения&lt;/a&gt; в качестве значения с верхним рангом.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Прибавлять единицу необходимо, чтобы предотвратить появление &lt;a href=&#34;../handing-of-dax-blank&#34;&gt;пустого значения&lt;/a&gt; в качестве значения с верхним рангом. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
+&lt;/section&gt;
 </description>
     </item>
     

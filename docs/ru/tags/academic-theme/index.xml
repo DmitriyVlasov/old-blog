@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>academic theme | Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/tags/academic-theme/</link>
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/academic-theme/index.xml" rel="self" type="application/rss+xml" />
+    <description>academic theme</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
+      <title>academic theme</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/academic-theme/</link>
+    </image>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/memo/hugo/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/memo/hugo/</guid>
+      <description>&lt;h2 id=&#34;управление-содержимым-в-hugo&#34;&gt;Управление содержимым в Hugo&lt;/h2&gt;
+&lt;p&gt;Ссылки на документацию адаптированную для темы academic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/&#34;&gt;Managing content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;Writing content with Markdown, LaTeX, and Shortcodes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

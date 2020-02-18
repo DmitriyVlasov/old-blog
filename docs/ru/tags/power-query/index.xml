@@ -7,7 +7,7 @@
     <description>Power Query</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Wed, 17 Oct 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>Power Query</title>
       <link>https://DmitriyVlasov.ru/ru/tags/power-query/</link>
     </image>
@@ -17,89 +17,70 @@
       <link>https://DmitriyVlasov.ru/ru/post/how-to-create-a-table-on-power-query/</link>
       <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/post/how-to-create-a-table-on-power-query/</guid>
-      <description>
-
-&lt;h2 id=&#34;встроенные-средства-языка&#34;&gt;Встроенные средства языка&lt;/h2&gt;
-
+      <description>&lt;h2 id=&#34;встроенные-средства-языка&#34;&gt;Встроенные средства языка&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;В этом варианте используем встроенную в язык функцию &lt;code&gt;#table&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Функция принимает два варианта параметров:
-
 &lt;ul&gt;
 &lt;li&gt;Первый параметр список имен полей, Второй список списков записей таблицы (см. &lt;a href=&#34;#fromFielList&#34;&gt;Создание таблицы на основании списка полей&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Первый параметр тип описывающий тип таблицы в виде перечисления в записи имен полей и их типов, Второй параметр список списков записей таблицы (см. &lt;a href=&#34;#fromTableType&#34;&gt;Создание таблицы на основании ее типа&lt;/a&gt;).&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Первый параметр тип описывающий тип таблицы в виде перечисления в записи имен полей и их типов, Второй параметр список списков записей таблицы (см. &lt;a href=&#34;#fromTableType&#34;&gt;Создание таблицы на основании ее типа&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;a name=&#34;fromFielList&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h3 id=&#34;создание-таблицы-на-основании-списка-полей&#34;&gt;Создание таблицы на основании списка полей&lt;/h3&gt;
-
 &lt;p&gt;Используем этот вариант если мы хотим создать таблицу и просто знаем какой то перечень полей и примерные значения для нее.&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Мы можем просто определить таблицу и передав пустой список вторым параметром просто создать пустую таблицу&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#table(
-// Список имен полей 
-{ &amp;quot;Digit&amp;quot;, &amp;quot;Name&amp;quot; },
-// Пустой список
-{} 
-)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Или добавить какие то статические данные:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#table(
-// Список имен полей 
-{ &amp;quot;Digit&amp;quot;, &amp;quot;Name&amp;quot; },
-// Список списков записей таблицы
-{
-  {1,&amp;quot;one&amp;quot;}, 
-  {2,&amp;quot;two&amp;quot;}, 
-  {3,&amp;quot;three&amp;quot;}
-} 
-)
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Мы можем просто определить таблицу и передав пустой список вторым параметром просто создать пустую таблицу&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;a name=&#34;fromTableType&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;создание-таблицы-на-основании-ее-типа&#34;&gt;Создание таблицы на основании ее типа&lt;/h3&gt;
-
-&lt;p&gt;Используем этот вариант если мы хотим создать таблицу и уже на первом этапе определить с какими типами полей в дальнейшем мы хотим работать.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Мы можем просто определить таблицу и передав пустой список вторым параметром просто создать пустую таблицу&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;#table(
-// Тип описывающий таблицу через определения в записи типов ее полей:
-type table [Digit = number, Name = text], 
-// Пустой список
-{}
-} 
+  // Список имен полей 
+    { &amp;quot;Digit&amp;quot;, &amp;quot;Name&amp;quot; },
+  // Пустой список
+    {} 
 )
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Или добавить какие то статические данные:&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Или добавить какие то статические данные:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;#table(
-// Тип описывающий таблицу через определения в записи типов ее полей:
-  type table [Digit = number, Name = text], 
-// Список списков записей таблицы
-  {
-    {1,&amp;quot;one&amp;quot;}, 
-    {2,&amp;quot;two&amp;quot;}, 
-    {3,&amp;quot;three&amp;quot;}
+  // Список имен полей 
+    { &amp;quot;Digit&amp;quot;, &amp;quot;Name&amp;quot; },
+  // Список списков записей таблицы
+    {
+      {1,&amp;quot;one&amp;quot;}, 
+      {2,&amp;quot;two&amp;quot;}, 
+      {3,&amp;quot;three&amp;quot;}
+    } 
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;создание-таблицы-на-основании-ее-типа&#34;&gt;Создание таблицы на основании ее типа&lt;/h3&gt;
+&lt;p&gt;Используем этот вариант если мы хотим создать таблицу и уже на первом этапе определить с какими типами полей в дальнейшем мы хотим работать.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Мы можем просто определить таблицу и передав пустой список вторым параметром просто создать пустую таблицу&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;#table(
+  // Тип описывающий таблицу через определения в записи типов ее полей:
+    type table [Digit = number, Name = text], 
+  // Пустой список
+    {}
   } 
 )
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Или добавить какие то статические данные:&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&#34;использованные-источники&#34;&gt;Использованные источники&lt;/h2&gt;
-
+&lt;pre&gt;&lt;code&gt;#table(
+    // Тип описывающий таблицу через определения в записи типов ее полей:
+      type table [Digit = number, Name = text], 
+    // Список списков записей таблицы
+      {
+        {1,&amp;quot;one&amp;quot;}, 
+        {2,&amp;quot;two&amp;quot;}, 
+        {3,&amp;quot;three&amp;quot;}
+      } 
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;использованные-источники&#34;&gt;Использованные источники&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/query-bi/m/power-query-m-language-specification&#34; target=&#34;_blank&#34;&gt;Power Query M language specification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/query-bi/m/power-query-m-language-specification&#34;&gt;Power Query M language specification&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -5,58 +5,218 @@
     <link>https://DmitriyVlasov.ru/ru/tags/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Tue, 23 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Tue, 18 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
-      <url>https://DmitriyVlasov.ru/img/icon-192.png</url>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>Tags</title>
       <link>https://DmitriyVlasov.ru/ru/tags/</link>
     </image>
     
     <item>
-      <title>1С</title>
-      <link>https://DmitriyVlasov.ru/ru/tags/1%D1%81/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/tags/1%D1%81/</guid>
+      <title>blog</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/blog/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/hugo/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ideas</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/ideas/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/ideas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>todo</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/todo/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/todo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>academic theme</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/academic-theme/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/academic-theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>archimate</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/archimate/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/archimate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>content management</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/content-management/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/content-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diagram</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/diagram/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/diagram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dremio</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/dremio/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/dremio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>link</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/link/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/link/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mongodb</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/mongodb/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/mongodb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>power bi</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/power-bi/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/power-bi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>q&amp;a</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/qa/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/qa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>study area</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/study-area/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/study-area/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>use cases</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/use-cases/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/use-cases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>область исследования</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C-%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>примеры использования</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>1C</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/1c/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/1c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Excel</title>
       <link>https://DmitriyVlasov.ru/ru/tags/excel/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/tags/excel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/ffmpeg/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/github/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
       <link>https://DmitriyVlasov.ru/ru/tags/markdown/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Вопросы и Ответы</title>
-      <link>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</guid>
+      <title>taskkill</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/taskkill/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/taskkill/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>надстройки Excel</title>
-      <link>https://DmitriyVlasov.ru/ru/tags/%D0%BD%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BA%D0%B8-excel/</link>
-      <pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/tags/%D0%BD%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BA%D0%B8-excel/</guid>
+      <title>windows</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/windows/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/windows/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Power BI</title>
-      <link>https://DmitriyVlasov.ru/ru/tags/power-bi/</link>
-      <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/tags/power-bi/</guid>
+      <title>books</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/books/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psy</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/psy/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/psy/</guid>
       <description></description>
     </item>
     
@@ -65,6 +225,14 @@
       <link>https://DmitriyVlasov.ru/ru/tags/power-query/</link>
       <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/tags/power-query/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Вопросы и Ответы</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</link>
+      <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</guid>
       <description></description>
     </item>
     

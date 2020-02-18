@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Курс &#34;Введение в Azure Databricks&#34; | Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/</link>
+      <atom:link href="https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/index.xml" rel="self" type="application/rss+xml" />
+    <description>Курс &#34;Введение в Azure Databricks&#34;</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Sat, 14 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
+      <title>Курс &#34;Введение в Azure Databricks&#34;</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/</link>
+    </image>
+    
+    <item>
+      <title>Презентация обзор &#34;Azure Databricks&#34;</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/00-intro/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/00-intro/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Подключение к кластеру</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/01-connect/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/01-connect/</guid>
+      <description>&lt;h2 id=&#34;видео&#34;&gt;Видео&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Вопросы и ответы</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/99-qa/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/courses/databricks-101/99-qa/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;В этом разделе будут расположены ответы на вопросы слушателей курса.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

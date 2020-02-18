@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ideas | Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/tags/ideas/</link>
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/ideas/index.xml" rel="self" type="application/rss+xml" />
+    <description>ideas</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Tue, 18 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
+      <title>ideas</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/ideas/</link>
+    </image>
+    
+    <item>
+      <title>Идеи</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/blog/ideas/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/blog/ideas/</guid>
+      <description>&lt;h2 id=&#34;поток-идей&#34;&gt;Поток идей&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Open&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2020-02-15&lt;/td&gt;
+&lt;td&gt;Давать название проектов на эсперанто&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
