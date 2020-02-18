@@ -1,9 +1,9 @@
 ---
 # Course title, summary, and position.
-linktitle: Черновик курса \"Введение в Azure Databricks\"
+linktitle: Введение в Azure Databricks
 summary: Узнайте, как применить Azure Databricks для реализации методов прогнозной и аналитической обработки данных, таких как исследовательский анализ данных, обучение моделей, анализ текста и глубокое обучение.
 
-weight: 1
+weight: 2
 
 # Page metadata.
 title: Курс "Введение в Azure Databricks"
@@ -17,9 +17,9 @@ type: docs  # Do not modify.
 # - name: Declare this menu item as a parent with ID `name`.
 # - weight: Position of link in menu.
 menu:
-  databricks-101:
-    name: О курсе
-    weight: 1
+  courses:
+    name: Azure Databricks 101
+    weight: 2
 ---
 
 ## Место проведения
