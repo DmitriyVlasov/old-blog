@@ -1,14 +1,13 @@
 ---
 # Course title, summary, and position.
-linktitle: Курсы
-summary: Обучающие курсы.
-
-weight: 4
+linktitle: Power BI
+summary: Заметки по Power BI
+weight: 2
 
 # Page metadata.
-title: Курсы
-date: "2020-02-18T00:00:00Z"
-lastmod: "2020-18-14T00:00:00Z"
+title: Power BI
+date: "2020-03-02T00:00:00Z"
+lastmod: "2020-03-02T00:00:00Z"
 draft: false  # Is this a draft? true/false
 toc: true  # Show table of contents? true/false
 type: docs  # Do not modify.
@@ -17,12 +16,7 @@ type: docs  # Do not modify.
 # - name: Declare this menu item as a parent with ID `name`.
 # - weight: Position of link in menu.
 menu:
-  courses:
-    name: Курсы
-    weight: 1
+  memo:
+    name: Power BI
+    weight: 2
 ---
-Обучающие курсы.
-
-{{% alert into %}}
-Раздел в проработке.
-{{% /alert %}}

@@ -3,7 +3,7 @@
 linktitle: Книги
 summary: Обзоры книг, закладки и цитаты из прочитанных книг или книг в процессе чтения.
 
-weight: 1
+weight: 3
 
 # Page metadata.
 title: Книги

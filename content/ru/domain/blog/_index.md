@@ -2,7 +2,6 @@
 # Course title, summary, and position.
 linktitle: Блог
 summary: Ведение и развитие личного блога.
-
 weight: 1
 
 # Page metadata.

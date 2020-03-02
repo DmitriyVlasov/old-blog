@@ -1,6 +1,6 @@
 ---
-title: Power BI and Mongodb
-linktitle: Power BI and Mongodb
+title: Power BI Data Sources
+linktitle: Power BI Data Sources
 toc: true
 type: docs
 date: "2020-02-17T00:00:00+01:00"
@@ -9,8 +9,9 @@ draft: false
 tags: [ "study area", "область исследования", "power bi", "mongodb", "dremio" ]
 menu:
   memo:
-    parent: Заметки
-    weight: 2
+    name: Power BI Data Sources
+    parent: Power BI
+    weight: 0
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
