@@ -19,7 +19,7 @@
     weight = 10
 
   [[ru.menu.main]]
-    name = "Статьи"
+    name = "Блог"
     url = "#posts"
     weight = 20
 
@@ -66,7 +66,7 @@
     weight = 10
 
   [[en.menu.main]]
-    name = "Posts"
+    name = "Blog"
     url = "#posts"
     weight = 20
 
