@@ -39,7 +39,7 @@
   
   
   
-  <meta name="theme-color" content="#795548">
+  <meta name="theme-color" content="#3f51b5">
   
 
   
@@ -193,7 +193,7 @@
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
   
 
   
@@ -273,7 +273,7 @@
   <meta property="og:description" content="Заметки разработчика о жизни, Вселенной и всего такого."><meta property="og:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="ru-ru">
   
-    <meta property="og:updated_time" content="2017-07-19T13:11:31&#43;03:00">
+    <meta property="og:updated_time" content="2020-03-02T00:00:00&#43;01:00">
   
 
   
@@ -413,7 +413,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/ru/#posts"><span>Статьи</span></a>
+          <a class="nav-link " href="/ru/#posts"><span>Блог</span></a>
         </li>
 
         
@@ -591,6 +591,16 @@
   
   
   <div>
+    <h2><a href="/ru/domain/memo/powerbi/dax/">DAX в заметках</a></h2>
+    <div class="article-style">
+      
+      Пример использования функции EARLIER Синтаксис EARLIER(column, [number])Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
+Пример =COUNTROWS (FILTER (ProductSubcategory;EARLIER ( ProductSubcategory[TotalSubcategorySales] )&lt; ProductSubcategory[TotalSubcategorySales]))+ 1 Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице.
+      
+    </div>
+  </div>
+  
+  <div>
     <h2><a href="/ru/post/dax-functions/">Обзор всех функций DAX</a></h2>
     <div class="article-style">
       
@@ -608,16 +618,6 @@
  SQL это null; Excel это не заполненная ячейка; DAX это blank.  В DAX также существует функция blank() возвращающее пустое значение.
 Таблица сравнения поведения пустого значения в разных окружениях
    Выражение DAX Excel SQL1     blank + blank blank 0 (ноль) blank   blank + 5 5 5 blank   blank * 5 blank 0 (ноль) blank   5 / blank infinity error blank   0 / blank nan error blank   blank / blank blank error blank   false or blank false false -   false and blank false false -   true or blank true true -   true and blank false true -   blank or blank blank error -   blank and blank blank error -    Источники  docs.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/ru/post/dax-function-earlier/">Пример использования функции EARLIER</a></h2>
-    <div class="article-style">
-      
-      Синтаксис EARLIER(column, [number])Параметры    Параметр Обязательный Описание     column Да Столбец или выражение, результатом которого служит столбец.   number Нет Следующий внешний этап вычисления. По умолчанию 1.    Возвращаемое значение Текущее значение строки из столбца column на расстоянии в number внешних этапов вычисления.
-Пример =COUNTROWS (FILTER (ProductSubcategory;EARLIER ( ProductSubcategory[TotalSubcategorySales] )&lt; ProductSubcategory[TotalSubcategorySales]))+ 1 Функция EARLIER получает значение TotalSubcategorySales для текущей строки в таблице.
       
     </div>
   </div>

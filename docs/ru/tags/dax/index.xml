@@ -5,12 +5,147 @@
     <link>https://DmitriyVlasov.ru/ru/tags/dax/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/dax/index.xml" rel="self" type="application/rss+xml" />
     <description>DAX</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Wed, 19 Jul 2017 13:11:31 +0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>DAX</title>
       <link>https://DmitriyVlasov.ru/ru/tags/dax/</link>
     </image>
+    
+    <item>
+      <title>DAX в заметках</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/memo/powerbi/dax/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/memo/powerbi/dax/</guid>
+      <description>&lt;h2 id=&#34;пример-использования-функции-earlier&#34;&gt;Пример использования функции EARLIER&lt;/h2&gt;
+&lt;h3 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;EARLIER(column, [number])
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;параметры&#34;&gt;Параметры&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Параметр&lt;/th&gt;
+&lt;th&gt;Обязательный&lt;/th&gt;
+&lt;th&gt;Описание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;column&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Да&lt;/td&gt;
+&lt;td&gt;Столбец или выражение, результатом которого служит столбец.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Нет&lt;/td&gt;
+&lt;td&gt;Следующий внешний этап вычисления. По умолчанию 1.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;возвращаемое-значение&#34;&gt;Возвращаемое значение&lt;/h3&gt;
+&lt;p&gt;Текущее значение строки из столбца &lt;code&gt;column&lt;/code&gt; на расстоянии в &lt;code&gt;number&lt;/code&gt; внешних этапов вычисления.&lt;/p&gt;
+&lt;h3 id=&#34;пример&#34;&gt;Пример&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;=
+COUNTROWS (
+    FILTER (
+        ProductSubcategory;
+        EARLIER ( ProductSubcategory[TotalSubcategorySales] )
+            &amp;lt; ProductSubcategory[TotalSubcategorySales]
+    )
+)
+    + 1
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; получает значение TotalSubcategorySales для текущей строки в таблице. В данном случае, поскольку процесс только начинается, это первая строка в таблице.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EARLIER([TotalSubcategorySales])&lt;/code&gt; дает результат $ 156 176.88 — текущая строка во внешнем цикле.&lt;/li&gt;
+&lt;li&gt;Теперь функция &lt;code&gt;FILTER&lt;/code&gt; возвращает таблицу, где все строки имеют значение TotalSubcategorySales, превышающее $ 156 176.88 (текущее значение &lt;code&gt;EARLIER&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Функция &lt;code&gt;COUNTROWS&lt;/code&gt; подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;Формула вычисляемого столбца переходит к следующей строке, и шаги с 1 по 4 повторяются. Эти шаги повторяются до конца таблицы.&lt;/li&gt;
+&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;как-в-dax-отобразить-положительные-числа-со-знаком-плюс&#34;&gt;Как в DAX отобразить положительные числа со знаком плюс?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Ответ:&lt;/strong&gt; Используйте &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;пример-1&#34;&gt;Пример&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;В качестве примера возьмем таблицу &lt;code&gt;Entry&lt;/code&gt; с положительными и отрицательными значениями:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;- 10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Для простоты примера сделаем вспомогательную, среднее значение:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;AvgValue = 
+  AVERAGE( Entry[Value] )
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Напишем формулу:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;FormatValue = 
+    IF( [AvgValue] = 0;
+        &amp;quot;0&amp;quot;;
+        FORMAT( [AvgValue]; &amp;quot;+#,##0;-#,##0&amp;quot; )
+    )
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;В результате получим таблицу вида:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;FormatValue&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;- 10&lt;/td&gt;
+&lt;td&gt;- 10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;+ 10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;комментарии&#34;&gt;Комментарии&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Подробное описание функции FROMAT см. в статье &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Так как для второго параметра нет форматирование нуля использовал функцию IF. Если не использовать функцию IF для обработки нулевого значения получиться 0 с плюсом. Что может быть не приемлемо для бизнес правил.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Обратите внимание, что правила форматирования чисел очень похожи на правила форматирование чисел в Excel.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Прибавлять единицу необходимо, чтобы предотвратить появление &lt;a href=&#34;../handing-of-dax-blank&#34;&gt;пустого значения&lt;/a&gt; в качестве значения с верхним рангом. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
     
     <item>
       <title>Обзор всех функций DAX</title>
@@ -1305,66 +1440,6 @@
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;В SQL Server отсутствует логический тип данных. Поэтому в явном виде логические операции и таблицы истинности в SQL не применимы. Хотя в предложении &lt;code&gt;WHERE&lt;/code&gt; и есть выражения &lt;code&gt;or&lt;/code&gt; или &lt;code&gt;and&lt;/code&gt; Которые позволяют объединять между выражения возвращающие логический контекст. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Пример использования функции EARLIER</title>
-      <link>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</link>
-      <pubDate>Wed, 05 Jul 2017 11:37:05 +0300</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</guid>
-      <description>&lt;h1 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;EARLIER(column, [number])
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;параметры&#34;&gt;Параметры&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Параметр&lt;/th&gt;
-&lt;th&gt;Обязательный&lt;/th&gt;
-&lt;th&gt;Описание&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;column&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Да&lt;/td&gt;
-&lt;td&gt;Столбец или выражение, результатом которого служит столбец.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Нет&lt;/td&gt;
-&lt;td&gt;Следующий внешний этап вычисления. По умолчанию 1.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;возвращаемое-значение&#34;&gt;Возвращаемое значение&lt;/h2&gt;
-&lt;p&gt;Текущее значение строки из столбца &lt;code&gt;column&lt;/code&gt; на расстоянии в &lt;code&gt;number&lt;/code&gt; внешних этапов вычисления.&lt;/p&gt;
-&lt;h1 id=&#34;пример&#34;&gt;Пример&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-dax&#34; data-lang=&#34;dax&#34;&gt;=
-COUNTROWS (
-    FILTER (
-        ProductSubcategory;
-        EARLIER ( ProductSubcategory[TotalSubcategorySales] )
-            &amp;lt; ProductSubcategory[TotalSubcategorySales]
-    )
-)
-    + 1
-&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
-&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; получает значение TotalSubcategorySales для текущей строки в таблице. В данном случае, поскольку процесс только начинается, это первая строка в таблице.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EARLIER([TotalSubcategorySales])&lt;/code&gt; дает результат $ 156 176.88 — текущая строка во внешнем цикле.&lt;/li&gt;
-&lt;li&gt;Теперь функция &lt;code&gt;FILTER&lt;/code&gt; возвращает таблицу, где все строки имеют значение TotalSubcategorySales, превышающее $ 156 176.88 (текущее значение &lt;code&gt;EARLIER&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Функция &lt;code&gt;COUNTROWS&lt;/code&gt; подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-&lt;li&gt;Формула вычисляемого столбца переходит к следующей строке, и шаги с 1 по 4 повторяются. Эти шаги повторяются до конца таблицы.&lt;/li&gt;
-&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Прибавлять единицу необходимо, чтобы предотвратить появление &lt;a href=&#34;../handing-of-dax-blank&#34;&gt;пустого значения&lt;/a&gt; в качестве значения с верхним рангом. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;

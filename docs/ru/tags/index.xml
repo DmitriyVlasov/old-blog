@@ -5,12 +5,60 @@
     <link>https://DmitriyVlasov.ru/ru/tags/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Tue, 18 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>Tags</title>
       <link>https://DmitriyVlasov.ru/ru/tags/</link>
     </image>
+    
+    <item>
+      <title>az</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/az/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/az/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/azure/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DP-200</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/dp-200/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/dp-200/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jq</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/jq/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/jq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DAX</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/dax/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/dax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>power bi</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/power-bi/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/power-bi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog</title>
@@ -101,14 +149,6 @@
     </item>
     
     <item>
-      <title>power bi</title>
-      <link>https://DmitriyVlasov.ru/ru/tags/power-bi/</link>
-      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/tags/power-bi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>q&amp;a</title>
       <link>https://DmitriyVlasov.ru/ru/tags/qa/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
@@ -157,6 +197,14 @@
     </item>
     
     <item>
+      <title>backup</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/backup/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Excel</title>
       <link>https://DmitriyVlasov.ru/ru/tags/excel/</link>
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
@@ -189,10 +237,42 @@
     </item>
     
     <item>
+      <title>ops</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/ops/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/ops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>restore</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/restore/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/restore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>taskkill</title>
       <link>https://DmitriyVlasov.ru/ru/tags/taskkill/</link>
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/tags/taskkill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/tools/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/tutorial/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/tags/tutorial/</guid>
       <description></description>
     </item>
     
@@ -241,14 +321,6 @@
       <link>https://DmitriyVlasov.ru/ru/tags/python/</link>
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DAX</title>
-      <link>https://DmitriyVlasov.ru/ru/tags/dax/</link>
-      <pubDate>Wed, 19 Jul 2017 13:11:31 +0300</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/tags/dax/</guid>
       <description></description>
     </item>
     

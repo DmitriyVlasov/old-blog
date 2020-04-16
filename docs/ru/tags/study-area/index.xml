@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Power BI and Mongodb</title>
-      <link>https://DmitriyVlasov.ru/ru/domain/memo/power-bi-and-mongodb/</link>
+      <title>Power BI Data Sources</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/memo/powerbi/powerbi-and-mongodb/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/domain/memo/power-bi-and-mongodb/</guid>
+      <guid>https://DmitriyVlasov.ru/ru/domain/memo/powerbi/powerbi-and-mongodb/</guid>
       <description>&lt;h2 id=&#34;как-загрузить-данные-в-power-bi-из-mongodb&#34;&gt;Как загрузить данные в Power BI из MongoDB?&lt;/h2&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h3 id=&#34;использовать-mongodb-connector-for-business-intelligence&#34;&gt;Использовать MongoDB Connector for Business Intelligence&lt;/h3&gt;

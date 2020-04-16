@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Power BI and Mongodb</title>
-      <link>https://DmitriyVlasov.ru/ru/domain/memo/power-bi-and-mongodb/</link>
+      <title>Power BI Data Sources</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/memo/powerbi/powerbi-and-mongodb/</link>
       <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/domain/memo/power-bi-and-mongodb/</guid>
+      <guid>https://DmitriyVlasov.ru/ru/domain/memo/powerbi/powerbi-and-mongodb/</guid>
       <description>&lt;h2 id=&#34;как-загрузить-данные-в-power-bi-из-mongodb&#34;&gt;Как загрузить данные в Power BI из MongoDB?&lt;/h2&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h3 id=&#34;использовать-mongodb-connector-for-business-intelligence&#34;&gt;Использовать MongoDB Connector for Business Intelligence&lt;/h3&gt;
@@ -32,6 +32,16 @@
 &lt;li&gt;&lt;strong&gt;Преимущества&lt;/strong&gt;: Проект с открытым исходным кодом, Есть сертифицированный коннектор в Power BI (см. статью &lt;a href=&#34;https://powerbi.microsoft.com/ru-ru/blog/announcing-general-availability-of-custom-and-certified-connectors-for-power-bi/&#34;&gt;Announcing General Availability of Custom and Certified Connectors for Power BI&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Особенности&lt;/strong&gt;: &lt;a href=&#34;https://www.dremio.com/&#34;&gt;Dremio&lt;/a&gt; Проект молодой, Дополнительный узел интеграции.&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mongodb</title>
+      <link>https://DmitriyVlasov.ru/ru/domain/memo/mongodb/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/domain/memo/mongodb/</guid>
+      <description>&lt;h2 id=&#34;резервное-копирование-и-восстановление-с-помощью-инструментов-mongodb&#34;&gt;Резервное копирование и восстановление с помощью инструментов MongoDB&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
 </description>
     </item>
     

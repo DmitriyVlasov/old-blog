@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>az | Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/tags/az/</link>
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/az/index.xml" rel="self" type="application/rss+xml" />
+    <description>az</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
+      <title>az</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/az/</link>
+    </image>
+    
+    <item>
+      <title>Утилита az</title>
+      <link>https://DmitriyVlasov.ru/ru/post/2020-04-16/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/post/2020-04-16/</guid>
+      <description>&lt;p&gt;Когда много начинаешь писать команды в консоли с помощью утилиты возникает желание часть редко изменяемых параметров сохранить и заполнять по умолчанию для этой цели предназначена команда &lt;code&gt;az configure&lt;/code&gt;. Например, если нужно сохранить по умолчанию регион создания можно написать следующее:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az configure --defaults location&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;westeurope
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Посмотреть список всех ресурсных групп отсортированных по имени&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az group list | jq &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[.[] |.name] | sort&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Примечание: Здесь для фильтрации результата вывода инструкции &lt;code&gt;az group list&lt;/code&gt; используется утилита &lt;a href=&#34;https://stedolan.github.io/jq/&#34;&gt;jq&lt;/a&gt;. Саму утилиту &lt;code&gt;jq&lt;/code&gt; интересно рассмотреть отдельно. Удобно что она установлена по умолчанию в консоли Azure CLI. Возможно позже расскажу о ней отдельно.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

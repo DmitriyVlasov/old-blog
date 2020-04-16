@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DP-200 | Дмитрий Власов</title>
+    <link>https://DmitriyVlasov.ru/ru/tags/dp-200/</link>
+      <atom:link href="https://DmitriyVlasov.ru/ru/tags/dp-200/index.xml" rel="self" type="application/rss+xml" />
+    <description>DP-200</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
+      <title>DP-200</title>
+      <link>https://DmitriyVlasov.ru/ru/tags/dp-200/</link>
+    </image>
+    
+    <item>
+      <title>Утилита az</title>
+      <link>https://DmitriyVlasov.ru/ru/post/2020-04-16/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/post/2020-04-16/</guid>
+      <description>&lt;p&gt;Когда много начинаешь писать команды в консоли с помощью утилиты возникает желание часть редко изменяемых параметров сохранить и заполнять по умолчанию для этой цели предназначена команда &lt;code&gt;az configure&lt;/code&gt;. Например, если нужно сохранить по умолчанию регион создания можно написать следующее:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az configure --defaults location&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;westeurope
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Посмотреть список всех ресурсных групп отсортированных по имени&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az group list | jq &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[.[] |.name] | sort&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Примечание: Здесь для фильтрации результата вывода инструкции &lt;code&gt;az group list&lt;/code&gt; используется утилита &lt;a href=&#34;https://stedolan.github.io/jq/&#34;&gt;jq&lt;/a&gt;. Саму утилиту &lt;code&gt;jq&lt;/code&gt; интересно рассмотреть отдельно. Удобно что она установлена по умолчанию в консоли Azure CLI. Возможно позже расскажу о ней отдельно.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Начало прохождения курса DP-200</title>
+      <link>https://DmitriyVlasov.ru/ru/post/2020-04-09/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/post/2020-04-09/</guid>
+      <description>&lt;p&gt;Начал самостоятельно изучать материалы по курсу к экзамену &lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/certifications/exams/dp-200?tab=tab-learning-paths&#34;&gt;DP-200: Implementing an Azure Data Solution&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;В модуле &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/modules/data-engineering-processes/&#34;&gt;Определение задач специалиста по инжинирингу данных в архитектуре, размещенной в облаке&lt;/a&gt;&amp;rdquo; курса &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/paths/azure-for-the-data-engineer/&#34;&gt;Azure для инженеров данных&lt;/a&gt;&amp;rdquo; Отметил для себя:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Пример высокоуровнего описания процесов ELTL (Extract Load Transform Load) на уровне цепочки сервисов в матрице использования. (см. урок &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/modules/data-engineering-processes/4-architecturing-project&#34;&gt;Анализ задач специалиста по инжинирингу данных&lt;/a&gt;&amp;quot;).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

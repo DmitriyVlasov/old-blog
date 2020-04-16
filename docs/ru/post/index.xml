@@ -5,12 +5,154 @@
     <link>https://DmitriyVlasov.ru/ru/post/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Статьи</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Wed, 17 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>Статьи</title>
       <link>https://DmitriyVlasov.ru/ru/post/</link>
     </image>
+    
+    <item>
+      <title>Утилита az</title>
+      <link>https://DmitriyVlasov.ru/ru/post/2020-04-16/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/post/2020-04-16/</guid>
+      <description>&lt;p&gt;Когда много начинаешь писать команды в консоли с помощью утилиты возникает желание часть редко изменяемых параметров сохранить и заполнять по умолчанию для этой цели предназначена команда &lt;code&gt;az configure&lt;/code&gt;. Например, если нужно сохранить по умолчанию регион создания можно написать следующее:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az configure --defaults location&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;westeurope
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Посмотреть список всех ресурсных групп отсортированных по имени&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az group list | jq &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[.[] |.name] | sort&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Примечание: Здесь для фильтрации результата вывода инструкции &lt;code&gt;az group list&lt;/code&gt; используется утилита &lt;a href=&#34;https://stedolan.github.io/jq/&#34;&gt;jq&lt;/a&gt;. Саму утилиту &lt;code&gt;jq&lt;/code&gt; интересно рассмотреть отдельно. Удобно что она установлена по умолчанию в консоли Azure CLI. Возможно позже расскажу о ней отдельно.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Начало прохождения курса DP-200</title>
+      <link>https://DmitriyVlasov.ru/ru/post/2020-04-09/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/post/2020-04-09/</guid>
+      <description>&lt;p&gt;Начал самостоятельно изучать материалы по курсу к экзамену &lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/certifications/exams/dp-200?tab=tab-learning-paths&#34;&gt;DP-200: Implementing an Azure Data Solution&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;В модуле &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/modules/data-engineering-processes/&#34;&gt;Определение задач специалиста по инжинирингу данных в архитектуре, размещенной в облаке&lt;/a&gt;&amp;rdquo; курса &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/paths/azure-for-the-data-engineer/&#34;&gt;Azure для инженеров данных&lt;/a&gt;&amp;rdquo; Отметил для себя:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Пример высокоуровнего описания процесов ELTL (Extract Load Transform Load) на уровне цепочки сервисов в матрице использования. (см. урок &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/modules/data-engineering-processes/4-architecturing-project&#34;&gt;Анализ задач специалиста по инжинирингу данных&lt;/a&gt;&amp;quot;).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>16 марта 2020 года</title>
+      <link>https://DmitriyVlasov.ru/ru/post/2020-03-16/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/post/2020-03-16/</guid>
+      <description>&lt;h2 id=&#34;о-возобновлении-блога&#34;&gt;О возобновлении блога&lt;/h2&gt;
+&lt;p&gt;Я заметил, что лучше выражаю мысли при устном разговоре. Буду писать как лежит мысль. Раньше я хотел писать для других. Что бы другие оценили и поддержали. Сейчас хочу писать для себя. Не столь важно кто как и сколько прочитает этот блог. Поэтому буду писать в блоге куда мало кто ходит. Сейчас для меня важнее сам процесс писание. Чем публичное одобрение и лайки. Пишу потому что по другому уже не могу. Блог и личный сайт как живой организм, наверное сайт все таки некое &amp;ldquo;физическое&amp;rdquo; отражение внутреннего или желаемого внутреннего. Быть откровенным и честным с самим собой в какой то момент становиться более важным чем быть признанным какой то частью сообщества. Как слышал где-то я не пряник что бы всем нравиться. Лайки в социальной сети и обратная связь из них или комментариев создает положительную обратную петлю. Социальное одобрение как способ влияние на мнение или направляемый поток энергии автора. Поэтому на моем блоге нет комментариев и пишу его не в социальной сети, а здесь. Хочется что бы твои мысли принадлежали мне и были какой то частью их и на них не стояла печать этой социальной сети. Возможно когда ни будь при обретении мной уверенности мне захочется большего внимание. А пока что так. Все что я высказываю в блоге это субъективно мое мнение.&lt;/p&gt;
+&lt;h2 id=&#34;о-электронных-градусниках&#34;&gt;О электронных градусниках&lt;/h2&gt;
+&lt;p&gt;Вчера водил Тэдди, наша собака, на профилактический осмотр к ветеринару. У Тэдди слабый нос и глаза. Периодически требуют отдельного внимания. Ветеринар осмотрела собаку. Измерила температуру электронным градусником. Температуру измерила удивительно быстро. Секунд наверное за 5. Оказывается современные электронные погружные градусники умеют так быстро мерить температуру. Меня это заинтересовало возможно при случае обновлю свои домашние. Домашние градусники работают особенно мой Омрон, мне нравиться он своей надежностью и громким сигналом. Но время измерения наверное по ощущениям от 1 до 2 минут. Так что при случае обновлю.&lt;/p&gt;
+&lt;h2 id=&#34;о-порядке&#34;&gt;О порядке&lt;/h2&gt;
+&lt;p&gt;В детстве, как я себя помню я не был сторонником порядка, комфорта и аккуратности. Сейчас наверное когда стал жить уже самостоятельно и работать лет наверное после 22 - 25 я стал поборником и апологетом порядка. Пой стол на работе очень аккуратный и опрятный. Мой электронный рабочий стол на компьютере стремиться к тому же. Но семейная жизнь и дети значительно ускоряют энтропию и чем больше в быту беспорядка и не аккуратности тем больше меня это бесит и выводит из себя. Это как борьба с ветряными мельницами и энтропией. Бесконечная бессмысленная и беспощадная. Но понимание всего этого не делает, во всяком случае пока меня более спокойным, внешние тихие проявления, а внутри гнев. Конечного и окончательного решения этой задачи к сожалению я на данный момент не вижу. Но что то нужно делать. Ничего не делание и оставление на поток проблемы не решает. Поддержание баланса захламленности и порядка среднего уровня. Доведение до крайней степени полного беспорядка ни к чему не приводят кроме внутреннего раздражения. Как всегда лучше начать с себя :-).&lt;/p&gt;
+&lt;p&gt;Есть желание расстаться во всем &amp;ldquo;мусором&amp;rdquo; и не нужными вещами для начала.&lt;/p&gt;
+&lt;h2 id=&#34;спокойно-ты-справишься&#34;&gt;Спокойно, ты справишься!&lt;/h2&gt;
+&lt;p&gt;Начал читать книгу &lt;a href=&#34;https://www.mann-ivanov-ferber.ru/books/spokojno-ty-spravishsya/&#34;&gt;Спокойно, ты справишься! 101 способ избавиться от тревоги и стресса&lt;/a&gt;. По совету товарища и коллеги по работе решил попробовать читать книгу в произвольном порядке например с конца. Выписал способы справиться с тревожностью, которые для меня подходят. Разделил на категории и расположил в порядке:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Что я могу сделать здесь и сейчас в любом месте;&lt;/li&gt;
+&lt;li&gt;Что я могу сделать сам;&lt;/li&gt;
+&lt;li&gt;Что я могу сделать в круге общения.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;главное&#34;&gt;Главное&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Выбери цель и иди к ней!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;окажи-себе-скорую-помощь-при-тревоге&#34;&gt;Окажи себе скорую помощь при тревоге&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ополосни лицо холодной водой.&lt;/li&gt;
+&lt;li&gt;Прочти наизусть молитву о терпении, паслом из Библии или текст любимой песни. Медленно.&lt;/li&gt;
+&lt;li&gt;Попробуй делать простые дыхательные упражнения, например метод &amp;ldquo;4 x 4&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Выбери точку на полу и смотри на нее 5 минут. Отмечай, что происходит с твоим зрением и мыслями.&lt;/li&gt;
+&lt;li&gt;Сделай столько приседаний, на сколько тебе хватает сил.&lt;/li&gt;
+&lt;li&gt;Включи музыку, потанцуй.&lt;/li&gt;
+&lt;li&gt;Займись чем-нибудь. Чем угодно.&lt;/li&gt;
+&lt;li&gt;Используй медитацию, а не медикаменты.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;веди-дневник&#34;&gt;Веди дневник&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Запиши свои тревоги в дневник.&lt;/li&gt;
+&lt;li&gt;Составь список своих умений и сильных сторон.&lt;/li&gt;
+&lt;li&gt;Заведи &amp;ldquo;Журнал благодарностей&amp;rdquo; и перечисли там все, за что тебе хочется поблагодарить жизнь. Дополняй и перечитывай этот список.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;измени-свое-физическое-окружение&#34;&gt;Измени свое физическое окружение&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Соберись. Убирай свою комнату, поддерживай порядок в шкафу.&lt;/li&gt;
+&lt;li&gt;Используй успокаивающие масла, например лавандовое.&lt;/li&gt;
+&lt;li&gt;Начни принимать витамины группы В. Стресс и тревога приводят к их нехватке.&lt;/li&gt;
+&lt;li&gt;Принимай добавки на основе рыбьего жира.&lt;/li&gt;
+&lt;li&gt;Питайся правильно!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;измени-свой-образ-мыслей&#34;&gt;Измени свой образ мыслей&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Для того чтобы уменьшить свои тревоги, признай их.&lt;/li&gt;
+&lt;li&gt;Прекрати сравнивать себя с другими.&lt;/li&gt;
+&lt;li&gt;Напоминай себе, что ты здесь и сейчас ты стараешься изо всех сил. Потому что это правда.&lt;/li&gt;
+&lt;li&gt;Начни разговаривать с собой в позитивном ключе, чтобы противодействовать негативным мыслям (&amp;ldquo;Сейчас мне плохо, но я могу это преодолеть&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;Сомневайся в обоснованности своих тревог.&lt;/li&gt;
+&lt;li&gt;Сомневайся в своих тревогах. На чем они основаны? Что произойдет в худшем случае? А что - в наиболее вероятном?&lt;/li&gt;
+&lt;li&gt;Борись с источниками своих тревог. Изменяй то, что ты можешь изменить. Принимай то, что изменить не можешь.&lt;/li&gt;
+&lt;li&gt;Знай, что твоя тревога пройдет. Принимай то, как она накатывает на тебя и спадает.&lt;/li&gt;
+&lt;li&gt;Выдели в своем ежедневном расписании &amp;ldquo;время для волнений&amp;rdquo; и откладывай все переживания на эти полчаса.&lt;/li&gt;
+&lt;li&gt;Практикуй осознанность.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;получи-новые-навыки-подходи-творчески&#34;&gt;Получи новые навыки. Подходи творчески&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Набросай узор или картину.&lt;/li&gt;
+&lt;li&gt;Мысли творчески. Дай выход своей нервной энергии:
+&lt;ul&gt;
+&lt;li&gt;рисуй,&lt;/li&gt;
+&lt;li&gt;пиши,&lt;/li&gt;
+&lt;li&gt;создавай скульптуры,&lt;/li&gt;
+&lt;li&gt;играй на сцене,&lt;/li&gt;
+&lt;li&gt;занимайся музыкой,&lt;/li&gt;
+&lt;li&gt;дизайном или танцами,&lt;/li&gt;
+&lt;li&gt;попробуй снять кино.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Научить шонглировать.&lt;/li&gt;
+&lt;li&gt;Соберись. Закончи проект, доклад и так далее.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;физическая-активность&#34;&gt;Физическая активность&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Покатай теннисные мячики голыми стопами ног. Это очень приятно!&lt;/li&gt;
+&lt;li&gt;Выходи на прогулку, лучше в парк.&lt;/li&gt;
+&lt;li&gt;Научись делать простые дыхательные упражнения, например метод &amp;ldquo;4 x 4&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Сходи погонять мяч на спортивной площадке.&lt;/li&gt;
+&lt;li&gt;Займись каким-нибудь новым видом спорта.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ментальная-активность&#34;&gt;Ментальная активность&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Выучи молитву о терпении.&lt;/li&gt;
+&lt;li&gt;Выучи наизусть паслом из Библии или текст любимой песни.&lt;/li&gt;
+&lt;li&gt;Вспомни счастливый момент из свой жизни. Поразмышляй о нем.&lt;/li&gt;
+&lt;li&gt;Тренируйся визуализировать или создавать мысленные образы. На самом деле, нет ничего лучше, чем воображать свой успех.&lt;/li&gt;
+&lt;li&gt;Используй медитацию, а не медикаменты.&lt;/li&gt;
+&lt;li&gt;Начни изучать новый язык.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;расширь-свой-круг-общения&#34;&gt;Расширь свой круг общения&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Чаще обнимайся с друзьями и знакомыми.&lt;/li&gt;
+&lt;li&gt;Признайся в своей симпатии человеку, который тебе тайно нравиться.&lt;/li&gt;
+&lt;li&gt;Общайся. Проведи время с близкими друзьями или членами семьи.&lt;/li&gt;
+&lt;li&gt;Займись волонтерством.&lt;/li&gt;
+&lt;li&gt;Позвони другу, даже если не хочется.&lt;/li&gt;
+&lt;li&gt;Отправь другу или родственнику открытку или рукописное письмо &amp;ndash; этот ныне утраченный вид искусства.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;получи-новые-впечатления&#34;&gt;Получи новые впечатления&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Сделай массаж, маникюр или педикюр. Подстригись.&lt;/li&gt;
+&lt;li&gt;Сходи в Музей.&lt;/li&gt;
+&lt;li&gt;Смейся! Сходи в кино на комедию или стендап-пыступление. Посмотри смешные ролики на Youtube.&lt;/li&gt;
+&lt;li&gt;Отправляйся в короткое путешествие.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Как на Power Query создать таблицу?</title>
@@ -1566,66 +1708,6 @@ in
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;В SQL Server отсутствует логический тип данных. Поэтому в явном виде логические операции и таблицы истинности в SQL не применимы. Хотя в предложении &lt;code&gt;WHERE&lt;/code&gt; и есть выражения &lt;code&gt;or&lt;/code&gt; или &lt;code&gt;and&lt;/code&gt; Которые позволяют объединять между выражения возвращающие логический контекст. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Пример использования функции EARLIER</title>
-      <link>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</link>
-      <pubDate>Wed, 05 Jul 2017 11:37:05 +0300</pubDate>
-      <guid>https://DmitriyVlasov.ru/ru/post/dax-function-earlier/</guid>
-      <description>&lt;h1 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h1&gt;
-&lt;pre&gt;&lt;code&gt;EARLIER(column, [number])
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;параметры&#34;&gt;Параметры&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Параметр&lt;/th&gt;
-&lt;th&gt;Обязательный&lt;/th&gt;
-&lt;th&gt;Описание&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;column&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Да&lt;/td&gt;
-&lt;td&gt;Столбец или выражение, результатом которого служит столбец.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;number&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Нет&lt;/td&gt;
-&lt;td&gt;Следующий внешний этап вычисления. По умолчанию 1.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;возвращаемое-значение&#34;&gt;Возвращаемое значение&lt;/h2&gt;
-&lt;p&gt;Текущее значение строки из столбца &lt;code&gt;column&lt;/code&gt; на расстоянии в &lt;code&gt;number&lt;/code&gt; внешних этапов вычисления.&lt;/p&gt;
-&lt;h1 id=&#34;пример&#34;&gt;Пример&lt;/h1&gt;
-&lt;pre&gt;&lt;code class=&#34;language-dax&#34; data-lang=&#34;dax&#34;&gt;=
-COUNTROWS (
-    FILTER (
-        ProductSubcategory;
-        EARLIER ( ProductSubcategory[TotalSubcategorySales] )
-            &amp;lt; ProductSubcategory[TotalSubcategorySales]
-    )
-)
-    + 1
-&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
-&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; получает значение TotalSubcategorySales для текущей строки в таблице. В данном случае, поскольку процесс только начинается, это первая строка в таблице.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;EARLIER([TotalSubcategorySales])&lt;/code&gt; дает результат $ 156 176.88 — текущая строка во внешнем цикле.&lt;/li&gt;
-&lt;li&gt;Теперь функция &lt;code&gt;FILTER&lt;/code&gt; возвращает таблицу, где все строки имеют значение TotalSubcategorySales, превышающее $ 156 176.88 (текущее значение &lt;code&gt;EARLIER&lt;/code&gt;).&lt;/li&gt;
-&lt;li&gt;Функция &lt;code&gt;COUNTROWS&lt;/code&gt; подсчитывает строки отфильтрованной таблицы и присваивает новому вычисляемому столбцу в текущей строке полученное значение и прибавляет единицу &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
-&lt;li&gt;Формула вычисляемого столбца переходит к следующей строке, и шаги с 1 по 4 повторяются. Эти шаги повторяются до конца таблицы.&lt;/li&gt;
-&lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Прибавлять единицу необходимо, чтобы предотвратить появление &lt;a href=&#34;../handing-of-dax-blank&#34;&gt;пустого значения&lt;/a&gt; в качестве значения с верхним рангом. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;

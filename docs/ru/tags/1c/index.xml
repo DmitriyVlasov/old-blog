@@ -24,15 +24,15 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;В верхнем левом углу выбрать кнопку &amp;ldquo;меню&amp;rdquo; \ Справка \ О программе.
-&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;img src=&#34;1%D1%818-about-path.png&#34; alt=&#34;1с8-about-path.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Откроется окно &amp;ldquo;О программе&amp;rdquo;, смотрите версию:
-&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;img src=&#34;1c-about.png&#34; alt=&#34;1c-about.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Заходим в каталог: &lt;code&gt;C:\Program Files\1cv8\&lt;/code&gt; и выбираем каталог с именем найденной версии.
-&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;img src=&#34;1c8-home-directory.png&#34; alt=&#34;1c8-home-directory&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;как-зарегистрировать-библиотеку-1с-8-comcntrdll&#34;&gt;Как зарегистрировать библиотеку 1С 8 &lt;code&gt;comcntr.dll&lt;/code&gt;&lt;/h2&gt;

@@ -2,8 +2,8 @@
   "name": "Дмитрий Власов",
   "short_name": "Дмитрий Власов",
   "lang": "ru-ru",
-  "theme_color": "#795548",
-  "background_color": "#795548",
+  "theme_color": "#3f51b5",
+  "background_color": "#3f51b5",
   "icons": [{
     "src": "/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_192x192_fill_lanczos_center_2.png",
     "sizes": "192x192",
