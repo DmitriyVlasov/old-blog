@@ -1,5 +1,6 @@
 +++
 date = "2018-10-17"
+lastmod = "2020-04-24"
 draft = false
 math = false
 highlight = true
@@ -81,6 +82,17 @@ caption = ""
       } 
 )
 ```
+
+## Шаблоны использования
+
+### Таблица для хранения мер в модели
+
+Минимальное необходимый код для создания пустой таблицы хранения мер:
+
+```
+#table(type table [Empty = text] , {} )
+```
+
 
 ## Использованные источники
 * [Power Query M language specification](https://msdn.microsoft.com/en-us/query-bi/m/power-query-m-language-specification)
