@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/power-bi/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/power-bi/index.xml" rel="self" type="application/rss+xml" />
     <description>power bi</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>power bi</title>
@@ -63,7 +63,7 @@ COUNTROWS (
 &lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;как-в-dax-отобразить-положительные-числа-со-знаком-плюс&#34;&gt;Как в DAX отобразить положительные числа со знаком плюс?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Ответ:&lt;/strong&gt; Используйте &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ответ:&lt;/strong&gt; Используйте &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;пример-1&#34;&gt;Пример&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;В качестве примера возьмем таблицу &lt;code&gt;Entry&lt;/code&gt; с положительными и отрицательными значениями:&lt;/li&gt;
@@ -127,7 +127,7 @@ COUNTROWS (
 &lt;h3 id=&#34;комментарии&#34;&gt;Комментарии&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Подробное описание функции FROMAT см. в статье &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Подробное описание функции FROMAT см. в статье &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Так как для второго параметра нет форматирование нуля использовал функцию IF. Если не использовать функцию IF для обработки нулевого значения получиться 0 с плюсом. Что может быть не приемлемо для бизнес правил.&lt;/p&gt;
@@ -160,12 +160,12 @@ COUNTROWS (
 &lt;li&gt;&lt;strong&gt;Особенности&lt;/strong&gt;: стоит существенных денег&lt;/li&gt;
 &lt;li&gt;Позволяет использовать выбранный инструмент BI (Power BI, Tableau, Qlik и другие ) для визуализации, обнаружения и представления отчетов по данным MongoDB с помощью стандартных SQL-запросов.&lt;/li&gt;
 &lt;li&gt;Он может использоваться в рамках платной подписки &amp;ldquo;MongoDB Enterprise Advanced subscription&amp;rdquo;. Стоимость уточняется отдельно у поставщика.&lt;/li&gt;
-&lt;li&gt;возможности смотри подробнее на странице: &lt;a href=&#34;https://www.mongodb.com/products/bi-connector&#34;&gt;MongoDB Connector for Business Intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;возможности смотри подробнее на странице: &lt;a href=&#34;https://www.mongodb.com/products/bi-connector&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MongoDB Connector for Business Intelligence&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;использовать-dremio&#34;&gt;Использовать Dremio&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Преимущества&lt;/strong&gt;: Проект с открытым исходным кодом, Есть сертифицированный коннектор в Power BI (см. статью &lt;a href=&#34;https://powerbi.microsoft.com/ru-ru/blog/announcing-general-availability-of-custom-and-certified-connectors-for-power-bi/&#34;&gt;Announcing General Availability of Custom and Certified Connectors for Power BI&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Особенности&lt;/strong&gt;: &lt;a href=&#34;https://www.dremio.com/&#34;&gt;Dremio&lt;/a&gt; Проект молодой, Дополнительный узел интеграции.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Преимущества&lt;/strong&gt;: Проект с открытым исходным кодом, Есть сертифицированный коннектор в Power BI (см. статью &lt;a href=&#34;https://powerbi.microsoft.com/ru-ru/blog/announcing-general-availability-of-custom-and-certified-connectors-for-power-bi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Announcing General Availability of Custom and Certified Connectors for Power BI&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Особенности&lt;/strong&gt;: &lt;a href=&#34;https://www.dremio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dremio&lt;/a&gt; Проект молодой, Дополнительный узел интеграции.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -236,9 +236,13 @@ COUNTROWS (
         {3,&amp;quot;three&amp;quot;}
       } 
 )
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;шаблоны-использования&#34;&gt;Шаблоны использования&lt;/h2&gt;
+&lt;h3 id=&#34;таблица-для-хранения-мер-в-модели&#34;&gt;Таблица для хранения мер в модели&lt;/h3&gt;
+&lt;p&gt;Минимальное необходимый код для создания пустой таблицы хранения мер:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#table(type table [Empty = text] , {} )
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;использованные-источники&#34;&gt;Использованные источники&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/query-bi/m/power-query-m-language-specification&#34;&gt;Power Query M language specification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/query-bi/m/power-query-m-language-specification&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Power Query M language specification&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -249,7 +253,7 @@ COUNTROWS (
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/post/power-bi-use-python-script-with-parameters/</guid>
       <description>&lt;h2 id=&#34;предисловие&#34;&gt;Предисловие&lt;/h2&gt;
-&lt;p&gt;После установки &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary&#34;&gt;августовского релиза Power BI &lt;/a&gt; я очень обрадовался, увидев поддержку &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#python&#34;&gt;Python&lt;/a&gt;. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, &lt;a href=&#34;https://blog.crossjoin.co.uk/2017/11/06/which-m-functions-are-only-available-to-custom-data-connectors/&#34;&gt;поддержка шифрования в Power BI&lt;/a&gt; есть только в &lt;a href=&#34;https://github.com/Microsoft/DataConnectors&#34;&gt;кастомных дата коннекторах&lt;/a&gt;, и отсутствует в Power Query для Power BI Desktop. А при всем моем теплом отношении к языку R, связываться с ним лишний раз, мне бы не хотелось. Поэтому поддержке Python в Power BI я был рад очень.&lt;/p&gt;
+&lt;p&gt;После установки &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;августовского релиза Power BI &lt;/a&gt; я очень обрадовался, увидев поддержку &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#python&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt;. Как раз в работе оказался проект, в котором возможность поддержки Python помогла реализовать требования заказчика. Нужно было подключаться к API, предварительно зашифровывая тело запроса открытым и закрытым ключём, перед отправлением запроса к API. К сожалению, как оказалось, &lt;a href=&#34;https://blog.crossjoin.co.uk/2017/11/06/which-m-functions-are-only-available-to-custom-data-connectors/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;поддержка шифрования в Power BI&lt;/a&gt; есть только в &lt;a href=&#34;https://github.com/Microsoft/DataConnectors&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;кастомных дата коннекторах&lt;/a&gt;, и отсутствует в Power Query для Power BI Desktop. А при всем моем теплом отношении к языку R, связываться с ним лишний раз, мне бы не хотелось. Поэтому поддержке Python в Power BI я был рад очень.&lt;/p&gt;
 &lt;h2 id=&#34;задача&#34;&gt;Задача&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Настроить управление поведением скрипта на Python через параметры отчета Power BI Desktop.&lt;/li&gt;
@@ -259,10 +263,10 @@ COUNTROWS (
 &lt;h2 id=&#34;описание-решения&#34;&gt;Описание решения&lt;/h2&gt;
 &lt;h3 id=&#34;предварительные-требования&#34;&gt;Предварительные требования&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;У вас установлена &lt;a href=&#34;https://www.anaconda.com/download/&#34;&gt;Anaconda&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;В Power BI включена &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#python&#34;&gt;поддержка Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;У вас установлена &lt;a href=&#34;https://www.anaconda.com/download/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anaconda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;В Power BI включена &lt;a href=&#34;https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-august-2018-feature-summary/#python&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;поддержка Python&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Запуск в терминале &lt;code&gt;jupyter notebook&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Откройте перед глазами памятку по &lt;a href=&#34;https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Откройте перед глазами памятку по &lt;a href=&#34;https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;подготовка-в-power-bi&#34;&gt;Подготовка в Power BI&lt;/h3&gt;
 &lt;ul&gt;
@@ -282,7 +286,7 @@ COUNTROWS (
 in
   Parameters
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;разработка-скрипта-python&#34;&gt;Разработка скрипта Python&lt;/h3&gt;
-&lt;p&gt;В моем примере скрипт на Python будем разрабатывать в инструменте, популярном у аналитиков данных &lt;a href=&#34;http://jupyter.org/&#34;&gt;Jupyter Notebook&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;В моем примере скрипт на Python будем разрабатывать в инструменте, популярном у аналитиков данных &lt;a href=&#34;http://jupyter.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jupyter Notebook&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Создаем файл блокнота.&lt;/li&gt;
 &lt;li&gt;Импортируем библиотеку работы с таблицами Pandas (структура аналогичная объекту Table в Power BI)&lt;/li&gt;
@@ -293,8 +297,8 @@ in
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
 
-FromDate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;01.07.2018&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
-ToDate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;31.07.2018&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+FromDate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01.07.2018&amp;#34;&lt;/span&gt;
+ToDate &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;31.07.2018&amp;#34;&lt;/span&gt;
 
 Parameters &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;DataFrame(
     [ 
@@ -302,7 +306,7 @@ Parameters &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span s
         FromDate, ToDate 
       ] 
     ],
-    columns &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;FromDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ToDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] 
+    columns &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FromDate&amp;#39;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ToDate&amp;#39;&lt;/span&gt;] 
 )
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;В рамках рассмотренного примера для простоты работы внутри скрипта на Python вручную создается таблица, а затем с помощью переданных параметров таблица отфильтровывается. Полученный результат далее возвращается в Power BI и может использоваться для дальнейшего анализа.&lt;/p&gt;
@@ -313,65 +317,65 @@ Parameters &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span s
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;Помним о том, что мы передали параметры в формате даты времени в текстовом формате ( объяснение подробнее &lt;a href=&#34;#%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F&#34;&gt;см ниже&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;Помним о том, что мы передали параметры в формате даты времени в текстовом формате ( объяснение подробнее &lt;a href=&#34;#%d0%9e%d0%b1%d1%81%d1%83%d0%b6%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5-%d1%80%d0%b5%d1%88%d0%b5%d0%bd%d0%b8%d1%8f&#34;&gt;см ниже&lt;/a&gt; )&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;FromDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime( Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;FromDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;], format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;m.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; )
-Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ToDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime( Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ToDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;], format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;m.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; )
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FromDate&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime( Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FromDate&amp;#39;&lt;/span&gt;], format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.%m.%Y&amp;#34;&lt;/span&gt; )
+Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ToDate&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime( Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ToDate&amp;#39;&lt;/span&gt;], format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.%m.%Y&amp;#34;&lt;/span&gt; )
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;Если вам нужно настроить преобразование строки под ваш формат даты времени, то вы можете использовать для этого таблицу кодов форматов для &lt;a href=&#34;https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior&#34;&gt;2&lt;/a&gt; или &lt;a href=&#34;https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior&#34;&gt;3&lt;/a&gt; Питона соответственно.&lt;/p&gt;
+&lt;p&gt;Если вам нужно настроить преобразование строки под ваш формат даты времени, то вы можете использовать для этого таблицу кодов форматов для &lt;a href=&#34;https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2&lt;/a&gt; или &lt;a href=&#34;https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;3&lt;/a&gt; Питона соответственно.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Получаем данные из внешней системы. Для демо примера создаем вручную таблицу в Pandas&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;Sales &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;DataFrame( [
-        [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;01.07.2018&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;], 
-        [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;01.08.2018&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;], 
-        [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;01.09.2018&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;]
-    ], columns&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Amount&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt; ] 
+        [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01.07.2018&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;], 
+        [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01.08.2018&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;], 
+        [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01.09.2018&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;]
+    ], columns&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Amount&amp;#39;&lt;/span&gt; ] 
 )
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Для корректной работы сортировки и фильтрации данных по столбцу даты времени приводим, в исследуемых таблицах столбец к дате.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime(Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;],format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;m.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime(Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;],format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.%m.%Y&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Применяем бизнес правила полученные от клиента и параметры, полученные из Power BI, к полученной в скрипте таблице&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;Result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Sales[ Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;FromDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] ]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;Result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Sales[ Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FromDate&amp;#39;&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] ]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Средствами &lt;a href=&#34;http://jupyter.org/&#34;&gt;Jupyter Notebook&lt;/a&gt; мы можем отладить и проверить полученные данные перед копированием полученного сприпта в Power BI.&lt;/p&gt;
+&lt;p&gt;Средствами &lt;a href=&#34;http://jupyter.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jupyter Notebook&lt;/a&gt; мы можем отладить и проверить полученные данные перед копированием полученного сприпта в Power BI.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;В результате получаем скрипт, подготовленный для передачи в Power BI&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Импортируем библиотеку работы с таблицами Pandas &lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Импортируем библиотеку работы с таблицами Pandas &lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
 
-&lt;span style=&#34;color:#75715e&#34;&gt;# Готовим параметры для использования&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# Так как параметры даты, времени внутрь Python из Power BI передаются не совсем корректно (с ошибкой).&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# Удобно параметры даты передать в строковом виде, а затем привести обрратно в дате.&lt;/span&gt;
-Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;FromDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime( Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;FromDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;], format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;m.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; )
-Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ToDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime( Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;ToDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;], format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;m.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; )
+&lt;span style=&#34;color:#75715e&#34;&gt;# Готовим параметры для использования&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Так как параметры даты, времени внутрь Python из Power BI передаются не совсем корректно (с ошибкой).&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Удобно параметры даты передать в строковом виде, а затем привести обрратно в дате.&lt;/span&gt;
+Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FromDate&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime( Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FromDate&amp;#39;&lt;/span&gt;], format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.%m.%Y&amp;#34;&lt;/span&gt; )
+Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ToDate&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime( Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ToDate&amp;#39;&lt;/span&gt;], format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.%m.%Y&amp;#34;&lt;/span&gt; )
 
-&lt;span style=&#34;color:#75715e&#34;&gt;# Получаем данные из внешней системы. Для демо примера просто создаем вручную таблицу в Pandas &lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Получаем данные из внешней системы. Для демо примера просто создаем вручную таблицу в Pandas &lt;/span&gt;
 Sales &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;DataFrame( [
-        [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;01.07.2018&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;], 
-        [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;01.08.2018&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;], 
-        [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;01.09.2018&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;]
-    ], columns&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Amount&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt; ] 
+        [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01.07.2018&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;], 
+        [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01.08.2018&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;], 
+        [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;01.09.2018&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;]
+    ], columns&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Amount&amp;#39;&lt;/span&gt; ] 
 )
-Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime(Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;],format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;m.&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Y&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;to_datetime(Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;],format&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.%m.%Y&amp;#34;&lt;/span&gt;)
 
-&lt;span style=&#34;color:#75715e&#34;&gt;# Применяем бизнес правила и параметры полученные из Power BI к таблице и возвращаем результат&lt;/span&gt;
-Result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Sales[ Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;FromDate&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] ]
+&lt;span style=&#34;color:#75715e&#34;&gt;# Применяем бизнес правила и параметры полученные из Power BI к таблице и возвращаем результат&lt;/span&gt;
+Result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Sales[ Sales[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; Parameters[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FromDate&amp;#39;&lt;/span&gt;][&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] ]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;вызов-скрипта-на-python-из-power-bi&#34;&gt;Вызов скрипта на Python из Power BI&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Так как, на данный момент, в мастере создания скрипта на Python в Power BI нет возможности передать не обязательные параметры, для простоты создаем минимально рабочий пример для создания корректного запроса Power Query, который затем обновим разработанным выше скриптом.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
 
-Dummy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;DataFrame( [ [ &lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; ] ], columns &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Dummy&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;] )
+Dummy &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;DataFrame( [ [ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; ] ], columns &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Dummy&amp;#39;&lt;/span&gt;] )
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;В мастере создания запросов Power BI Desktop, выбираем из раскрывающегося списка скрипт на Python. Передам минимальный скрипт на Python написанный выше.&lt;/li&gt;
@@ -417,9 +421,9 @@ in
 &lt;h3 id=&#34;материалы&#34;&gt;Материалы&lt;/h3&gt;
 &lt;p&gt;Для удобства исследования статьи привожу готовый файл срипта и пример на Power BI:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/DmitriyVlasov/Blog/blob/master/samples/2018-08-20/sample-power-bi-use-python-script-with-parameters.pbix&#34;&gt;Решение на Power BI&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/DmitriyVlasov/Blog/blob/master/samples/2018-08-20/sample-power-bi-use-python-script-with-parameters.ipynb&#34;&gt;Файл скрипта на python в формате jupiter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://app.powerbi.com/view?r=eyJrIjoiNDNkZWM5OTgtZjRkMS00YzVkLTkxYjAtYjdmZDA2NzQ0YjdjIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9&#34;&gt;Ссылка на интерактивный отчет в Power BI online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DmitriyVlasov/Blog/blob/master/samples/2018-08-20/sample-power-bi-use-python-script-with-parameters.pbix&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Решение на Power BI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DmitriyVlasov/Blog/blob/master/samples/2018-08-20/sample-power-bi-use-python-script-with-parameters.ipynb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Файл скрипта на python в формате jupiter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://app.powerbi.com/view?r=eyJrIjoiNDNkZWM5OTgtZjRkMS00YzVkLTkxYjAtYjdmZDA2NzQ0YjdjIiwidCI6IjcyMTYyZmFhLWM0ZDMtNGVkNi04OWJkLWEzNzY0MjE3MDA2MyIsImMiOjl9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ссылка на интерактивный отчет в Power BI online&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;обсуждение-решения&#34;&gt;Обсуждение решения&lt;/h3&gt;
 &lt;ul&gt;
@@ -521,31 +525,31 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee635034&#34;&gt;TRUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee635034&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TRUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает логическое значение &lt;code&gt;true&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634894&#34;&gt;FALSE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634894&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FALSE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает логическое значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634379&#34;&gt;AND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634379&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет значения аргументов и возвращает значение &lt;code&gt;true&lt;/code&gt;, если оба аргумента имеют значение &lt;code&gt;true&lt;/code&gt;. В противном случае возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634951&#34;&gt;OR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634951&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли один из аргументов &lt;code&gt;true&lt;/code&gt;, и если да, то возвращает значение &lt;code&gt;true&lt;/code&gt;. Функция возвращает значение &lt;code&gt;false&lt;/code&gt;, если оба аргумента имеют значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634884&#34;&gt;NOT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634884&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NOT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Изменяет значение &lt;code&gt;false&lt;/code&gt; на &lt;code&gt;true&lt;/code&gt;, а &lt;code&gt;true&lt;/code&gt; на &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634824&#34;&gt;IF&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634824&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IF&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет выполнение условия, указанного в первом аргументе. Возвращает одно значение, если условие равно &lt;code&gt;true&lt;/code&gt;, и другое значение, если условие равно &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492166&#34;&gt;SWITCH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492166&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SWITCH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет выражение на основе списка значений и возвращает одно из нескольких возможных результирующих выражений.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -565,35 +569,35 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634811&#34;&gt;CONCATENATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634811&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CONCATENATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Соединяет две текстовые строки в одну текстовую строку (Чаще удобнее использовать оператор &lt;code&gt;&amp;amp;&lt;/code&gt;).&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt163697.aspx&#34;&gt;CONCATENATEX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt163697.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CONCATENATEX&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Функция работает над таблицей и возвращает текстовую строку. Сначала  для каждой записи таблицы вычисляет выражение, а затем сводит все вычесленные записи таблицы в одну строку с учетом разделителя из параметров.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634898&#34;&gt;REPT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634898&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REPT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Повторяет текст заданное количество раз.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634781&#34;&gt;LEFT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634781&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LEFT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает указанное количество символов с начала текстовой строки.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634358&#34;&gt;RIGHT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634358&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RIGHT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Функция RIGHT возвращает последний символ или последние символы текстовой строки, в зависимости от указанного количества символов.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634558&#34;&gt;TRIM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634558&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TRIM&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Удаляет все пробелы из текста, за исключением единичных пробелов между словами.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634251&#34;&gt;LOWER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634251&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LOWER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует все буквы в текстовой строке в нижний регистр.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634377&#34;&gt;UPPER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634377&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UPPER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует все буквы в текстовой строке в верхний регистр.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -609,19 +613,19 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634924&#34;&gt;FORMAT&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Преобразует значение в текст в указанном числовом формате. (см. также предопределенные форматы &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634561&#34;&gt;чисел&lt;/a&gt; и &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634813&#34;&gt;даты и времени&lt;/a&gt;. Пользовательские форматы &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634206&#34;&gt;чисел&lt;/a&gt; и &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634398&#34;&gt;даты и времени&lt;/a&gt;)&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634924&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FORMAT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Преобразует значение в текст в указанном числовом формате. (см. также предопределенные форматы &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634561&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;чисел&lt;/a&gt; и &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634813&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;даты и времени&lt;/a&gt;. Пользовательские форматы &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634206&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;чисел&lt;/a&gt; и &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634398&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;даты и времени&lt;/a&gt;)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634924&#34;&gt;FIXED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634924&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FIXED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует значение в текст в указанном числовом формате.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634584&#34;&gt;VALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634584&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует текстовую строку, представляющую число, в число.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492191&#34;&gt;CURRENCY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492191&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CURRENCY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет аргумент и возвращает результат как тип данных currency.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -637,39 +641,39 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt825189.aspx&#34;&gt;UNICHAR&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает символ Юникод по его числовому значению. Работает аналогично функции Excel &lt;a href=&#34;https://goo.gl/33djp8&#34;&gt;ЮНИСИМВ&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt825189.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UNICHAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает символ Юникод по его числовому значению. Работает аналогично функции Excel &lt;a href=&#34;https://goo.gl/33djp8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ЮНИСИМВ&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;UNICODE&lt;/td&gt;
 &lt;td&gt;Возвращает число (код знака), соответствующее первому знаку в тексте.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634917&#34;&gt;LEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634917&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LEN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число символов в текстовой строке.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634235&#34;&gt;SEARCH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634235&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SEARCH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает номер позиции, начиная с которой обнаружена подстрока. Поиск идет слева на право без учета регистра и с учетом диакритических знаков.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634882&#34;&gt;FIND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634882&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FIND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает начальный номер позиции, начиная с которой обнаружена подстрока. Поиск идет с учетом регистра.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634548&#34;&gt;MID&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634548&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MID&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает строку символов из середины текстовой строки с учетом начальной позиции и длины.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634374&#34;&gt;REPLACE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634374&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;REPLACE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Заменяет часть текстовой строки другой текстовой строкой на основе указанного числа символов.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634233&#34;&gt;SUBSTITUTE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634233&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SUBSTITUTE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Заменяет существующий текст новым в текстовой строке.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634408&#34;&gt;EXACT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634408&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EXACT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Сравнивает две текстовые строки и возвращает &lt;code&gt;true&lt;/code&gt;, если они полностью одинаковые, и &lt;code&gt;false&lt;/code&gt; в противном случае. Функция учитывает регистр, но не учитывает отличия форматирования. Можно использовать функцию, чтобы проверить входящий в документ текст.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -689,19 +693,19 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634559&#34;&gt;SQRT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634559&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SQRT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает квадратный корень числа.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634921&#34;&gt;POWER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634921&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;POWER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает результат возведения числа в степень.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634249&#34;&gt;SIGN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634249&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SIGN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Определяет знак числа, результата вычисления или значения в столбце. Функция возвращает значение 1, если число положительное, значение 0 (ноль), если число равно нулю, и значение -1, если число отрицательное.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634382&#34;&gt;QUOTIENT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634382&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QUOTIENT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Выполняет деление и возвращает только целочисленную часть результата. Эта функция используется, если не нужно учитывать остаток от деления.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -717,43 +721,43 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634566&#34;&gt;ABS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634566&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ABS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает абсолютное значение числа.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634373&#34;&gt;INT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634373&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;INT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в меньшую сторону до ближайшего целого.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634402&#34;&gt;ROUND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634402&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ROUND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число до указанного количества разрядов.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634963&#34;&gt;ROUNDDOWN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634963&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ROUNDDOWN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число вниз, к нулю.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634948&#34;&gt;ROUNDUP&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634948&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ROUNDUP&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в большую сторону, от 0 (нуля).&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634815&#34;&gt;FLOOR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634815&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FLOOR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в меньшую сторону (к нулю) до ближайшего числа, кратного заданной значимости.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634541&#34;&gt;CEILING&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634541&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CEILING&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в большую сторону до ближайшего целого или до ближайшего числа, кратного заданной значимости.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg413419&#34;&gt;ISO.CEILING&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg413419&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISO.CEILING&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Округляет число в большую сторону до ближайшего целого или до ближайшего числа, кратного заданной значимости.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634553&#34;&gt;MROUND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634553&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MROUND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число, округленное до кратного заданной значимости.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634907&#34;&gt;TRUNC&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634907&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TRUNC&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Усекает число до целого, удаляя дробную часть.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -769,11 +773,11 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634783&#34;&gt;RAND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634783&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RAND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает случайное число, большее или равное 0 и меньшее 1, с равномерным распределением. Возвращаемое число изменяется каждый раз при пересчете ячейки, содержащей данную функцию.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634569&#34;&gt;RANDBETWEEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634569&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RANDBETWEEN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает случайное число, расположенное в интервале между двумя заданными числами.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -789,27 +793,27 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634817&#34;&gt;PI&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634817&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PI&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число $Pi$ с точностью до 15 знака.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634774&#34;&gt;LOG&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634774&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LOG&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает логарифм числа по указанному основанию.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634578&#34;&gt;LOG10&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634578&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LOG10&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает логарифм числа по основанию 10.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634772&#34;&gt;LN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634772&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает натуральный логарифм числа. Натуральные логарифмы вычисляются по основанию $e$.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634208&#34;&gt;EXP&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634208&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EXP&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение выражения $e^n$, где $n$ - заданное в параметрах число.  Функция &lt;code&gt;EXP&lt;/code&gt; обратна функции &lt;code&gt;LN&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634540&#34;&gt;FACT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634540&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FACT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает факториал числа.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -829,35 +833,35 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634567&#34;&gt;YEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634567&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YEAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает для заданной даты год в виде четырехзначного числа от 1900 до 9999.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634914&#34;&gt;MONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634914&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MONTH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает месяц в виде числа от 1 до 12.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634390&#34;&gt;DAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634390&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DAY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает день месяца в виде числа от 1 до 31.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634800&#34;&gt;HOUR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634800&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HOUR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение часа в виде числа от 0 до 23.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634776&#34;&gt;MINUTE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634776&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MINUTE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число минут от 0 до 59 по заданному значению даты и времени.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634889&#34;&gt;SECOND&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634889&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SECOND&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает для заданного значения времени число секунд в виде числа от 0 до 59.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634550&#34;&gt;WEEKDAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634550&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WEEKDAY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает число от 1 до 7, определяющее день недели для даты. По умолчанию дни недели считаются от воскресенья (1) до субботы (7).&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634572&#34;&gt;WEEKNUM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634572&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WEEKNUM&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает номер недели для заданных даты и года в соответствии со значением тип возврата. Номер недели указывает числовую позицию недели относительно начала года.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -873,27 +877,27 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634927&#34;&gt;DATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634927&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует год, месяц, день, заданный в виде чисел в дату формате &lt;code&gt;datetime&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634564&#34;&gt;TIME&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634564&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TIME&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует часы, минуты и секунды, заданные в виде чисел, во время в формате &lt;code&gt;datetime&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634543&#34;&gt;DATEVALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634543&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATEVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует дату из текстового формата в дату в формате &lt;code&gt;datetime&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee635036&#34;&gt;TIMEVALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee635036&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TIMEVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Преобразует время из текстового формата во время в формате &lt;code&gt;datetime&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634554&#34;&gt;TODAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634554&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TODAY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает текущую дату без времени.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634891&#34;&gt;NOW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634891&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NOW&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает текущую дату и время.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -909,19 +913,19 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/dn802538.aspx&#34;&gt;DATEDIFF&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/dn802538.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATEDIFF&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает интервал времени между двумя датами. (Тип интервала указывается в параметре Interval) Интервал может принимать следующие значения: &lt;code&gt;second&lt;/code&gt;, &lt;code&gt;minute&lt;/code&gt;, &lt;code&gt;hour&lt;/code&gt;, &lt;code&gt;day&lt;/code&gt;, &lt;code&gt;week&lt;/code&gt;, &lt;code&gt;month&lt;/code&gt;, &lt;code&gt;quarter&lt;/code&gt;, &lt;code&gt;year&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634405&#34;&gt;YEARFRAC&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634405&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;YEARFRAC&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет долю года, представленную числом целых дней между двумя датами. Функция позволяет определить долю преимуществ или обязательств за целый год, приходящуюся на указанный срок.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634544&#34;&gt;EDATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634544&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EDATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает дату, отстоящую от заданной даты на указанное число месяцев (до или после). С помощью функции вычисляются сроки обязательств и платежей, приходящиеся на тот же день месяца, что и начало расчетного периода.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634394&#34;&gt;EOMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634394&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EOMONTH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает дату окончания месяца (до или после указанного числа месяцев). С помощью функции вычисляются сроки обязательств и платежей, приходящиеся на конец месяца.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -946,23 +950,23 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634905&#34;&gt;DATEADD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634905&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATEADD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, сдвинутых в будущее или в прошлое от дат в текущем контексте на указанное количество интервалов.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634557&#34;&gt;DATESBETWEEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634557&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATESBETWEEN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, за период с начальной до конечной даты.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634539&#34;&gt;DATESINPERIOD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634539&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATESINPERIOD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, который начинается с начальной даты и продолжается определенное количество интервалов.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634873&#34;&gt;PARALLELPERIOD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634873&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PARALLELPERIOD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, со сдвинутыми на несколько интервалов вперед или назад датами, от дат из столбца параметров в текущем контексте.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634972&#34;&gt;SAMEPERIODLASTYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634972&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SAMEPERIODLASTYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Столбец дат, со сдвинутыми на один год назад от дат, из столбца параметров в текущем контексте.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -983,23 +987,23 @@ in
 &lt;tr&gt;
 &lt;td&gt;Текущий&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634359&#34;&gt;DATESMTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634901&#34;&gt;DATESQTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634221&#34;&gt;DATESYTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634359&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATESMTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634901&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATESQTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634221&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATESYTD&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Предыдущий&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634803&#34;&gt;PREVIOUSDAY&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634758&#34;&gt;PREVIOUSMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634385&#34;&gt;PREVIOUSQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634770&#34;&gt;PREVIOUSYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634803&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PREVIOUSDAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634758&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PREVIOUSMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634385&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PREVIOUSQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634770&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PREVIOUSYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Следующий&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634542&#34;&gt;NEXTDAY&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634392&#34;&gt;NEXTMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634878&#34;&gt;NEXTQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634212&#34;&gt;NEXTYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634542&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NEXTDAY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634392&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NEXTMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634878&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NEXTQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634212&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NEXTYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1019,17 +1023,17 @@ in
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Первый&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634806&#34;&gt;FIRSTDATE&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634954&#34;&gt;STARTOFMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634935&#34;&gt;STARTOFQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634797&#34;&gt;STARTOFYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634806&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FIRSTDATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634954&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STARTOFMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634935&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STARTOFQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634797&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STARTOFYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Последний&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634380&#34;&gt;LASTDATE&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634239&#34;&gt;ENDOFMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634243&#34;&gt;ENDOFQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634245&#34;&gt;ENDOFYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634380&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LASTDATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634239&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ENDOFMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634243&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ENDOFQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634245&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ENDOFYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1045,11 +1049,11 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634210&#34;&gt;FIRSTNONBLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634210&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FIRSTNONBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает первое значение в столбце column (с фильтрацией по текущему контексту), где выражение не является пустым.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634247&#34;&gt;LASTNONBLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634247&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LASTNONBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает последнее значение в столбце column (с фильтрацией по текущему контексту), где выражение не является пустым.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1068,21 +1072,21 @@ in
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Сальдо на начало&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634224&#34;&gt;OPENINGBALANCEMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634931&#34;&gt;OPENINGBALANCEQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634886&#34;&gt;OPENINGBALANCEYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634224&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OPENINGBALANCEMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634931&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OPENINGBALANCEQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634886&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OPENINGBALANCEYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Оборот&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634560&#34;&gt;TOTALMTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634579&#34;&gt;TOTALQTD&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634400&#34;&gt;TOTALYTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634560&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TOTALMTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634579&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TOTALQTD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634400&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TOTALYTD&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Сальдо на конец&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634215&#34;&gt;CLOSINGBALANCEMONTH&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634876&#34;&gt;CLOSINGBALANCEQUARTER&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634562&#34;&gt;CLOSINGBALANCEYEAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634215&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CLOSINGBALANCEMONTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634876&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CLOSINGBALANCEQUARTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634562&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CLOSINGBALANCEYEAR&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1099,43 +1103,43 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634204&#34;&gt;ISBLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634204&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, пустое ли значение, и возвращает значение &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802550&#34;&gt;ISEMPTY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802550&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISEMPTY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если таблица пустая.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634580&#34;&gt;ISLOGICAL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634580&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISLOGICAL&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли значение ошибкой, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634370&#34;&gt;ISTEXT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634370&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISTEXT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли значение текстом, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634563&#34;&gt;ISNONTEXT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634563&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISNONTEXT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, не является ли значение текстом (пустые ячейки не являются текстом), и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634911&#34;&gt;ISNUMBER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634911&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISNUMBER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли значение числом, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171515.aspx&#34;&gt;ISEVEN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171515.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISEVEN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение ИСТИНА, если число четное, и значение ЛОЖЬ, если нечетное.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171506.aspx&#34;&gt;ISODD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt171506.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISODD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение ИСТИНА, если число нечетное, и значение ЛОЖЬ, если четное.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492163&#34;&gt;ISFILTERED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492163&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISFILTERED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если columnName фильтруется напрямую. Если для столбца не задан фильтр или если фильтрация происходит потому, что выполняется фильтрация другого столбца в той же или в связанной таблице, функция возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492197&#34;&gt;ISCROSSFILTERED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492197&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISCROSSFILTERED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt; при фильтрации по столбцу columnName или другому столбцу в этой же или связанной таблице.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1143,23 +1147,23 @@ in
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если текущая строка содержит подытог для заданного столбца, в противном случае возвращает &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/dn802535.aspx&#34;&gt;ISONORAFTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/dn802535.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISONORAFTER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Логическая функция, которая эмулирует поведение предложения &lt;code&gt;Start At&lt;/code&gt; и возвращает &lt;code&gt;true&lt;/code&gt; для строки, которая соответствует всем параметрам условия. Эта функция принимает переменное число аргументов кратное трем (т.н. троек), первые два аргумента в тройке - это сравниваемые выражения, а третий аргумент указывает порядок сортировки. Порядок сортировки по увеличению (по умолчанию) или уменьшению.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492183&#34;&gt;CONTAINS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492183&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CONTAINS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если значения для всех столбцов, на которые имеются ссылки, существуют или содержатся в этих столбцах; в противном случае возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34;&gt;CONTAINSROW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CONTAINSROW&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если существует по меньшей мере одна строка, в которой все столбцы имеют указанные значения.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492135&#34;&gt;HASONEFILTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492135&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HASONEFILTER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если число значений, отсортированных по columnName, равно одному; в противном случае возвращает значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492190&#34;&gt;HASONEVALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492190&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HASONEVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt; при фильтрации содержимого столбца columnName до одного уникального значения. В противном случае возвращается значение &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1175,7 +1179,7 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh230954.aspx&#34;&gt;USERNAME&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh230954.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;USERNAME&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает имя домена и имя пользователя из учетных данных, предоставленных системе при подключении.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1203,11 +1207,11 @@ in
 &lt;td&gt;Принимает текстовое сообщение и порождает ошибку. Может использовать в формулах для описания недопустимого состояния пользовательских данных.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634214&#34;&gt;ISERROR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634214&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ISERROR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Проверяет, является ли значение ошибкой, и возвращает &lt;code&gt;true&lt;/code&gt; или &lt;code&gt;false&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634765&#34;&gt;IFERROR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634765&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IFERROR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет выражение и возвращает указанное значение, если выражение ошибочно. В противном случае возвращает значение выражения.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1215,7 +1219,7 @@ in
 &lt;p&gt;&lt;a href=&#34;#TOC&#34;&gt;К содержанию&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;функции-фильтрации&#34;&gt;Функции фильтрации&lt;/h1&gt;
-&lt;p&gt;Функции фильтра и значений DAX относятся к самым мощным и сложным, значительно отличаясь от функций Excel. Функции поиска работают с использованием таблиц и связей, как в базе данных. Функции фильтрации дают возможность управлять контекстом данных для создания динамических вычислений. Описание контекста см. в разделе &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg413423&#34;&gt;Контекст в формулах DAX&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Функции фильтра и значений DAX относятся к самым мощным и сложным, значительно отличаясь от функций Excel. Функции поиска работают с использованием таблиц и связей, как в базе данных. Функции фильтрации дают возможность управлять контекстом данных для создания динамических вычислений. Описание контекста см. в разделе &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg413423&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Контекст в формулах DAX&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1225,67 +1229,67 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492170&#34;&gt;LOOKUPVALUE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492170&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LOOKUPVALUE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение в столбце result_columnName для строки, соответствующей всем критериям, указанным с помощью параметров search_columnName и search_value.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634825&#34;&gt;CALCULATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634825&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CALCULATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет выражение в контексте, изменяемом указанными фильтрами.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634760&#34;&gt;CALCULATETABLE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634760&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CALCULATETABLE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет табличное выражение в контексте, изменяемом данными фильтрами.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634202&#34;&gt;RELATED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634202&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RELATED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает связанное значение из другой таблицы.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634226&#34;&gt;RELATEDTABLE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634226&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RELATEDTABLE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Вычисляет табличное выражение в контексте, изменяемом данными фильтрами.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634802&#34;&gt;ALL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634802&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ALL&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает все строки в таблице или все значения в столбце, не учитывая применяемые фильтры. Эта функция полезна для очистки фильтров и создания вычислений по всем строкам таблицы.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634795&#34;&gt;ALLEXCEPT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634795&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ALLEXCEPT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Удаляет все фильтры контекста в таблице, кроме фильтров, примененных к указанным столбцам.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634793&#34;&gt;ALLNOBLANKROW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634793&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ALLNOBLANKROW&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Из родительской таблицы связи возвращает все непустые строки либо все различные значения столбца, за исключением пустых строк, не учитывая существующие фильтры контекста.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492186&#34;&gt;ALLSELECTED&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492186&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ALLSELECTED&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Удаляет фильтры содержимого из столбцов и строк в текущем запросе, сохраняя все остальные фильтры содержимого и явные фильтры. Функция ALLSELECTED возвращает содержимое, представляющее все строки и столбцы в запросе, сохраняя явные фильтры и фильтры содержимого, не относящиеся к фильтрам строк и столбцов. Эту функцию можно использовать для получения визуальных итогов в запросах.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634966&#34;&gt;FILTER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634966&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FILTER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает таблицу, представляющую подмножество другой таблицы или выражения.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492172&#34;&gt;FILTERS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492172&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FILTERS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значения, которые напрямую применяются в качестве фильтров к столбцу columnName.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634943&#34;&gt;DISTINCT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634943&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DISTINCT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает таблицу из одного столбца, содержащую уникальные значения из указанного столбца. Другими словами, повторяющиеся значения удаляются, и возвращаются только уникальные значения. &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;strong&gt;Примечание&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; Эту функцию нельзя использовать для возвращения результатов в ячейку или столбец на листе. Функция DISTINCT вкладывается в формулу, чтобы получить список уникальных значений, который можно передать другой функции, а затем выполнить подсчет, суммирование или другие операции.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634547&#34;&gt;VALUES&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634547&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VALUES&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает таблицу с одним столбцом, содержащую уникальные значения из указанного столбца или таблицы. Другими словами, повторяющиеся значения удаляются, и возвращаются только уникальные значения. &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; &lt;strong&gt;Примечание&lt;/strong&gt; &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; Эту функцию нельзя использовать для возвращения результатов в ячейку или столбец на листе. Она служит в качестве промежуточной функции, вложенной в формулу, чтобы получить список уникальных значений, которые можно подсчитать или использовать для фильтрации или суммирования других значений.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634551&#34;&gt;EARLIER&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634551&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EARLIER&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает текущее значение указанного столбца на внешнем этапе вычисления для данного столбца. &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; Функция EARLIER полезна для вложенных вычислений, когда необходимо указать в качестве входного определенное значение и в зависимости от него проводить вычисления. В Microsoft Excel такие вычисления можно выполнять только в контексте текущей строки, однако в DAX можно сохранить входное значение, а затем выполнить вычисление с использованием данных из всей таблицы. &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; Функция EARLIER используется главным образом в контексте вычисляемых столбцов.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634779&#34;&gt;EARLIEST&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634779&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EARLIEST&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает текущее значение указанного столбца на внешнем этапе вычисления для данного столбца.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh213140.aspx&#34;&gt;CUSTOMDATA&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/hh213140.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CUSTOMDATA&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает содержимое свойства &lt;code&gt;CustomData&lt;/code&gt; в строке подключения.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1310,67 +1314,67 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492204&#34;&gt;ADDCOLUMNS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492204&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ADDCOLUMNS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Добавляет вычисляемые столбцы к выбранной таблице или табличному выражению.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634574&#34;&gt;COUNTROWS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634574&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COUNTROWS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает количество строк в таблице.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492184&#34;&gt;ROW&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492184&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ROW&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает однострочную таблицу. Эта таблица содержит значения, являющиеся результатом выражения, заданного для каждого столбца.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492198&#34;&gt;TOPN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492198&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TOPN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает первые $N$ строк таблицы.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492171&#34;&gt;SUMMARIZE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492171&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SUMMARIZE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает сводную таблицу с вычисленными итогами для перечня сгруппированных столбцов.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163696&#34;&gt;SUMMARIZECOLUMNS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163696&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SUMMARIZECOLUMNS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает таблицу-сводку по набору групп.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163693&#34;&gt;GROUPBY&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt163693&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GROUPBY&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Функция &lt;code&gt;GROUPBY&lt;/code&gt; аналогична функции &lt;code&gt;SUMMARIZE&lt;/code&gt;. Однако &lt;code&gt;GROUPBY&lt;/code&gt; не выполняет неявный &lt;code&gt;CALCULATE&lt;/code&gt; для любых добавочных столбцов, которые он добавляет. &lt;code&gt;GROUPBY&lt;/code&gt; разрешает использовать новую функцию &lt;code&gt;CURRENTGROUP()&lt;/code&gt; внутри функций агрегации в добавочных столбцах, которые она добавляет. &lt;code&gt;GROUPBY&lt;/code&gt; пытается повторно использовать данные, которые были сгруппированы, что делает его высокоэффективным.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492168&#34;&gt;CROSSJOIN&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Возвращает &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5&#34;&gt;декартово произведение&lt;/a&gt; $1 + N$ таблиц, где $N &amp;gt;= 1$.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492168&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CROSSJOIN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Возвращает &lt;a href=&#34;https://ru.wikipedia.org/wiki/%d0%9f%d1%80%d1%8f%d0%bc%d0%be%d0%b5_%d0%bf%d1%80%d0%be%d0%b8%d0%b7%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;декартово произведение&lt;/a&gt; $1 + N$ таблиц, где $N &amp;gt;= 1$.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492196&#34;&gt;GENERATE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492196&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GENERATE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает декартово произведение всех строк в таблице 1 и таблицы, являющейся результатом вычисления таблицы 2 в контексте текущей строки из таблицы 1.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492206&#34;&gt;GENERATEALL&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492206&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GENERATEALL&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Аналогично &lt;code&gt;GENERATE&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243783&#34;&gt;INTERSECT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243783&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;INTERSECT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает пересечение строк двух таблиц, сохраняя дубликаты.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802543&#34;&gt;NATURALINNERJOIN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802543&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NATURALINNERJOIN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Выполняет внутреннее соединение таблицы с другой таблицей. Таблицы объединены в общие столбцы (по имени) в двух таблицах. Если две таблицы не имеют общих имен столбцов, возвращается ошибка.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802527&#34;&gt;NATURALLEFTOUTERJOIN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802527&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NATURALLEFTOUTERJOIN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Выполняет внутреннее соединение таблицы с другой таблицей. Таблицы объединены в общие столбцы (по имени) в двух таблицах. Если две таблицы не имеют общих имен столбцов, возвращается ошибка.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802530&#34;&gt;UNION&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/dn802530&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UNION&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Создает таблицу объединения (объединения) из пары таблиц.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243784&#34;&gt;EXCEPT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243784&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EXCEPT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает строки одной таблицы, которых не существует в другой таблице.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt674921.aspx&#34;&gt;DATATABLE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt674921.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DATATABLE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Создает таблицу с константными значениями средствами языка DAX. Полезно для использования в случае создания короткого редко изменчивого справочника на уровне DAX.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1390,49 +1394,49 @@ in
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Сумма&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634387&#34;&gt;SUM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634387&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SUM&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634959&#34;&gt;SUMX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634959&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SUMX&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Среднее&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634231&#34;&gt;AVERAGE&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634809&#34;&gt;AVERAGE&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634546&#34;&gt;AVERAGE&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634231&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AVERAGE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634809&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AVERAGE&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634546&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AVERAGE&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Минимум&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634870&#34;&gt;MIN&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634789&#34;&gt;MIN&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634576&#34;&gt;MIN&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634870&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634789&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIN&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634576&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIN&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Максимум&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634228&#34;&gt;MAX&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634582&#34;&gt;MAX&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634576&#34;&gt;MAX&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634228&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MAX&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634582&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MAX&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634576&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MAX&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Количество значений&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634791&#34;&gt;COUNT&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634956&#34;&gt;COUNT&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634549&#34;&gt;COUNT&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634219&#34;&gt;COUNT&lt;strong&gt;AX&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634791&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COUNT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634956&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COUNT&lt;strong&gt;A&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634549&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COUNT&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634219&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COUNT&lt;strong&gt;AX&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Количество пустых значений&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634230&#34;&gt;COUNTBLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634230&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COUNTBLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Количество разных значений&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492142&#34;&gt;DISTINCTCOUNT&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492142&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DISTINCTCOUNT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
 &lt;td&gt;-&lt;/td&gt;
@@ -1452,28 +1456,28 @@ in
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Ранг&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492169&#34;&gt;RANK.EQ&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492185&#34;&gt;RANK&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492169&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RANK.EQ&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492185&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RANK&lt;strong&gt;X&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Дисперсия всей совокупности&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492143&#34;&gt;VAR.P&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492202&#34;&gt;VAR&lt;strong&gt;X&lt;/strong&gt;.P&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492143&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VAR.P&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492202&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VAR&lt;strong&gt;X&lt;/strong&gt;.P&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Дисперсия выборки&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492133&#34;&gt;VAR.S&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492132&#34;&gt;VAR&lt;strong&gt;X&lt;/strong&gt;.S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492133&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VAR.S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VAR&lt;strong&gt;X&lt;/strong&gt;.S&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Стандартное отклонение всей совокупности&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492207&#34;&gt;STDEV.P&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492208&#34;&gt;STDEV&lt;strong&gt;X&lt;/strong&gt;.P&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492207&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STDEV.P&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492208&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STDEV&lt;strong&gt;X&lt;/strong&gt;.P&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Стандартное отклонение выборки&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492150&#34;&gt;STDEV.S&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492205&#34;&gt;STDEV&lt;strong&gt;X&lt;/strong&gt;.S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492150&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STDEV.S&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492205&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STDEV&lt;strong&gt;X&lt;/strong&gt;.S&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1512,7 +1516,7 @@ in
 &lt;li&gt;Общее количество родительских элементов строки, количество уровней в иерархии до родительского элемента верхнего уровня,&lt;/li&gt;
 &lt;li&gt;Идентификатор родительского элемента, расположенного на n уровней выше текущей строки,&lt;/li&gt;
 &lt;li&gt;Идентификатор n-потомка, считая от верхнего уровня иерархии.&lt;/li&gt;
-&lt;li&gt;Определить, является ли определенный родительский элемент элементом иерархии текущей строки. (см. &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492192&#34;&gt;подробнее&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Определить, является ли определенный родительский элемент элементом иерархии текущей строки. (см. &lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492192&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;подробнее&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1523,23 +1527,23 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492167&#34;&gt;PATH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492167&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PATH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает строку текста с разделителями, содержащую идентификаторы всех родительских элементов текущего идентификатора, с самого старого до текущего.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492187&#34;&gt;PATHLENGTH&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492187&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PATHLENGTH&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает количество родительских элементов указанного элемента в заданных результатах функции PATH, включая сам элемент.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492182&#34;&gt;PATHCONTAINS&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492182&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PATHCONTAINS&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если указанный объект item существует в указанном объекте path.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492134&#34;&gt;PATHITEM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492134&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PATHITEM&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает элемент с указанным параметром position из строки результатов вычисления функции PATH. Позиции считаются слева направо.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492199&#34;&gt;PATHITEMREVERSE&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/gg492199&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PATHITEMREVERSE&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает элемент с указанным параметром position из строки результатов вычисления функции PATH. Позиции вычисляются в направлении справа налево.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1557,7 +1561,7 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634820&#34;&gt;BLANK&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/ee634820&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BLANK&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает пустое значение.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -1576,15 +1580,15 @@ in
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34;&gt;VAR&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VAR&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Сохраняет результат выражения как именованную переменную, которая затем может быть передана как аргумент другим выражениям. Когда результирующие значения были рассчитаны для выражения переменных, эти значения не изменяются, даже если эта переменная указана в другом выражении.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34;&gt;IN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/library/mt842621.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает значение &lt;code&gt;true&lt;/code&gt;, если существует по меньшей мере одно значение, в которой все столбцы имеют указанные значения.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34;&gt;RETURN&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/mt243785&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RETURN&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Возвращает результат вычисления формулы используется совместно с выражением &lt;code&gt;VAR&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -1628,7 +1632,7 @@ in
 &lt;li&gt;Excel это не заполненная ячейка;&lt;/li&gt;
 &lt;li&gt;DAX это blank.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;В DAX также существует функция &lt;a href=&#34;(https://msdn.microsoft.com/ru-ru/library/ee634820.aspx)&#34;&gt;blank()&lt;/a&gt; возвращающее пустое значение.&lt;/p&gt;
+&lt;p&gt;В DAX также существует функция &lt;a href=&#34;%28https://msdn.microsoft.com/ru-ru/library/ee634820.aspx%29&#34;&gt;blank()&lt;/a&gt; возвращающее пустое значение.&lt;/p&gt;
 &lt;p&gt;Таблица сравнения поведения пустого значения в разных окружениях&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1716,8 +1720,8 @@ in
 &lt;/table&gt;
 &lt;h1 id=&#34;источники&#34;&gt;Источники&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/sql/analysis-services/tabular-models/data-types-supported-ssas-tabular#a-namebkmkhandblanksa-handling-of-blanks-empty-strings-and-zero-values&#34;&gt;docs.microsoft.com, Handling of Blanks, Empty Strings, and Zero Values&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/ee634820.aspx&#34;&gt;MSDN, Функция BLANK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/sql/analysis-services/tabular-models/data-types-supported-ssas-tabular#a-namebkmkhandblanksa-handling-of-blanks-empty-strings-and-zero-values&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docs.microsoft.com, Handling of Blanks, Empty Strings, and Zero Values&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/ee634820.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSDN, Функция BLANK&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;

@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/ffmpeg/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <description>ffmpeg</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>ffmpeg</title>
@@ -17,10 +17,10 @@
       <link>https://DmitriyVlasov.ru/ru/domain/memo/ffmpeg/</link>
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/domain/memo/ffmpeg/</guid>
-      <description>&lt;p&gt;Универсальный видео и аудио конвертор и декодер можете скачать с сайта &lt;a href=&#34;https://ffmpeg.org/download.html&#34;&gt;ffmpeg&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Универсальный видео и аудио конвертор и декодер можете скачать с сайта &lt;a href=&#34;https://ffmpeg.org/download.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;как-конвертировать-файл-flv-в-mp4&#34;&gt;Как конвертировать файл flv в mp4?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;В командной строке выполняете команду вида &lt;code&gt;ffmpeg -i &amp;quot;input.flv&amp;quot; &amp;quot;output.mp4&amp;quot;&lt;/code&gt;, где:
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;quot;input.flv&amp;quot;&lt;/code&gt; - произвольное имя файла источника&lt;/li&gt;
@@ -30,7 +30,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;как-конвертировать-файл-flv-в-ogg&#34;&gt;Как конвертировать файл flv в ogg?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;В командной строке выполняете команду вида &lt;code&gt;ffmpeg -i &amp;lt;input&amp;gt; -c:a libopus -b:a &amp;lt;bitrate&amp;gt; &amp;lt;output&amp;gt;&lt;/code&gt;, где:
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;*&amp;lt;input&amp;gt;*&lt;/code&gt; - Файл ввода, может быть в любом поддерживаемом ffmpeg формате.&lt;/li&gt;

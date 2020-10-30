@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/1c/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/1c/index.xml" rel="self" type="application/rss+xml" />
     <description>1C</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>1C</title>
@@ -41,7 +41,7 @@
 &lt;li&gt;Запустить терминал &lt;code&gt;cmd&lt;/code&gt; под учетной записью администратора&lt;/li&gt;
 &lt;li&gt;Замените в тексте кода ниже &lt;code&gt;&amp;lt;ВЕРСИЯ_1С&amp;gt;&lt;/code&gt; на найденную версию:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;C:\Windows\SysWOW64\regsvr32&lt;span style=&#34;color:#75715e&#34;&gt; &amp;#34;C:\Program Files\1cv8\&amp;lt;ВЕРСИЯ_1С&amp;gt;\bin\comcntr.dll&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;C:\Windows\SysWOW64\regsvr32&lt;span style=&#34;color:#75715e&#34;&gt; &amp;#34;C:\Program Files\1cv8\&amp;lt;ВЕРСИЯ_1С&amp;gt;\bin\comcntr.dll&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Выполните&lt;/li&gt;
 &lt;li&gt;Если все прошло хорошо, получите сообщение вида:

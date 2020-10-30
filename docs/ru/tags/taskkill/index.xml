@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/taskkill/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/taskkill/index.xml" rel="self" type="application/rss+xml" />
     <description>taskkill</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>taskkill</title>
@@ -23,7 +23,7 @@
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;TASKKILL /im excel.exe /t /f
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;Подробнее о команде в официальной документации &lt;a href=&#34;https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/taskkill&#34;&gt;&lt;code&gt;TASKKILL&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Подробнее о команде в официальной документации &lt;a href=&#34;https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/taskkill&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;TASKKILL&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -183,43 +183,13 @@
   </url>
   
   <url>
-    <loc>https://DmitriyVlasov.ru/ru/tags/az/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/tags/azure/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/tags/dp-200/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/tags/jq/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/tags/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://DmitriyVlasov.ru/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://DmitriyVlasov.ru/ru/tags/"
-                />
+    <loc>https://DmitriyVlasov.ru/ru/post/2020-04-24/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -234,7 +204,7 @@
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/post/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -245,6 +215,56 @@
                 hreflang="ru"
                 href="https://DmitriyVlasov.ru/ru/post/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/post/2020-04-18/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/az/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/post/2020-04-17/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/bash/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/dp-200/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/jq/</loc>
+    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://DmitriyVlasov.ru/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://DmitriyVlasov.ru/ru/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://DmitriyVlasov.ru/ru/tags/azure/</loc>
+    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -263,13 +283,18 @@
   </url>
   
   <url>
+    <loc>https://DmitriyVlasov.ru/ru/domain/</loc>
+    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/dax/</loc>
     <lastmod>2020-03-02T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/power-bi/</loc>
-    <lastmod>2020-03-02T00:00:00+01:00</lastmod>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -444,17 +469,17 @@
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/power-query/</loc>
-    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/tags/%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B8-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B/</loc>
-    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://DmitriyVlasov.ru/ru/post/how-to-create-a-table-on-power-query/</loc>
-    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -646,10 +671,6 @@
                 hreflang="ru"
                 href="https://DmitriyVlasov.ru/ru/dmitriy-vlasov/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://DmitriyVlasov.ru/ru/domain/</loc>
   </url>
   
 </urlset>

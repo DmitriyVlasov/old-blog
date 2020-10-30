@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/azure/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <description>Azure</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>Azure</title>
@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>Утилита az</title>
+      <title>Azure CLI</title>
       <link>https://DmitriyVlasov.ru/ru/post/2020-04-16/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/post/2020-04-16/</guid>
@@ -23,7 +23,7 @@
 &lt;li&gt;Посмотреть список всех ресурсных групп отсортированных по имени&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az group list | jq &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[.[] |.name] | sort&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Примечание: Здесь для фильтрации результата вывода инструкции &lt;code&gt;az group list&lt;/code&gt; используется утилита &lt;a href=&#34;https://stedolan.github.io/jq/&#34;&gt;jq&lt;/a&gt;. Саму утилиту &lt;code&gt;jq&lt;/code&gt; интересно рассмотреть отдельно. Удобно что она установлена по умолчанию в консоли Azure CLI. Возможно позже расскажу о ней отдельно.&lt;/em&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Примечание: Здесь для фильтрации результата вывода инструкции &lt;code&gt;az group list&lt;/code&gt; используется утилита &lt;a href=&#34;https://stedolan.github.io/jq/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jq&lt;/a&gt;. Саму утилиту &lt;code&gt;jq&lt;/code&gt; интересно рассмотреть отдельно. Удобно что она установлена по умолчанию в консоли Azure CLI. Возможно позже расскажу о ней отдельно.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

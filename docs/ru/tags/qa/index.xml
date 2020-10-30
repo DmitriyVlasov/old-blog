@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/qa/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/qa/index.xml" rel="self" type="application/rss+xml" />
     <description>q&amp;a</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>q&amp;a</title>
@@ -20,8 +20,8 @@
       <description>&lt;h2 id=&#34;управление-содержимым-в-hugo&#34;&gt;Управление содержимым в Hugo&lt;/h2&gt;
 &lt;p&gt;Ссылки на документацию адаптированную для темы academic:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/&#34;&gt;Managing content&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;Writing content with Markdown, LaTeX, and Shortcodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Managing content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Writing content with Markdown, LaTeX, and Shortcodes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -55,7 +55,7 @@
 &lt;li&gt;Запустить терминал &lt;code&gt;cmd&lt;/code&gt; под учетной записью администратора&lt;/li&gt;
 &lt;li&gt;Замените в тексте кода ниже &lt;code&gt;&amp;lt;ВЕРСИЯ_1С&amp;gt;&lt;/code&gt; на найденную версию:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;C:\Windows\SysWOW64\regsvr32&lt;span style=&#34;color:#75715e&#34;&gt; &amp;#34;C:\Program Files\1cv8\&amp;lt;ВЕРСИЯ_1С&amp;gt;\bin\comcntr.dll&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;C:\Windows\SysWOW64\regsvr32&lt;span style=&#34;color:#75715e&#34;&gt; &amp;#34;C:\Program Files\1cv8\&amp;lt;ВЕРСИЯ_1С&amp;gt;\bin\comcntr.dll&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Выполните&lt;/li&gt;
 &lt;li&gt;Если все прошло хорошо, получите сообщение вида:
@@ -77,7 +77,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;я-разрабатываю-пользовательскую-вкладку-в-excel-как-найти-имена-картинок-для-заполнения-тега-imagemso&#34;&gt;Я разрабатываю пользовательскую вкладку в Excel, как найти имена картинок для заполнения тега &lt;code&gt;imageMSO&lt;/code&gt;?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bert-toolkit.com/imagemso-list.html&#34;&gt;Список иконок &lt;code&gt;imageMSO&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bert-toolkit.com/imagemso-list.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Список иконок &lt;code&gt;imageMSO&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -87,10 +87,10 @@
       <link>https://DmitriyVlasov.ru/ru/domain/memo/ffmpeg/</link>
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/domain/memo/ffmpeg/</guid>
-      <description>&lt;p&gt;Универсальный видео и аудио конвертор и декодер можете скачать с сайта &lt;a href=&#34;https://ffmpeg.org/download.html&#34;&gt;ffmpeg&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Универсальный видео и аудио конвертор и декодер можете скачать с сайта &lt;a href=&#34;https://ffmpeg.org/download.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;как-конвертировать-файл-flv-в-mp4&#34;&gt;Как конвертировать файл flv в mp4?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;В командной строке выполняете команду вида &lt;code&gt;ffmpeg -i &amp;quot;input.flv&amp;quot; &amp;quot;output.mp4&amp;quot;&lt;/code&gt;, где:
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;quot;input.flv&amp;quot;&lt;/code&gt; - произвольное имя файла источника&lt;/li&gt;
@@ -100,7 +100,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;как-конвертировать-файл-flv-в-ogg&#34;&gt;Как конвертировать файл flv в ogg?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Скачиваете и устанавливаете &lt;a href=&#34;https://ffmpeg.org/download.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;В командной строке выполняете команду вида &lt;code&gt;ffmpeg -i &amp;lt;input&amp;gt; -c:a libopus -b:a &amp;lt;bitrate&amp;gt; &amp;lt;output&amp;gt;&lt;/code&gt;, где:
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;*&amp;lt;input&amp;gt;*&lt;/code&gt; - Файл ввода, может быть в любом поддерживаемом ffmpeg формате.&lt;/li&gt;
@@ -143,10 +143,10 @@
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/domain/memo/markdown/</guid>
       <description>&lt;h2 id=&#34;где-посмотреть-возможности-markdown&#34;&gt;Где посмотреть возможности Markdown?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/tutorial/index.html&#34;&gt;Учебник по markdown&lt;/a&gt; от разработчиков протокола &lt;a href=&#34;https://commonmark.org&#34;&gt;Commonmark&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/tutorial/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Учебник по markdown&lt;/a&gt; от разработчиков протокола &lt;a href=&#34;https://commonmark.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Commonmark&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;как-регулировать-размер-изображения-в-маркдаун&#34;&gt;Как регулировать размер изображения в маркдаун?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;(https://commonmark.org/help/tutorial/08-images.html)&#34;&gt;Маркдаун&lt;/a&gt; этого не позволяет сделать.
-&lt;a href=&#34;https://github.com/hakimel/reveal.js/issues/1349&#34;&gt;Используйте&lt;/a&gt; html тэг &lt;code&gt;img&lt;/code&gt;, например так&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;%28https://commonmark.org/help/tutorial/08-images.html%29&#34;&gt;Маркдаун&lt;/a&gt; этого не позволяет сделать.
+&lt;a href=&#34;https://github.com/hakimel/reveal.js/issues/1349&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Используйте&lt;/a&gt; html тэг &lt;code&gt;img&lt;/code&gt;, например так&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;image&amp;quot; width=&amp;quot;40%&amp;quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
@@ -162,7 +162,7 @@
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;TASKKILL /im excel.exe /t /f
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;Подробнее о команде в официальной документации &lt;a href=&#34;https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/taskkill&#34;&gt;&lt;code&gt;TASKKILL&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Подробнее о команде в официальной документации &lt;a href=&#34;https://docs.microsoft.com/ru-ru/windows-server/administration/windows-commands/taskkill&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;TASKKILL&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

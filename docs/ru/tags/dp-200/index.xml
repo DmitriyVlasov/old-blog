@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/dp-200/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/dp-200/index.xml" rel="self" type="application/rss+xml" />
     <description>DP-200</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>DP-200</title>
@@ -13,7 +13,59 @@
     </image>
     
     <item>
-      <title>Утилита az</title>
+      <title>2020 апреля 18</title>
+      <link>https://DmitriyVlasov.ru/ru/post/2020-04-18/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/post/2020-04-18/</guid>
+      <description>&lt;h2 id=&#34;о-конфигурациях-и-чувствительных-данных&#34;&gt;О конфигурациях и чувствительных данных&lt;/h2&gt;
+&lt;p&gt;Для безопасного сохранения скриптов конфигурации в системах хранения версий нужно убедиться, что любые чувствительные данные: логины, пароли, регионы, токены и так далее. лежали отдельно от кода конфигурирования в утилите командной строки &lt;code&gt;bash&lt;/code&gt; и &lt;code&gt;az&lt;/code&gt; Этого можно добиться с помощью так называемой интерполяции (подстановки) переменных оболочки или окружения. Значения чувствительных данных должны храниться отдельно от скриптов развертывания, конфигурации приложения, и уже тем более кода собственно приложения. например в &lt;a href=&#34;https://docs.microsoft.com/ru-ru/azure/key-vault/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Azure Key Vault&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;памятка&#34;&gt;Памятка&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Пример скрипта создания сервера Azure SQL. Значения ключей берутся из переменных bash. Переменной присваивается значение например так: &lt;code&gt;LOCATION=centralus&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az sql server create &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;--name $SERVERNAME &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;--resource-group $RESOURCE_GROUP &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;--location $LOCATION &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;--admin-user $ADMIN_LOGIN &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;--admin-password $PASSWORD
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure CLI. Продолжение</title>
+      <link>https://DmitriyVlasov.ru/ru/post/2020-04-17/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://DmitriyVlasov.ru/ru/post/2020-04-17/</guid>
+      <description>&lt;p&gt;Постепенно по мере погружение в курс DP-200 осваиваю команды &lt;code&gt;bash&lt;/code&gt;. Давно еще заметил, 
+что в блоге в какой то момент перестали отображаться блоки &lt;code&gt;% alert info %&lt;/code&gt; Они просто подавляются в выводе. Нужно разобраться удобно через них добавлять информационные контекстные комментарии.  Наверное в каждой статьи буду просто выделять отдельный раздел памятка или справка с перечнем команд которые освоил на данный момент, по месту, а потом когда накопятся буду выделять для них какой то отдельный раздел статьи.&lt;/p&gt;
+&lt;p&gt;В утилите &lt;code&gt;az&lt;/code&gt; есть параметр общий для всех операций это параметр &lt;code&gt;--query&lt;/code&gt;. С помощью его можно фильтровать результат вывода операции. В это параметре используется синтаксис утилиты &lt;a href=&#34;https://jmespath.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jmespath&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;памятка&#34;&gt;Памятка&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Вывести список всех переменных окружения&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;printenv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Установить переменную&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$serverName&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;SampleServer
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Вывести имя переменной на экран&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;echo $serverName
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Отредактировать файл конфигурации утилиты &lt;code&gt;az&lt;/code&gt; с помощью редактора &lt;code&gt;nano&lt;/code&gt;. Базовое редактирование происходит с помощью действий в Notepad Windows. Что бы сохранить изменения нажмите &lt;code&gt;Ctrl+O&lt;/code&gt; затем &lt;code&gt;Enter&lt;/code&gt;. После правки и сохранения можете закрыть файл &lt;code&gt;Ctrl+X&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;nano .azure/config
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Посмотреть список имен ресурсных групп. фильтрация происходит с помощью синтаксиса &lt;a href=&#34;https://jmespath.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jmespath&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az group list --query &lt;span style=&#34;color:#f92672&#34;&gt;[]&lt;/span&gt;.name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Azure CLI</title>
       <link>https://DmitriyVlasov.ru/ru/post/2020-04-16/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/post/2020-04-16/</guid>
@@ -23,7 +75,7 @@
 &lt;li&gt;Посмотреть список всех ресурсных групп отсортированных по имени&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az group list | jq &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[.[] |.name] | sort&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Примечание: Здесь для фильтрации результата вывода инструкции &lt;code&gt;az group list&lt;/code&gt; используется утилита &lt;a href=&#34;https://stedolan.github.io/jq/&#34;&gt;jq&lt;/a&gt;. Саму утилиту &lt;code&gt;jq&lt;/code&gt; интересно рассмотреть отдельно. Удобно что она установлена по умолчанию в консоли Azure CLI. Возможно позже расскажу о ней отдельно.&lt;/em&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Примечание: Здесь для фильтрации результата вывода инструкции &lt;code&gt;az group list&lt;/code&gt; используется утилита &lt;a href=&#34;https://stedolan.github.io/jq/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jq&lt;/a&gt;. Саму утилиту &lt;code&gt;jq&lt;/code&gt; интересно рассмотреть отдельно. Удобно что она установлена по умолчанию в консоли Azure CLI. Возможно позже расскажу о ней отдельно.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -32,10 +84,10 @@
       <link>https://DmitriyVlasov.ru/ru/post/2020-04-09/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/post/2020-04-09/</guid>
-      <description>&lt;p&gt;Начал самостоятельно изучать материалы по курсу к экзамену &lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/certifications/exams/dp-200?tab=tab-learning-paths&#34;&gt;DP-200: Implementing an Azure Data Solution&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;В модуле &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/modules/data-engineering-processes/&#34;&gt;Определение задач специалиста по инжинирингу данных в архитектуре, размещенной в облаке&lt;/a&gt;&amp;rdquo; курса &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/paths/azure-for-the-data-engineer/&#34;&gt;Azure для инженеров данных&lt;/a&gt;&amp;rdquo; Отметил для себя:&lt;/p&gt;
+      <description>&lt;p&gt;Начал самостоятельно изучать материалы по курсу к экзамену &lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/certifications/exams/dp-200?tab=tab-learning-paths&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DP-200: Implementing an Azure Data Solution&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;В модуле &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/modules/data-engineering-processes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Определение задач специалиста по инжинирингу данных в архитектуре, размещенной в облаке&lt;/a&gt;&amp;rdquo; курса &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/paths/azure-for-the-data-engineer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Azure для инженеров данных&lt;/a&gt;&amp;rdquo; Отметил для себя:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Пример высокоуровнего описания процесов ELTL (Extract Load Transform Load) на уровне цепочки сервисов в матрице использования. (см. урок &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/modules/data-engineering-processes/4-architecturing-project&#34;&gt;Анализ задач специалиста по инжинирингу данных&lt;/a&gt;&amp;quot;).&lt;/li&gt;
+&lt;li&gt;Пример высокоуровнего описания процесов ELTL (Extract Load Transform Load) на уровне цепочки сервисов в матрице использования. (см. урок &amp;ldquo;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/learn/modules/data-engineering-processes/4-architecturing-project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Анализ задач специалиста по инжинирингу данных&lt;/a&gt;&amp;quot;).&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

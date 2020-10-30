@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/domain/memo/powerbi/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/domain/memo/powerbi/index.xml" rel="self" type="application/rss+xml" />
     <description>Power BI</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Mon, 02 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>Power BI</title>
@@ -63,7 +63,7 @@ COUNTROWS (
 &lt;li&gt;Функция &lt;code&gt;EARLIER&lt;/code&gt; всегда получает значение столбца перед выполнением текущей операции в таблице. Чтобы получить значение на более раннем этапе цикла, установите второй аргумент в значение 2.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;как-в-dax-отобразить-положительные-числа-со-знаком-плюс&#34;&gt;Как в DAX отобразить положительные числа со знаком плюс?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Ответ:&lt;/strong&gt; Используйте &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ответ:&lt;/strong&gt; Используйте &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;пример-1&#34;&gt;Пример&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;В качестве примера возьмем таблицу &lt;code&gt;Entry&lt;/code&gt; с положительными и отрицательными значениями:&lt;/li&gt;
@@ -127,7 +127,7 @@ COUNTROWS (
 &lt;h3 id=&#34;комментарии&#34;&gt;Комментарии&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Подробное описание функции FROMAT см. в статье &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Подробное описание функции FROMAT см. в статье &lt;a href=&#34;https://docs.microsoft.com/ru-ru/dax/custom-numeric-formats-for-the-format-function&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;пользовательские числовые форматы для функции FORMAT&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Так как для второго параметра нет форматирование нуля использовал функцию IF. Если не использовать функцию IF для обработки нулевого значения получиться 0 с плюсом. Что может быть не приемлемо для бизнес правил.&lt;/p&gt;
@@ -160,12 +160,12 @@ COUNTROWS (
 &lt;li&gt;&lt;strong&gt;Особенности&lt;/strong&gt;: стоит существенных денег&lt;/li&gt;
 &lt;li&gt;Позволяет использовать выбранный инструмент BI (Power BI, Tableau, Qlik и другие ) для визуализации, обнаружения и представления отчетов по данным MongoDB с помощью стандартных SQL-запросов.&lt;/li&gt;
 &lt;li&gt;Он может использоваться в рамках платной подписки &amp;ldquo;MongoDB Enterprise Advanced subscription&amp;rdquo;. Стоимость уточняется отдельно у поставщика.&lt;/li&gt;
-&lt;li&gt;возможности смотри подробнее на странице: &lt;a href=&#34;https://www.mongodb.com/products/bi-connector&#34;&gt;MongoDB Connector for Business Intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;возможности смотри подробнее на странице: &lt;a href=&#34;https://www.mongodb.com/products/bi-connector&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MongoDB Connector for Business Intelligence&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;использовать-dremio&#34;&gt;Использовать Dremio&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Преимущества&lt;/strong&gt;: Проект с открытым исходным кодом, Есть сертифицированный коннектор в Power BI (см. статью &lt;a href=&#34;https://powerbi.microsoft.com/ru-ru/blog/announcing-general-availability-of-custom-and-certified-connectors-for-power-bi/&#34;&gt;Announcing General Availability of Custom and Certified Connectors for Power BI&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Особенности&lt;/strong&gt;: &lt;a href=&#34;https://www.dremio.com/&#34;&gt;Dremio&lt;/a&gt; Проект молодой, Дополнительный узел интеграции.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Преимущества&lt;/strong&gt;: Проект с открытым исходным кодом, Есть сертифицированный коннектор в Power BI (см. статью &lt;a href=&#34;https://powerbi.microsoft.com/ru-ru/blog/announcing-general-availability-of-custom-and-certified-connectors-for-power-bi/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Announcing General Availability of Custom and Certified Connectors for Power BI&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Особенности&lt;/strong&gt;: &lt;a href=&#34;https://www.dremio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dremio&lt;/a&gt; Проект молодой, Дополнительный узел интеграции.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

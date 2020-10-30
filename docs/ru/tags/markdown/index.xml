@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/markdown/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <description>Markdown</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0100</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>Markdown</title>
@@ -18,10 +18,10 @@
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
       <guid>https://DmitriyVlasov.ru/ru/domain/memo/markdown/</guid>
       <description>&lt;h2 id=&#34;где-посмотреть-возможности-markdown&#34;&gt;Где посмотреть возможности Markdown?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/tutorial/index.html&#34;&gt;Учебник по markdown&lt;/a&gt; от разработчиков протокола &lt;a href=&#34;https://commonmark.org&#34;&gt;Commonmark&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://commonmark.org/help/tutorial/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Учебник по markdown&lt;/a&gt; от разработчиков протокола &lt;a href=&#34;https://commonmark.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Commonmark&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;как-регулировать-размер-изображения-в-маркдаун&#34;&gt;Как регулировать размер изображения в маркдаун?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;(https://commonmark.org/help/tutorial/08-images.html)&#34;&gt;Маркдаун&lt;/a&gt; этого не позволяет сделать.
-&lt;a href=&#34;https://github.com/hakimel/reveal.js/issues/1349&#34;&gt;Используйте&lt;/a&gt; html тэг &lt;code&gt;img&lt;/code&gt;, например так&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;%28https://commonmark.org/help/tutorial/08-images.html%29&#34;&gt;Маркдаун&lt;/a&gt; этого не позволяет сделать.
+&lt;a href=&#34;https://github.com/hakimel/reveal.js/issues/1349&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Используйте&lt;/a&gt; html тэг &lt;code&gt;img&lt;/code&gt;, например так&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;image&amp;quot; width=&amp;quot;40%&amp;quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>

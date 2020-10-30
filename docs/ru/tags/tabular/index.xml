@@ -5,7 +5,7 @@
     <link>https://DmitriyVlasov.ru/ru/tags/tabular/</link>
       <atom:link href="https://DmitriyVlasov.ru/ru/tags/tabular/index.xml" rel="self" type="application/rss+xml" />
     <description>Tabular</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Wed, 05 Jul 2017 15:56:25 +0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>ru-ru</language><copyright>© [Creative Commons Attribution-ShareAlike 3.0 Unported](https://ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported)</copyright><lastBuildDate>Wed, 05 Jul 2017 15:56:25 +0300</lastBuildDate>
     <image>
       <url>https://DmitriyVlasov.ru/images/icon_hucbbc31a72d99417bde92f4ec84ba243f_10104_512x512_fill_lanczos_center_2.png</url>
       <title>Tabular</title>
@@ -23,7 +23,7 @@
 &lt;li&gt;Excel это не заполненная ячейка;&lt;/li&gt;
 &lt;li&gt;DAX это blank.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;В DAX также существует функция &lt;a href=&#34;(https://msdn.microsoft.com/ru-ru/library/ee634820.aspx)&#34;&gt;blank()&lt;/a&gt; возвращающее пустое значение.&lt;/p&gt;
+&lt;p&gt;В DAX также существует функция &lt;a href=&#34;%28https://msdn.microsoft.com/ru-ru/library/ee634820.aspx%29&#34;&gt;blank()&lt;/a&gt; возвращающее пустое значение.&lt;/p&gt;
 &lt;p&gt;Таблица сравнения поведения пустого значения в разных окружениях&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -111,8 +111,8 @@
 &lt;/table&gt;
 &lt;h1 id=&#34;источники&#34;&gt;Источники&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/sql/analysis-services/tabular-models/data-types-supported-ssas-tabular#a-namebkmkhandblanksa-handling-of-blanks-empty-strings-and-zero-values&#34;&gt;docs.microsoft.com, Handling of Blanks, Empty Strings, and Zero Values&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/ee634820.aspx&#34;&gt;MSDN, Функция BLANK&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/ru-ru/sql/analysis-services/tabular-models/data-types-supported-ssas-tabular#a-namebkmkhandblanksa-handling-of-blanks-empty-strings-and-zero-values&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docs.microsoft.com, Handling of Blanks, Empty Strings, and Zero Values&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://msdn.microsoft.com/ru-ru/library/ee634820.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MSDN, Функция BLANK&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
