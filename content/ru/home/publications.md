@@ -65,6 +65,6 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-{{% alert note %}}
+{{% callout note %}}
 Быстро обнаружить соответствующего содержания, [фильтрация публикаций]({{< ref "/publication/_index.md" >}}).
-{{% /alert %}}
+{{% /callout %}}

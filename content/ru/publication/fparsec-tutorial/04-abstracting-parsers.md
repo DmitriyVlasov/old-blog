@@ -35,9 +35,9 @@ let floatBetweenBrackets = pfloat |> betweenStrings "[" "]"
 let floatBetweenDoubleBrackets = pfloat |> betweenStrings "[[" "]]"
 ```
 
-{{% alert note %}}
+{{% callout note %}}
 В случае, если вы новичок в F#: `pfloat |> betweenStrings "[" "]"` это просто еще один способ, чтобы написать `betweenStrings "[" "]" pfloat`.
-{{% /alert %}}
+{{% /callout %}}
 
 В тот момент, как вы заметите, что вам часто нужно применять синтаксический анализатор между двумя другими, вы можете пойти дальше, представив функцию `betweenStrings` следующим образом:
 ```fsharp

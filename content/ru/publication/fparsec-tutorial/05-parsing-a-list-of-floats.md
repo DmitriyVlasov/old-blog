@@ -65,7 +65,7 @@ Failure: Error in Ln: 1 Col: 1
 Expecting: '['
 ```
 
-{{% alert note %}}
+{{% callout note %}}
 
 Если вы предпочитаете, чтобы последнее сообщение об ошибке было сформулировано в терминах более высокого уровневого синтаксического анализатора `floatBetweenBrackets` вместо низкоуровневого синтаксического анализатора `str "["`, вы можете использовать оператор `<?>`, как в следующем примере:
 ```fsharp
@@ -77,7 +77,7 @@ Expecting: float between brackets
 ```
 
 Пожалуйста, смотрите главу [5.8 Customizing error messages<sup>en</sup>] (http://www.quanttec.com/fparsec/users-guide/customizing-error-messages.html) руководства пользователя, чтобы узнать больше о настройке сообщений об ошибках.
-{{% /alert %}}
+{{% /callout %}}
 
 Если вам не нужен результат работы синтаксического анализатора и просто хотите пропустить полученный список, вы можете использовать оптимизированные комбинаторы [`skipMany`](http://www.quanttec.com/fparsec/reference/primitives.html#members.skipMany) или [`skipMany1`](http://www.quanttec.com/fparsec/reference/primitives.html#members.skipMany1) вместо `many` и `many1` .
 

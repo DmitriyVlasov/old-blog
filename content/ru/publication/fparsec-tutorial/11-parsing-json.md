@@ -44,7 +44,7 @@ type Json = JString of string
 Here we've chosen the F# `list` type to represent a sequence of values and the `Map` type to represent a sequence of key-value pairs, because these types are particularly convenient to process in F#.[fn If you need to parse huge sequences and objects, it might be more appropriate to use an array and dictionary for JList and JObject respectively.] Note that the `Json` type is recursive, since both `JList` and `JObject` values can themselves contain `Json` values. Our parser will have to reflect this recursive structure.
 
 ___
-###Tip
+### Tip
 If you're new to FParsec and have a little time, it would be a good exercise to try to implement the JSON parser on your own (with the help of the reference documentation). This tutorial already covered almost everything you need and the JSON grammar is simple enough that this shouldn't take too much time. Of course, you can always peek at the implementation below if you get stuck.
 ___
 

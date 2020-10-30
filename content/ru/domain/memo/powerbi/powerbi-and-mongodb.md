@@ -19,9 +19,9 @@ weight: 1
 
 ## Как загрузить данные в Power BI из MongoDB?
 
-{{% alert info %}}
+{{% callout info %}}
 Все ниже следующие выкладки результаты исследование в интернете требуют моделирования и проработки и проверки в рамках конкретных задач проекта.
-{{% /alert %}}
+{{% /callout %}}
 
 ### Использовать MongoDB Connector for Business Intelligence
 

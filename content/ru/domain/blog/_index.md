@@ -21,6 +21,6 @@ menu:
     weight: 1
 ---
 
-{{% alert into %}}
+{{% callout into %}}
 Раздел в проработке.
-{{% /alert %}}
+{{% /callout %}}

@@ -23,6 +23,6 @@ menu:
 ---
 Обучающие курсы.
 
-{{% alert into %}}
+{{% callout into %}}
 Раздел в проработке.
-{{% /alert %}}
+{{% /callout %}}
