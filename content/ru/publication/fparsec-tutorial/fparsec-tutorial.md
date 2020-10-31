@@ -22,13 +22,13 @@ selected = true
 
 # Links (optional)
 url_code = "https://github.com/stephan-tolksdorf/fparsec"
-url_dataset = "https://bitbucket.org/fparsec/main/src/c234349e7b738e09a1b9eb53f5f1ef77d584f09b/Samples/?at=default"
+url_dataset = "https://github.com/stephan-tolksdorf/fparsec/tree/master/Samples"
 url_source = "http://www.quanttec.com/fparsec/tutorial.html"
 +++
 
 # Введение
 
-Этот учебник знакомит вас с основными понятиями библиотеки FParsec. Наша цель &mdash; дать вам возможность попробовать создать приложения синтаксического разбора с помощью библиотеки FParsec. Мы охватим только основные идеи и дадим беглый обзор библиотеки по [API](https://ru.wikipedia.org/wiki/API)<sup>en</sup>. Но, надеемся, это будет достаточной основой для того, чтобы вы могли в дальнейшем использовать FParsec самостоятельно с помощью: [руководства пользователя](http://www.quanttec.com/fparsec/users-guide/)<sup>en</sup>, [справочника по API](http://www.quanttec.com/fparsec/reference/)<sup>en</sup> и примеров синтаксических анализаторов в папке [Samples](https://bitbucket.org/fparsec/main/src/c234349e7b738e09a1b9eb53f5f1ef77d584f09b/Samples/?at=default)<sup>en</sup>.
+Этот учебник знакомит вас с основными понятиями библиотеки FParsec. Наша цель &mdash; дать вам возможность попробовать создать приложения синтаксического разбора с помощью библиотеки FParsec. Мы охватим только основные идеи и дадим беглый обзор библиотеки по [API](https://ru.wikipedia.org/wiki/API)<sup>en</sup>. Но, надеемся, это будет достаточной основой для того, чтобы вы могли в дальнейшем использовать FParsec самостоятельно с помощью: [руководства пользователя](http://www.quanttec.com/fparsec/users-guide/)<sup>en</sup>, [справочника по API](http://www.quanttec.com/fparsec/reference/)<sup>en</sup> и примеров синтаксических анализаторов в папке [Samples](https://github.com/stephan-tolksdorf/fparsec/tree/master/Samples)<sup>en</sup>.
 
 ## Благодарности
 Благодарю мою жену Ольгу за помощь в переводе, стилистической выверке и редактуре теста.
