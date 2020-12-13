@@ -11,6 +11,8 @@ caption = ""
 
 +++
 
+{{< youtube S9J-wUz9Y1E >}}
+
 ## Что такое для меня творчество?
 
 {{< figure src="my.jpg" title="Я" >}}
